@@ -1,0 +1,5 @@
+# TradingView screener + MCP bridge for Cursor
+tradingview-assistant>=0.9.1
+tradingview-screener>=3.2.0
+mcp[cli]>=1.12.0,<2
+uv>=0.4.0
