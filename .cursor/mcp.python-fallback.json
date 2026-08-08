@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tradingview": {
+      "command": "python",
+      "args": ["-m", "tradingview_mcp.server", "stdio"]
+    }
+  }
+}
