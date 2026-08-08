@@ -17,4 +17,9 @@ if ($LASTEXITCODE -ne 0) {
   exit 1
 }
 
+$cursorDir = Join-Path (Get-Location) ".cursor"
+if (-not (Test-Path $cursorDir)) { New-Item -ItemType Directory -Path $cursorDir | Out-Null }
+Copy-Item -Force (Join-Path (Get-Location) ".cursor/mcp.windows.json") (Join-Path $cursorDir "mcp.json")
+Write-Host "Wrote .cursor/mcp.json"
+
 Write-Host "OK. Restart Cursor fully, then check Settings -> Tools & MCP -> tradingview (green dot)."
