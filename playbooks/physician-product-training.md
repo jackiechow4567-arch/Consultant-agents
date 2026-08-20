@@ -143,7 +143,7 @@ Decompensated cirrhosis (Child-Pugh B/C); ESRD (GFR <15); severe psychiatric his
 |------------|----------------------------------|--------|
 | Hydroxyurea / hydroxycarbamide | **Yes, if you name the RCT and the stats** | PROUD-PV / CONTINUATION-PV (also in PI) |
 | Phlebotomy alone (low-risk PV) | **Yes, if you name the RCT and the stats** | Low-PV, NEJM Evidence 2023 |
-| Pegasys / other IFN / China ropeginterferon | **No superiority** | No H2H; PI potency warning |
+| Pegasys / other IFN / China ropeginterferon | **No PV superiority** | **No PV H2H.** Hepatitis H2H vs Pegasys exists but is **off-indication** — see `pegasys-claim-check.md`. PI potency warning still bars mcg-to-mcg comparisons |
 | Anagrelide | **No** | No cited RCT in the PM library |
 | Ruxolitinib | **No uncited superiority** | Different role (typically HU-resistant/intolerant in broader MPN practice) — do not invent a BESREMi-vs-rux RCT |
 
@@ -200,11 +200,36 @@ Use this structure every time:
 **Say:**  
 “Price is a fair question. We do **not** have a head-to-head versus those interferons, and the Hong Kong PI states that potency should not be compared across pegylated or non-pegylated proteins in this class. What I *can* show is the **PV-specific indication**, the **dosing schedule**, and the **named studies versus hydroxyurea and versus phlebotomy alone**. For an individual patient’s affordability, we have structured patient-support options I can outline with the eligibility rules — I will not invent a discount.”
 
-**Never say:** “More effective than Pegasys.” “Better quality than China ropeg.” “Worth 10× because…”
+**Never say:** “More effective than Pegasys.” “Pegasys is 3× lower dose.” “We have less flu-like than Pegasys.” “Better quality than China ropeg.” “Worth 10× because…”
 
-**If they press:** Offer a Medical Information request. Do not fill silence with a comparative adjective.
+**If they press:** Use the difference script in Q1b, then Medical Information. Do not fill silence with a hepatitis comparison.
 
 **After:** Log competitive question type (not patient identifiers) for brand/Medical. Do not put unpublished pricing strategy in the note.
+
+---
+
+### Q1b. “What is the difference from Pegasys?” (dose / flu-like / old hep studies)
+
+**They mean:** Translate 500 mcg vs 180 mcg into “yours is stronger / better tolerated.”
+
+**Checked facts (do not over-claim):** Full table in `industry/pm-reference/pegasys-claim-check.md`.
+
+| Piece | True? | Clinic use |
+|-------|-------|------------|
+| BESREMi max **500 mcg q2w** | Yes | Yes, as **maximum** |
+| Pegasys adult hep label **180 mcg weekly** | Yes | As *their* labelled hep schedule only |
+| “3× lower dose” (180 vs 500) | **Misleading** — ignores weekly vs q2w; 2-week mass is ~360 vs 500 mcg; same-mcg PK is not equivalent | **No** |
+| “500 mcg = optimal” | No — study **means ~350–380 mcg**; 500 is the cap | Say max, not optimal |
+| Hep C Phase 2 vs **Pegasys** (flu-like numerically lower) | Study exists; HCV + ribavirin; small n; **not PV** | Medical-reactive only |
+| Hep B Phase 1/2 vs **Pegasys** | Study exists; authors said **comparable** safety; rash, not flu-like, was the standout AE | Medical-reactive only |
+| Hep C Phase 3 | Vs **PEG-Intron**, not Pegasys | Do not mis-cite |
+| Less flu-like than Pegasys **in PV** | **No PV H2H**; BESREMi PV label still lists flu-like as common | **No** |
+| Used up to **6 years** in PROUD/CONTI | Yes — 72-month follow-up vs HU | **Yes** |
+
+**Say:**  
+“Different molecules, different labels. BESREMi is the PV-indicated product here: every two weeks, titrate to counts, **maximum 500 micrograms** — in the Phase 3 program the **mean** dose was about **350–380 micrograms**, not 500 for every patient. Pegasys is alfa-2a; its classic adult hepatitis dose is **180 micrograms once weekly**. Those microgram numbers are **not** a 3× potency comparison — our PI says not to compare potency in this class, and the dosing intervals differ. We do not have a PV head-to-head versus Pegasys. Historical hepatitis studies are a Medical Information topic, not a PV promotional comparison. What I can show in PV is PROUD-PV / CONTINUATION-PV versus hydroxyurea, with patients followed **through six years**. Flu-like symptoms remain an interferon-class effect on our label.”
+
+**Never say:** “Pegasys is three times weaker.” “We already won on flu-like in Hep B/C.” “Phase 3 hep was versus Pegasys.”
 
 ---
 
@@ -342,7 +367,7 @@ Use in a 1:1 with a hematologist who already knows interferons exist.
 
 > “BESREMi is ropeginterferon alfa-2b, indicated in Hong Kong as **monotherapy for adults with polycythaemia vera without symptomatic splenomegaly**. Dosing starts at 100 micrograms — 50 if they are already on another cytoreductive — titrated by 50 every two weeks toward standard count targets, up to 500 every two weeks; some stable patients may later move to every four weeks after a year and a half.  
 > The evidence I can discuss on-label is the **Phase III program versus hydroxyurea**, including six-year complete hematologic response and event-free survival, and **Low-PV versus phlebotomy alone** in low-risk disease.  
-> I will not claim superiority versus other interferons — we do not have that head-to-head, and the PI forbids potency comparisons in class.  
+> I will not claim superiority versus other interferons — we do not have a **PV** head-to-head versus Pegasys, and the PI forbids potency comparisons in class.  
 > Access today is private, with defined patient-support rules; public listing is the work in progress, not a date I can promise.  
 > What would help most is hearing how you currently sequence HU, phlebotomy, and interferon in PV — and any safety or titration concerns I should take back to Medical.”
 
@@ -360,7 +385,8 @@ Use in a 1:1 with a hematologist who already knows interferons exist.
 
 | Forbidden | Replace with |
 |-----------|----------------|
-| “Better than Pegasys / China ropeg / Roferon” | “No head-to-head; PI potency warning” |
+| “Better than Pegasys / China ropeg / Roferon” | “No PV head-to-head; PI potency warning” |
+| “Pegasys is 3× lower dose / we have less flu-like” | Labelled schedules only; hepatitis H2H is Medical-reactive, not a PV claim |
 | “Safe / very safe” | “See PI contraindications and ADRs” |
 | “Disease-modifying guarantee / prevents MF” | Named EFS/CHR/molecular stats + limits |
 | “Also for ET/MF” | “Not in HK PI; Medical if they asked” |
@@ -443,7 +469,7 @@ Answer without notes. Fail = restudy the cited module.
 2. Starting dose if the patient is already on HU?  
 3. Three numbers from CONTINUATION-PV at ~72 months (CHR both arms + p; EFS both arms + p).  
 4. Low-PV primary result.  
-5. Why you cannot say “better than Pegasys.”  
+5. Why you cannot say “Pegasys is 3× lower dose” or “we have less flu-like than Pegasys.”  
 6. Two PSP programs and the 2026 expiry.  
 7. What you do when they ask about ET.  
 8. Meal caps.  
@@ -506,7 +532,7 @@ Your job in the clinic is **credibility under pressure**, not a clever comparati
 - Live HA listing status / submission window date
 - PARADIGM cleared local language
 - PSP uptake and remaining budget (High — keep in `work-briefs/`)
-- Any new IFN H2H data (none in the PM library as of 2026-07-27)
+- Any **PV** IFN H2H vs Pegasys (none as of 2026-08-20). Hepatitis H2H exists but is not a PV claim — see `pegasys-claim-check.md`.
 
 ---
 
@@ -514,6 +540,7 @@ Your job in the clinic is **credibility under pressure**, not a clever comparati
 
 - Role memory: `industry/role-pm.md`
 - PI: `industry/pm-reference/besremi-hk-pi-summary.md`
+- Pegasys claim check: `industry/pm-reference/pegasys-claim-check.md`
 - Evidence: `industry/pm-reference/pv-clinical-evidence.md`
 - Compliance: `industry/pm-reference/regulatory-compliance.md`
 - Access: `industry/pm-reference/ha-formulary-access.md`

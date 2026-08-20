@@ -8,7 +8,7 @@
 |------------|---------------------------|-------|
 | Hydroxyurea (HU) | **Yes, if citing named RCT** | PROUD-PV / CONTINUATION-PV |
 | Phlebotomy alone (low-risk PV) | **Yes, if citing named RCT** | Low-PV / NEJM Evidence 2023 |
-| Pegasys / other IFN / China ropeg | **No superiority claims** | No head-to-head; PI potency warning |
+| Pegasys / other IFN / China ropeg | **No PV superiority claims** | No **PV** head-to-head. Hepatitis H2H vs Pegasys exists (off-indication) — see `pegasys-claim-check.md`. PI potency warning bars mcg-to-mcg comparisons |
 | Anagrelide | **No** | No cited RCT in user's library |
 
 ## PROUD-PV / CONTINUATION-PV (Gisslinger et al., Leukemia 2023)
