@@ -20,6 +20,7 @@
 | [hk-hospitals-landscape.md](hk-hospitals-landscape.md) | Key HK hospitals for field/access planning (no PII) |
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
 | [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
+| [Physician product training](../../playbooks/physician-product-training.md) | PM self-training + STOP–BRIDGE–CITE battlecards for hematologist questions (rehearsal only; not an approved leave-behind) |
 
 ## Prohibitions for agents
 

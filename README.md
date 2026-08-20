@@ -77,6 +77,7 @@ Fill these over time (forward distillation is fine; full Perplexity history expo
 - [Finance Q&A brief](playbooks/finance-qa-brief.md)
 - [Executive communication](playbooks/exec-comms.md)
 - [Data story brief](playbooks/data-story-brief.md)
+- [Physician product training (BESREMi HCP Q&A)](playbooks/physician-product-training.md)
 - [Perplexity Space distill](playbooks/perplexity-space-distill.md) (optional)
 - [Notion agent databases + prompts](playbooks/notion-agent-db.md)
 

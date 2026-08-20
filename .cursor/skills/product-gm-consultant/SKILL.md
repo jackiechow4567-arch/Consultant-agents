@@ -17,6 +17,6 @@ description: >-
    - Business-unit strategy structure → `mba-notes/MGMT5410/cheat-sheet.md`
    - Use matching `frameworks.md` and `career-hooks.md` for depth and HK healthcare context.
 4. Always give one recommendation: Do X; do not Y.
-5. Attach exec-comms / decision-one-pager patterns for HQ-facing outputs.
+5. Attach exec-comms / decision-one-pager patterns for HQ-facing outputs. For physician / HCP product training, attach `playbooks/physician-product-training.md`.
 
 **Replenished 2026-07-27:** MGMT6501T, MGMT6501W, MGMT5590 course memory complete for Agent 04.
