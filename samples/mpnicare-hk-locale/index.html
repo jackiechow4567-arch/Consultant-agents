@@ -196,16 +196,17 @@
 
     .banner {
       max-width: 1120px;
-      margin: 0 auto 22px;
-      background: var(--warn-bg);
-      border: 1px solid #efd29a;
-      color: var(--warn);
-      padding: 14px 18px;
-      border-radius: 10px;
+      margin: 0 auto 18px;
+      background: #f7f7f7;
+      border-left: 3px solid #9eb8c8;
+      color: #555;
+      padding: 8px 14px;
+      font-size: 14px;
+      line-height: 1.6;
       display: none;
     }
-    .banner.show { display: block; }
-    .banner b { display: block; margin-bottom: 4px; }
+    html[data-locale="zh-HK"] .banner.regional { display: block; }
+    .banner b { font-weight: 700; margin-right: 6px; }
     .tag {
       display: none;
       background: var(--tag-bg);
@@ -217,9 +218,7 @@
       letter-spacing: .02em;
     }
     html[data-locale="zh-HK"] .tag { display: inline-flex; }
-    html[data-locale="zh-HK"] .banner { display: block; }
-    html[data-locale="zh-HK"] .hk-only { display: block; }
-    .hk-only { display: none; }
+    .cat-name { color: #c45c54; font-weight: 700; font-size: 13px; }
     .article-flag {
       display: none;
       color: var(--tag);
@@ -308,7 +307,7 @@
 </head>
 <body>
   <div class="sample-bar">
-    <div>這是可點擊的網頁樣本（不是程式碼）。請點右上角 <strong>中文（香港）</strong> 查看香港版。版面結構不變，只改固定頁／選單／頁尾用字，並為其他地區文章加上標示。</div>
+    <div>香港版樣本：<strong>病人教育專區只改名稱、不加地區提示</strong>。地區提示只出現在血液腫瘤專欄／健康資訊／品味生活的欄目頁、文章卡及文章頁。</div>
     <div class="actions">
       <button type="button" data-go="matrix">用字對照</button>
       <button type="button" data-go="home">返回首頁</button>
@@ -394,7 +393,7 @@
         lifeTitle: "品味生活",
         links: "友善連結",
         terms: "使用條款與私隱政策",
-        hero1: "這裡是骨髓增生性腫瘤(Myeloproliferative neoplasm, MPN)疾病病人教育網站！",
+        hero1: "這裡是骨髓增生性腫瘤(Myeloproliferative neoplasm, MPN)疾病衛教網站！",
         hero2: "MPN是一種因造血幹細胞基因突變而導致血球異常增生的骨髓疾病，臨床症狀大多不具特異性，但罹病多時易引發嚴重併發症甚至危及生命，因此又被視為健康的沉默殺手。",
         hero3: "您可以透過此網站取得MPN相關的疾病資訊、治療新知及照護建議，幫助您對MPN有更深入的了解。",
         latest: "最新文章",
@@ -428,8 +427,7 @@
         author: "余明生醫師　曾任高雄榮民總醫院血腫科主任　現任澳門仁伯爵綜合醫院血液腫瘤科",
         body: `<p>許多原發性血小板增多症（Essential Thrombocythemia, ET）病人可能會問：「是不是只要把血小板降下來就好了？」其實，現代 ET 治療的核心並不光是追求某一個血小板數字，而是降低血栓與出血風險、改善症狀，並兼顧長期治療安全性與生活品質。</p>
         <p>隨著我們對 ET 的理解增加，醫學界也開始思考更長遠的問題：除了控制血球之外，治療是否可能進一步影響造成疾病的異常造血細胞，甚至改變疾病的自然病程？這就是目前所謂的「疾病修飾（disease modification）」概念。</p>
-        <p><b>ET 不只是血小板升高</b><br>ET 是一種慢性骨髓增生性腫瘤（Myeloproliferative Neoplasm, MPN），多數病友具有 JAK2、CALR 或 MPL 等驅動基因變化。因此，ET 並非單純的血小板過高，而是異常造血細胞長期增生所造成的慢性疾病。除了血栓與出血之外，少部分病友長期可能進展為骨髓纖維化或急性骨髓性白血病。</p>
-        <p>本文為其他地區原文，治療方法、藥物名稱、研究數據及當地用語均按原文保留，不作香港化改寫。</p>`
+        <p><b>ET 不只是血小板升高</b><br>ET 是一種慢性骨髓增生性腫瘤（Myeloproliferative Neoplasm, MPN），多數病友具有 JAK2、CALR 或 MPL 等驅動基因變化。因此，ET 並非單純的血小板過高，而是異常造血細胞長期增生所造成的慢性疾病。除了血栓與出血之外，少部分病友長期可能進展為骨髓纖維化或急性骨髓性白血病。</p>`
       },
       health: {
         date: "7月16日",
@@ -438,8 +436,7 @@
         img: "https://static.wixstatic.com/media/85705e_c6d03b2f29454d16af1822a01f3cb1f0~mv2.jpg/v1/fill/w_734,h_320,fp_0.50_0.50,q_80/85705e_c6d03b2f29454d16af1822a01f3cb1f0~mv2.jpg",
         author: "杏倫皮膚科院長　林軼群院長",
         body: `<p>在骨髓增生性腫瘤（MPN）的長期治療路徑中，病友們往往將重心放在血球計數的穩定與脾臟體積的縮減。然而，對於真性紅血球增多症（PV）、原發性血小板增多症（ET）及骨髓纖維化（MF）的病友而言，另一個不容忽視的併發症—帶狀皰疹（Herpes Zoster，俗稱「皮蛇」），正悄悄威脅著大家的生活品質。</p>
-        <p>本文將帶領病友深入了解 MPN 與帶狀皰疹的關係，並著重於「早期發現」與「精準預防」的關鍵策略。</p>
-        <p>本文為其他地區原文，治療內容、藥物名稱及數據均按原文保留。</p>`
+        <p>本文將帶領病友深入了解 MPN 與帶狀皰疹的關係，並著重於「早期發現」與「精準預防」的關鍵策略。</p>`
       },
       life: {
         date: "2025年6月12日",
@@ -448,8 +445,7 @@
         img: "https://static.wixstatic.com/media/85270a_4f96420fb0574e72aa83623ac12876ee~mv2.jpg/v1/fill/w_734,h_320,fp_0.50_0.50,q_80/85270a_4f96420fb0574e72aa83623ac12876ee~mv2.jpg",
         author: "作者：陳愫儀",
         body: `<p>世界博覽會又稱萬國博覽會，1951年在英國初次舉辦，自2000年起每5年舉行一次，由國際展覽局（BIE）的157個會員國提出申請主辦，主辦的目的在於向全世界展現各自國家的文化與特色。</p>
-        <p>1971年，台灣以中華民國的名義第一次參加匈牙利布達佩斯世界博覽會……</p>
-        <p>本文為其他地區原文，當地機構名稱、制度及用語均按原文保留。</p>`
+        <p>1971年，台灣以中華民國的名義第一次參加匈牙利布達佩斯世界博覽會……</p>`
       }
     };
 
@@ -527,14 +523,17 @@
       `;
     }
 
-    function card(key) {
+    function catName(key) {
       const x = t();
+      return key === "medical" ? x.medical : key === "health" ? x.health : x.lifeTitle;
+    }
+
+    function card(key) {
       const a = ARTICLES[key];
-      const cat = key === "medical" ? x.medical : key === "health" ? x.health : x.lifeTitle;
       return `<article class="card" data-article="${key}">
         <img src="${a.img}" alt="">
         <div class="body">
-          <div class="meta"><span>${a.date}</span><span class="tag">其他地區內容</span></div>
+          <div class="meta"><span class="cat-name">${catName(key)}</span><span class="tag">其他地區內容</span><span>${a.date}</span></div>
           <h3>${a.title}</h3>
           <p>${a.excerpt}</p>
         </div>
@@ -543,22 +542,42 @@
 
     function listPage(key) {
       const x = t();
-      const title = key === "medical" ? x.medical : key === "health" ? x.health : x.lifeTitle;
-      const extras = Object.keys(ARTICLES).includes(key) ? card(key) : "";
+      const title = catName(key);
+      const extras = extraCards(key);
       return `<section class="wrap">
         <h1 class="page-title">${title}</h1>
-        <div class="banner"><b>${x.catBannerTitle}</b>${x.catBanner}</div>
-        <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">${extras}${key === "medical" ? extraCards() : ""}</div>
+        <div class="banner regional"><b>${x.catBannerTitle}</b>${x.catBanner}</div>
+        <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">${card(key)}${extras}</div>
       </section>`;
     }
 
-    function extraCards() {
-      return `<article class="card" data-article="medical">
-        <img src="${ARTICLES.medical.img}" alt="">
+    function extraCards(key) {
+      if (key === "medical") {
+        return `<article class="card" data-article="medical">
+          <img src="${ARTICLES.medical.img}" alt="">
+          <div class="body">
+            <div class="meta"><span class="cat-name">${catName("medical")}</span><span class="tag">其他地區內容</span><span>讀畢需時 5 分鐘</span></div>
+            <h3>骨髓增生性腫瘤（MPN）常見治療方法</h3>
+            <p>余明生醫師 曾任高雄榮民總醫院血腫科主任……</p>
+          </div>
+        </article>`;
+      }
+      if (key === "health") {
+        return `<article class="card" data-article="health">
+          <img src="${ARTICLES.health.img}" alt="">
+          <div class="body">
+            <div class="meta"><span class="cat-name">${catName("health")}</span><span class="tag">其他地區內容</span><span>讀畢需時 2 分鐘</span></div>
+            <h3>從心找到力量</h3>
+            <p>朱怡苹臨床心理師 伴旅心理治療所／初色心理治療所……</p>
+          </div>
+        </article>`;
+      }
+      return `<article class="card" data-article="life">
+        <img src="${ARTICLES.life.img}" alt="">
         <div class="body">
-          <div class="meta"><span>讀畢需時 5 分鐘</span><span class="tag">其他地區內容</span></div>
-          <h3>骨髓增生性腫瘤（MPN）常見治療方法</h3>
-          <p>余明生醫師 曾任高雄榮民總醫院血腫科主任……（正文原文保留，不因香港語系改寫。）</p>
+          <div class="meta"><span class="cat-name">${catName("life")}</span><span class="tag">其他地區內容</span><span>讀畢需時 3 分鐘</span></div>
+          <h3>欲賞鬱金香花宴，庫肯霍夫花園見</h3>
+          <p>鬱金香與荷蘭有著非比尋常的愛恨情仇……</p>
         </div>
       </article>`;
     }
@@ -594,7 +613,6 @@
               <button class="chip" data-go="health">${x.health}</button>
               <button class="chip" data-go="life">${x.lifeTitle}</button>
             </div>
-            <div class="banner"><b>${x.catBannerTitle}</b>${x.catBanner}</div>
             <div class="cards">
               ${card("medical")}${card("health")}${card("life")}
             </div>
@@ -660,7 +678,8 @@
         ["首頁", "並發症（現行香港機翻）", "併發症", "醫學正字"],
         ["關於MPN", "紅細胞／白細胞／按我了解更多", "紅血球／白血球／按此了解更多", "避免機翻把原文改差"],
         ["病人教育專區", "衛教專區／紅細胞增多症／有愛相髓…", "病人教育專區／紅血球增多症／病友故事集", "只改分類名稱"],
-        ["欄目頁／文章卡／文章頁", "（無標示）", "其他地區內容提示＋標籤＋一行聲明", "正文、藥物、數據不改"],
+        ["血腫／健康／品味 欄目頁", "（無標示）", "標題下加一欄「其他地區內容提示」", "不套用到病人教育專區"],
+        ["該三欄文章卡／文章頁", "（無標示）", "分類名旁標籤；標題下加一行", "正文、藥物、數據不改"],
         ["使用條款", "個資／個資法3、10、11條／百份百／藥華藥", "個人資料／《私隱》條例重寫／百分百／藥華醫藥", "法律稿，須合規審閱"]
       ];
       return `<section class="wrap">
