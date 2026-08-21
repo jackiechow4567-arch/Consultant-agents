@@ -4,7 +4,9 @@ Interactive overlay of [mpnicare.org](https://www.mpnicare.org/). Layout, page s
 
 ## Open the sample
 
-Open `index.html` in a browser.
+If you only need to review the look: open **`REVIEW.html`** (static screenshots, no clicking required).
+
+To try the language toggle: open `index.html` in a browser.
 
 1. Default view = current Traditional Chinese chrome (Taiwan source site).
 2. Click **中文（香港）** in the top-right language control.

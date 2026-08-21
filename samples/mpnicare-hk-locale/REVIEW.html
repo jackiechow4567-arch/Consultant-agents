@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MPNicare Hong Kong overlay — visual review</title>
+  <style>
+    :root { --ink:#1c2b2b; --mute:#5b6a6a; --teal:#b8e0e0; --bg:#f4fbfb; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:"Noto Sans TC","PingFang HK","Segoe UI",sans-serif; color:var(--ink); background:var(--bg); }
+    header { background:#12353a; color:#fff; padding:22px 28px; }
+    header h1 { margin:0 0 8px; font-size:24px; }
+    header p { margin:0; color:#c7ece7; max-width:880px; line-height:1.6; }
+    nav { display:flex; gap:10px; flex-wrap:wrap; padding:14px 28px; background:#fff; position:sticky; top:0; border-bottom:1px solid #d5eaea; }
+    nav a { color:#0b5f8a; text-decoration:none; background:#eaf6f6; padding:8px 12px; border-radius:999px; font-size:14px; }
+    section { padding:28px; max-width:1200px; margin:0 auto; }
+    h2 { margin:0 0 8px; }
+    .note { color:var(--mute); margin:0 0 16px; }
+    figure { margin:0 0 28px; background:#fff; border-radius:12px; overflow:hidden; box-shadow:0 8px 24px rgba(20,40,40,.08); }
+    figure img { width:100%; display:block; }
+    figcaption { padding:12px 16px 16px; font-size:14px; line-height:1.6; }
+    .grid { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+    @media (max-width:900px) { .grid { grid-template-columns:1fr; } }
+    .call { background:#fff4dc; border:1px solid #efd29a; padding:14px 16px; border-radius:10px; margin:18px 28px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MPNicare Hong Kong Chinese overlay — visual review</h1>
+    <p>Layout matches the live site. The Hong Kong version only changes menu / titles / footer / terms, and adds “其他地區內容” labels. Article bodies are not rewritten.</p>
+  </header>
+  <div class="call"><b>How to use this file:</b> scroll the screenshots below. To try the live toggle, open <a href="index.html">index.html</a> and click <b>中文（香港）</b> at the top right.</div>
+  <nav>
+    <a href="#compare">TW vs HK home</a>
+    <a href="#article">Article label</a>
+    <a href="#edu">Patient education</a>
+    <a href="#about">About MPN</a>
+    <a href="#terms">Terms / PDPO</a>
+  </nav>
+
+  <section id="compare">
+    <h2>1. Homepage — click 中文（香港）</h2>
+    <p class="note">Same grid. Hong Kong menu becomes 病人教育專區 / 血液腫瘤專欄 / 健康資訊 / 品味生活. Cards get a teal “其他地區內容” tag. A yellow banner appears above the article row.</p>
+    <div class="grid">
+      <figure>
+        <img src="screenshots/sample-tw-home.png" alt="Traditional Chinese homepage, original chrome" />
+        <figcaption><b>中文 (source).</b> Menu still shows 衛教專區, 血腫專欄, 健康照護. No regional tags.</figcaption>
+      </figure>
+      <figure>
+        <img src="screenshots/sample-hk-home.png" alt="Hong Kong Chinese homepage overlay" />
+        <figcaption><b>中文（香港）.</b> Menu localised. Yellow regional banner. Card tags. Footer uses 賬號 / 資料 / 私隱政策.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="article">
+    <h2>2. Article page — label only, body unchanged</h2>
+    <p class="note">One line under the title:「其他地區內容｜原文保留，內容未必適用於香港。」 Treatment methods, drug names and data stay in the original wording.</p>
+    <figure>
+      <img src="screenshots/sample-hk-article.png" alt="Hong Kong article page with regional disclaimer" />
+      <figcaption>血液腫瘤專欄 article with regional tag + disclaimer line. Original ET article text retained.</figcaption>
+    </figure>
+  </section>
+
+  <section id="edu">
+    <h2>3. Patient education — names only</h2>
+    <p class="note">衛教專區 → 病人教育專區. 認識紅血球增多症. 有愛相髓病友故事集 → 病友故事集. Tile layout unchanged.</p>
+    <figure>
+      <img src="screenshots/sample-hk-edu.png" alt="Hong Kong patient education page" />
+      <figcaption>Four category tiles, same positions, Hong Kong names only.</figcaption>
+    </figure>
+  </section>
+
+  <section id="about">
+    <h2>4. About MPN</h2>
+    <p class="note">紅血球 / 白血球 kept. CTA becomes 按此了解更多MPN (not 按我).</p>
+    <figure>
+      <img src="screenshots/sample-hk-about.png" alt="Hong Kong About MPN page" />
+      <figcaption>About page chrome only; disease descriptions stay on the original structure.</figcaption>
+    </figure>
+  </section>
+
+  <section id="terms">
+    <h2>5. Terms and privacy — Cap. 486 rewrite</h2>
+    <p class="note">Not a find-and-replace of Taiwan PDPA Arts. 3 / 10 / 11. This is a legal-review draft for 《個人資料（私隱）條例》.</p>
+    <figure>
+      <img src="screenshots/sample-hk-terms.png" alt="Hong Kong terms and privacy rewrite" />
+      <figcaption>藥華醫藥 unified; 無限制; 百分百; 個人資料; 網上業務; data access / correction under Cap. 486.</figcaption>
+    </figure>
+  </section>
+</body>
+</html>
