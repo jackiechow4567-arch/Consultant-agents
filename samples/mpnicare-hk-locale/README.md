@@ -59,9 +59,9 @@ Direct HK homepage link when served locally: `index.html?lang=zh-HK&page=home`
 
 ## Word files (change log)
 
-Two `.docx` files in `word/` document the overlay for stakeholders who cannot open the HTML sample:
+兩份繁體中文 `.docx` 檔位於 `word/`，供未能打開網頁樣本的持份者審閱：
 
 | File | Contents |
 |---|---|
-| `word/MPNicare-HK-wording-change-log.docx` | Side-by-side TW → HK wording table (menu, home, about, education, footer, regional labels). Article bodies are marked as unchanged. |
-| `word/MPNicare-HK-terms-privacy-rewrite.docx` | Current Taiwan terms vs the Hong Kong Cap. 486 draft (legal review, not final). |
+| `word/MPNicare-HK-wording-change-log.docx` | 台灣原文 → 香港用語對照表（選單、首頁、關於MPN、教育專區、頁尾、地區標示）。文章正文標明不改。 |
+| `word/MPNicare-HK-terms-privacy-rewrite.docx` | 現有台灣條款 vs 香港第486章私隱重寫稿（法律審閱草稿，非正式定稿）。 |
