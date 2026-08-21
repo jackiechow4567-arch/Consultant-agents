@@ -56,3 +56,12 @@ This sample is the recommended overlay: keep the original articles, label them, 
 | `original-homepage.png` | Live mpnicare.org homepage captured for layout matching |
 
 Direct HK homepage link when served locally: `index.html?lang=zh-HK&page=home`
+
+## Word files (change log)
+
+Two `.docx` files in `word/` document the overlay for stakeholders who cannot open the HTML sample:
+
+| File | Contents |
+|---|---|
+| `word/MPNicare-HK-wording-change-log.docx` | Side-by-side TW → HK wording table (menu, home, about, education, footer, regional labels). Article bodies are marked as unchanged. |
+| `word/MPNicare-HK-terms-privacy-rewrite.docx` | Current Taiwan terms vs the Hong Kong Cap. 486 draft (legal review, not final). |
