@@ -2,41 +2,174 @@
 
 > **For:** Hong Kong Product Manager (role lens = PM)  
 > **Product:** Besremi® (ropeginterferon alfa-2b) — polycythaemia vera (PV) only  
-> **Sensitivity:** **Mid** — published PI + named RCTs. Internal PSP uptake, draft dossiers, named KOLs, and Veeva logs stay **High** (local `work-briefs/` only).  
-> **Status of this file:** Internal rehearsal material. **Not** an approved leave-behind, detail aid, or patient material. Any HCP-facing use requires Medical + Compliance + global lexicon clearance.  
-> **Sources:** `industry/role-pm.md`, `industry/pm-reference/` (HK PI, evidence, HKAPI/UMAO, HADF). Do not invent claims beyond those files.
+> **Sensitivity:** **Mid** — published PI + named RCTs + **de-identified field patterns**. Raw CRM, named HCPs, phones, emails, and patient-level notes stay **High** (do not paste into git).  
+> **Status of this file:** Internal rehearsal material. **Not** an approved leave-behind. Any HCP-facing use requires Medical + Compliance + global lexicon clearance.  
+> **Sources:** `industry/role-pm.md`, `industry/pm-reference/` (PI, evidence, HKAPI, HADF, `pegasys-claim-check.md`, `field-visit-patterns.md`). Do not invent claims.
 
 ---
 
-## Recommendation (how to train)
+## Recommendation (training design)
 
-**Do a five-module clinic-ready self-training plus STOP–BRIDGE–CITE battlecards; do not build a promo-slide curriculum.**
+**Do train two visit types — (A) private IFN-experienced clinic and (B) HA consultant — with nurse, wastage, PSP math, and PV first-patient scripts. Do not keep a HU-first academic slide curriculum as the core.**
 
-Why:
+Why (from Mar–Aug 2026 field contacts, de-identified in `field-visit-patterns.md`):
 
-1. Physicians test **clinical credibility and claim boundaries**, not campaign polish. A deck that “sells” IFN-to-IFN superiority or ET/MF will fail compliance and trust in the same visit.
-2. Hard-won field pattern: the first question is often **price vs traditional / pegylated IFN**. The only safe answer is value within **named RCTs + PI**, not comparative IFN efficacy.
-3. HA formulary is the year’s north star. Every HCP conversation should either **identify an appropriate private-pay patient** or **collect formulary-relevant clinical questions** — not promise listing dates.
+1. Almost every HCP listed affordability as a **Barrier**. They already use **Pegasys or China IFN**. They do not ask for CONTINUATION-PV p-values first.
+2. The close that worked was **multi-visit + nurse + first patient**, not a single scientific dump. The close that failed was **q4w-to-save-cost**, **HQ will cut price**, **250 mcg as a discount**, and **ET/MF is easier to start**.
+3. Pegasys is **back in Hong Kong**. Shortage is no longer the whole story. Residual honest POD is **PV label + supply reliability you can document + PSP rules + 6-year vs-HU data** — not potency or flu-like vs Pegasys.
 
-**Explicit non-goals of this training**
+**Explicit non-goals**
 
-- Not a substitute for Medical Information letters
-- Not permission to originate local scientific claims
-- Not a patient-facing PSP brochure
-- Not ET/MF promotional enablement
+- Not a substitute for Medical Information letters  
+- Not permission to originate local scientific claims  
+- Not ET/MF promotional enablement  
+- Not a congress-sponsorship sales pitch  
+- Not a promise that HQ will lower list price  
 
 ---
 
-## How to use this playbook (90 minutes core / ~4 hours full)
+## How to use this playbook (field-calibrated)
 
-| Pass | Time | What you finish able to do |
-|------|------|----------------------------|
-| **Pocket** | 15 min | Recite the 90-second opening + red-line list |
-| **Core** | 90 min | Modules 0–3; answer the 12 high-frequency physician questions without crossing PI |
-| **Full** | ~4 h | All five modules + two role-plays + self-quiz |
-| **Weekly** | 15 min | One new question logged from field → add to battlecard backlog |
+| Pass | Time | Done when |
+|------|------|-----------|
+| **This-week pocket** | 20 min | Recite **Track A 45-second opening** + red lines + PSP one-liner |
+| **Track A** | 45 min | Private Pegasys/China-IFN visit (price, wastage, nurse, supply) |
+| **Track B** | 25 min | HA visit (HADF, self-pay today, IIT parked, no MF) |
+| **Track C** | 20 min | First-patient AE + ET/MF stop + congress compliance |
+| **Evidence core** | 40 min | Original Modules 1–2 (PI + named RCTs) — still required |
+| **Drills** | 40 min | Drills E–H (field-real), not only A–D |
 
-**Before any live HCP meeting:** run the 60-second gate at the end of Module 0.
+**Before any live HCP meeting:** 60-second gate (Module 0) **plus** “Is this a nurse visit or a physician visit?”
+
+---
+
+## Field-calibrated positioning (MARK5120)
+
+**Private IFN clinic (actual buyer today):**
+
+> For **adults with PV without symptomatic splenomegaly who can access private care**, BESREMi is the **Hong Kong–indicated long-acting interferon for PV** — not “a stronger Pegasys.” Reason to believe: **labelled PV indication**, **q2w titration to count targets (max 500 mcg)**, **PROUD/CONTI vs HU through six years**, **PSP rules as written**. Frame of reference = **off-label peg-IFN / China IFN they already use**. POD they will test = **price and wastage**. Your job is to **not lose on a false potency claim** while still naming one eligible patient.
+
+**HA consultant:**
+
+> Same product, different job: **evidence quality for eventual listing** + **who can be treated on-label today** (self-pay / named-patient as locally true). Not MF gap-filling.
+
+| Allowed in field | Forbidden in field (observed failures) |
+|------------------|----------------------------------------|
+| PV indication; PI start 100 / 50; max 500 q2w; mean study dose ~350–380 mcg | Another HCP’s 250/350/500 as company protocol |
+| q4w **may** follow ≥1.5 y **stable** q2w (PI) | q4w “to save cost; Pegasys cannot” |
+| Pegasys is off-label for PV in HK; different molecule; no PV H2H | “3× dose,” “less flu-like,” hepatitis H2H |
+| Factual supply you are cleared to state | Weaponising a shortage you cannot document |
+| PSP: Base Case buy 5 get 1; Private Sector buy 2 get 1, private, first year, **end-2026** | Informal discount; “HQ is about to cut list” |
+| ET/MF: not in HK PI; Medical if **they** asked | ET filing month; “MF is more feasible” |
+
+---
+
+# Track A — Private IFN clinic (core)
+
+**Success:** Physician names **one on-label PV patient**; nurse can inject; first-patient follow-up date exists; you did not invent a SKU, pen, or price cut.
+
+## 45-second opening (Pegasys-experienced private haematologist)
+
+> “You already use interferon in PV. BESREMi is **ropeginterferon alfa-2b**, indicated in Hong Kong as **monotherapy for adults with polycythaemia vera without symptomatic splenomegaly** — that is the labelled difference versus off-label peginterferon alfa-2a.  
+> Dosing is **every two weeks**, start **100 micrograms** (50 if already on another cytoreductive), +50 to count targets, **maximum 500**. Many patients in the Phase 3 program sat near **350–380**, not 500.  
+> I will not claim it is more potent or better tolerated than Pegasys — we have **no PV head-to-head**, and the PI forbids potency comparisons.  
+> Access is private plus **written PSP rules**; I will not quote a special price. If supply reliability of other interferons is the clinical problem, I can speak only to **our** current availability, not to their catalogue.  
+> What would help is: which **PV** patient you would even consider, and whether **wastage at low titration doses** is the blocker I should take to Medical/RA.”
+
+## PSP one-liner (memorize)
+
+> “List is on the order of **HK$36,000 per injection**. Private Sector is **buy 2 get 1**, private only, first year, **expires end of 2026**. Base Case is **buy 5 get 1**. I will confirm eligibility with market access before I apply it to a named patient. Clinic overhead is **their** fee — I will not invent a net.”
+
+## Q17. “Pegasys is about a thousand dollars a syringe. Yours is thirty times.”
+
+**Say:**  
+“The gap is real. I will not pretend PSP closes it to peg-IFN. What I can put next to that gap is: **on-label PV**, **q2w labelled schedule**, **six-year vs-HU data**, and **PSP as written**. If the patient cannot bridge that gap, BESREMi is not the drug for that patient today — I will not stretch the indication or the price.”
+
+**Never:** “HQ will lower it soon.” “Use 250 mcg so it is cheaper.”
+
+## Q18. “I only need 100 mcg. Why pay for a 500 pack? Is there a pen?”
+
+**Say:**  
+“Titration waste is a fair device question. I will answer from the **Hong Kong pack IFU** — whether the presentation is an **adjustable prefilled syringe** and what must be discarded — not from another market’s pen. I will not promise a pen or a 250 mcg presentation unless it is **on the current HK registration**.”
+
+**Never:** Promise EU pen. Coach them to share syringes.
+
+**Action:** RA one-pager: HK device, discard rules, whether 250 mcg is registered.
+
+## Q19. “After 1.5 years you go every four weeks and that saves money. Pegasys can do that too.”
+
+**Say:**  
+“You are right that interval extension is not unique as a **clinical** idea. For BESREMi, q4w is in the PI only after **≥1.5 years at a stable q2w dose** — a labelled option, not a price match versus Pegasys.”
+
+**Never:** Use q4w as the reason they should stop Pegasys.
+
+## Q20. “Pegasys is back. Why switch? Their supply was the only problem.”
+
+**Say:**  
+“If supply has resumed, shortage is not a reason to switch today. Reasons that remain inside the label: **PV indication in HK**, **dosing schedule**, **named long-term vs-HU evidence**. If a **specific** presentation of another IFN is still stocked out, that is an operational fact for **that product**, not proof we are clinically superior.”
+
+## Q21. “What dose does [famous doctor] use? 250 then 350 then 500?”
+
+**Say:**  
+“I will not turn another clinician’s practice into our protocol. The HK PI starts at **100 mcg** (50 if on other cytoreductive), +50 mcg every two weeks, max **500**. Any **accelerated** start at 250 is a **Medical** question, not a sales titration.”
+
+## Q22. Nurse visit — “Leave the brochure; the doctor is busy.”
+
+**Do:** Approved physician + patient materials, **injection IFU/video** if cleared, PI, callback rule (“nurse calls when there is a **PV** patient”), preferred channel (email / WhatsApp / phone) **logged without stuffing the CRM with patient IDs**.  
+**Do not:** Dump ET pipeline, congress money, or unapproved 250-discount story on the nurse.
+
+**Chinese copy:** If a nurse flags a translation as odd, **stop using that line** until Medical/comms revises it. Do not argue linguistics in the clinic.
+
+---
+
+# Track B — HA consultant
+
+**Success:** They will take a **PV-only** evidence conversation; IIT goes to Clinical PM; you did not agree MF is the easier start.
+
+## Q23. “MF / pre-fibrotic MF have no options. Ropeg is more feasible there.”
+
+**Say:**  
+“I hear the unmet need. In Hong Kong BESREMi is **not indicated** for MF or prefibrotic MF. I cannot recommend that use. If they want literature, **Medical Information**, logged as reactive.”
+
+**Never:** “Yes, that’s the easier place to start.”
+
+## Q24. “When is ET coming? After US FDA, August?”
+
+**Say:**  
+“ET is **not** in the HK PI. I will not give a local launch date. Global filings are **Medical/RA**, not a clinic promise.”
+
+## Q25. “When will you cut the price so HA can use it?”
+
+**Say:**  
+“I cannot commit a list-price cut. Public access is the **HADF** path. I can discuss **evidence** and, where true, **current** self-pay / named-patient mechanics — not a future discount.”
+
+## Q26. “Let’s do an IIT / double-blind generic-style study.”
+
+**Say:**  
+“That sits with **Clinical PM and the site CTC**, not with a promotional visit. I will connect the right function and will not design a protocol in the corridor.”
+
+## Q27. HA “free drug for N months / annual cap” ideas
+
+**Say:**  
+“Company-sponsored supply inside HA has **compliance, contract, and PV** rules. I will not sketch a mini-PSP on the whiteboard. Market access + Legal.”
+
+---
+
+# Track C — First patient, PV, congress
+
+## Q28. First patient: “Not sleeping well; mild; maybe not the drug.”
+
+**Do this order:** stop selling → **suspected ADR process** (even if mild / uncertain) → do not agree “probably unrelated” as the company position → follow PI + Drug Office path → document. Then, separately, titration / PSP.  
+**Never:** “It’s mild, don’t report.”
+
+## Q29. “Can you sponsor ASH / EHA like Company X? They gave a large trip budget.”
+
+**Say:**  
+“If there is a legitimate educational need, it goes through **written contract, FMV, and HKAPI process**. I will not match another company’s number in the clinic, and I will not trade prescriptions for a meeting.”
+
+**Never:** Informal “we can do 100k too.” (Even competitor figures stay out of HCP-facing talk.)
+
+---
 
 ---
 
@@ -389,10 +522,15 @@ Use in a 1:1 with a hematologist who already knows interferons exist.
 | “Pegasys is 3× lower dose / we have less flu-like” | Labelled schedules only; hepatitis H2H is Medical-reactive, not a PV claim |
 | “Safe / very safe” | “See PI contraindications and ADRs” |
 | “Disease-modifying guarantee / prevents MF” | Named EFS/CHR/molecular stats + limits |
-| “Also for ET/MF” | “Not in HK PI; Medical if they asked” |
+| “Also for ET/MF” / “MF is more feasible” | “Not in HK PI; Medical if they asked” |
+| “ET will be approved in [month]” | Pipeline is not a local claim |
 | “It will be listed next year” | “No date; dossier in progress” |
-| “I’ll get you a special price” | Confirm PSP eligibility with market access |
+| “I’ll get you a special price” / “HQ will cut list” | Confirm PSP eligibility with market access |
+| “q4w to save cost vs Pegasys” | PI: stable ≥1.5 y; not a price weapon |
+| “250 mcg is the cheaper start” / another doctor’s titration | PI start 100/50; Medical owns accelerated protocols |
+| “There is a pen for titration” | Only if on current HK pack list |
 | “Everyone should start this” | Label + clinical judgment + access |
+| Informal congress “we’ll match Company X” | Written FMV / HKAPI process only |
 
 ---
 
@@ -436,6 +574,26 @@ Pass if: HU titration nuance acknowledged; vs-HU data offered without attacking 
 Mid-sentence the physician mentions a possible depression signal on interferon.  
 Pass if: you stop selling, open ADR/PV path, do not minimize.
 
+### Drill E — Private Pegasys economist (field-real)
+
+Physician: Pegasys ~low-thousands HKD/syringe; BESREMi ~30×; q4w “you said saves money”; Pegasys can extend interval too; asks for a pen because 100 mcg from 500 is waste.  
+Pass if: gap acknowledged; PSP rules without HQ price-cut; q4w is PI-stability not cost-win; device answered from HK IFU only; one on-label PV patient named.
+
+### Drill F — Nurse gatekeeper (8 minutes)
+
+Nurse: “Leave brochures, doctor too busy, we use China IFN, call us if…”  
+Pass if: approved kit only; injection support if cleared; callback for **PV** patients; no ET date, no congress envelope.
+
+### Drill G — HA “MF is easier” (10 minutes)
+
+Consultant: likes the drug; wants MF/pre-MF because few options; asks ET timing after US FDA; sketches HA free-drug months.  
+Pass if: MF/ET stopped; HADF not a date; free-drug parked to Access/Legal; IIT parked to Clinical PM.
+
+### Drill H — First patient sleep (5 minutes)
+
+Physician: first BESREMi patient, mild insomnia, “probably not related.”  
+Pass if: PV process first; you do not collude with “not related”; product talk only after the safety path is open.
+
 ---
 
 # Field kit (what to carry in your head, not in an unapproved bag)
@@ -471,12 +629,14 @@ Answer without notes. Fail = restudy the cited module.
 4. Low-PV primary result.  
 5. Why you cannot say “Pegasys is 3× lower dose” or “we have less flu-like than Pegasys.”  
 6. Two PSP programs and the 2026 expiry.  
-7. What you do when they ask about ET.  
+7. What you do when they ask about ET **or** say MF is more feasible.  
 8. Meal caps.  
 9. Titration-speed comparison in the PI and why it matters.  
-10. First action if a suspected ADR is mentioned.
+10. First action if a suspected ADR is mentioned (including “mild, maybe not related”).  
+11. Why q4w is not a cost argument versus Pegasys.  
+12. What you say when they ask for a pen / 250 mcg cheaper start.
 
-**Passing bar:** 10/10 before a first solo KOL meeting; 8/10 is not enough for Q1, Q5, Q7, Q9.
+**Passing bar:** 12/12 before a first solo KOL meeting; **must** include Q7, Q10, Q11, Q12 (field failure modes).
 
 ---
 
@@ -508,11 +668,12 @@ Your job in the clinic is **credibility under pressure**, not a clever comparati
 
 | # | Action | Owner |
 |---|--------|--------|
-| 1 | Complete Core pass (Modules 0–3) and self-quiz; schedule Drills A–C with Medical as the “physician” | **PM** |
-| 2 | Confirm current approved leave-behinds, lexicon phrases, and PSP eligibility one-pager | **PM + Medical + Market access** |
-| 3 | Agree Veeva fields for reactive ET/MF and competitive IFN questions | **PM + Compliance** |
-| 4 | Do **not** locally write new comparative IFN or ET slides | **PM** (hard stop) |
-| 5 | Feed recurring unanswered clinic questions into global lexicon / Medical FAQ request | **PM → HQ Medical** |
+| 1 | Rehearse **Track A opening + Q17–Q22** out loud; run Drills E–H before the next private academic 1:1 | **PM** |
+| 2 | RA/Medical: HK **device IFU** (discard vs adjustable), whether **250 mcg** is registered, whether any **accelerated 250 start** is lexicon-cleared | **PM + RA + Medical** |
+| 3 | Market access: **one-sentence PSP net** you are allowed to say (no unpublished uptake) | **PM + Market access** |
+| 4 | Medical: reactive **ET/MF** letter so the field stops improvising filing dates | **Medical** |
+| 5 | First-patient mild AE: confirm PV file is complete; do not leave “probably unrelated” as the company line | **PM + PV** |
+| 6 | Do **not** locally write IFN-comparison, ET, or MF start slides | **PM** (hard stop) |
 
 ---
 
@@ -533,6 +694,8 @@ Your job in the clinic is **credibility under pressure**, not a clever comparati
 - PARADIGM cleared local language
 - PSP uptake and remaining budget (High — keep in `work-briefs/`)
 - Any **PV** IFN H2H vs Pegasys (none as of 2026-08-20). Hepatitis H2H exists but is not a PV claim — see `pegasys-claim-check.md`.
+- Whether a **250 mcg** pack / **pen** is on the current HK registration (do not assume from EU SmPC).
+- Cleared wording for **Pegasys distributor restock** (factual only).
 
 ---
 
@@ -541,6 +704,7 @@ Your job in the clinic is **credibility under pressure**, not a clever comparati
 - Role memory: `industry/role-pm.md`
 - PI: `industry/pm-reference/besremi-hk-pi-summary.md`
 - Pegasys claim check: `industry/pm-reference/pegasys-claim-check.md`
+- Field patterns (de-identified): `industry/pm-reference/field-visit-patterns.md`
 - Evidence: `industry/pm-reference/pv-clinical-evidence.md`
 - Compliance: `industry/pm-reference/regulatory-compliance.md`
 - Access: `industry/pm-reference/ha-formulary-access.md`

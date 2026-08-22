@@ -119,7 +119,7 @@
 
 1. **Premium vs off-label traditional IFN:** Physicians repeatedly ask why BESREMi costs many times more than traditional interferons used off-label for PV. There is **no PV head-to-head** vs Pegasys. Historical hepatitis H2H vs Pegasys does **not** license PV efficacy or flu-like superiority claims; mcg ratios (500 vs 180) are not potency. Differentiation must stay within approved PV evidence, labelled dosing (max 500 mcg q2w; study means ~350–380 mcg), 6-year CONTINUATION-PV duration vs HU, and lexicon-approved disease-modifying narrative. Detail: `pm-reference/pegasys-claim-check.md`.
 2. **Competitive noise (Pegasys, China ropeginterferon):** Each physician interaction surfaces "why your drug?" — need a standing, compliant response framework for price/value questions that does not imply unsupported comparative outcomes.
-3. *(TBD — add formulary, PSP, or compliance lessons as they emerge)*
+3. **Field CRM (Mar–Aug 2026, de-identified):** Conversion is nurse + multi-visit + first patient, not a one-call scientific close. Pegasys restocked in HK — do not lead with shortage. q4w-as-cost-save vs Pegasys was neutralized in clinic. Do not sell 250 mcg / pens / HQ price cuts / ET dates / “MF is more feasible.” Detail: `pm-reference/field-visit-patterns.md`.
 
 ## Frameworks I actually use as PM
 
