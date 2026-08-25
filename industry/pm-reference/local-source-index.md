@@ -42,6 +42,10 @@ Attached approved-style artworks used to revise `physician-product-training.md` 
 
 Numbers on those pieces were reconciled to HK PI + Gisslinger *Leukemia* 2023 in the training module (primary CHR 54.5% vs 34.9%; LOCF 72.6% vs 47.3% as graph explanation).
 
+## Publication library on `origin/main` (uploaded 2026-08-25)
+
+Commit `09bf80c` added 19 PDFs to the repo root. Gap analysis vs current physician training: [`physician-product-training-gaps.md`](physician-product-training-gaps.md).
+
 ## Maintenance
 
 When adding a new Space file:

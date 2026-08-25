@@ -23,6 +23,7 @@
 | [physician-product-training.md](physician-product-training.md) | HK physician / field certification module — Piece A/B talk-track, NCCN overlay, CHR/EFS, objections |
 | [physician-product-training.docx](physician-product-training.docx) | Same module in Word (for Medical/Compliance review and printing) |
 | [physician-product-training-compliance.md](physician-product-training-compliance.md) | Pre-flight checklist for the training module (HKAPI/UMAO/lexicon) |
+| [physician-product-training-gaps.md](physician-product-training-gaps.md) | Gaps vs PDFs uploaded to the repo (Low-PV, year-1 PROUD-PV, safety, AMWG; do-not-use list) |
 | [physician-product-training-slides.html](physician-product-training-slides.html) | Slide deck for certification / HCP scientific session (DRAFT) |
 
 ## Prohibitions for agents
