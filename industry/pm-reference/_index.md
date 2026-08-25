@@ -21,6 +21,7 @@
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
 | [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
 | [physician-product-training.md](physician-product-training.md) | HK physician / field certification module — Piece A/B talk-track, NCCN overlay, CHR/EFS, objections |
+| [physician-product-training.docx](physician-product-training.docx) | Same module in Word (for Medical/Compliance review and printing) |
 | [physician-product-training-compliance.md](physician-product-training-compliance.md) | Pre-flight checklist for the training module (HKAPI/UMAO/lexicon) |
 | [physician-product-training-slides.html](physician-product-training-slides.html) | Slide deck for certification / HCP scientific session (DRAFT) |
 

@@ -19,7 +19,7 @@
 
 | Asset | Where |
 |-------|--------|
-| Facilitator / talk-track | [`physician-product-training.md`](physician-product-training.md) (this file) |
+| Facilitator / talk-track | [`physician-product-training.md`](physician-product-training.md) (this file) · Word: [`physician-product-training.docx`](physician-product-training.docx) |
 | Compliance pre-flight | [`physician-product-training-compliance.md`](physician-product-training-compliance.md) |
 | HTML slide deck (keyboard ← →) | [`physician-product-training-slides.html`](physician-product-training-slides.html) |
 | Canva 12-slide deck (DRAFT) | [Open in Canva](https://www.canva.com/d/bp9GpvLL8cxB5mR) (design `DAHTRbuo6kQ`) |
