@@ -15,6 +15,15 @@
 | **C — Local label** | HK PI (`besremi-hk-pi-summary.md`) | Binding on-label boundary for every proactive claim |
 | **D — Evidence vault** | `pv-clinical-evidence.md` · Gisslinger et al., *Leukemia* 2023 | Named RCT numbers for comparative claims vs HU / best available therapy (BAT) |
 
+**Deliverables in this revision**
+
+| Asset | Where |
+|-------|--------|
+| Facilitator / talk-track | [`physician-product-training.md`](physician-product-training.md) (this file) |
+| Compliance pre-flight | [`physician-product-training-compliance.md`](physician-product-training-compliance.md) |
+| HTML slide deck (keyboard ← →) | [`physician-product-training-slides.html`](physician-product-training-slides.html) |
+| Canva 12-slide deck (DRAFT) | [Open in Canva](https://www.canva.com/d/bp9GpvLL8cxB5mR) (design `DAHTRbuo6kQ`) |
+
 **Do not** treat Piece A/B as a substitute for HK PI. NCCN is a **US** guideline. Hong Kong prescribing follows the local indication, not NCCN category ranking.
 
 ---
