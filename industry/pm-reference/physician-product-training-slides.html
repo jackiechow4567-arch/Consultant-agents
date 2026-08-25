@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BESREMi Physician Product Training (HK) — DRAFT</title>
+  <title>BESREMi Physician Product Training (HK) v2 — DRAFT</title>
   <style>
     :root {
       --teal: #0d6e6e;
@@ -35,13 +35,13 @@
     .kicker { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); font-weight: 700; margin: 0 0 8px; }
     .title-slide .kicker { color: #ffd19a; }
     h1 { font-size: 42px; line-height: 1.15; margin: 0 0 12px; color: var(--navy); }
-    .title-slide h1 { color: var(--white); font-size: 48px; max-width: 16ch; }
-    h2 { font-size: 30px; margin: 0 0 18px; color: var(--navy); }
+    .title-slide h1 { color: var(--white); font-size: 44px; max-width: 18ch; }
+    h2 { font-size: 28px; margin: 0 0 16px; color: var(--navy); }
     h3 { font-size: 15px; margin: 0 0 8px; color: var(--teal); letter-spacing: .04em; text-transform: uppercase; }
-    p, li { font-size: 18px; line-height: 1.45; }
+    p, li { font-size: 17px; line-height: 1.4; }
     .sub { color: var(--muted); font-size: 18px; max-width: 70ch; }
     .title-slide .sub { color: #d7ecec; }
-    .grid { display: grid; gap: 16px; }
+    .grid { display: grid; gap: 14px; }
     .g2 { grid-template-columns: 1fr 1fr; }
     .g3 { grid-template-columns: 1fr 1fr 1fr; }
     .g4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
@@ -49,25 +49,30 @@
       background: var(--white);
       border: 1px solid var(--line);
       border-radius: 12px;
-      padding: 16px 18px;
+      padding: 14px 16px;
       box-shadow: 0 1px 0 rgba(13,110,110,.06);
     }
     .card.teal { background: var(--teal); color: var(--white); border: 0; }
     .card.navy { background: var(--navy); color: var(--white); border: 0; }
     .card.orange { background: #fff7ef; border-color: #f0c49a; }
     .card.warn { background: #fff4f0; border-color: #f0b09a; }
-    table { width: 100%; border-collapse: collapse; font-size: 15px; }
-    th, td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
-    th { background: var(--teal-l); color: var(--teal-d); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+    .card.gate { background: #f4f0ff; border-color: #c4b5fd; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--teal-l); color: var(--teal-d); font-size: 12px; letter-spacing: .04em; text-transform: uppercase; }
     .hi { color: var(--teal-d); font-weight: 700; }
-    .big { font-size: 36px; font-weight: 800; color: var(--teal); line-height: 1; }
+    .big { font-size: 34px; font-weight: 800; color: var(--teal); line-height: 1; }
     .big span { display: block; font-size: 13px; font-weight: 600; color: var(--muted); margin-top: 6px; letter-spacing: .04em; text-transform: uppercase; }
     .banner {
       background: #fff4e5;
       border-left: 4px solid var(--orange);
       padding: 10px 14px;
       font-size: 15px;
-      margin: 0 0 16px;
+      margin: 0 0 14px;
+    }
+    .banner.gate {
+      background: #f3e8ff;
+      border-left-color: #7c3aed;
     }
     .draft {
       position: fixed; top: 10px; right: 16px; z-index: 5;
@@ -79,18 +84,20 @@
       display: flex; justify-content: space-between; align-items: center;
       padding: 8px 24px; background: var(--teal-d); color: #d7ecec; font-size: 12px;
     }
-    .nav { display: flex; gap: 8px; }
+    .nav { display: flex; gap: 8px; align-items: center; }
     button {
       background: transparent; color: #fff; border: 1px solid #5aa; border-radius: 6px;
       padding: 4px 10px; cursor: pointer; font-size: 12px;
     }
     button:hover { background: #0d6e6e; }
     ul.tight { margin: 0; padding-left: 18px; }
-    ul.tight li { margin: 0 0 6px; }
+    ul.tight li { margin: 0 0 5px; }
     .pill { display: inline-block; background: var(--teal-l); color: var(--teal-d); font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 99px; }
     .small { font-size: 13px; color: var(--muted); }
     .goal { text-align: center; }
     .goal .icon { font-size: 28px; margin-bottom: 6px; }
+    ol.check { margin: 0; padding-left: 22px; }
+    ol.check li { margin: 0 0 6px; font-size: 16px; }
     @media print {
       .draft, footer.bar { display: none !important; }
       .slide { display: flex !important; height: auto; min-height: 100vh; page-break-after: always; }
@@ -98,40 +105,40 @@
   </style>
 </head>
 <body>
-  <div class="draft">DRAFT — NOT FOR FIELD USE</div>
+  <div class="draft">DRAFT — NOT FOR FIELD USE · v2</div>
   <div class="deck" id="deck">
 
     <section class="slide title-slide on">
-      <p class="kicker">PharmaEssentia Hong Kong · Physician product training</p>
+      <p class="kicker">PharmaEssentia Hong Kong · Physician product training · v2 · 26 Aug 2026</p>
       <h1>Rediscovering polycythemia vera</h1>
-      <p class="sub">BESREMi (ropeginterferon alfa-2b) — disease, NCCN context, and Hong Kong label. Built from the attached MPN/PV board and <strong>PEC-BES-HK020126</strong>.</p>
-      <div class="grid g3" style="margin-top:36px;max-width:960px">
-        <div class="card" style="background:#0b5c5c;border:0;color:#fff"><h3 style="color:#ffd19a">Piece A</h3><p>MPN classification, JAK2, WHO 2016, risk, treatment goals</p></div>
-        <div class="card" style="background:#0b5c5c;border:0;color:#fff"><h3 style="color:#ffd19a">Piece B</h3><p>NCCN pathways, HU long-term risk, CHR and event-free survival</p></div>
-        <div class="card" style="background:#0b5c5c;border:0;color:#fff"><h3 style="color:#ffd19a">HK overlay</h3><p>Local PI: adult PV without symptomatic splenomegaly</p></div>
+      <p class="sub">BESREMi (ropeginterferon alfa-2b) — disease first, year-1 honesty, then 6-year CHR/EFS, safety, and the Hong Kong label. Built from the MPN/PV board and <strong>PEC-BES-HK020126</strong>.</p>
+      <div class="grid g3" style="margin-top:28px;max-width:980px">
+        <div class="card" style="background:#0b5c5c;border:0;color:#fff"><h3 style="color:#ffd19a">Core tomorrow</h3><p>AMWG overlay · year-1 43% vs 46% · 72-mo CHR · EFS ≠ OS · trial safety · HK PI 100/50 µg</p></div>
+        <div class="card" style="background:#0b5c5c;border:0;color:#fff"><h3 style="color:#ffd19a">Medical gate</h3><p>Low-PV 100 µg vs phlebotomy — core / notes-only / out in the room</p></div>
+        <div class="card" style="background:#0b5c5c;border:0;color:#fff"><h3 style="color:#ffd19a">Still out</h3><p>HIDAT start · IFN-to-IFN · ET/MF promo · pregnancy · Novartis early-MF PDF</p></div>
       </div>
     </section>
 
     <section class="slide">
-      <p class="kicker">Before you present</p>
+      <p class="kicker">Before you present · 26 Aug dry-run</p>
       <h2>Compliance frame</h2>
-      <div class="banner">On-label in Hong Kong: <strong>monotherapy in adults for polycythaemia vera without symptomatic splenomegaly</strong>. NCCN is US scientific context — not HA listing.</div>
+      <div class="banner">On-label in Hong Kong: <strong>monotherapy in adults for polycythaemia vera without symptomatic splenomegaly</strong>. NCCN is US scientific context — not HA listing. AMWG is Asia consensus — not HA.</div>
       <div class="grid g2">
         <div class="card">
           <h3>Do</h3>
           <ul class="tight">
-            <li>Open with disease (Piece A), then pathway and data (Piece B)</li>
-            <li>Name PROUD-PV / CONTINUATION-PV for comparative claims</li>
-            <li>Lead with CHR <span class="hi">54.5% vs 34.9%</span> at 72 months (p=0.02)</li>
-            <li>Put abbreviated PI on every leave-behind</li>
+            <li>Open with disease (Piece A), then AMWG, then pathway and data</li>
+            <li>Say year-1 <span class="hi">43.1% vs 46.0%, p=0.63</span> <strong>before</strong> the 6-year win</li>
+            <li>Lead late CHR with <span class="hi">54.5% vs 34.9%</span> at 72 months (p=0.02)</li>
+            <li>Put abbreviated PI on every HCP leave-behind</li>
           </ul>
         </div>
         <div class="card warn">
           <h3>Do not</h3>
           <ul class="tight">
-            <li>Promote ET or myelofibrosis — classification only; reactive if asked</li>
-            <li>Claim IFN-to-IFN superiority (Pegasys, China ropeg, traditional IFN)</li>
-            <li>Say “~80% respond” or “prevents leukemia / death”</li>
+            <li>Promote ET or myelofibrosis — classification only</li>
+            <li>Claim IFN-to-IFN superiority or teach HIDAT 250–350–500 as HK start</li>
+            <li>Say “~80% respond,” “prevents leukemia / death,” or “CHR significant at 5 years”</li>
             <li>Imply Hospital Authority formulary listing</li>
           </ul>
         </div>
@@ -189,7 +196,7 @@
         </div>
       </div>
       <div class="card orange" style="margin-top:16px">
-        <strong>Bridge to treatment goals:</strong> prevent thrombotic events, prevent myelofibrosis, prevent acute leukemia — and improve symptoms (Piece A).
+        <strong>Bridge to treatment goals:</strong> prevent thrombotic events, prevent myelofibrosis, prevent acute leukemia — and improve symptoms (Piece A). ELN 2021 also: avoid iatrogenic toxicity and improve HRQoL. These are the disease bar, not BESREMi-specific claims.
       </div>
     </section>
 
@@ -210,6 +217,7 @@
           <p>Subnormal serum erythropoietin.</p>
           <h3 style="margin-top:18px">Requirement</h3>
           <p>All 3 major <strong>or</strong> first 2 major + the minor criterion.</p>
+          <p class="small">If a physician uses newer WHO/ICC language, stay on the diagnostic logic. Do not invent updated cut-offs.</p>
         </div>
       </div>
     </section>
@@ -231,6 +239,27 @@
         <div class="card goal"><div class="icon">⊕</div><strong>Prevent thrombosis</strong></div>
         <div class="card goal"><div class="icon">⊕</div><strong>Prevent myelofibrosis</strong></div>
         <div class="card goal"><div class="icon">⊕</div><strong>Prevent acute leukemia</strong></div>
+      </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">New · AMWG 2023 (Gill / Kwong, HKU)</p>
+      <h2>Asia overlay — not HA, not a ranking</h2>
+      <div class="banner">Pegylated IFN-α-2a <strong>or</strong> ropeginterferon-α-2b. If asked “which IFN?”: both named; HK PI is BESREMi; Pegasys is not this product.</div>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Must say</h3>
+          <ul class="tight">
+            <li>PV is not uniform — JAK2 allele burden and leukocytosis associate with thrombosis and transformation</li>
+            <li>Phlebotomy-only is not long-term care in younger patients; cytoreduction is SoC in the majority</li>
+            <li>ELN HU resistance at <strong>2 g/day may not apply</strong> in Asia — toxicity often earlier</li>
+          </ul>
+        </div>
+        <div class="card orange">
+          <h3>Do not mix targets</h3>
+          <p>AMWG cites WBC <strong>≤15 × 10⁹/L</strong> as a thrombosis-risk threshold. HK PI CHR uses WBC <strong>&lt;10</strong>.</p>
+          <p class="small" style="margin-top:10px">AMWG ≠ Hospital Authority listing. Do not say “Asia prefers BESREMi.”</p>
+        </div>
       </div>
     </section>
 
@@ -302,13 +331,34 @@
         </div>
       </div>
       <div class="card warn" style="margin-top:16px">
-        <strong>Talk-track:</strong> PV is not a one-year hematocrit problem. These are cited HU-cohort estimates on the approved piece — not “HU is unsafe” and not a BESREMi 10-year mortality claim.
+        <strong>Talk-track:</strong> PV is not a one-year hematocrit problem. These are cited HU-cohort estimates on the approved piece — not “HU is unsafe” and not a BESREMi 10-year mortality claim. The 6-year RCT is the product story; these numbers are why the field cares.
       </div>
     </section>
 
     <section class="slide">
+      <p class="kicker">New · say this before the 6-year win</p>
+      <h2>Year-1 PROUD-PV — non-inferiority was not met</h2>
+      <div class="banner">If you only show month 72, a senior haematologist will say you cherry-picked. Teach 12 months first.</div>
+      <div class="grid g3">
+        <div class="card warn">
+          <p class="big" style="color:#b45309">43.1%<span>vs 46.0% HU at 12 months</span></p>
+          <p><strong>p = 0.63</strong> · NS. Same figure in the HK PI. Kiladjian: 43% vs 46%.</p>
+        </div>
+        <div class="card">
+          <h3>Why</h3>
+          <p>HU is a fast cytoreductor. Ropeg at the <strong>PI start of 100 µg q2w</strong> needs titration time. Do not invent “the study was unfair.”</p>
+        </div>
+        <div class="card orange">
+          <h3>Not the HK start</h3>
+          <p>HIDAT <strong>250–350–500 µg</strong> is not the local label. HK PI = <strong>100 µg</strong> (50 if already on cytoreductive).</p>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">Month-36 CHR 57.0% vs 37.8% (p=0.03). Month-60 CHR <strong>55.8% vs 44.0%, p=0.097 — not significant</strong>. Do not say “CHR stays significant at 5 years.”</p>
+    </section>
+
+    <section class="slide">
       <p class="kicker">Piece B + Gisslinger Leukemia 2023</p>
-      <h2>Complete hematologic response through 5–6 years</h2>
+      <h2>Complete hematologic response through 6 years</h2>
       <p class="small" style="margin-top:-10px">CHR: no phlebotomy in 3 months + Hct &lt;45% + WBC &lt;10 × 10⁹/L + platelets &lt;400 × 10⁹/L</p>
       <div class="grid g3">
         <div class="card teal">
@@ -329,7 +379,7 @@
 
     <section class="slide">
       <p class="kicker">Piece B + Gisslinger Leukemia 2023</p>
-      <h2>Event-free survival over ≥6 years</h2>
+      <h2>Event-free survival — complete the claim</h2>
       <div class="grid g3">
         <div class="card teal">
           <p class="big" style="color:#fff">0.94 vs 0.82<span style="color:#cfe">EFS probability · log-rank p=0.04</span></p>
@@ -341,10 +391,35 @@
           <p class="big">5.3% vs 16.2%<span>First risk events 5/95 vs 12/74</span></p>
         </div>
       </div>
-      <div class="card" style="margin-top:16px">
-        <strong>Events on Piece B:</strong> disease progression, death, thromboembolic events.<br>
-        <strong>Do not say</strong> “prevents death” or “prevents leukemia.” Say: fewer patients had a first risk event; EFS was higher (p=0.04).
+      <div class="grid g2" style="margin-top:14px">
+        <div class="card warn">
+          <strong>EFS ≠ OS.</strong> Composite of thromboembolic events, disease progression, and death. Median EFS not reached. OS was not an endpoint. Do not say “patients live longer.”
+        </div>
+        <div class="card">
+          <strong>Event mix:</strong> Ropeg — TE 2, MF 1, death 2. Control — TE 5, MF 2, AML 2, death 3.<br>
+          <strong>Do not slogan</strong> “prevents leukemia.” AML sat in the control arm; numbers are small.
+        </div>
       </div>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">New · Kiladjian + Edahiro · core deck</p>
+      <h2>Safety in the same meeting as efficacy</h2>
+      <div class="grid g3">
+        <div class="card teal">
+          <p class="big" style="color:#fff">~16%<span style="color:#cfe">grade ≥3 TRAE both arms</span></p>
+          <p>16.5% vs 16.7% treatment-related (PROUD-PV / Kiladjian). Not “more toxic than HU” on grade ≥3.</p>
+        </div>
+        <div class="card orange">
+          <p class="big">~11% vs 2–3%<span>drug-related discontinuation</span></p>
+          <p>IFN-class monitoring is why we start and titrate by the PI. Use PI or the paper — do not mix as if identical.</p>
+        </div>
+        <div class="card gate">
+          <h3>Edahiro Japan Ph2 — gate</h3>
+          <p>n=29, start 100 µg (PI-like). <strong>Alopecia 55.2%.</strong> Medical: say on core vs Q&amp;A only.</p>
+        </div>
+      </div>
+      <p class="small" style="margin-top:12px">Ropeg pattern: liver enzymes, arthralgia, flu-like, psychiatric / autoimmune / endocrine. HU pattern: leukopenia, thrombocytopenia. Pregnancy: HK PI not recommended — do not use Bang 2023 (n=1) in promo.</p>
     </section>
 
     <section class="slide">
@@ -355,19 +430,39 @@
           <h3 style="color:#ffd19a">Indication</h3>
           <p>Monotherapy in <strong>adults</strong> for polycythaemia vera <strong>without symptomatic splenomegaly</strong>.</p>
           <h3 style="color:#ffd19a">Form</h3>
-          <p>SC prefilled syringe 500 mcg/mL (1 mL); 50–500 mcg adjustable.</p>
+          <p>SC prefilled syringe 500 mcg/mL (1 mL); 50–500 mcg adjustable. 2–8 °C; do not freeze.</p>
         </div>
         <div class="card">
-          <h3>Dosing</h3>
+          <h3>Dosing — not HIDAT</h3>
           <table>
-            <tr><th>Start</th><td>100 mcg q2w (50 mcg if already on cytoreductive)</td></tr>
+            <tr><th>Start</th><td><strong>100 mcg q2w</strong> (50 mcg if already on cytoreductive)</td></tr>
             <tr><th>Titrate</th><td>+50 mcg every 2 weeks; taper the other agent</td></tr>
             <tr><th>Targets</th><td>Hct &lt;45%; Plt &lt;400; WBC &lt;10 × 10⁹/L</td></tr>
             <tr><th>Max / maintain</th><td>500 mcg q2w; after ≥1.5 y stable may go q4w</td></tr>
           </table>
         </div>
       </div>
-      <p class="small" style="margin-top:12px">Contraindications include decompensated cirrhosis, ESRD GFR &lt;15, severe psychiatric disease, severe uncontrolled CV disease, autoimmune disease, transplant immunosuppression, telbivudine, hypersensitivity. ADR: drugoffice.gov.hk/adr.html</p>
+      <p class="small" style="margin-top:12px">Contraindications include decompensated cirrhosis, ESRD GFR &lt;15, severe psychiatric disease, severe uncontrolled CV disease, autoimmune disease, transplant immunosuppression, telbivudine, hypersensitivity. ADR: drugoffice.gov.hk/adr.html. Do <strong>not</strong> teach 250–350–500 µg as the HK start.</p>
+    </section>
+
+    <section class="slide">
+      <p class="kicker">Medical-gated · skip unless yes in the room</p>
+      <h2>Low-PV vs phlebotomy — two regimens</h2>
+      <div class="banner gate"><strong>Gate:</strong> Medical yes / notes-only / out. If not yes, skip this slide. Barbui <em>NEJM Evidence</em> 2023. Fixed 100 µg q2w is <strong>not</strong> the HK PI titration.</div>
+      <div class="grid g3">
+        <div class="card teal">
+          <p class="big" style="color:#fff">81.3%<span style="color:#cfe">vs 50.8% phlebotomy at 12 months</span></p>
+          <p>Composite Hct control in low-risk PV. Named RCT vs phlebotomy — not vs HU.</p>
+        </div>
+        <div class="card warn">
+          <h3>Do not quote 94% as ITT</h3>
+          <p>~94% is among <strong>n=36 still on drug</strong> at 5 years. KM treatment survival ~58% — people stopped.</p>
+        </div>
+        <div class="card orange">
+          <h3>Two regimens</h3>
+          <p>Low-PV = <strong>fixed 100 µg</strong>. HK PI = <strong>100/50 +50 to 500</strong>. Do not flatten. Does not replace PROUD-PV as the registrational story.</p>
+        </div>
+      </div>
     </section>
 
     <section class="slide">
@@ -376,35 +471,49 @@
       <table>
         <thead><tr><th>They say</th><th>You say</th></tr></thead>
         <tbody>
+          <tr><td>“It failed at one year.”</td><td>Agree: 43.1% vs 46.0%, p=0.63. Then 72-mo CHR 54.5% vs 34.9% (p=0.02) and EFS 0.94 vs 0.82 (p=0.04).</td></tr>
           <tr><td>“NCCN prefers ropeg in all low-risk.”</td><td>NCCN is US context. HK label is adult PV without symptomatic splenomegaly. Low-risk still needs cytoreduction <em>indications</em>.</td></tr>
-          <tr><td>“HU is cheaper and faster.”</td><td>Titration is often faster with HU (PI). Long-term CHR 54.5% vs 34.9% (p=0.02) and EFS 0.94 vs 0.82 (p=0.04).</td></tr>
-          <tr><td>“Why not Pegasys / China ropeg?”</td><td>No head-to-head. Cannot compare IFN potency. Stay on PV evidence and dosing convenience.</td></tr>
+          <tr><td>“Start at 250–350–500 / China data.”</td><td>HK start is 100/50 µg. Jin 2023 is a protocol — no results. Do not invent Chinese efficacy.</td></tr>
+          <tr><td>“Why not Pegasys / China ropeg?”</td><td>No head-to-head. Cannot compare IFN potency. Stay on PV evidence and dosing.</td></tr>
           <tr><td>“The poster shows ~80% CHR.”</td><td>LOCF 72.6%. Primary is 54.5% vs 34.9%. Use the primary number.</td></tr>
-          <tr><td>“Use it in ET / MF.”</td><td>Not in HK PI. Reactive scientific exchange only; document.</td></tr>
+          <tr><td>“Use it in ET / MF.”</td><td>Not in HK PI. Reactive scientific exchange only; document. SURPASS-ET is off-label here.</td></tr>
         </tbody>
       </table>
     </section>
 
     <section class="slide">
-      <p class="kicker">Leave-behind</p>
-      <h2>Abbreviated prescribing information</h2>
-      <div class="card">
-        <p><strong>Besremi® (ropeginterferon alfa-2b)</strong> 500 mcg/mL solution for injection, prefilled syringe.</p>
-        <p><strong>Indication (HK):</strong> monotherapy in adults for polycythaemia vera without symptomatic splenomegaly.</p>
-        <p><strong>Dosage:</strong> 100 mcg SC q2w (50 mcg if switching); +50 mcg q2w to targets; max 500 mcg q2w; may extend to q4w after ≥1.5 years stable.</p>
-        <p><strong>Contraindications:</strong> decompensated cirrhosis; ESRD GFR &lt;15; severe psychiatric disease; severe uncontrolled CV disease; autoimmune disease; post-transplant immunosuppression; telbivudine; hypersensitivity.</p>
-        <p><strong>Undesirable effects:</strong> interferon-class (influenza-like, liver enzymes, cytopenias, psychiatric, autoimmune, ischemic) — see full PI.</p>
-        <p><strong>ADR:</strong> http://www.drugoffice.gov.hk/adr.html · <strong>PI date:</strong> insert current HK registered date before print.</p>
-        <p class="small">This deck is not the PI. Always refer to the current Hong Kong package insert. DRAFT pending Medical / Regulatory / Compliance clearance. PharmaEssentia Asia (Hong Kong) Limited. Source art: PEC-BES-HK020126.</p>
+      <p class="kicker">Leave-behind · pass = all eight</p>
+      <h2>Knowledge check + abbreviated PI</h2>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Field must answer</h3>
+          <ol class="check">
+            <li>HK indication in one sentence</li>
+            <li>Who is low-risk on Piece A?</li>
+            <li>Year-1 CHR vs HU + p-value</li>
+            <li>72-month primary CHR + p-value</li>
+            <li>EFS numbers, and why EFS ≠ OS</li>
+            <li>HK start dose — not HIDAT</li>
+            <li>Forbidden answer on Pegasys</li>
+            <li>Low-PV: two regimens; who gates the slide?</li>
+          </ol>
+        </div>
+        <div class="card">
+          <p><strong>Besremi® (ropeginterferon alfa-2b)</strong> 500 mcg/mL solution for injection, prefilled syringe.</p>
+          <p><strong>Indication (HK):</strong> monotherapy in adults for polycythaemia vera without symptomatic splenomegaly.</p>
+          <p><strong>Dosage:</strong> 100 mcg SC q2w (50 mcg if switching); +50 mcg q2w to targets; max 500 mcg q2w; may extend to q4w after ≥1.5 years stable.</p>
+          <p><strong>Contraindications:</strong> decompensated cirrhosis; ESRD GFR &lt;15; severe psychiatric disease; severe uncontrolled CV disease; autoimmune disease; post-transplant immunosuppression; telbivudine; hypersensitivity.</p>
+          <p class="small">Undesirable effects: interferon-class — see full PI. ADR: http://www.drugoffice.gov.hk/adr.html · <strong>PI date:</strong> insert current HK registered date before print. This deck is not the PI. DRAFT pending Medical / Regulatory / Compliance. PharmaEssentia Asia (Hong Kong) Limited. PEC-BES-HK020126.</p>
+        </div>
       </div>
     </section>
 
   </div>
   <footer class="bar">
-    <span>BESREMi physician product training · HK · DRAFT · PEC-BES-HK020126 content included</span>
+    <span>BESREMi physician product training v2 · HK · DRAFT · 26 Aug 2026 · PEC-BES-HK020126</span>
     <span class="nav">
       <button type="button" id="prev">Prev</button>
-      <span id="pos">1 / 14</span>
+      <span id="pos">1 / 18</span>
       <button type="button" id="next">Next</button>
     </span>
   </footer>

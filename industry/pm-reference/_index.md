@@ -2,7 +2,7 @@
 
 > **For agents:** When role lens = PM, read this index then load only the files relevant to the question.  
 > **Sensitivity:** Public/regulatory/clinical publications = Mid/Low. Internal transcripts and draft dossiers = see `work-briefs/pm/README.md` (High — local only).  
-> **Last built:** 2026-08-25 (physician product training added from attached HCP pieces + PI/evidence vault).
+> **Last built:** 2026-08-25 (physician training v2 — 26 Aug meeting brief + year-1 / AMWG / safety / gated Low-PV).
 
 ## Load order
 
@@ -20,11 +20,12 @@
 | [hk-hospitals-landscape.md](hk-hospitals-landscape.md) | Key HK hospitals for field/access planning (no PII) |
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
 | [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
-| [physician-product-training.md](physician-product-training.md) | HK physician / field certification module — Piece A/B talk-track, NCCN overlay, CHR/EFS, objections |
+| [physician-product-training.md](physician-product-training.md) | HK physician / field certification module v2 — Piece A/B talk-track, AMWG overlay, year-1 honesty, CHR/EFS, safety, gated Low-PV |
 | [physician-product-training.docx](physician-product-training.docx) | Same module in Word (for Medical/Compliance review and printing) |
+| [physician-product-training-meeting-brief.md](physician-product-training-meeting-brief.md) | **26 Aug 2026 one-pager** — 60-min run-of-show, Medical gates, decisions to capture |
 | [physician-product-training-compliance.md](physician-product-training-compliance.md) | Pre-flight checklist for the training module (HKAPI/UMAO/lexicon) |
 | [physician-product-training-gaps.md](physician-product-training-gaps.md) | Gaps vs PDFs uploaded to the repo (Low-PV, year-1 PROUD-PV, safety, AMWG; do-not-use list) |
-| [physician-product-training-slides.html](physician-product-training-slides.html) | Slide deck for certification / HCP scientific session (DRAFT) |
+| [physician-product-training-slides.html](physician-product-training-slides.html) | v2 slide deck for 26 Aug dry-run (keyboard ← →; DRAFT) |
 
 ## Prohibitions for agents
 

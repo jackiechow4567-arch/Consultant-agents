@@ -1,0 +1,49 @@
+# Tomorrow’s meeting — BESREMi physician training (v2)
+
+**When:** Wednesday 26 Aug 2026  
+**Use:** Internal alignment / field dry-run. Still **DRAFT** until Medical ticks the checklist.  
+**Open in the room:** HTML deck `physician-product-training-slides.html` (**18 slides**, arrow keys) · this one-pager · Word `physician-product-training.docx`  
+**Sensitivity:** Mid
+
+## Ask of the room (first 3 minutes)
+
+**Do** certify the v2 talk-track: year-1 honesty → 6-year CHR/EFS → safety → AMWG overlay → HK PI. **Do not** import HIDAT, Pegasys superiority, ET/MF, pregnancy, or the Novartis early-MF PDF.
+
+Medical decision needed **in the meeting** on one gate: **Low-PV 100 µg vs phlebotomy** — core slide tomorrow, or speaker-notes only?
+
+## 60-minute run-of-show
+
+| Min | Slide theme | You must say |
+|-----|-------------|--------------|
+| 0–3 | Title + compliance | HK indication: adult PV **without symptomatic splenomegaly**. NCCN ≠ HA. |
+| 3–12 | Piece A disease | JAK2, WHO 2016, risk 2×2. ET/MF = classification only. |
+| 12–16 | **AMWG overlay (new)** | Asia consensus (HKU authors). Peg-IFN **or** ropeg — no ranking. HU 2 g ELN may not apply in Asia. AMWG ≠ HA. |
+| 16–22 | NCCN + HU 10-year | US art on `PEC-BES-HK020126`. Not “HU is unsafe.” |
+| 22–28 | **Year-1 honesty (new)** | PROUD-PV 12 mo **43% vs 46%, p=0.63**. PI 43.1%. Slower than HU. Then why 6 years. |
+| 28–36 | 6-year CHR + EFS | CHR **54.5% vs 34.9%, p=0.02**. EFS **0.94 vs 0.82, p=0.04**. **EFS ≠ OS.** Do not quote 5-year CHR as significant (p=0.097). |
+| 36–42 | **Safety (new)** | Grade ≥3 TRAE ~16% both arms. Drug-related D/C **~11% vs 2–3%**. Japan Ph2 alopecia **55.2%** if asked. |
+| 42–48 | HK PI dosing | Start **100 / 50 µg**, +50 q2w, max 500, may q4w after 1.5 y. **Not** 250–350–500. |
+| 48–55 | **Low-PV (gated)** | 81.3% vs 50.8% vs phlebotomy. **Different regimen (fixed 100 µg).** Skip if Medical says no. |
+| 55–60 | Objections + close | Year-1 miss, ~80% graph, Pegasys, HIDAT, ET/MF, HA listing. Knowledge check. |
+
+## What changed vs yesterday’s deck
+
+| Added | Still forbidden |
+|-------|-----------------|
+| Year-1 43% vs 46% (NS) | IFN-to-IFN superiority |
+| Kiladjian/Gisslinger safety D/C | HIDAT as HK start |
+| EFS ≠ OS; event mix; 5-year CHR NS | “Prevents leukemia / death” |
+| AMWG overlay | Novartis MF “slideshow” PDF |
+| Low-PV gated module | Pregnancy promo; Gill 2020 Pegasys/rux QoL as BESREMi |
+| China Ph2 = **protocol only** | Quoting 94% Low-PV 5-year as ITT |
+
+## Decisions to capture before you leave the room
+
+1. Low-PV: **core / notes-only / out**  
+2. Edahiro alopecia 55.2%: **say / Medical Q&A only**  
+3. Who inserts the current **PI date** on the abbreviated PI block  
+4. Is tomorrow’s audience internal only, or will an HCP see slides? (If HCP: abbreviated PI on every leave-behind; ≥2/3 science)
+
+## After the meeting
+
+PM updates lexicon flags. Field does the five-question knowledge check before any HCP call.

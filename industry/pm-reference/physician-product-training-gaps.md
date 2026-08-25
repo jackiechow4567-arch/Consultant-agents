@@ -4,6 +4,7 @@
 > **Sensitivity:** Mid — published papers only.  
 > **Role lens:** PM.  
 > **Status:** Analysis for Medical/PM. Not an HCP leave-behind.  
+> **v2 close-out (2026-08-25):** P0/P1 items are now in `physician-product-training.md` (year-1, safety, EFS completeness, AMWG) with Low-PV **gated**. This memo remains the source of the do-not-use list.  
 > **Do not** treat this memo as permission to add claims. Each “add” still needs global lexicon + HK PI clearance.
 
 ## Recommendation (answer first)
