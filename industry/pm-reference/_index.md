@@ -2,7 +2,7 @@
 
 > **For agents:** When role lens = PM, read this index then load only the files relevant to the question.  
 > **Sensitivity:** Public/regulatory/clinical publications = Mid/Low. Internal transcripts and draft dossiers = see `work-briefs/pm/README.md` (High — local only).  
-> **Last built:** 2026-07-27 from user's Perplexity Space file set (Downloads).
+> **Last built:** 2026-08-25 (physician product training added from attached HCP pieces + PI/evidence vault).
 
 ## Load order
 
@@ -20,6 +20,9 @@
 | [hk-hospitals-landscape.md](hk-hospitals-landscape.md) | Key HK hospitals for field/access planning (no PII) |
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
 | [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
+| [physician-product-training.md](physician-product-training.md) | HK physician / field certification module — Piece A/B talk-track, NCCN overlay, CHR/EFS, objections |
+| [physician-product-training-compliance.md](physician-product-training-compliance.md) | Pre-flight checklist for the training module (HKAPI/UMAO/lexicon) |
+| [physician-product-training-slides.html](physician-product-training-slides.html) | Slide deck for certification / HCP scientific session (DRAFT) |
 
 ## Prohibitions for agents
 

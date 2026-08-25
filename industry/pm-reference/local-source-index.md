@@ -31,6 +31,17 @@
 
 `guidance_notes_registration-of-nda.pdf`, `ADR_Report_Form_en.pdf`, `PPB_Guidance_ADR_Industry_en.pdf`, `Cap-113-HA-Ordinance.pdf`, `Code-of-Professional-Conduct.pdf`, `Cap-486-Consolidated-version-for-the-Whole-Chapter-01-10-2022-English.pdf`
 
+## Physician training source pieces (2026-08-25)
+
+Attached approved-style artworks used to revise `physician-product-training.md` (not copied into git):
+
+| Piece | Identifier | Content folded into training |
+|-------|------------|------------------------------|
+| Disease education board | PharmaEssentia MPN/PV infographic | MPN classification (PV/ET/PMF), JAK2 signaling, WHO 2016 PV criteria, age/thrombosis risk table, treatment goals |
+| *Rediscovering Polycythemia Vera* | `PEC-BES-HK020126` · PharmaEssentia Asia (Hong Kong) Limited | NCCN low- and high-risk pathways, HU 1/5/10-year transformation and mortality, CHR definition and 5-year visual, EFS p=0.04 (5/95 vs 12/74) |
+
+Numbers on those pieces were reconciled to HK PI + Gisslinger *Leukemia* 2023 in the training module (primary CHR 54.5% vs 34.9%; LOCF 72.6% vs 47.3% as graph explanation).
+
 ## Maintenance
 
 When adding a new Space file:
