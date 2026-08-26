@@ -1,7 +1,7 @@
 # Tomorrow’s meeting — BESREMi physician training (v2)
 
 **When:** Wednesday 26 Aug 2026  
-**Use:** Internal alignment / field dry-run. Still **DRAFT** until Medical ticks the checklist.  
+**Two meetings today:** (1) Internal cert — this brief. (2) **Prof. Liang 1:1** — `hcp-meeting-script-liang-20260826.md` (do **not** run the 60-minute deck with him).  
 **Open in the room:** HTML deck `physician-product-training-slides.html` (**21 slides**, arrow keys) · this one-pager · **brochure map** `physician-product-training-brochure-map.md` · Word `physician-product-training.docx`  
 **Sensitivity:** Mid
 

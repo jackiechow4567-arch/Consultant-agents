@@ -1,12 +1,11 @@
-# BESREMi physician product training (HK) — v2 (meeting-ready)
+# BESREMi physician product training (HK) — v3 (brochure-first)
 
 > **Status:** DRAFT pending local Medical / Regulatory / Compliance clearance. Not for field use until approved.  
 > **Audience:** Internal field, MSL, and PM certification to detail Hong Kong hematologists.  
 > **Sensitivity:** Mid — approved-piece localization + published evidence + HK PI. No patient-level data.  
-> **Revision date:** 2026-08-25 (v2)  
-> **Meeting:** Wednesday 26 Aug 2026 — use [`physician-product-training-meeting-brief.md`](physician-product-training-meeting-brief.md) as the run-of-show.  
-> **What changed in v2:** Closed library gaps — year-1 PROUD-PV honesty, trial safety, EFS ≠ OS, AMWG overlay, gated Low-PV, HIDAT/do-not-use certification. Still no ET/MF/pregnancy promo.  
-> **What changed after the full brochure:** Training now maps the leave-behind’s 5-year CHR graph, **84.3% ever-CHR**, JAK2 **8% vs 44%**, 36-month AE table, and PI page so field does not contradict the handout.
+> **Revision date:** 2026-08-26 (v3 — brochure-first)  
+> **Meeting today:** (1) Internal cert — [`physician-product-training-meeting-brief.md`](physician-product-training-meeting-brief.md). (2) **Prof. Liang 1:1** — [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md).  
+> **What changed in v3:** Training spine is the **physician brochure** (CHR graph → 84.3% ever-CHR → JAK2 8% vs 44% → EFS KM → 36-month AE table → PI). PI 43.1% / 54.5% are **said out loud as the translation**, not as a competing headline.
 
 ## Source pieces incorporated
 
@@ -28,7 +27,7 @@
 | HTML slide deck (keyboard ← →) | [`physician-product-training-slides.html`](physician-product-training-slides.html) |
 | **Brochure vs training map** | [`physician-product-training-brochure-map.md`](physician-product-training-brochure-map.md) — why 84.3% / the 5-year graph / JAK2 8% vs 44% are not the same as PI 43.1% and 54.5% |
 | Library gaps (why v2 exists) | [`physician-product-training-gaps.md`](physician-product-training-gaps.md) |
-| Canva 12-slide deck (v1 visual; use HTML for v2) | [Open in Canva](https://www.canva.com/d/bp9GpvLL8cxB5mR) (design `DAHTRbuo6kQ`) |
+| **Prof. Liang 1:1 script (26 Aug)** | [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md) · Word: [`hcp-meeting-script-liang-20260826.docx`](hcp-meeting-script-liang-20260826.docx) |
 
 **Do not** treat Piece A/B/E as a substitute for HK PI. NCCN is a **US** guideline. Hong Kong prescribing follows the local indication, not NCCN category ranking.
 
@@ -36,9 +35,11 @@
 
 ## Recommendation for how to run the session
 
-**Do** run disease-first, then **say the year-1 miss before the 6-year win**, then safety, then HK PI. If you are **handing the full physician brochure** (EFFICACY / SAFETY / OTHER INFO tabs), walk those pages and use [`physician-product-training-brochure-map.md`](physician-product-training-brochure-map.md) as the translation layer. **Do not** import HIDAT, Pegasys superiority, ET/MF, pregnancy, or the Novartis early-MF PDF (`20230508162013_1_slideshow.pdf`).
+**Do** walk the **physician brochure in page order** with every physician who receives it: CHR graph → 84.3% footnote → JAK2 → EFS → safety table → PI. **Do not** lecture a senior haematologist on WHO 2016. **Do not** import HIDAT, Pegasys superiority, ET/MF, pregnancy, or the Novartis early-MF PDF.
 
-**The brochure and this training are the same trials, different analyses.** The leave-behind graph (~62% vs ~75% at month 12; ~73% at month 60) and **84.3% (107/127) ever-CHR** will contradict the PI primary (**43.1% vs 46%** at 12 months; **54.5% vs 34.9%** at 72 months) unless you **name the analysis out loud**.
+**HCP 1:1 (including Prof. Liang today):** use [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md) — consult style, ~25 minutes. Internal 60-minute cert still uses the meeting brief.
+
+**Same trials, different analyses — say it on the page.** Graph month-12 (~62% vs ~75%) is **not** PI **43.1% vs 46%**. **84.3%** is **ever-CHR**. Late primary is **54.5% vs 34.9%, p=0.02**.
 
 **Session length:** Facilitator section times below are for **full certification**. Today compresses to **60 minutes** — use the meeting brief, not every minute mark in this file. Low-PV is **gated** — core slide only if Medical says yes in the room.  
 **HKAPI:** If an HCP is present, ≥ two-thirds genuine scientific content; hospitality within Code caps; abbreviated PI on every leave-behind.
@@ -50,10 +51,10 @@
 1. Place polycythemia vera (PV) inside myeloproliferative neoplasms (MPNs) without promoting essential thrombocythemia (ET) or primary myelofibrosis (PMF).
 2. Walk a hematologist through WHO 2016 PV criteria, JAK2 biology, risk (age / thrombosis), and treatment goals using Piece A.
 3. Place **NCCN (US)** and **AMWG 2023 (Asia)** as scientific context, then restate the **HK indication**.
-4. Quote year-1 PROUD-PV **honestly** (43% vs 46%, NS) **then** 72-month CHR and EFS from named studies.
-5. Counsel trial safety (grade ≥3 similar to HU; more IFN-class discontinuations) without attacking HU.
-6. Handle Pegasys / China ropeg / HIDAT / “it failed at one year” without IFN-to-IFN superiority or off-label dosing.
-7. Start, titrate, and stop per HK PI (100/50 µg — **not** 250–350–500); report ADRs; describe PSP only as currently approved.
+4. Walk the **brochure CHR page**: graph (HU ahead at 1 year, crossover by 24 months), **84.3% = ever-CHR**, then PI **43.1% vs 46%** and **54.5% vs 34.9% at 72 months**.
+5. Teach JAK2 **37% → 8% vs 38% → 44%** as core when that page is handed over; no TFR.
+6. Counsel the **36-month all-causality table** (liver enzymes, not worse cytopenias) plus drug-related D/C ~11% vs 2–3%.
+7. Handle Pegasys / HIDAT / “it failed at one year” / “84% respond” without IFN-to-IFN superiority or mixing analyses.
 
 ---
 
@@ -69,6 +70,27 @@
 ---
 
 ## Talk-track (use this order)
+
+### 0. Default HCP 1:1 — walk the brochure (12–20 min)
+
+Skip Piece A diagnosis if the physician is a senior haematologist. Open the leave-behind. Speak **on the page**.
+
+| Page | What you say (short) |
+|------|----------------------|
+| Open | Adult PV **without symptomatic splenomegaly**. Ask how they cytoreduce today. |
+| CHR graph | HU ~**75% vs 62%** at 12 months; crossover by 24; ~**73% vs 53%** at 60. HU is faster (PI 2.6 vs 3.7 months). |
+| 84.3% (107/127) | **Ever-CHR** by 36 months — criteria met **at any time**. Not the snapshot. |
+| Translation | PI 12-mo **43.1% vs 46.0%, p=0.63** (discontinued = fail). Late primary **54.5% vs 34.9%, p=0.02**. LOCF 72.6% vs 47.3% ≈ this graph. |
+| 3% (4/127) TE | 36-month major TE on n=127. **Not** EFS 5/95. |
+| JAK2 | **37% → 8%** vs **38% → 44%** at 60 months. No stopping rule, no TFR. |
+| EFS KM | **5/95 vs 12/74, p=0.04**. Progression, death, TE. **EFS ≠ OS.** No “prevents leukemia.” |
+| Safety p.9 | Counts not worse vs HU. **GGT 16% vs 2%** (G≥3 8% vs 2%). D/C ~11% vs 2–3% is a different cut. |
+| PI | Start **100/50 µg**, +50 q2w, max 500, may q4w after 1.5 y. Thyroid CI. **Not HIDAT.** |
+| Close | One suitable patient, or the barrier. PSP only if terms confirmed. |
+
+**Prof. Liang today:** use the dedicated script — do not run the 60-minute certification deck.
+
+---
 
 ### 1. Open — why PV still needs rediscovering (2 min)
 
@@ -230,38 +252,31 @@ A haematologist who saw the original PROUD-PV readout will say “it lost to HU 
 
 ---
 
-### 8. Piece B — BESREMi complete hematologic response (6 min)
+### 8. Brochure CHR page — walk what they will hold (6 min)
 
-**CHR definition (Piece B):** no phlebotomy in the past 3 months; hematocrit <45%; leukocytes <10 × 10⁹/L; platelets <400 × 10⁹/L.
+**CHR definition (on the page):** no phlebotomy in the past 3 months; hematocrit <45%; leukocytes <10 × 10⁹/L; platelets <400 × 10⁹/L.
 
-**Poster claim:** greater CHR vs control (HU/BAT) at 24 months, **sustained through 60 months**.
+**Speak in this order (brochure first, PI second):**
 
-**Numbers to use in HK (named study — Gisslinger et al., *Leukemia* 2023; PROUD-PV / CONTINUATION-PV):**
+1. **Graph:** HU is ahead at **12 months (~75% vs ~62%)**. Lines **cross by 24 months**. At **60 months ~73% vs ~53%**. Headline on the art: greater CHR vs control at 24 months, sustained at 60 months.
+2. **84.3% (107/127):** **ever-CHR** by 36 months — criteria met **at any time** (footnote). Not “84% still in CHR.”
+3. **Major TE 3% (4/127)** at 36 months — do **not** mix with EFS 5/95.
+4. **PI translation (must still say):** 12-month primary **43.1% vs 46.0%, p=0.63** (ITT; discontinued = failure; non-inferiority not met). Late primary **54.5% vs 34.9% at 72 months, p=0.02** (Gisslinger 2023). LOCF **72.6% vs 47.3%** is the published analogue of the ~70% graph. Mean time in CHR **60.9% vs 41.2%** (p=0.04).
 
-| Analysis | BESREMi | Control (HU → BAT) | Stats |
-|----------|---------|--------------------|-------|
-| **CHR at 72 months (primary; discontinued = non-responders)** | **54.5%** (48/88) | **34.9%** (22/63) | RR 1.55; 95% CI 1.07–2.26; **p=0.02** |
-| LOCF sensitivity (explains the poster’s ~70% visual) | 72.6% (69/95) | 47.3% (35/74) | RR 1.54; 95% CI 1.18–2.00; p=0.001 |
-| Mean time in CHR | 60.9% | 41.2% | p=0.04 |
+| Analysis | BESREMi | Control (HU → BAT) | Stats | Role |
+|----------|---------|--------------------|-------|------|
+| Brochure graph, ~M12 | ~62% | ~75% | Visual on leave-behind | HU faster at 1 year |
+| Brochure graph, ~M60 | ~73% | ~53% | Visual on leave-behind | Long-term curve |
+| Ever-CHR by 36 mo | **84.3% (107/127)** | — | Footnote: at any time | Not a snapshot |
+| PI 12-mo primary | **43.1%** | **46.0%** | **p=0.63** | Honesty |
+| 72-mo primary (D/C = fail) | **54.5%** (48/88) | **34.9%** (22/63) | **p=0.02** | PI-aligned late number |
+| LOCF 72 mo | 72.6% (69/95) | 47.3% (35/74) | p=0.001 | Analogue of the graph |
 
-**Field rule — three CHR numbers, say which one is on the page:**
-
-| If they are looking at… | You say |
-|-------------------------|---------|
-| Brochure **5-year graph** (~62% vs ~75% at M12; crossover by M24; ~73% vs ~53% at M60) | “This is the long-term CHR **curve on this leave-behind**. HU is ahead at 1 year; ropeg crosses and holds.” |
-| Brochure **84.3% (107/127)** | “**Ever** achieved CHR by 36 months — criteria met **at any time**. Not the snapshot on the graph.” |
-| HK PI / haematologist who remembers PROUD-PV | “12-month primary **43.1% vs 46.0%, p=0.63** — discontinued counted as failures; non-inferiority not met.” |
-| “What is the PI-aligned late number?” | **54.5% vs 34.9% at 72 months, p=0.02** (Gisslinger 2023 primary). LOCF 72.6% vs 47.3% is the published analogue of the ~70% graph. |
-
-**Do not** collapse those four rows into “about 80% respond.” The brochure may print 84.3% **with its footnote**; you must say the footnote.
-
-**Brochure callout, do not mix with EFS:** major thromboembolic events **3% (4/127)** at 36 months. That is **not** the EFS first-event count of 5/95.
-
-**Titration honesty (HK PI):** mean titration ~3.7 months (ropeg) vs ~2.6 months (hydroxycarbamide). HU may be preferred when **early** count reduction is needed to prevent thrombosis/bleeding. This is a clinical nuance, not an anti-product line. It is also why the graph’s month-12 dots sit **above** HU and **below** the PI 43.1% story at the same calendar time — different analysis, same pharmacology.
+**Titration honesty (HK PI):** ~3.7 vs ~2.6 months. Same pharmacology as the graph’s month-12 HU lead.
 
 ---
 
-### 8b. Brochure — JAK2 V617F allele burden (if this page is in the room)
+### 8b. Brochure JAK2 page — core when handed over
 
 The leave-behind shows median JAK2 V617F **37% → 8%** on BESREMi vs **38% → 44%** on HU/BAT at **60 months** (HU **rebounds**). Gisslinger 2023 at ~6 years is the same direction: median **8.5% vs 50.4%**; molecular response **66.0% vs 19.4%** (p<0.0001).
 
