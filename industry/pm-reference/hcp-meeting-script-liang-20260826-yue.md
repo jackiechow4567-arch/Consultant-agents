@@ -1,9 +1,12 @@
-# 一對一會面講稿（粵語）— 梁教授（2026年8月26日）
+# 一對一會面講稿（粵語）— 梁教授（2026年8月26日 15:30）
 
 > **請用呢份 Word 嚟 rehearse。** 英文原文仍在 `hcp-meeting-script-liang-20260826.md`。  
+> **時間／地點：** 2026年8月26日 **15:30**，養和醫院。  
 > **前 30 秒核對身份：** **梁憲孫醫生**（Dr Raymond Liang Hin-Suen），養和醫院內科部門主管／血液及細胞治療中心總監；港大／中大榮譽臨床教授。只係公開資料。如果唔係呢位梁教授，即刻停、改對象。  
+> **明日：** **詹楚生教授** 27 Aug，同一間醫院。今日唔好預賣明日；脾／適應證紀律兩日都要用。  
 > **形式：** 一對一科學交流 + 已批核 leave-behind。**風格：請教，唔好上課。** 唔使講 WHO 2016。  
-> **敏感度：** Mid — 香港 PI + 已批核 brochure + 已發表 RCT。唔好講病人姓名。唔好引 unpublished ad-board。  
+> **敏感度：** 講稿本身 Mid（香港 PI + 已批核 brochure + 已發表 RCT）。Visit report 原料 High — **具名 HCP、秘書、電話、病人識別唔寫入呢份講稿。** 唔好引 unpublished ad-board。  
+> **Visit report（已對 2026 contact log）：** **梁教授本人未有臨床探訪記錄。** 以下「最可能被問」來自全港 field 模式，唔係佢上次講過嘅嘢。  
 > **狀態：** DRAFT — 等 Medical 確認呢份 brochure 係而家用嘅 HCP leave-behind。  
 > **PSP（私家／養和）：** Private Sector — 買 2 送 1、只限私家、第一年、**2026 年底完結**。講條款之前，今日先同 market access 核對。唔好主動報 list price（內部規劃價每針 HK$36,000，除非佢問）。
 
@@ -16,6 +19,13 @@
 - **記住：** Ropeg 第一年慢啲；5 年 CHR 曲線同 HU 上面 JAK2 rebound，先至係長期故事；香港起始劑量 **100／50 µg**。
 - **感覺：** 科學上老實，唔會將 84.3% 講成而家仲響應緊。
 - **行動：** 睇下佢有冇第一位合適應證嘅私家病人，同埋 PSP 文件幫唔幫到手。
+
+**Field 已經踩過、今日唔好再踩（脫敏）：**
+- 唔好再講「外國 KOL／Gill 用 **250–350–500**」——香港起始係 **100／50**。CRM 有 accelerated 250 欄，興趣多數 Neutral；唔當已批核 HK start。
+- 唔好用「穩 1.5 年之後 q4w **慳過 Pegasys**」——field 已經被回：「Pegasys 都可以拉長間隔」。
+- 唔好比 potency、針數、dose 多寡；亦 **唔好** 搬 Hep B H2H。Field 自己都記咗：Pegasys 返港之後 **off-label 用於 PV**，幾乎冇人用嚟醫 Hep B／C。
+- 唔好承諾 HQ **減價**；唔好主動推 MF／ET（細胞治療中心明日仲有一場）。
+- Journal club（2027）係另一條院內醫學教育線，**唔好** 塞入今日 1:1 目標。
 
 ---
 
@@ -47,7 +57,7 @@
 
 ---
 
-## 如果一開波就話「好貴」（梁教授最可能嘅開場）
+## 如果一開波就話「好貴」（全港 field 第 1 題；當佢會開呢句）
 
 **同事三句，邊句用得、邊句唔用得：**
 
@@ -56,6 +66,8 @@
 | 「我哋 dosage 比起 Pegasys 多／好」 | **唔得** | 香港 PI：**唔好比同一類 pegylated／非 pegylated protein 嘅 potency**。Dose 多、針少、藥力強，全部都係 IFN-to-IFN。 |
 | 「第一隻拎到 FDA approval for PV」 | **唔好咁講** | **唔係** 第一隻 FDA 批 PV 嘅藥——ruxolitinib（Jakafi）2014 已經批（HU 失敗／不耐受）。準確句（只可以當監管事實、**唔好用來打 Pegasys**）：BESREMi 係 **第一隻 FDA 專門批 PV 嘅干擾素**（2021），亦係 FDA 講「**唔受先前治療史限制**」嘅第一隻 PV 藥。香港跟 **香港 PI**，唔係 FDA。 |
 | 「Safety 好過 Pegasys，因為以前 Hep B 有 H2H」 | **唔得** | 同事自己都講 **MPN 冇頭對頭**。Hep B ≠ PV；藥都唔同（Pegasys 係 peg-IFN-α-2a，BESREMi 係 ropeg-IFN-α-2b）。HKAPI 比較要有 **相關適應證、有名有姓、統計顯著** 嘅研究。 |
+
+**Field 價差（內部 cue，唔好主動報）：** 其他診所報過 Pegasys 大約每支 **HK$1,000–1,200**（視劑量）。價差大係事實。PSP 之後多數診所仍然標「Barrier to most patients」。有人問過 HQ 幾時減價——你只可以講已反映本地需要，**唔好承諾減價時間**。
 
 **價錢要答嘅三層（照呢個次序，唔好先扯 Pegasys）：**
 
@@ -75,7 +87,9 @@
 
 **如果佢跟住問「咁同 Pegasys 比呢？」**
 
-「PV **冇** 同 Pegasys 嘅頭對頭。PI 寫明唔好比 potency。Hep B 嘅 interferon 研究 **唔可以** 搬過嚟當 PV 安全優於 Pegasys——病唔同、藥唔同、劑量都唔同。我可以留喺呢份香港 leave-behind 對 HU 嘅數據，同埋起始 **100／50 µg**。」
+「PV **冇** 同 Pegasys 嘅頭對頭。PI 寫明唔好比 potency。Hep B 嘅 interferon 研究 **唔可以** 搬過嚟當 PV 安全優於 Pegasys——病唔同、藥唔同、劑量都唔同。
+
+可以留喺標籤內嘅分別係：**香港 PI 專門批成年 PV、無症狀性脾腫大**；Pegasys 喺港用 PV 係 **off-label**。我可以講 **呢個產品** 嘅 q2w／穩後可 q4w，同埋起始 **100／50 µg**。供應穩定性如果您問，我只講 BESREMi 係本地註冊產品、而家 SKU 我同 supply 核過——**唔會** 攻擊第二隻藥缺貨。」
 
 **如果佢問「係咪第一隻 FDA 批嘅 PV 藥？」**
 
@@ -175,30 +189,49 @@ IFN 特徵係 **肝酶**：GGT **16% vs 2%**，grade ≥3 **8% vs 2%**；ALT 13%
 | 「ET／MF／脾。」 | 唔喺香港適應證。如果佢問：**只可以 reactive**：引 PI、唔好留 ET／MF 物料、Veeva 記錄。有症狀性脾腫大 = **唔好** 推 BESREMi。 |
 | 「VAF 8% 可唔可以停？」 | 唔可以。唔係停藥規則；唔好講 TFR。 |
 | 「我病人負擔唔起。」／一開波就話貴 | 認同 **係貴**。唔好比 Pegasys。價值留喺 vs HU 嘅 RCT + 呢個產品 q2w／q4w。合資格先講 Private Sector PSP。 |
+| 「Pegasys 每支千幾蚊。」 | 認同價差大。**唔好** 確認／反駁對手價。跟三層：認同貴 → vs HU + 自己 q2w／q4w → PSP。 |
+| 「滴定期用 500 支打 100，好浪費。有冇 pen？」 | 認同滴定期有 wastage 問題。香港 PI 預充針筒係 **500 µg/mL、可調 50–500**。**唔好** 承諾有 pen。**唔好** 因此改口由 250 起。起始仍係 **100／50**。SKU 有冇其他規格，問 supply 再答。 |
+| 「q4w 可以慳錢。」 | PI：穩 q2w **至少 1.5 年** 之後 **可以** q4w。唔好當即時慳錢賣點，亦唔好比 Pegasys 間隔。 |
+| 「點同 Pegasys 分別？」 | Label（PV-specific vs off-label）+ 呢個產品自己嘅劑量時間表 + 本地註冊供應。**唔係** 更勁／更安全嘅 IFN。 |
+| 「MF／早期纖維化選擇少，可唔可以用？」 | **唔喺香港適應證。** Reactive、引 PI、唔留物料、Veeva。明日仲有同一中心另一場——今日唔好打開呢條。 |
+| 「ET 美國批咗未／香港幾時有？」 | 香港而家 **只有 PV**。ET 提交狀態交 Medical；**唔好** 報內部時間表。 |
+| 「內地 interferon／廈門貨平好多。」 | 冇 H2H。唔好比 potency。香港處方跟 **香港註冊產品** 同香港 PI。 |
+| 「HQ 幾時減價？」 | 已反映本地需要。**冇日期、唔承諾。** 而家橋係 PSP。 |
+| 「醫管局可唔可以送幾個月藥／有 cap？」 | 養和係私家。**唔好** 發明公立免費藥 cap。未納入；Private Sector PSP 核過先講。 |
 
 ---
 
-## 教授仲有機會問咩（visit report 不在本庫；用呢輪 + 養和私家 KOL 題庫）
+## 教授仲有機會問咩（已對 visit report；脫敏 field 模式）
 
-> **資料缺口：** Git／work-briefs **冇** 之前 visit report 原文。以下係（1）你而家呢輪已出現嘅題（價錢、Pegasys、FDA、Hep B）；（2）養和私家、血液＋細胞治療中心、前 QMH／HA 榮譽顧問 **好大機會** 會問嘅題。如果你之後把 visit report 貼過嚟，可以再收窄。**唔好引 ad-board 逐字。**
+> **原料 High，講稿 Mid。** 2026 contact log：**無** 梁教授臨床探訪。HKSH 記錄只係約期（今日 15:30；明日 Chim）同 2027 journal club——journal club **唔係** 今日目標。  
+> 以下題目係其他診所／公立中心 **重複出現** 嘅異議，按出現頻率排。**唔好** 喺檯面點名其他醫生。**唔好引 ad-board 逐字。**
 
-### A. 呢輪已經出過 —— 一定要熟
+### A. Field 已經撞過 —— 今日一定要熟（按頻率）
 
-| 佢問 | 你答（兩句） |
-|------|----------------|
-| 好貴／Pegasys 平啲 | 認同貴。**唔好比** Pegasys potency。價值 = vs HU 嘅 RCT + 自己 q2w／q4w + PSP。 |
-| Dosage 多過／針少過 Pegasys | **唔講。** 只講 BESREMi PI：q2w，穩 1.5 年可 q4w。 |
-| Hep B 證明安全啲 | **唔得。** 病唔同、藥唔同；MPN 冇 H2H。 |
-| 第一隻 FDA PV 藥？ | **唔好咁講。** 第一隻 FDA **專門批 PV 嘅干擾素**；rux 2014 已批（HU 之後）。香港跟香港 PI。 |
+| 佢問 | 你答（兩句） | 點解係 field 題 |
+|------|----------------|----------------|
+| 好貴／Pegasys 平啲（～每支千幾） | 認同貴、認同價差大。**唔好比** potency。價值 = vs HU 嘅 RCT + 自己 q2w／q4w + PSP。 | 幾乎每次探訪嘅 #1 異議；PSP 之後多數仍係 barrier。 |
+| 幾時減價？ | 已向 HQ 反映。**唔承諾時間。** 而家橋係合資格 PSP。 | 公立醫生已直接問過。 |
+| Dosage 多過／針少過 Pegasys | **唔講。** 只講 BESREMi PI：q2w，穩 1.5 年可 q4w。 | 同事想用嚟打價錢；PI 禁止。 |
+| 點同 Pegasys **分別**（CRM 明確 next step） | **Label + 本地註冊 + 呢個產品自己嘅時間表。** 唔係更勁／更安全。Pegasys 喺港 PV = off-label。 | Field 任務係 differentiate；PI 禁止 IFN-to-IFN potency。 |
+| Hep B 證明安全啲 | **唔得。** 病唔同、藥唔同；MPN 冇 H2H。Field 都記咗 Pegasys 返港幾乎冇人用嚟醫 Hep B／C。 | 同事想用舊 H2H；連適應證都對唔上。 |
+| 第一隻 FDA PV 藥？ | **唔好咁講。** 第一隻 FDA **專門批 PV 嘅干擾素**；rux 2014 已批（HU 之後）。香港跟香港 PI。 | 監管事實 ≠ 打 Pegasys。 |
+| 有冇 pen？滴定用 100 從 500 支好浪費 | 認同 wastage。HK 預充針 **500 µg/mL 可調**。**冇 pen 承諾。** 起始仍 **100／50**，唔好改口 250。 | 私家醫生已問；有人試過用 250 SKU 當「平啲」——今日唔好。 |
+| q4w 慳錢 vs Pegasys | 穩 1.5 年之後 **可以** q4w。唔好比間隔；Pegasys 都可以拉長。 | Field 用過呢句，被即場擋返。 |
+| 由 250–350–500 開始（HIDAT／外國 KOL） | **香港 PI 100／50 µg**，+50 q2w，最高 500。HIDAT 唔係本地標籤。 | 你已經對其他醫生講過 Gill 250——**今日唔好再講。** |
+| Pegasys 以前斷貨／而家 DKSH 返咗？ | 如果佢問供應：只講 BESREMi 本地註冊、而家 SKU 核過。**唔好** 攻擊對手缺貨。Pegasys PV = off-label。 | 供應不穩曾經係轉藥理由；而家 Pegasys 已返港。 |
+| 內地／廈門 interferon 平 | 冇 H2H；唔好比 potency；跟香港註冊產品。 | 有中心訂咗 Pegasys 未到貨，而家用緊中國 IFN。 |
+| 醫管局免費藥幾個月／一年 cap？ | 養和私家。**唔發明** 公立 cap。未納入；Private Sector PSP 核過先講。 | 公立顧問討論過 HADF／免費藥機制。 |
+| MF／pre-fibrotic MF 選擇少 | **唔喺適應證。** Reactive、引 PI、唔留物料。細胞治療中心明日仲有 Chim。 | 公立探訪已出現「MF 更可行」——off-label 陷阱。 |
+| ET 適應證／FDA 之後香港幾時有 | 香港而家只有 PV。ET 交 Medical；唔報內部時間。 | 有中心 ET 量大，已追過提交狀態。 |
 
-### B. 好大機會（私家養和 + 你哋平時 field 會撞）
+### B. 養和私家 + 血液／細胞治療中心 —— 好大機會
 
 | 佢問 | 你答 |
 |------|------|
 | 穩定 HU 病人點解要轉？ | 唔係人人要轉。適合：HU 毒性／不耐受、放血負擔重、想長期 CHR／JAK2 方向、**無症狀性脾腫大**。HU 第一年仍然快啲。 |
 | 已經用緊 Pegasys，點 switch？ | PI：已用其他細胞減少藥，**起始 50 µg** q2w，一邊加 ropeg 一邊 taper 舊藥。唔好比邊隻 IFN 勁。Veeva 記。 |
-| 由 250–350–500 開始（HIDAT／台灣）？ | **香港 PI 100／50 µg**，+50 q2w，最高 500。HIDAT 唔係本地標籤。 |
-| 有症狀性脾腫大／中國人 PV 好多脾（歷史系列）？ | 香港適應證 **無症狀性脾腫大**。有症狀性脾 = **唔好** 主動推。歷史 HK 系列唔好當而家風險模型。 |
+| 有症狀性脾腫大／中國人 PV 好多脾（歷史系列）？ | 香港適應證 **無症狀性脾腫大**。有症狀性脾 = **唔好** 主動推。歷史 HK 系列唔好當而家風險模型。詹教授 1997 系列係 **明日** 場要更小心，今日都唔好打開。 |
 | 醫管局幾時納入？公立病人點算？ | **未納入，冇日期。** 而家係私家 + PSP。唔好承諾。 |
 | PSP 2026 完咗點算？ | Private Sector **買 2 送 1、第一年、2026 年底完**。之後條款未批之前 **唔好發明**。Base Case（買 5 送 1）係另一個 live programme，核過先講。 |
 | 保險／養和 package 包唔包？ | 唔好代保險公司答。可以幫病人／院務問事前授權；臨床決定仍然係適應證。 |
@@ -219,12 +252,14 @@ IFN 特徵係 **肝酶**：GGT **16% vs 2%**，grade ≥3 **8% vs 2%**；ALT 13%
 | 題 | 點處理 |
 |----|--------|
 | 香港有幾多病人用緊／邊位 KOL 用 | 唔報內部數字、唔點名。可以講適應證同 PSP 路徑。 |
-| 有冇香港 trial／PARADIGM | 唔好即場承諾 site。交 Medical／CPM。 |
+| 有冇香港 trial／IIT／PARADIGM | 唔好即場承諾 site。交 Medical／CPM。公立中心另有 IIT 討論——**唔好** 帶到養和 1:1。 |
 | 84.3%／圖 12 個月 62% | 見上面：ever-CHR vs ITT 43.1% vs 圖。 |
 | 預防白血病／長命啲 | EFS ≠ OS。唔好比。 |
 | 內地 ropeg 平好多 | 冇 H2H；唔好比 potency；香港跟香港註冊產品。 |
+| 養和 journal club／2027 slot | 秘書線已另約。今日目標係 **第一位合適應證病人**，唔係排醫學教育。 |
+| 政府員工／「有錢病人」先用得 | **唔好** 喺檯面講目標客群。只講適應證 + 私家 + PSP 資格。 |
 
-**今日優先預演順序：** 貴 → Pegasys／switch 50 µg → HIDAT 100 µg → 脾／適應證 → 醫管局／PSP 2026 → 自己打／雪櫃 → 懷孕 → ET／MF（收口）。
+**今日優先預演順序（visit report 排序）：** 貴 vs Pegasys 千幾蚊 → 點分別（label／供應，唔係 potency）→ 冇 pen／100 從 500 浪費 → HIDAT／250（唔好講 Gill）→ q4w 慳錢被擋 → 內地 IFN → HQ 減價 → HA 免費藥 cap → MF／ET 收口 → 脾／適應證。
 
 ---
 
@@ -239,10 +274,11 @@ IFN 特徵係 **肝酶**：GGT **16% vs 2%**，grade ≥3 **8% vs 2%**；ALT 13%
 **臨走內部記錄：**
 
 1. 會唔會指出第一位病人？會／唔會／之後  
-2. 障礙：療效／安全／價錢／脾／習慣／其他  
+2. 障礙：療效／安全／價錢／Pegasys 價差／wastage／脾／習慣／其他  
 3. 有興趣嘅 PSP：Private Sector／Base Case／都唔要  
-4. 有冇問 off-label？有／冇 — Veeva  
+4. 有冇問 off-label（ET／MF）？有／冇 — Veeva  
 5. 跟進負責人 + 日期  
+6. **明日 Chim：** 今日有冇打開脾／MF？有就明日更要收口。  
 
 ---
 
@@ -265,10 +301,13 @@ Market access 確認之後先講而家條款。Private Sector **2026 年完**。
 ## 風險
 
 1. 佢當 84.3% 係 snapshot CHR — 你好 promotional。對策：先講註腳。  
-2. 佢問 Pegasys 頭對頭 — 一排名就違反 PI／HKAPI。對策：類別效力句 + 記錄。
+2. 佢問 Pegasys 頭對頭 — 一排名就違反 PI／HKAPI。對策：label／off-label + 類別效力句 + 記錄。  
+3. 你重複 field 舊句：Gill 250、q4w 慳過 Pegasys、Hep B 更安全、承諾減價。對策：上面「唔好再踩」清單。  
+4. 細胞治療中心打開 MF／ET — 明日 Chim 更難收。對策：reactive、唔留物料。
 
 ## 會面之後
 
 - Veeva 記錄（包括任何 reactive ET／MF）  
 - 電郵 Medical 三行 debrief（冇病人識別）  
 - 如果要開始用藥：PSP 資格 + 注射培訓 + 而家 PI  
+- **今晚／明早：** 用同一適應證紀律 prep **27 Aug Chim**（唔好把今日未答嘅 off-label 帶過去）  

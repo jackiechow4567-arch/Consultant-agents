@@ -1,10 +1,13 @@
-# 1:1 meeting script — Prof. Liang (26 Aug 2026)
+# 1:1 meeting script — Prof. Liang (26 Aug 2026, 15:30)
 
 > **Cantonese Word for review:** [`hcp-meeting-script-liang-20260826-yue.docx`](hcp-meeting-script-liang-20260826-yue.docx) · markdown [`hcp-meeting-script-liang-20260826-yue.md`](hcp-meeting-script-liang-20260826-yue.md)
 
+> **When / where:** **26 Aug 2026, 15:30**, Hong Kong Sanatorium & Hospital.  
 > **Assumption (confirm in the first 30 seconds):** Dr **Raymond Liang Hin-Suen** (梁憲孫醫生), Head of Medicine / Director, Haematology and Cellular Therapy Centre, **Hong Kong Sanatorium & Hospital**; Honorary Clinical Professor, HKU / CUHK. Public profile only. If this is a different Liang, stop and retarget.  
+> **Tomorrow:** **Prof. Chim Chor Sang James**, 27 Aug, same hospital. Do not pre-sell tomorrow; spleen / indication discipline applies both days.  
 > **Channel:** 1:1 scientific exchange + approved leave-behind. **Style: Consult, not lecture.** He does not need WHO 2016.  
-> **Sensitivity:** Mid — HK PI + approved brochure + published RCT. No patient names. No unpublished ad-board quotes.  
+> **Sensitivity:** Script is Mid — HK PI + approved brochure + published RCT. Visit-report source is High — **no named other HCPs, secretaries, phones, or patient identifiers in this script.** No unpublished ad-board quotes.  
+> **Visit report (2026 contact log):** **No prior clinical visit with Prof. Liang himself.** Likely questions below are **territory field patterns**, not things he has already said to you.  
 > **Status:** DRAFT until you confirm Medical has cleared this brochure as the live HCP leave-behind.  
 > **PSP (private / HKSH):** Private Sector — buy 2 get 1, private only, first year, **expires end 2026**. Re-confirm with market access **before** you quote terms. Do not volunteer list price (planning figure HK$36,000/injection stays internal unless he asks).
 
@@ -16,6 +19,13 @@
 - **Remember:** Ropeg is slower at year 1; the 5-year CHR curve and JAK2 rebound vs HU are why the conversation is long-term; HK start is **100/50 µg**.
 - **Feel:** You are scientifically honest and will not over-claim 84.3%.
 - **Do:** Identify whether he has a first private-pay patient who fits the HK indication, and whether PSP paperwork is useful.
+
+**Do not repeat (de-identified field mistakes):**
+- Do not say an overseas KOL / Gill starts **250–350–500**. HK start is **100/50**. The CRM “250 mcg accelerated” column is often Neutral — not an approved HK start.
+- Do not sell “q4w after 1.5 y **saves money vs Pegasys**” — that line has already been knocked back (“Pegasys can space too”).
+- Do not rank potency, injection count, or Hep B H2H. Field notes already say Pegasys is back in HK via a distributor, **off-label for PV**, and is not being used for Hep B/C.
+- Do not promise an HQ **price cut**. Do not open MF/ET (cellular-therapy centre; Chim is tomorrow).
+- Journal club (2027) is a separate medical-education thread — **not** today’s 1:1 objective.
 
 ---
 
@@ -49,6 +59,8 @@
 
 ## If he opens with “this is too expensive”
 
+Territory pattern: this is **question #1 on almost every call**. Treat it as the likely open.
+
 **Colleague’s three lines — which you may use:**
 
 | Colleague wants to say | Allowed? | Why |
@@ -56,6 +68,8 @@
 | “Our dosage is more / better than Pegasys” | **No** | HK PI: do **not** compare potency with another pegylated or non-pegylated protein of the same class. More mcg, fewer injections, or “stronger IFN” are all IFN-to-IFN. |
 | “First drug with FDA approval for PV” | **Do not say it that way** | **Not** the first FDA-approved PV drug — ruxolitinib (Jakafi) 2014 (after HU failure/intolerance). Accurate regulatory fact (**not** a Pegasys attack): BESREMi is the **first FDA-approved interferon specifically for PV** (2021), and the first FDA PV medicine that can be used **regardless of prior treatment history**. Hong Kong follows the **HK PI**, not FDA. |
 | “Safer than Pegasys because of old Hep B head-to-head” | **No** | Even the colleague notes **no MPN H2H**. Hep B ≠ PV; different products (Pegasys = peg-IFN-α-2a; BESREMi = ropeg-IFN-α-2b). HKAPI comparatives need a **named, significant study in the relevant indication**. |
+
+**Field price gap (internal cue — do not volunteer):** other clinics have quoted Pegasys at about **HK$1,000–1,200 per syringe** (dose-dependent). The gap is real. After PSP, most clinics still log “barrier to most patients.” Someone has already asked when HQ will cut price — you may say local need has been reflected; **do not promise a cut or a date**.
 
 **Three-layer price answer (this order — do not lead with Pegasys):**
 
@@ -75,7 +89,9 @@ If the patient is private and eligible, there is a Private Sector PSP — **buy 
 
 **If he follows with “versus Pegasys?”**
 
-“There is **no** Pegasys head-to-head in PV. The PI says not to compare potency. Hepatitis B interferon studies **cannot** be moved across as ‘safer than Pegasys in PV’ — different disease, different product, different dose. I can stay on this Hong Kong leave-behind versus HU, and the start dose **100/50 µg**.”
+“There is **no** Pegasys head-to-head in PV. The PI says not to compare potency. Hepatitis B interferon studies **cannot** be moved across as ‘safer than Pegasys in PV’ — different disease, different product, different dose.
+
+On-label differences I can name: **Hong Kong PI is adult PV without symptomatic splenomegaly**; Pegasys for PV in Hong Kong is **off-label**. I can speak **this product’s** q2w / possible q4w schedule and the start dose **100/50 µg**. If you ask about supply, I will only confirm BESREMi as the locally registered product and current SKUs with supply — I will **not** attack another product’s stockouts.”
 
 **If he asks “first FDA-approved PV drug?”**
 
@@ -175,6 +191,77 @@ Contraindications on this page include **thyroid disease unless controlled**, de
 | “ET / MF / spleen.” | Not in the HK indication. If he asks, **reactive only**: cite PI, no leave-behind on ET/MF, document in Veeva. Symptomatic splenomegaly = **do not** position BESREMi. |
 | “Can I stop when VAF is 8%?” | No. Not a stopping rule; no TFR claim. |
 | “Too expensive for my patient.” / opens with price | Agree it **is expensive**. Do **not** compare to Pegasys. Value = named RCT vs HU + this product’s q2w/q4w. Private Sector PSP only if eligible and terms confirmed. |
+| “Pegasys is about a thousand dollars a syringe.” | Agree the gap is large. **Do not** confirm or rebut a competitor price. Then the three layers: expensive → vs HU + own q2w/q4w → PSP. |
+| “Wasting a 500 mcg syringe at 100. Is there a pen?” | Agree titration wastage is real. HK PI prefilled syringe is **500 µg/mL, adjustable 50–500**. **Do not** promise a pen. **Do not** switch the start to 250. Start remains **100/50**. Other SKUs only if supply confirms. |
+| “q4w will save money.” | PI: after **≥1.5 y** stable q2w the interval **may** go q4w. Not an immediate cost pitch; do not compare intervals with Pegasys. |
+| “How is this different from Pegasys?” | Label (PV-specific vs off-label) + this product’s own schedule + locally registered supply. **Not** a stronger or safer IFN. |
+| “Few options in MF / pre-fibrotic MF.” | **Not the HK indication.** Reactive, cite PI, no leave-behind, Veeva. Chim is tomorrow at the same centre — do not open this today. |
+| “ET after FDA — when in Hong Kong?” | HK indication is **PV only**. ET status goes to Medical; **no** internal timeline. |
+| “Mainland / Xiamen interferon is much cheaper.” | No H2H. No potency compare. Hong Kong prescribing follows the **Hong Kong-registered** product and PI. |
+| “When will HQ cut the price?” | Local need has been reflected. **No date, no promise.** Current bridge is PSP. |
+| “Can HA give free drug for months / is there a cap?” | This is private HKSH. **Do not** invent a public free-drug cap. Not listed; quote Private Sector PSP only after confirm. |
+
+---
+
+## What else he may ask (visit-report field patterns; de-identified)
+
+> **Source is High; this page is Mid.** 2026 contact log: **no** clinical visit with Prof. Liang. HKSH rows are logistics (today 15:30; Chim tomorrow) and a **2027 journal club** — that club is **not** today’s objective.  
+> Questions below are **repeated objections** from other private and public calls, ranked by how often they appear. **Do not** name other physicians at the table.
+
+### A. Already hit in the field — rehearse these
+
+| He asks | You say (two sentences) | Why it is a field question |
+|---------|-------------------------|----------------------------|
+| Too expensive / Pegasys ~HK$1–1.2k | Agree expensive; agree the gap is large. **No** potency compare. Value = RCT vs HU + own q2w/q4w + PSP. | #1 objection almost every visit; PSP still a barrier for most. |
+| When will you cut the price? | Need has been reflected to HQ. **No date.** Bridge is eligible PSP. | Already asked in a public hospital. |
+| Higher dose / fewer jabs than Pegasys | **Do not say.** Only the BESREMi PI: q2w; may q4w after 1.5 y stable. | Colleague wanted this as a price answer; PI forbids it. |
+| How do we **differentiate** from Pegasys? | **Label + local registration + this product’s schedule.** Not stronger/safer. Pegasys-in-PV is off-label. | Explicit CRM next step; potency H2H is forbidden. |
+| Hep B H2H proves safer | **No.** Different disease, different product; no MPN H2H. Field already notes Pegasys is not used for Hep B/C in HK. | Colleague wanted old H2H; indication does not match. |
+| First FDA PV drug? | **Do not say it that way.** First FDA **interferon specifically for PV**; rux 2014 after HU. HK follows HK PI. | Regulatory fact ≠ Pegasys attack. |
+| Pen? Wasting 100 from a 500 syringe | Agree wastage. HK PFS **500 µg/mL adjustable**. **No pen promise.** Start still **100/50**, not 250. | Private HCP already asked; 250 SKU as “cheaper” must not be today’s start story. |
+| q4w saves vs Pegasys | May q4w after 1.5 y stable. Do not compare intervals; Pegasys can space too. | Line already used and knocked back. |
+| Start 250–350–500 (HIDAT / overseas KOL) | **HK PI 100/50 µg**, +50 q2w, max 500. HIDAT is not the local label. | You have already quoted Gill 250 to another HCP — **not today**. |
+| Pegasys was out of stock / now back? | If asked: BESREMi is locally registered; confirm current SKUs. **Do not** attack competitor stockouts. PV use of Pegasys is off-label. | Unstable supply used to be a switch reason; Pegasys has resumed. |
+| Mainland interferon is cheaper | No H2H; no potency; HK-registered product only. | At least one centre ordered Pegasys, still using China IFN. |
+| HA free drug for months / annual cap? | Private HKSH. **Do not invent** a public cap. Not listed; Private Sector PSP if confirmed. | Public consultant has discussed HADF / free-drug mechanics. |
+| MF / pre-fibrotic MF has few choices | **Not the indication.** Reactive, PI, no materials. Chim tomorrow. | Public visit already floated MF as “more feasible” — off-label trap. |
+| ET indication after FDA | HK is PV only. ET to Medical; no internal date. | A high-ET centre has already asked. |
+
+### B. Likely at private HKSH + cellular therapy
+
+| He asks | You say |
+|---------|---------|
+| Why switch a stable HU patient? | Not everyone. Fit: HU toxicity/intolerance, heavy phlebotomy, longer CHR/JAK2 horizon, **no symptomatic splenomegaly**. HU is still faster in year 1. |
+| Switching from Pegasys? | PI: already on another cytoreductive → start **50 µg** q2w, taper the old drug. Do not rank IFNs. Log in Veeva. |
+| Symptomatic splenomegaly / historic high spleen in Chinese PV? | HK indication is **without symptomatic splenomegaly**. Symptomatic spleen = **do not** position. Historic HK series are not today’s risk model. Chim 1997 is **tomorrow’s** caution as well. |
+| When will HA list? | **Not listed, no date.** Private + PSP now. No promise. |
+| What happens when PSP ends 2026? | Private Sector **buy 2 get 1, first year, ends 2026**. Do not invent successor terms. Base Case (buy 5 get 1) is a different live programme — confirm before quoting. |
+| Does HKSH package / insurance cover it? | Do not speak for the insurer. Prior auth help is fine; clinical decision stays on-label. |
+| Who injects? Self-inject? | PI: physician, nurse, or trained family/patient, SC abdomen/thigh. Offer injection training. |
+| Fridge / travel? | **2–8°C**, do not freeze; ~15 min at room temp before use. Unstable cold chain → do not send the patient away with stock. |
+| Combine with HU? | Titration may **taper in parallel**; dual long-term therapy is not the labelled standard. |
+| When q4w? | Stable q2w **≥1.5 years**, then interval **may** extend to q4w. |
+| How often JAK2? Stop at 8%? | Brochure is long-term fall vs HU rebound. **8% is not a stop rule**; no TFR. Monitoring interval is clinical, not a PEC protocol. |
+| Versus ruxolitinib? | Do not rank. Rux has a post-HU high-risk place in US pathways; HK BESREMi is not “beats rux.” Follow spleen, prior therapy, label. |
+| Fertility / pregnancy? | PI: **not recommended in pregnancy**; contraception during treatment and ≥14 days after. **No** n=1 cases. Fertility plans = Medical, reactive. |
+| Depression / thyroid / liver? | Severe psychiatric history and uncontrolled thyroid are contraindications. Page-9 signature is liver enzymes (GGT 16% vs 2%). Monitor LFT and mood. |
+| Asian data? Hair loss? | Japan Ph2 n=29, 100 µg start is PI-like; alopecia 55.2% is **not** brochure page 9. PI alopecia ~6–7%. China Ph2 (Jin) = **protocol, no results**. |
+| Low-risk, phlebotomy only? | Disease goals and phlebotomy burden are fair. Low-PV **fixed 100 µg** ≠ PI titration — **not core** unless Medical gates it in today. |
+| ET / MF / transplant / cellular therapy? | This centre will see them. **Not the HK indication.** Reactive, PI, no materials, Veeva. |
+
+### C. Possible, but do not open
+
+| Topic | Handle |
+|-------|--------|
+| How many HK patients / which KOL uses it | No internal numbers, no names. Indication + PSP path only. |
+| HK trial / IIT / PARADIGM | No site promise. Medical / CPM. A public IIT thread exists elsewhere — **do not** bring it to this 1:1. |
+| 84.3% / graph 62% at month 12 | Ever-CHR vs ITT 43.1% vs the leave-behind curve. |
+| Prevents leukemia / live longer | EFS ≠ OS. Do not claim. |
+| Mainland ropeg much cheaper | No H2H; no potency; HK-registered product. |
+| HKSH journal club / 2027 slot | Separate secretary thread. Today’s job is a **first on-label patient**, not CME booking. |
+| “Only government staff / rich patients” | **Do not** say targeting out loud. Indication + private + PSP eligibility only. |
+
+**Rehearse order (visit-report ranked):** expensive vs Pegasys ~HK$1–1.2k → differentiate (label/supply, not potency) → no pen / 100-from-500 wastage → HIDAT/250 (no Gill) → q4w cost knock-back → mainland IFN → HQ price cut → HA free-drug cap → MF/ET close → spleen / indication.
 
 ---
 
@@ -189,10 +276,11 @@ I will log any off-label scientific question through Medical and will not leave 
 **Capture before you leave (internal only):**
 
 1. Will he identify a first patient? Y / N / later  
-2. Barrier: efficacy / safety / cost / spleen / habit / other  
+2. Barrier: efficacy / safety / cost / Pegasys gap / wastage / spleen / habit / other  
 3. PSP of interest: Private Sector / Base Case / neither  
-4. Off-label question asked? Y/N — Veeva  
+4. Off-label (ET/MF) asked? Y/N — Veeva  
 5. Follow-up owner + date  
+6. **Chim tomorrow:** did today’s call open spleen / MF? If yes, close tighter tomorrow.  
 
 ---
 
@@ -215,10 +303,13 @@ Quote only live terms after market-access confirm. Private Sector **ends 2026**.
 ## Risks
 
 1. He treats 84.3% as snapshot CHR — you look promotional. Mitigant: footnote first.  
-2. He asks Pegasys H2H — any ranking is a PI/HKAPI breach. Mitigant: class-potency line + log.
+2. He asks Pegasys H2H — any ranking is a PI/HKAPI breach. Mitigant: label / off-label + class-potency line + log.  
+3. You repeat field lines already used: Gill 250, q4w cheaper than Pegasys, Hep B safer, promised price cut. Mitigant: “do not repeat” list above.  
+4. Cellular-therapy centre opens MF/ET — Chim tomorrow is harder. Mitigant: reactive, no materials.
 
 ## After the meeting
 
 - Log in Veeva (including reactive ET/MF if any).  
 - Email Medical a three-line debrief (no patient identifiers).  
 - If he wants a patient start: PSP eligibility + injection training + current PI.  
+- **Tonight / tomorrow morning:** same indication discipline for **27 Aug Chim** — do not carry unanswered off-label into that call.  

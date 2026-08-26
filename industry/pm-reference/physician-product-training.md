@@ -4,7 +4,7 @@
 > **Audience:** Internal field, MSL, and PM certification to detail Hong Kong hematologists.  
 > **Sensitivity:** Mid — approved-piece localization + published evidence + HK PI. No patient-level data.  
 > **Revision date:** 2026-08-26 (v3 — brochure-first)  
-> **Meeting today:** (1) Internal cert — [`physician-product-training-meeting-brief.md`](physician-product-training-meeting-brief.md). (2) **Prof. Liang 1:1** — [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md).  
+> **Meeting today:** (1) Internal cert — [`physician-product-training-meeting-brief.md`](physician-product-training-meeting-brief.md). (2) **Prof. Liang 1:1, 15:30** — [`hcp-meeting-script-liang-20260826-yue.md`](hcp-meeting-script-liang-20260826-yue.md) (粵語 Word for rehearse). **27 Aug:** Prof. Chim.  
 > **What changed in v3:** Training spine is the **physician brochure** (CHR graph → 84.3% ever-CHR → JAK2 8% vs 44% → EFS KM → 36-month AE table → PI). PI 43.1% / 54.5% are **said out loud as the translation**, not as a competing headline.
 
 ## Source pieces incorporated
@@ -27,7 +27,7 @@
 | HTML slide deck (keyboard ← →) | [`physician-product-training-slides.html`](physician-product-training-slides.html) |
 | **Brochure vs training map** | [`physician-product-training-brochure-map.md`](physician-product-training-brochure-map.md) — why 84.3% / the 5-year graph / JAK2 8% vs 44% are not the same as PI 43.1% and 54.5% |
 | Library gaps (why v2 exists) | [`physician-product-training-gaps.md`](physician-product-training-gaps.md) |
-| **Prof. Liang 1:1 script (26 Aug)** | English: [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md) · **粵語 Word:** [`hcp-meeting-script-liang-20260826-yue.docx`](hcp-meeting-script-liang-20260826-yue.docx) |
+| **Prof. Liang 1:1 script (26 Aug 15:30)** | 粵語 Word: [`hcp-meeting-script-liang-20260826-yue.docx`](hcp-meeting-script-liang-20260826-yue.docx) · English: [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md) — Q-bank revised from 2026 visit-report field patterns (de-identified; do not commit raw Excel) |
 
 **Do not** treat Piece A/B/E as a substitute for HK PI. NCCN is a **US** guideline. Hong Kong prescribing follows the local indication, not NCCN category ranking.
 
