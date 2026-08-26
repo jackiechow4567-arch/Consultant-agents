@@ -23,6 +23,8 @@
 | [physician-product-training.md](physician-product-training.md) | HK physician / field certification module v2 — Piece A/B talk-track, AMWG overlay, year-1 honesty, CHR/EFS, safety, gated Low-PV |
 | [physician-product-training.docx](physician-product-training.docx) | Same module in Word (for Medical/Compliance review and printing) |
 | [physician-product-training-meeting-brief.md](physician-product-training-meeting-brief.md) | **26 Aug 2026 one-pager** — 60-min run-of-show, Medical gates, decisions to capture |
+| [physician-product-training-brochure-map.md](physician-product-training-brochure-map.md) | **Why training ≠ physician brochure** — 84.3% ever-CHR, 5-year graph vs PI 43.1%/54.5%, JAK2 8% vs 44%, page-9 AE table |
+| [physician-product-training-brochure-map.docx](physician-product-training-brochure-map.docx) | Same map in Word |
 | [physician-product-training-compliance.md](physician-product-training-compliance.md) | Pre-flight checklist for the training module (HKAPI/UMAO/lexicon) |
 | [physician-product-training-gaps.md](physician-product-training-gaps.md) | Gaps vs PDFs uploaded to the repo (Low-PV, year-1 PROUD-PV, safety, AMWG; do-not-use list) |
 | [physician-product-training-slides.html](physician-product-training-slides.html) | v2 slide deck for 26 Aug dry-run (keyboard ← →; DRAFT) |

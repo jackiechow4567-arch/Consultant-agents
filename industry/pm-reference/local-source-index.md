@@ -42,6 +42,8 @@ Attached approved-style artworks used to revise `physician-product-training.md` 
 
 Numbers on those pieces were reconciled to HK PI + Gisslinger *Leukemia* 2023 in the training module (primary CHR 54.5% vs 34.9%; LOCF 72.6% vs 47.3% as graph explanation).
 
+**Full physician brochure (EFFICACY / SAFETY / OTHER INFO tabs)** shared 2026-08-26: 5-year CHR graph, 84.3% ever-CHR, JAK2 8% vs 44%, EFS KM, 36-month all-causality AE table, PI page. Map vs training: [`physician-product-training-brochure-map.md`](physician-product-training-brochure-map.md).
+
 ## Publication library on `origin/main` (uploaded 2026-08-25)
 
 Commit `09bf80c` added 19 PDFs to the repo root. Gap analysis vs current physician training: [`physician-product-training-gaps.md`](physician-product-training-gaps.md).

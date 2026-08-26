@@ -22,8 +22,10 @@
 | 3 | ET/PMF limited to classification; no efficacy/dosing; reactive path documented | |
 | 4 | No IFN-to-IFN superiority; PI potency warning respected | |
 | 5 | Comparative vs HU/BAT uses **named** PROUD-PV / CONTINUATION-PV stats | |
-| 6 | **Year-1 taught first:** 12-mo CHR **43.1% vs 46.0% (p=0.63)**; non-inferiority not met | |
-| 7 | Primary 72-mo CHR headline is **54.5% vs 34.9% (p=0.02)**; LOCF ~72.6% only as graph explanation | |
+| 6 | **Year-1 taught first:** 12-mo CHR **43.1% vs 46.0% (p=0.63)**; non-inferiority not met; **graph month-12 (~62% vs 75%) named as a different analysis** | |
+| 7 | Primary 72-mo CHR headline is **54.5% vs 34.9% (p=0.02)**; brochure graph / LOCF ~72.6% only as graph explanation | |
+| 7a | Brochure **84.3% (107/127)** spoken as **ever-CHR**, not snapshot | |
+| 7b | JAK2 brochure page (8% vs 44% at 60 mo) not expanded to TFR / clone eradication | |
 | 8 | Month-60 CHR **not** claimed significant (55.8% vs 44.0%, p=0.097) | |
 | 9 | EFS 0.94 vs 0.82, p=0.04; **EFS ≠ OS**; no “prevents death/leukemia” | |
 | 10 | HIDAT **250–350–500** not taught as HK start; PI start **100/50 µg** | |
@@ -65,7 +67,8 @@
 ## Red lines if the field ad-libs
 
 - “NCCN says start BESREMi in all low-risk PV.”
-- “80% complete response.”
+- “80% complete response.” / “84% still in CHR.”
+- Mixing brochure graph month-12 (~62%) with PI 43.1% as if they were the same percentage.
 - “Better interferon than Pegasys.”
 - “Stops myelofibrosis / AML.” / “Patients live longer.”
 - “CHR is significant at 5 years.”

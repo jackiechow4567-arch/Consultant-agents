@@ -5,7 +5,8 @@
 > **Sensitivity:** Mid — approved-piece localization + published evidence + HK PI. No patient-level data.  
 > **Revision date:** 2026-08-25 (v2)  
 > **Meeting:** Wednesday 26 Aug 2026 — use [`physician-product-training-meeting-brief.md`](physician-product-training-meeting-brief.md) as the run-of-show.  
-> **What changed in v2:** Closed library gaps — year-1 PROUD-PV honesty, trial safety, EFS ≠ OS, AMWG overlay, gated Low-PV, HIDAT/do-not-use certification. Still no ET/MF/pregnancy promo.
+> **What changed in v2:** Closed library gaps — year-1 PROUD-PV honesty, trial safety, EFS ≠ OS, AMWG overlay, gated Low-PV, HIDAT/do-not-use certification. Still no ET/MF/pregnancy promo.  
+> **What changed after the full brochure:** Training now maps the leave-behind’s 5-year CHR graph, **84.3% ever-CHR**, JAK2 **8% vs 44%**, 36-month AE table, and PI page so field does not contradict the handout.
 
 ## Source pieces incorporated
 
@@ -14,28 +15,32 @@
 | **A — Disease education** | PharmaEssentia MPN / PV clinical reference (classification, JAK2, WHO 2016, risk, treatment goals) | Opens the call: diagnose and stage PV before product |
 | **B — Treatment & evidence** | *Rediscovering Polycythemia Vera* · `PEC-BES-HK020126` · PharmaEssentia Asia (Hong Kong) Limited | NCCN pathway, hydroxyurea (HU) long-term risk, BESREMi CHR and event-free survival (EFS) |
 | **C — Local label** | HK PI (`besremi-hk-pi-summary.md`) | Binding on-label boundary for every proactive claim |
-| **D — Evidence vault** | `pv-clinical-evidence.md` · Gisslinger et al., *Leukemia* 2023 | Named RCT numbers for comparative claims vs HU / best available therapy (BAT) |
+| **D — Evidence vault** | `pv-clinical-evidence.md` · Gisslinger et al., *Leukemia* 2023 | Named RCT numbers for comparative claims vs HU / BAT |
+| **E — Physician brochure (this leave-behind)** | EFFICACY / SAFETY / OTHER INFO tabbed piece (CHR 5-year graph, JAK2 VAF, EFS KM, 36-month AE table, PI) | HCP handout — training is the **translation layer**; see brochure map |
 
 **Deliverables in this revision**
 
 | Asset | Where |
 |-------|--------|
 | Facilitator / talk-track | [`physician-product-training.md`](physician-product-training.md) (this file) · Word: [`physician-product-training.docx`](physician-product-training.docx) |
-| **Tomorrow’s 1-pager** | [`physician-product-training-meeting-brief.md`](physician-product-training-meeting-brief.md) |
+| **Today’s 1-pager** | [`physician-product-training-meeting-brief.md`](physician-product-training-meeting-brief.md) |
 | Compliance pre-flight | [`physician-product-training-compliance.md`](physician-product-training-compliance.md) |
 | HTML slide deck (keyboard ← →) | [`physician-product-training-slides.html`](physician-product-training-slides.html) |
+| **Brochure vs training map** | [`physician-product-training-brochure-map.md`](physician-product-training-brochure-map.md) — why 84.3% / the 5-year graph / JAK2 8% vs 44% are not the same as PI 43.1% and 54.5% |
 | Library gaps (why v2 exists) | [`physician-product-training-gaps.md`](physician-product-training-gaps.md) |
 | Canva 12-slide deck (v1 visual; use HTML for v2) | [Open in Canva](https://www.canva.com/d/bp9GpvLL8cxB5mR) (design `DAHTRbuo6kQ`) |
 
-**Do not** treat Piece A/B as a substitute for HK PI. NCCN is a **US** guideline. Hong Kong prescribing follows the local indication, not NCCN category ranking.
+**Do not** treat Piece A/B/E as a substitute for HK PI. NCCN is a **US** guideline. Hong Kong prescribing follows the local indication, not NCCN category ranking.
 
 ---
 
 ## Recommendation for how to run the session
 
-**Do** run disease-first, then **say the year-1 miss before the 6-year win**, then safety, then HK PI. **Do not** import HIDAT, Pegasys superiority, ET/MF, pregnancy, or the Novartis early-MF PDF (`20230508162013_1_slideshow.pdf`).
+**Do** run disease-first, then **say the year-1 miss before the 6-year win**, then safety, then HK PI. If you are **handing the full physician brochure** (EFFICACY / SAFETY / OTHER INFO tabs), walk those pages and use [`physician-product-training-brochure-map.md`](physician-product-training-brochure-map.md) as the translation layer. **Do not** import HIDAT, Pegasys superiority, ET/MF, pregnancy, or the Novartis early-MF PDF (`20230508162013_1_slideshow.pdf`).
 
-**Session length:** Facilitator section times below are for **full certification**. Tomorrow compresses to **60 minutes** — use the meeting brief, not every minute mark in this file. Low-PV is **gated** — core slide only if Medical says yes in the room.  
+**The brochure and this training are the same trials, different analyses.** The leave-behind graph (~62% vs ~75% at month 12; ~73% at month 60) and **84.3% (107/127) ever-CHR** will contradict the PI primary (**43.1% vs 46%** at 12 months; **54.5% vs 34.9%** at 72 months) unless you **name the analysis out loud**.
+
+**Session length:** Facilitator section times below are for **full certification**. Today compresses to **60 minutes** — use the meeting brief, not every minute mark in this file. Low-PV is **gated** — core slide only if Medical says yes in the room.  
 **HKAPI:** If an HCP is present, ≥ two-thirds genuine scientific content; hospitality within Code caps; abbreviated PI on every leave-behind.
 
 ---
@@ -239,9 +244,29 @@ A haematologist who saw the original PROUD-PV readout will say “it lost to HU 
 | LOCF sensitivity (explains the poster’s ~70% visual) | 72.6% (69/95) | 47.3% (35/74) | RR 1.54; 95% CI 1.18–2.00; p=0.001 |
 | Mean time in CHR | 60.9% | 41.2% | p=0.04 |
 
-**Field rule:** Lead with **54.5% vs 34.9% at 72 months** — this is the PI-aligned, lexicon-safe figure. If the physician is looking at the Piece B line graph (~70–80% range), explain it as the **LOCF sensitivity**, not the primary analysis. Do not say “about 80% of patients respond.”
+**Field rule — three CHR numbers, say which one is on the page:**
 
-**Titration honesty (HK PI):** mean titration ~3.7 months (ropeg) vs ~2.6 months (hydroxycarbamide). HU may be preferred when **early** count reduction is needed to prevent thrombosis/bleeding. This is a clinical nuance, not an anti-product line.
+| If they are looking at… | You say |
+|-------------------------|---------|
+| Brochure **5-year graph** (~62% vs ~75% at M12; crossover by M24; ~73% vs ~53% at M60) | “This is the long-term CHR **curve on this leave-behind**. HU is ahead at 1 year; ropeg crosses and holds.” |
+| Brochure **84.3% (107/127)** | “**Ever** achieved CHR by 36 months — criteria met **at any time**. Not the snapshot on the graph.” |
+| HK PI / haematologist who remembers PROUD-PV | “12-month primary **43.1% vs 46.0%, p=0.63** — discontinued counted as failures; non-inferiority not met.” |
+| “What is the PI-aligned late number?” | **54.5% vs 34.9% at 72 months, p=0.02** (Gisslinger 2023 primary). LOCF 72.6% vs 47.3% is the published analogue of the ~70% graph. |
+
+**Do not** collapse those four rows into “about 80% respond.” The brochure may print 84.3% **with its footnote**; you must say the footnote.
+
+**Brochure callout, do not mix with EFS:** major thromboembolic events **3% (4/127)** at 36 months. That is **not** the EFS first-event count of 5/95.
+
+**Titration honesty (HK PI):** mean titration ~3.7 months (ropeg) vs ~2.6 months (hydroxycarbamide). HU may be preferred when **early** count reduction is needed to prevent thrombosis/bleeding. This is a clinical nuance, not an anti-product line. It is also why the graph’s month-12 dots sit **above** HU and **below** the PI 43.1% story at the same calendar time — different analysis, same pharmacology.
+
+---
+
+### 8b. Brochure — JAK2 V617F allele burden (if this page is in the room)
+
+The leave-behind shows median JAK2 V617F **37% → 8%** on BESREMi vs **38% → 44%** on HU/BAT at **60 months** (HU **rebounds**). Gisslinger 2023 at ~6 years is the same direction: median **8.5% vs 50.4%**; molecular response **66.0% vs 19.4%** (p<0.0001).
+
+**How to say it:** “Higher mutant allele burden is associated with thrombosis, hemorrhage, and fibrotic progression. In this long-term analysis the ropeg curve keeps falling; the HU/BAT curve comes back up.”  
+**How not to say it:** “Selectively depletes HSCs” is **brochure art** — do not expand to “eradicates the clone,” “cures PV,” or treatment-free remission. Do not use 8% as a stopping rule.
 
 ---
 
@@ -268,24 +293,35 @@ A haematologist who saw the original PROUD-PV readout will say “it lost to HU 
 | **Event mix** | Ropeg **n=95:** TE **2**, MF **1**, death **2**. Control **n=74:** TE **5**, MF **2**, AML **2**, death **3**. **Do not slogan “prevents leukemia.”** AML sat in the **control** arm in this analysis; **numbers are small.** |
 | **Time in CHR** | **60.9% vs 41.2%** of follow-up — the **durability** story that sits next to the ~70–80% **LOCF** graph. |
 
-**Molecular (lexicon-optional, not on Piece B):** JAK2V617F molecular response 66.0% vs 19.4% at 6 years (p<0.0001); median allele burden 8.5% vs 50.4%. Use only if the global lexicon and local Medical allow it in this module. Do not teach treatment-free remission.
-
 ---
 
 ### 9a. Safety — same meeting as efficacy (6 min)
 
-A haematologist who only hears CHR/EFS will **discount** the brand. Put safety **on the core deck**, not in an appendix.
+**If the 36-month all-causality table (brochure page 9) is open — use this table, not Edahiro:**
+
+| Pattern | BESREMi (n=127) | Control (n=127) | How to say it |
+|---------|-----------------|-----------------|---------------|
+| Thrombocytopenia | 21% (G≥3 2%) | 28% (4%) | Cytopenias are **not** the IFN problem vs HU |
+| Leukopenia | 18% (2%) | 22% (5%) | Same |
+| Anaemia | 13% (1%) | 24% (2%) | Same |
+| GGT increase | **16% (G≥3 8%)** | 2% (2%) | **IFN / liver signature** |
+| ALT increase | 13% (4%) | 2% (0%) | Monitor LFTs |
+| AST increase | 10% (2%) | 2% (0%) | Monitor LFTs |
+| Arthralgia | 12% (1%) | 4% (0%) | IFN-class |
+| Fatigue | 13% (0%) | 13% (1%) | Balanced |
+| Headache | 12% | 13% | Balanced |
+
+This table is **regardless of causality**. **Drug-related discontinuation ~11% vs 2–3%** is a different cut — use it for “will they stay on drug?”  
+**Do not** put Edahiro **alopecia 55.2%** (Japan Ph2 n=29) onto page 9. PI / this brochure lists alopecia around **6–7%**.
 
 | Point | Line | Source |
 |---|---|---|
-| **Grade ≥3 TRAEs ~balanced** | **~16.5% vs 16.7%** (treatment-related, PROUD-PV / Kiladjian) | Kiladjian; Gisslinger 2023 discussion |
-| **Drug-related discontinuation** | Ropeg **~8–11%** vs HU **~2–4%** (paper vs PI wording differs slightly — use **PI or the paper**, not both as if identical) | Kiladjian; HK PI ~**11.4% vs 2.4%** in one PI passage; Gisslinger letter **11.0% vs 2.4%** to 7.3 y |
-| **Ropeg pattern** | Liver enzyme increase, arthralgia, flu-like, **IFN-class** psychiatric / autoimmune / endocrine | HK PI warnings |
-| **HU pattern** | Leukopenia, thrombocytopenia | Expected |
-| **Japan Ph2, PI-like start** | **n=29**, start **100 µg**; **alopecia 55.2%** — warn KAMs so **clinic surprises** are not “we weren’t told.” **Medical gate in the room:** core line vs Q&A only. | Edahiro 2022; cited in HK PI |
-| **Pregnancy** | **Do not** use Bang 2023 (n=1) in **promo**. HK PI: not recommended; contraception during treatment and **≥14 days after last dose**. Do not teach US REMS as HK law. | Label |
+| **Grade ≥3 TRAEs ~balanced** | **~16.5% vs 16.7%** (treatment-related) | Kiladjian; Gisslinger 2023 |
+| **Drug-related discontinuation** | Ropeg **~8–11%** vs HU **~2–4%** | Kiladjian; HK PI ~**11.4% vs 2.4%**; Gisslinger letter **11.0% vs 2.4%** to 7.3 y |
+| **Japan Ph2, PI-like start** | **n=29**, start **100 µg**; **alopecia 55.2%** — **Medical gate:** Q&A only unless cleared; **not** on the 36-month table | Edahiro 2022 |
+| **Pregnancy** | **Do not** use Bang 2023 (n=1). HK PI: not recommended; contraception during treatment and **≥14 days after last dose** | Label |
 
-**Talk-track:** “Efficacy at 6 years is the reason to consider the product. IFN-class monitoring is the reason we **start and titrate by the PI**, not by a conference slide.”
+**Talk-track:** “Efficacy at 6 years is the reason to consider the product. Liver enzymes and IFN-class monitoring are the reason we **start and titrate by the PI**.”
 
 ---
 
@@ -295,13 +331,14 @@ A haematologist who only hears CHR/EFS will **discount** the brand. Put safety *
 |------|--------|
 | Product | Besremi® ropeginterferon alfa-2b, 500 mcg/mL prefilled syringe (1 mL), SC |
 | Indication | Monotherapy in adults for PV **without symptomatic splenomegaly** |
-| Start | 100 mcg q2w (50 mcg if already on another cytoreductive) |
+| Start | 100 mcg q2w (50 mcg if already on another cytoreductive; also **50 mcg** if severe renal impairment GFR 15–29) |
 | Titration | +50 mcg every 2 weeks; taper the other cytoreductive in parallel |
 | Targets | Hct <45%; platelets <400 × 10⁹/L; WBC <10 × 10⁹/L |
 | Max | 500 mcg q2w |
 | Maintenance | q2w for ≥1.5 years at stable dose; may extend to **q4w** |
+| Injection | SC abdomen (≥5 cm from navel) or thigh; may be self-administered after training |
 
-**Key contraindications (abbreviate verbally; full list on leave-behind):** decompensated cirrhosis (Child-Pugh B/C); ESRD (GFR <15); severe psychiatric history; severe uncontrolled CV disease; autoimmune disease; transplant immunosuppression; telbivudine combination; hypersensitivity. Excipient of known effect: benzyl alcohol 10 mg/mL.
+**Key contraindications (abbreviate verbally; full list on leave-behind):** hypersensitivity; **pre-existing thyroid disease unless controlled**; decompensated cirrhosis (Child-Pugh B/C); ESRD (GFR <15); severe psychiatric history; severe uncontrolled CV disease; autoimmune disease; transplant immunosuppression; telbivudine combination. Child-Pugh A: no dose adjustment. Elderly: no adjustment. Paediatric: not established. Excipients of known effect: benzyl alcohol 10 mg/mL **and** polysorbate 80.
 
 **ADR:** suspected ADRs via Drug Office — http://www.drugoffice.gov.hk/adr.html
 
@@ -341,24 +378,27 @@ NCCN **low-risk** on Piece B still lists **aspirin ± phlebotomy** and **IFN if 
 | “Start at 250–350–500 like HIDAT / China / SURPASS-ET.” | **HK PI start is 100 µg** (50 if already on cytoreductive), +50 q2w, max 500. HIDAT and Jin 2023 China Ph2 are **not** the local label. Jin is a **protocol with no results** in our library — do not invent Chinese efficacy. |
 | “Why is this so much more than Pegasys / China ropeg / traditional IFN?” | No head-to-head. PI forbids potency comparisons across the IFN class. Stay on PV evidence, q2w/q4w dosing, and named HU/phlebotomy data. Log the exchange. |
 | “I want it for ET / MF.” | Not in HK PI. Reactive scientific exchange only; document in Veeva; do not leave Piece A’s ET/PMF columns as a mini-detail-aid. SURPASS-ET is an **ET protocol, off-label here**. |
-| “The poster shows ~80% CHR.” | That visual aligns with **LOCF 72.6%**. Primary analysis (discontinued = non-responder) is **54.5% vs 34.9%**. Use the primary number unless Medical has cleared the LOCF graph language. |
-| “CHR is still significant at 5 years.” | **No.** Month-60 CHR **55.8% vs 44.0%, p=0.097 (NS)**. Do not quote 5-year CHR as significant. The significant late CHR timepoint in Gisslinger 2023 is **72 months**. |
+| “The poster shows ~80% CHR.” / “This page says 84.3%.” | **84.3% (107/127)** is **ever-CHR by 36 months** (footnote: criteria met at any time). The **graph** is a snapshot/LOCF-style curve (~73% at 60 months). The **PI-aligned primary** at 72 months is **54.5% vs 34.9%**. Name which one you are quoting. |
+| “Your graph shows 62% at 1 year, not 43%.” | Both are PROUD-PV/CONTINUATION-PV. **43.1% vs 46%** is the **ITT primary** (discontinued = failure). The **green/yellow graph** is the 5-year CHR curve used on the leave-behind — HU is ahead at month 12 on that curve, which is the same clinical point as “HU is faster.” |
+| “CHR is still significant at 5 years.” | **No** for the Gisslinger primary snapshot at month 60 (**55.8% vs 44.0%, p=0.097**). The brochure graph is a **different analysis**. Do not call the PI 5-year CHR significant. |
+| “JAK2 went to 8% — can I stop?” | No TFR claim. 8% vs 44% at 60 months is **allele-burden reduction on the brochure**, not a stopping rule. |
 | “Will HA pay?” | Not listed as of this module. Private + PSP bridge. Formulary is the company milestone — no promised date. |
 
 ---
 
-## Knowledge check (pass = all eight)
+## Knowledge check (pass = all nine)
 
 1. HK indication in one sentence?  
 2. Who is low-risk PV on Piece A?  
 3. Year-1 PROUD-PV CHR vs HU, with p-value?  
 4. Primary CHR at 72 months vs control, with p-value?  
-5. EFS probabilities, p-value, and why EFS ≠ OS?  
-6. HK start dose — and what HIDAT number you must **not** teach as the local start?  
-7. What is forbidden when a physician asks about Pegasys?  
-8. Low-PV 100 µg vs PI titration — same regimen or two regimens, and who gates the slide?
+5. What is **84.3% (107/127)** on the brochure — snapshot or ever-response?  
+6. EFS probabilities, p-value, and why EFS ≠ OS?  
+7. HK start dose — and what HIDAT number you must **not** teach as the local start?  
+8. What is forbidden when a physician asks about Pegasys?  
+9. Low-PV 100 µg vs PI titration — same regimen or two regimens, and who gates the slide?
 
-**Answers:** (1) Adult monotherapy for PV without symptomatic splenomegaly. (2) Age <60 **and** no thrombosis history. (3) **43.1% vs 46.0%, p=0.63** (NS; non-inferiority not met). (4) 54.5% vs 34.9%, p=0.02. (5) 0.94 vs 0.82, p=0.04; composite of TE / progression / death — **not** overall survival. (6) **100 µg** q2w (50 if already on cytoreductive); **do not** teach **250–350–500** as HK start. (7) IFN-to-IFN superiority / potency comparison. (8) **Two regimens**; Medical yes/no in the room.
+**Answers:** (1) Adult monotherapy for PV without symptomatic splenomegaly. (2) Age <60 **and** no thrombosis history. (3) **43.1% vs 46.0%, p=0.63** (NS; non-inferiority not met). (4) 54.5% vs 34.9%, p=0.02. (5) **Ever-CHR by 36 months** (criteria met at any time) — **not** the 5-year graph snapshot and **not** the 72-month primary. (6) 0.94 vs 0.82, p=0.04; composite of TE / progression / death — **not** overall survival. (7) **100 µg** q2w (50 if already on cytoreductive or GFR 15–29); **do not** teach **250–350–500** as HK start. (8) IFN-to-IFN superiority / potency comparison. (9) **Two regimens**; Medical yes/no in the room.
 
 ---
 
