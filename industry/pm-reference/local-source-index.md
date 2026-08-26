@@ -14,6 +14,13 @@
 | `Role-Whattheycareabout-HowIusuallyengage.csv` | `../role-pm.md` § Stakeholders |
 | `20250613-Primary-Healthcare-Sharing-Session-2025_For-HKAPI-Members.pdf`, `20260429-COP-TTT-Workshop_slides-for-members.pdf` | `hkapi-policy-updates.md` |
 
+## Physician pieces (artwork not in git)
+
+| Local / attached source | Vault reference |
+|-------------------------|-----------------|
+| Piece A MPN/PV disease board (HSC / JAK2 panel) | `hsc-in-physician-brochure.md` |
+| Piece B `PEC-BES-HK020126` (*Rediscovering Polycythemia Vera*) | Physician product-training talk-track (separate PR) |
+
 ## High sensitivity — local only (`work-briefs/pm/`)
 
 | Local file | Why local-only |

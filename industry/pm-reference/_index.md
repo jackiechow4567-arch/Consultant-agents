@@ -19,6 +19,7 @@
 | [ha-formulary-access.md](ha-formulary-access.md) | HADF mechanics, HA drug spend context, formulary submission logic |
 | [hk-hospitals-landscape.md](hk-hospitals-landscape.md) | Key HK hospitals for field/access planning (no PII) |
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
+| [hsc-in-physician-brochure.md](hsc-in-physician-brochure.md) | HSCs = hematopoietic stem cells on Piece A; field talk-track and claim boundary |
 | [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
 
 ## Prohibitions for agents
