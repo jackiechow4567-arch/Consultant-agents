@@ -47,6 +47,44 @@
 
 ---
 
+## If he opens with “this is too expensive”
+
+**Colleague’s three lines — which you may use:**
+
+| Colleague wants to say | Allowed? | Why |
+|------------------------|----------|-----|
+| “Our dosage is more / better than Pegasys” | **No** | HK PI: do **not** compare potency with another pegylated or non-pegylated protein of the same class. More mcg, fewer injections, or “stronger IFN” are all IFN-to-IFN. |
+| “First drug with FDA approval for PV” | **Do not say it that way** | **Not** the first FDA-approved PV drug — ruxolitinib (Jakafi) 2014 (after HU failure/intolerance). Accurate regulatory fact (**not** a Pegasys attack): BESREMi is the **first FDA-approved interferon specifically for PV** (2021), and the first FDA PV medicine that can be used **regardless of prior treatment history**. Hong Kong follows the **HK PI**, not FDA. |
+| “Safer than Pegasys because of old Hep B head-to-head” | **No** | Even the colleague notes **no MPN H2H**. Hep B ≠ PV; different products (Pegasys = peg-IFN-α-2a; BESREMi = ropeg-IFN-α-2b). HKAPI comparatives need a **named, significant study in the relevant indication**. |
+
+**Three-layer price answer (this order — do not lead with Pegasys):**
+
+1. **Agree it is expensive** — private pay, premium is a fact. Do not argue “it is not expensive.”
+2. **Value stays on-label** — named RCT vs HU (CHR / EFS / JAK2 rebound) and **this product’s** q2w, then possible q4w schedule.
+3. **Bridge** — Private Sector PSP if eligible (buy 2 get 1, first year, **ends 2026**). Do not quote terms until confirmed today.
+
+### Exact lines if price is the first sentence
+
+“Professor Liang, in private pay this medicine **is expensive**. I will not compare value against Pegasys or a mainland interferon — the Hong Kong PI **forbids** potency comparisons in this class, and there is **no** PV head-to-head.
+
+If the time horizon is **years**, not two or three months of count control, the named data versus HU are 72-month CHR **54.5% vs 34.9%, p=0.02**; EFS **5/95 vs 12/74, p=0.04**; JAK2 at 60 months **8% vs 44% rebound**. Hydroxyurea is faster in year 1; the PI says that.
+
+On dosing I will only speak the **BESREMi PI**: every two weeks, and after at least 1.5 years stable the interval **may** go to every four weeks. I will not say ‘fewer injections than Pegasys’ or ‘more dose than Pegasys.’
+
+If the patient is private and eligible, there is a Private Sector PSP — **buy 2 get 1**, first year, **ends 2026** — I will only quote terms I confirmed with market access today. It is not on the HA Drug Formulary; I will not give a listing date.”
+
+**If he follows with “versus Pegasys?”**
+
+“There is **no** Pegasys head-to-head in PV. The PI says not to compare potency. Hepatitis B interferon studies **cannot** be moved across as ‘safer than Pegasys in PV’ — different disease, different product, different dose. I can stay on this Hong Kong leave-behind versus HU, and the start dose **100/50 µg**.”
+
+**If he asks “first FDA-approved PV drug?”**
+
+“The accurate line is: the **first FDA-approved interferon specifically for PV**, and an FDA PV medicine that can be used **regardless of prior treatment history**. Ruxolitinib was approved for PV in 2014, after hydroxyurea. Hong Kong prescribing follows the Hong Kong PI; FDA is not HA.”
+
+**Do not volunteer** HK$36,000 per injection. If he asks list price, answer then go straight to PSP — do not stop on the number.
+
+---
+
 ## Opening (90 seconds) — consult
 
 “Professor Liang, thank you for the time. I have you at the Haematology Centre at Sanatorium — Happy Valley or Island East today?
@@ -136,7 +174,7 @@ Contraindications on this page include **thyroid disease unless controlled**, de
 | “Start 250–350–500.” | Hong Kong PI start is **100/50 µg**. |
 | “ET / MF / spleen.” | Not in the HK indication. If he asks, **reactive only**: cite PI, no leave-behind on ET/MF, document in Veeva. Symptomatic splenomegaly = **do not** position BESREMi. |
 | “Can I stop when VAF is 8%?” | No. Not a stopping rule; no TFR claim. |
-| “Too expensive for my patient.” | If **private** and eligible: Private Sector PSP **buy 2 get 1**, first year, **ends 2026** — confirm live terms. Do not invent a discount. Base Case (buy 5 get 1) if that is the live programme for this setting. |
+| “Too expensive for my patient.” / opens with price | Agree it **is expensive**. Do **not** compare to Pegasys. Value = named RCT vs HU + this product’s q2w/q4w. Private Sector PSP only if eligible and terms confirmed. |
 
 ---
 
