@@ -47,6 +47,7 @@ Cross-domain: **one primary + at most one support**. No five-way panels.
 | Decision memo | `playbooks/decision-one-pager.md` |
 | Project risk | `playbooks/project-risk-resource.md` |
 | Finance Q&A | `playbooks/finance-qa-brief.md` |
+| PM product training / physician HCP Q&A | `playbooks/physician-product-training.md` |
 
 ## Tool rules (mandatory)
 

@@ -82,7 +82,8 @@ If matching `mba-notes/<CODE>/cheat-sheet.md` exists, prefer citing it.
 3.
 ```
 
-Attach `playbooks/decision-one-pager.md` and/or `playbooks/exec-comms.md` when producing exec-ready materials.
+Attach `playbooks/decision-one-pager.md` and/or `playbooks/exec-comms.md` when producing exec-ready materials.  
+Attach `playbooks/physician-product-training.md` when the task is PM product training, hematologist Q&A, objection handling, or clinic-ready claim boundaries for BESREMi.
 
 ## Prohibitions
 

@@ -117,9 +117,9 @@
 
 ## Hard-won lessons (from practice)
 
-1. **Premium vs off-label traditional IFN:** Physicians repeatedly ask why BESREMi costs many times more than traditional interferons used off-label for PV. Without head-to-head data, we cannot claim superior efficacy vs Pegasys or China ropeginterferon — differentiation must stay within approved PV evidence, dosing convenience, and lexicon-approved disease-modifying narrative, not comparative superiority claims.
+1. **Premium vs off-label traditional IFN:** Physicians repeatedly ask why BESREMi costs many times more than traditional interferons used off-label for PV. There is **no PV head-to-head** vs Pegasys. Historical hepatitis H2H vs Pegasys does **not** license PV efficacy or flu-like superiority claims; mcg ratios (500 vs 180) are not potency. Differentiation must stay within approved PV evidence, labelled dosing (max 500 mcg q2w; study means ~350–380 mcg), 6-year CONTINUATION-PV duration vs HU, and lexicon-approved disease-modifying narrative. Detail: `pm-reference/pegasys-claim-check.md`.
 2. **Competitive noise (Pegasys, China ropeginterferon):** Each physician interaction surfaces "why your drug?" — need a standing, compliant response framework for price/value questions that does not imply unsupported comparative outcomes.
-3. *(TBD — add formulary, PSP, or compliance lessons as they emerge)*
+3. **Field CRM (Mar–Aug 2026, de-identified):** Conversion is nurse + multi-visit + first patient, not a one-call scientific close. Pegasys restocked in HK — do not lead with shortage. q4w-as-cost-save vs Pegasys was neutralized in clinic. Do not sell 250 mcg / pens / HQ price cuts / ET dates / “MF is more feasible.” Detail: `pm-reference/field-visit-patterns.md`.
 
 ## Frameworks I actually use as PM
 
@@ -131,7 +131,7 @@
 |-----------|-------------------|
 | Global harmonized lexicon / PI as claim boundary | **Daily, non-negotiable** — every claim, slide, and HCP conversation checked against this first |
 | STP / positioning (MARK5120) — PV segment, private vs HA | **Yes** — private-pay early adopters (symptomatic, younger, disease-modification-focused) vs broader HA population pre-formulary; positioning differs by channel |
-| Comparative / value-based claims vs HU, phlebotomy | **Yes — data-supported only.** HKAPI §3.5: comparative claims require adequate, well-controlled, statistically significant studies naming the comparator. Supported: vs HU — CHR 54.5% vs 34.9% at 6y (p=0.02), EFS 94% vs 82% (p=0.04); vs phlebotomy alone (low-risk PV) — hematocrit control 81% vs 51% (p<0.001), fewer phlebotomies 2.9 vs 4.2/year. **No anagrelide superiority claims without cited RCT.** **No IFN-to-IFN superiority** (Pegasys, China ropeg, traditional IFN) — no head-to-head data |
+| Comparative / value-based claims vs HU, phlebotomy | **Yes — data-supported only.** HKAPI §3.5: comparative claims require adequate, well-controlled, statistically significant studies naming the comparator. Supported: vs HU — CHR 54.5% vs 34.9% at 6y (p=0.02), EFS 94% vs 82% (p=0.04); vs phlebotomy alone (low-risk PV) — hematocrit control 81% vs 51% (p<0.001), fewer phlebotomies 2.9 vs 4.2/year. **No anagrelide superiority claims without cited RCT.** **No IFN-to-IFN superiority in PV** (Pegasys, China ropeg, traditional IFN) — no **PV** H2H; hepatitis H2H is not a PV claim (see `pm-reference/pegasys-claim-check.md`) |
 | EVC / budget impact for HA formulary dossier | **Yes — core formulary work, PV-only for now.** Budget impact on ~500 PV patients; ET excluded from current model (investigational/off-label in HK). Track ET as future market-sizing input — regional data suggests ET may be more prevalent than PV |
 | Porter / competitive response (IFN shortage, Pegasys) | **Yes, lightweight** — standing watch on supply disruptions; adjust messaging/availability positioning reactively |
 | RICE / impact-confidence-effort | **Yes, informal** — no numeric scoring every quarter; weigh impact-on-formulary vs effort/compliance risk when prioritizing initiatives |
