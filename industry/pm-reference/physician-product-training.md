@@ -27,7 +27,7 @@
 | HTML slide deck (keyboard ← →) | [`physician-product-training-slides.html`](physician-product-training-slides.html) |
 | **Brochure vs training map** | [`physician-product-training-brochure-map.md`](physician-product-training-brochure-map.md) — why 84.3% / the 5-year graph / JAK2 8% vs 44% are not the same as PI 43.1% and 54.5% |
 | Library gaps (why v2 exists) | [`physician-product-training-gaps.md`](physician-product-training-gaps.md) |
-| **Prof. Liang 1:1 script (26 Aug)** | [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md) · Word: [`hcp-meeting-script-liang-20260826.docx`](hcp-meeting-script-liang-20260826.docx) |
+| **Prof. Liang 1:1 script (26 Aug)** | English: [`hcp-meeting-script-liang-20260826.md`](hcp-meeting-script-liang-20260826.md) · **粵語 Word:** [`hcp-meeting-script-liang-20260826-yue.docx`](hcp-meeting-script-liang-20260826-yue.docx) |
 
 **Do not** treat Piece A/B/E as a substitute for HK PI. NCCN is a **US** guideline. Hong Kong prescribing follows the local indication, not NCCN category ranking.
 
