@@ -1,5 +1,7 @@
 # 1:1 meeting script — Prof. Liang (26 Aug 2026)
 
+> **Cantonese Word for review:** [`hcp-meeting-script-liang-20260826-yue.docx`](hcp-meeting-script-liang-20260826-yue.docx) · markdown [`hcp-meeting-script-liang-20260826-yue.md`](hcp-meeting-script-liang-20260826-yue.md)
+
 > **Assumption (confirm in the first 30 seconds):** Dr **Raymond Liang Hin-Suen** (梁憲孫醫生), Head of Medicine / Director, Haematology and Cellular Therapy Centre, **Hong Kong Sanatorium & Hospital**; Honorary Clinical Professor, HKU / CUHK. Public profile only. If this is a different Liang, stop and retarget.  
 > **Channel:** 1:1 scientific exchange + approved leave-behind. **Style: Consult, not lecture.** He does not need WHO 2016.  
 > **Sensitivity:** Mid — HK PI + approved brochure + published RCT. No patient names. No unpublished ad-board quotes.  

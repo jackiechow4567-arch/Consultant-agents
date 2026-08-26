@@ -2,7 +2,7 @@
 
 > **For agents:** When role lens = PM, read this index then load only the files relevant to the question.  
 > **Sensitivity:** Public/regulatory/clinical publications = Mid/Low. Internal transcripts and draft dossiers = see `work-briefs/pm/README.md` (High — local only).  
-> **Last built:** 2026-08-26 (training v3 brochure-first + Prof. Liang 1:1 script).
+> **Last built:** 2026-08-26 (training v3 + Prof. Liang 1:1 English/Cantonese scripts).
 
 ## Load order
 
@@ -25,8 +25,10 @@
 | [physician-product-training-meeting-brief.md](physician-product-training-meeting-brief.md) | **26 Aug 2026 one-pager** — 60-min run-of-show, Medical gates, decisions to capture |
 | [physician-product-training-brochure-map.md](physician-product-training-brochure-map.md) | **Why training ≠ physician brochure** — 84.3% ever-CHR, 5-year graph vs PI 43.1%/54.5%, JAK2 8% vs 44%, page-9 AE table |
 | [physician-product-training-brochure-map.docx](physician-product-training-brochure-map.docx) | Same map in Word |
-| [hcp-meeting-script-liang-20260826.md](hcp-meeting-script-liang-20260826.md) | **26 Aug 1:1 script** — Prof. Liang (HKSH); brochure-first consult; PSP Private Sector |
-| [hcp-meeting-script-liang-20260826.docx](hcp-meeting-script-liang-20260826.docx) | Same script in Word |
+| [hcp-meeting-script-liang-20260826.md](hcp-meeting-script-liang-20260826.md) | **26 Aug 1:1 script (English)** — Prof. Liang (HKSH); brochure-first consult; PSP Private Sector |
+| [hcp-meeting-script-liang-20260826.docx](hcp-meeting-script-liang-20260826.docx) | English Word |
+| [hcp-meeting-script-liang-20260826-yue.md](hcp-meeting-script-liang-20260826-yue.md) | **同一講稿（香港粵語）** — 口語逐頁稿，畀 PM rehearse |
+| [hcp-meeting-script-liang-20260826-yue.docx](hcp-meeting-script-liang-20260826-yue.docx) | 粵語 Word（請用呢份 rehearse） |
 | [physician-product-training-compliance.md](physician-product-training-compliance.md) | Pre-flight checklist for the training module (HKAPI/UMAO/lexicon) |
 | [physician-product-training-gaps.md](physician-product-training-gaps.md) | Gaps vs PDFs uploaded to the repo (Low-PV, year-1 PROUD-PV, safety, AMWG; do-not-use list) |
 | [physician-product-training-slides.html](physician-product-training-slides.html) | v2 slide deck for 26 Aug dry-run (keyboard ← →; DRAFT) |
