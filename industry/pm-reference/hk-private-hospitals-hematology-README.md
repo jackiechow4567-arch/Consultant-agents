@@ -36,12 +36,37 @@
 - St. Teresa's Hospital
 - Precious Blood Hospital
 
+## Opening hours (`department_opening_hours`)
+
+Both CSVs include a **`department_opening_hours`** column with published reception/clinic or lab counter hours for each haematology-related department or centre. **`opening_hours_notes`** (locations tab only) clarifies caveats such as “by appointment only”, extended lab coverage, or unpublished hours.
+
+| Site type | What the hours represent |
+|---|---|
+| Clinical haematology centres | Clinic/centre reception hours; specialist consultations are typically by appointment within these times |
+| Laboratory haematology | Lab service or specimen collection hours (may differ from clinical clinic hours) |
+| Unpublished | Row notes say to contact the department directly (e.g. Canossa lab) |
+
+**21 location rows** cover all 14 licensed private hospitals plus Adventist Medical Centre satellites and HKSH pathology lab.
+
+## Haematologists tab (20 doctors)
+
+Clinical / paediatric consultants are listed in `hk-private-hospitals-hematologists.csv`, including:
+
+- **Gleneagles HK** — 6 haematology/hemonc specialists
+- **HKSH** — 2 adult + 2 paediatric clinical; 2 pathology haematologists
+- **Union** — 2 consultants (3 practice sites between them)
+- **Adventist network** — Dr Ma (Stubbs + AMC); Dr Chan (Tsuen Wan)
+- **CUHKMC** — Dr Li Wa (in-house)
+- **Matilda** — Dr Herman Liu (honorary/visiting)
+
+Each haematologist row includes **`department_opening_hours`** aligned to their listed practice location(s).
+
 ## Data files
 
 | File | Contents |
 |---|---|
-| `hk-private-hospitals-hematology.csv` | Locations and contacts (Tab 1 source) |
-| `hk-private-hospitals-hematologists.csv` | Haematologists by hospital (Tab 2 source) |
+| `hk-private-hospitals-hematology.csv` | Locations, contacts, and department opening hours (Tab 1 source) |
+| `hk-private-hospitals-hematologists.csv` | Haematologists by hospital with department hours (Tab 2 source) |
 | `hk-private-hospitals-hematology.xlsx` | Excel workbook with both tabs |
 
 Regenerate Excel after CSV edits:

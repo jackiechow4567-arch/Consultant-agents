@@ -25,7 +25,7 @@ Original CSV includes HA visitor pages / map references — see `local-source-in
 
 ## Private hospital haematology directory
 
-- `hk-private-hospitals-hematology.csv` — all 14 licensed private hospitals; clinical vs lab haematology; locations and contacts (verified 2026-08-27)
+- `hk-private-hospitals-hematology.csv` — all 14 licensed private hospitals; clinical vs lab haematology; locations, contacts, and department opening hours (verified 2026-08-27)
 - `hk-private-hospitals-hematologists.csv` — visiting/in-house haematologists by hospital (clinical + paediatric + pathology)
 - `hk-private-hospitals-hematology.xlsx` — Excel workbook with tabs **Locations & Contacts** and **Haematologists**
 - `hk-private-hospitals-hematology-README.md` — scope definitions and refresh checklist
