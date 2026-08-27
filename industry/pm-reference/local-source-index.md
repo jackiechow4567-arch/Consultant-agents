@@ -8,6 +8,7 @@
 |------------|-----------------|
 | `HK-PI_Besremi-final.pdf` | `besremi-hk-pi-summary.md` |
 | `2023-Gisslinger.pdf`, `2023-Barbui.pdf`, + paper list | `pv-clinical-evidence.md` |
+| `2022 Verstovsek.pdf`, `2022 Edahiro.pdf`, `AMWG MPN consensus.pdf`, Gill 2020 PEG-IFNα-2A RWE, `2022 Kiladjian.pdf` | `ropeg-vs-peginterferon.md` |
 | `21st-edition_HKAPI-Code-of-Practice.pdf`, ADR docs, Cap 486 | `regulatory-compliance.md` |
 | `HADF-Drug-Formulary-Operation-Guidline-v21.4_250426.pdf`, `Executive-Digest-Issue-1-_-2026_28.pdf` | `ha-formulary-access.md` |
 | `Hospital-Address-OfficialMapLocationLink.csv` | `hk-hospitals-landscape.md` |

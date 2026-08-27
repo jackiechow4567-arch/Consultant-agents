@@ -14,6 +14,7 @@
 | File | Use when |
 |------|----------|
 | [besremi-hk-pi-summary.md](besremi-hk-pi-summary.md) | Indication, dosing, contraindications, PI-bound claims, IFN potency warning |
+| [ropeg-vs-peginterferon.md](ropeg-vs-peginterferon.md) | Claim-safe Ropeg vs pegIFN (Pegasys) differences; no IFN-to-IFN superiority |
 | [pv-clinical-evidence.md](pv-clinical-evidence.md) | PROUD-PV, Low-PV, comparative stats vs HU/phlebotomy, claim boundaries |
 | [regulatory-compliance.md](regulatory-compliance.md) | UMAO, HKAPI CoP, promo rules, hospitality, ADR reporting |
 | [ha-formulary-access.md](ha-formulary-access.md) | HADF mechanics, HA drug spend context, formulary submission logic |
