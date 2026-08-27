@@ -1,3 +1,4 @@
 # Consultant agents — local-only paths
 work-briefs/**
 !work-briefs/README.md
+__pycache__/
