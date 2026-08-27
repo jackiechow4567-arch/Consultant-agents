@@ -48,6 +48,17 @@ Both CSVs include a **`department_opening_hours`** column with published recepti
 
 **21 location rows** cover all 14 licensed private hospitals plus Adventist Medical Centre satellites and HKSH pathology lab.
 
+## Inpatient pharmacies tab (14 hospitals)
+
+`hk-private-hospitals-inpatient-pharmacy.csv` lists the **inpatient pharmacy department** for each of the 14 licensed private hospitals, including:
+
+- `inpatient_pharmacy_address_en` — full published address (hospital campus + floor/building where listed)
+- `inpatient_pharmacy_floor_location` — floor or wing within the hospital
+- `pharmacy_hours` — published counter or service hours where available
+- `notes` — e.g. internal-only pharmacy (HKSH Eastern), separate inpatient vs outpatient counters (CUHKMC, Baptist Block E 24hr)
+
+Satellite outpatient sites (Union polyclinics, Adventist Medical Centre, HKBH EKMC) are excluded — inpatient pharmacy is at the main licensed hospital campus.
+
 ## Haematologists tab (20 doctors)
 
 Clinical / paediatric consultants are listed in `hk-private-hospitals-hematologists.csv`, including:
@@ -67,7 +78,8 @@ Each haematologist row includes **`department_opening_hours`** aligned to their 
 |---|---|
 | `hk-private-hospitals-hematology.csv` | Locations, contacts, and department opening hours (Tab 1 source) |
 | `hk-private-hospitals-hematologists.csv` | Haematologists by hospital with department hours (Tab 2 source) |
-| `hk-private-hospitals-hematology.xlsx` | Excel workbook with both tabs |
+| `hk-private-hospitals-inpatient-pharmacy.csv` | Inpatient pharmacy address and contact per licensed hospital (Tab 3 source) |
+| `hk-private-hospitals-hematology.xlsx` | Excel workbook with all three tabs |
 
 Regenerate Excel after CSV edits:
 

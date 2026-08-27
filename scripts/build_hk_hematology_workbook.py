@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PM_REF = ROOT / "industry" / "pm-reference"
 LOCATIONS_CSV = PM_REF / "hk-private-hospitals-hematology.csv"
 DOCTORS_CSV = PM_REF / "hk-private-hospitals-hematologists.csv"
+PHARMACY_CSV = PM_REF / "hk-private-hospitals-inpatient-pharmacy.csv"
 OUTPUT_XLSX = PM_REF / "hk-private-hospitals-hematology.xlsx"
 
 
@@ -47,6 +48,7 @@ def write_sheet(ws, headers: list[str], rows: list[list[str]]) -> None:
 def main() -> None:
     loc_headers, loc_rows = read_csv(LOCATIONS_CSV)
     doc_headers, doc_rows = read_csv(DOCTORS_CSV)
+    pharm_headers, pharm_rows = read_csv(PHARMACY_CSV)
 
     wb = Workbook()
     ws_locations = wb.active
@@ -55,6 +57,9 @@ def main() -> None:
 
     ws_doctors = wb.create_sheet("Haematologists")
     write_sheet(ws_doctors, doc_headers, doc_rows)
+
+    ws_pharmacy = wb.create_sheet("Inpatient Pharmacies")
+    write_sheet(ws_pharmacy, pharm_headers, pharm_rows)
 
     wb.save(OUTPUT_XLSX)
     print(f"Wrote {OUTPUT_XLSX}")
