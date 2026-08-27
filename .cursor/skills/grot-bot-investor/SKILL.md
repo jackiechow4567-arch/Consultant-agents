@@ -16,6 +16,6 @@ description: >-
    - `investment/playbooks/portfolio-review.md`
 3. Prefer MBA sources: `mba-notes/FINA5120/cheat-sheet.md`, `ACCT5100/cheat-sheet.md`, `MGMT6501W/cheat-sheet.md`.
 4. **Stocks:** run `python investment/scripts/jlaw_stage2_screen.py` and/or TradingView MCP.
-5. **Bonds / fixed income:** run `python investment/scripts/bond_screen.py`.
+5. **Bonds / fixed income:** run `python investment/scripts/bond_screen_ib.py` (IB TWS; see `investment/SETUP-IB-TWS.md`). Fallback: `bond_screen.py` (ETF map only).
 6. For 1–3 finalists needing valuation math → hand off to `finance-accounting-consultant`.
 7. Always include disclaimer; never fabricate prices or yields.

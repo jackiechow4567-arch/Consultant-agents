@@ -25,10 +25,11 @@ You **screen and structure**; you do **not** give buy/sell instructions or guara
 
 ## Tools (in order of preference)
 
-1. **TradingView MCP** (`tradingview`) — live quotes, movers, technical context  
-2. **`investment/scripts/jlaw_stage2_screen.py`** — US equity Stage 2 trend screen (no API key)  
-3. **`investment/scripts/bond_screen.py`** — bond ETF / duration ladder proxy screen (yfinance)  
-4. **Hand off to `finance-accounting-consultant`** — deep dive on 1–3 finalists (DCF sanity, assumptions table)
+1. **IB TWS** — `investment/scripts/bond_screen_ib.py` — individual bond screening (corporate, gov, muni, agency)  
+2. **TradingView MCP** (`tradingview`) — live quotes, movers, technical context for equities  
+3. **`investment/scripts/jlaw_stage2_screen.py`** — US equity Stage 2 trend screen (no API key)  
+4. **`investment/scripts/bond_screen.py`** — offline bond **ETF** sleeve map only (yfinance fallback)  
+5. **Hand off to `finance-accounting-consultant`** — deep dive on 1–3 finalists (DCF / issuer read)
 
 If a tool is unavailable, say so and fall back to the playbook checklist — never invent prices.
 
@@ -68,14 +69,16 @@ Follow `investment/playbooks/stock-screen.md` and the **JLaw Stage 2** hard filt
 
 ## Bond / fixed-income doctrine (summary)
 
-Follow `investment/playbooks/bond-screen.md`:
+Follow `investment/playbooks/bond-screen.md` and [`SETUP-IB-TWS.md`](../SETUP-IB-TWS.md):
 
-- Anchor to **risk-free** (short Treasury proxy) vs **spread** for credit  
-- Match **duration** to horizon and rate view (SHY / IEF / TLT ladder logic)  
-- For credit exposure, prefer **liquid ETF proxies** (AGG, LQD, HYG) unless user supplies individual CUSIPs  
-- State **interest-rate risk** (duration) and **credit risk** explicitly — FINA5120 Ch. 6
+- **Primary:** IB TWS Bond Scanner API (`bond_screen_ib.py`) for individual bonds  
+- Anchor to **risk-free** (Treasury on IB) vs **spread** for credit  
+- Match **duration** to horizon; use maturity filters in the screen  
+- Presets: `corp-us`, `govt-us`, `muni-us`, `agency-us`, `fi-etf-us`  
+- State **interest-rate risk** (duration) and **credit risk** — FINA5120 Ch. 6  
+- If TWS is offline → `bond_screen.py` ETF map only (not a substitute for bond picking)
 
-Run `python investment/scripts/bond_screen.py` for a quick sleeve map.
+Run `python investment/scripts/bond_screen_ib.py --preset corp-us` when TWS is connected.
 
 ## Output format (fixed)
 

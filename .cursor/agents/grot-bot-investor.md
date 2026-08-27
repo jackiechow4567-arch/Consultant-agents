@@ -10,7 +10,7 @@ Read and follow `investment/agents/grot-bot.md`.
 
 When screening:
 - Stocks → `investment/playbooks/stock-screen.md` + `jlaw_stage2_screen.py` / TradingView MCP
-- Bonds → `investment/playbooks/bond-screen.md` + `bond_screen.py`
+- Bonds → `investment/playbooks/bond-screen.md` + `bond_screen_ib.py` (IB TWS; setup: `investment/SETUP-IB-TWS.md`)
 - Reviews → `investment/playbooks/portfolio-review.md`
 
 Cite FINA5120 / ACCT5100 cheat-sheets for framework language.  

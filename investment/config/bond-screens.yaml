@@ -1,0 +1,46 @@
+# IB TWS bond scanner presets for Grot Bot
+# Run `python investment/scripts/bond_screen_ib.py --dump-scanner-params` once TWS is
+# connected to discover valid locationCode / scanCode values for your TWS version.
+
+defaults:
+  host: 127.0.0.1
+  port: 7497          # 7497 = TWS paper / Gateway paper; 7496 = live
+  client_id: 71
+  timeout: 15
+  rows: 40
+
+# Sort / ranking codes mirror TWS Bond Scanner options where possible.
+# If a scan fails, run --dump-scanner-params and update scan_code below.
+presets:
+  corp-us:
+    label: US Corporate Bonds
+    instrument: BOND
+    location_code: BOND.US
+    scan_code: YIELD_TO_WORST_NEAR_TO_FAR
+    sp_rating_above: BBB
+    sp_rating_below: AAA
+    exclude_convertible: true
+
+  govt-us:
+    label: US Treasuries & Government
+    instrument: BOND
+    location_code: BOND.GOVT.US
+    scan_code: MATURITY_NEAR_TO_FAR
+
+  muni-us:
+    label: US Municipal Bonds
+    instrument: BOND
+    location_code: BOND.MUNI.US
+    scan_code: YIELD_TO_WORST_NEAR_TO_FAR
+
+  agency-us:
+    label: US Agency Bonds
+    instrument: BOND
+    location_code: BOND.AGNCY.US
+    scan_code: MATURITY_NEAR_TO_FAR
+
+  fi-etf-us:
+    label: US Fixed-Income ETFs (TWS Advanced Scanner)
+    instrument: ETF.FI.US
+    location_code: ETF.FI.US
+    scan_code: TOP_PERC_GAIN

@@ -25,7 +25,7 @@ Monthly or post-screen review. Combines equity and fixed-income sleeves.
 
 ## Review steps
 
-1. **Re-run screens** — `jlaw_stage2_screen.py` and/or `bond_screen.py` if >30 days stale  
+1. **Re-run screens** — equities: `jlaw_stage2_screen.py`; bonds: `bond_screen_ib.py` (or `bond_screen.py` if TWS offline) if >30 days stale  
 2. **Thesis audit** — mark each line Valid / Weakened / Invalid  
 3. **Risk dashboard** — beta blend, sector/factor concentration, FI duration bucket  
 4. **ACCT5100 pass** — any new red flags on held names?  

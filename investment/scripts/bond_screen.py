@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Bond / fixed-income ETF sleeve map via yfinance (no API key)."""
+"""Offline bond ETF sleeve map via yfinance (fallback when IB TWS is not running).
+
+For individual bond screening, use bond_screen_ib.py + TWS.
+See investment/SETUP-IB-TWS.md and investment/playbooks/bond-screen.md.
+"""
 
 from __future__ import annotations
 
