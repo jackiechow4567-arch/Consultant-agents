@@ -27,6 +27,14 @@ description: >-
 6. Point to role memory: `industry/role-pm.md` / `role-gm.md` / `role-clinical-pm.md`.
 7. Output in the router’s fixed format. Do not deep-analyze before sensitivity is set.
 
+## Personal investing (Grot Bot)
+
+If the task is **stock/bond screening, watchlists, or portfolio candidate review** (not corporate HQ finance):
+
+- Route to **`grot-bot-investor`** (reads `investment/agents/grot-bot.md`)
+- Support: **FA** for finalist valuation / assumptions only
+- Default sensitivity **Low** unless account-level detail is shared
+
 ## After routing
 
 Offer to continue as the primary specialist (read that agent file and proceed), or tell the user which Cursor skill to invoke next.

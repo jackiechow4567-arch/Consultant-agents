@@ -89,7 +89,16 @@ Add `cheat-sheet.md` per course when ready (PDFs stay in OneDrive).
 
 [DEVELOPMENT-PLAN-v2.md](DEVELOPMENT-PLAN-v2.md)
 
+## Grot Bot (personal investing)
+
+Stock and bond screening assistant aligned with your finance agents and FINA5120 notes.
+
+- Setup: [investment/README.md](investment/README.md)  
+- Cursor skill: `grot-bot-investor`  
+- Agent prompt: [investment/agents/grot-bot.md](investment/agents/grot-bot.md)
+
 ## Other personal skills
 
 - `deidentify-brief` — high → de-identified summary  
 - `decision-one-pager` — exec decision memo  
+- `grot-bot-investor` — equity / fixed-income screening and watchlists  
