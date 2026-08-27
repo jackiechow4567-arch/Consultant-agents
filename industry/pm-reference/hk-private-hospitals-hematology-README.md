@@ -36,6 +36,20 @@
 - St. Teresa's Hospital
 - Precious Blood Hospital
 
+## Data files
+
+| File | Contents |
+|---|---|
+| `hk-private-hospitals-hematology.csv` | Locations and contacts (Tab 1 source) |
+| `hk-private-hospitals-hematologists.csv` | Haematologists by hospital (Tab 2 source) |
+| `hk-private-hospitals-hematology.xlsx` | Excel workbook with both tabs |
+
+Regenerate Excel after CSV edits:
+
+```bash
+python3 scripts/build_hk_hematology_workbook.py
+```
+
 ## Data sources
 
 - [HK Private Hospitals Association](https://www.privatehospitals.org.hk/en/hospitals.htm) — master list of 14 licensed hospitals
