@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Japanese Listening Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #161310;
+      --bg-2: #1f1a16;
+      --ink: #f3eadf;
+      --muted: #b9a898;
+      --line: #3a322b;
+      --vermilion: #c45c3e;
+      --gold: #d4a574;
+      --ok: #7d9a6a;
+      --bad: #c45c3e;
+      --shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--ink); }
+    body {
+      font-family: "Source Serif 4", Georgia, serif;
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #2a211c 0%, transparent 55%),
+        var(--bg);
+    }
+    button, input, select, textarea {
+      font: inherit;
+    }
+    .wrap {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      align-items: flex-end;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    .seal {
+      font-family: "Noto Sans JP", sans-serif;
+      letter-spacing: 0.28em;
+      font-size: 12px;
+      color: var(--vermilion);
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 34px;
+      margin: 6px 0 0;
+      font-weight: 600;
+    }
+    .lede {
+      max-width: 36rem;
+      color: var(--muted);
+      margin: 8px 0 0;
+      line-height: 1.45;
+    }
+    .routine {
+      min-width: 260px;
+      background: var(--bg-2);
+      border: 1px solid var(--line);
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+    .routine h2 {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin: 0 0 8px;
+    }
+    .routine ol { margin: 0; padding-left: 18px; color: var(--muted); }
+    .routine li { margin: 4px 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 22px;
+    }
+    @media (max-width: 860px) {
+      header, .grid { display: block; }
+      .routine { margin-top: 16px; }
+      .list { margin-bottom: 16px; }
+    }
+    .tracks { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+    .chip, .mode, .ctrl, .primary, .ghost {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 8px 12px;
+      border-radius: 999px;
+    }
+    .chip.active, .mode.active {
+      background: var(--vermilion);
+      border-color: var(--vermilion);
+      color: #fff7f0;
+    }
+    .list {
+      background: var(--bg-2);
+      border: 1px solid var(--line);
+      max-height: 640px;
+      overflow: auto;
+    }
+    .item {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+      padding: 12px 14px;
+      cursor: pointer;
+    }
+    .item:hover { background: #2a231e; }
+    .item.active { background: #332922; box-shadow: inset 3px 0 0 var(--vermilion); }
+    .item .t { font-family: "Noto Sans JP", sans-serif; font-size: 14px; }
+    .item .s { display: block; color: var(--muted); font-size: 12px; margin-top: 3px; }
+    .item .done { color: var(--ok); float: right; font-size: 12px; }
+    .stage {
+      background: var(--bg-2);
+      border: 1px solid var(--line);
+      padding: 22px;
+      min-height: 560px;
+      box-shadow: var(--shadow);
+    }
+    .modes, .controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .jp {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 28px;
+      line-height: 1.7;
+      margin: 18px 0 8px;
+      min-height: 4.8em;
+    }
+    .jp rt { font-size: 11px; color: var(--gold); }
+    .hidden-script .jp { filter: blur(10px); user-select: none; }
+    .en, .kana { color: var(--muted); margin: 0 0 8px; }
+    .kana { font-family: "Noto Sans JP", sans-serif; }
+    audio { width: 100%; margin: 10px 0 4px; }
+    .primary {
+      background: var(--gold);
+      color: #231910;
+      border-color: var(--gold);
+      font-weight: 600;
+    }
+    textarea {
+      width: 100%;
+      min-height: 90px;
+      background: #161310;
+      color: var(--ink);
+      border: 1px solid var(--line);
+      padding: 12px;
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 18px;
+    }
+    .quiz button.choice {
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin: 8px 0;
+      padding: 12px;
+      background: #161310;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      cursor: pointer;
+    }
+    .quiz button.choice:hover { border-color: var(--gold); }
+    .quiz button.choice.correct { border-color: var(--ok); background: #24301f; }
+    .quiz button.choice.wrong { border-color: var(--bad); background: #3a1f1a; }
+    .result { margin-top: 10px; font-weight: 600; }
+    .result.ok { color: var(--ok); }
+    .result.bad { color: var(--vermilion); }
+    .progress {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    footer a { color: var(--gold); }
+    .keys { font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="seal">聴解 · Listening Lab</div>
+        <h1>Japanese Listening Lab</h1>
+        <p class="lede">Cursor Cloud Agents cannot play audio and are too slow for drills. Use this page in Chrome or Edge. Neural Japanese audio is already in the folder.</p>
+      </div>
+      <aside class="routine">
+        <h2>15-minute daily stack</h2>
+        <ol>
+          <li>8 min here: shadow, then dictation</li>
+          <li>5 min live voice: ChatGPT Voice or Gemini Live</li>
+          <li>Optional: one NHK Web Easy story</li>
+        </ol>
+      </aside>
+    </header>
+
+    <div class="tracks" id="tracks"></div>
+    <div class="grid">
+      <nav class="list" id="list" aria-label="Clips"></nav>
+      <section class="stage">
+        <div class="modes">
+          <button class="mode active" data-mode="shadow">Shadow</button>
+          <button class="mode" data-mode="dictation">Dictation</button>
+          <button class="mode" data-mode="quiz">Quiz</button>
+        </div>
+        <div class="controls">
+          <button class="primary" id="play">Play</button>
+          <button class="ctrl" id="toggleScript">Show script</button>
+          <label class="keys">Speed
+            <select id="speed">
+              <option value="0.7">0.7x</option>
+              <option value="0.85">0.85x</option>
+              <option value="1" selected>1.0x</option>
+              <option value="1.15">1.15x</option>
+            </select>
+          </label>
+        </div>
+        <audio id="player" controls></audio>
+        <p class="keys">Space replay · ← → previous / next · S toggle script</p>
+        <div id="scriptBox" class="hidden-script">
+          <div class="jp" id="jp"></div>
+          <p class="kana" id="kana"></p>
+          <p class="en" id="en"></p>
+        </div>
+        <div id="modePanel"></div>
+        <p class="progress" id="progress"></p>
+      </section>
+    </div>
+
+    <footer>
+      <p><strong>Do not use a Cursor Cloud Agent as a Japanese teacher.</strong> It has to boot a machine, cannot speak, and breaks the listen–repeat loop. For grammar/text drills, use Cursor Desktop chat with the <code>japanese-teacher</code> skill. For real conversation, use ChatGPT Advanced Voice or Gemini Live.</p>
+      <p>Authentic input: <a href="https://www3.nhk.or.jp/news/easy/" target="_blank" rel="noreferrer">NHK News Web Easy</a> · <a href="https://nhkeasier.com/" target="_blank" rel="noreferrer">NHK Easier</a> · Nihongo Con Teppei (podcast).</p>
+    </footer>
+  </div>
+  <script src="lessons.js"></script>
+  <script>
+    const TRACKS = [
+      { id: "n5", label: "N5 daily" },
+      { id: "n4", label: "N4 daily" },
+      { id: "n3", label: "N3 work" },
+      { id: "med", label: "Clinic / healthcare" },
+    ];
+    const STORE = "jp-listening-lab-v1";
+    const state = {
+      track: "n5",
+      index: 0,
+      mode: "shadow",
+      showScript: false,
+      stats: JSON.parse(localStorage.getItem(STORE) || "{}"),
+    };
+    const $ = (id) => document.getElementById(id);
+    const lessons = () => (window.LESSONS || []).filter((x) => x.track === state.track);
+    const current = () => lessons()[state.index];
+
+    function save() {
+      localStorage.setItem(STORE, JSON.stringify(state.stats));
+    }
+    function mark(kind, ok) {
+      const id = current().id;
+      state.stats[id] = state.stats[id] || { shadow: 0, dictation: 0, quiz: 0 };
+      if (ok) state.stats[id][kind] += 1;
+      save();
+      renderProgress();
+    }
+    function norm(s) {
+      return (s || "")
+        .normalize("NFKC")
+        .replace(/[。、．，,.!！?？\s　「」『』（）()]/g, "")
+        .toLowerCase();
+    }
+    function renderTracks() {
+      $("tracks").innerHTML = TRACKS.map((t) =>
+        `<button class="chip ${t.id === state.track ? "active" : ""}" data-track="${t.id}">${t.label}</button>`
+      ).join("");
+    }
+    function renderList() {
+      $("list").innerHTML = lessons().map((item, i) => {
+        const st = state.stats[item.id] || {};
+        const done = (st.dictation || 0) + (st.quiz || 0) > 0 ? "✓" : "";
+        return `<button class="item ${i === state.index ? "active" : ""}" data-i="${i}">
+          <span class="done">${done}</span>
+          <span class="t">${item.title}</span>
+          <span class="s">${item.jp.slice(0, 22)}…</span>
+        </button>`;
+      }).join("");
+    }
+    function renderScript() {
+      const item = current();
+      $("jp").innerHTML = item.ruby;
+      $("kana").textContent = item.kana;
+      $("en").textContent = item.en;
+      $("scriptBox").classList.toggle("hidden-script", !state.showScript && state.mode === "shadow");
+      $("toggleScript").textContent = state.showScript ? "Hide script" : "Show script";
+    }
+    function loadAudio() {
+      const player = $("player");
+      player.src = current().audio;
+      player.playbackRate = Number($("speed").value);
+    }
+    function renderMode() {
+      const item = current();
+      const panel = $("modePanel");
+      document.querySelectorAll(".mode").forEach((b) => b.classList.toggle("active", b.dataset.mode === state.mode));
+      if (state.mode === "shadow") {
+        panel.innerHTML = `<p class="en">Listen once with the script hidden. Shadow (speak along) on the second play. Then reveal the script.</p>
+          <button class="primary" id="markShadow">I shadowed this clip</button>`;
+        $("markShadow").onclick = () => mark("shadow", true);
+      } else if (state.mode === "dictation") {
+        panel.innerHTML = `<p class="en">Play the clip, then type what you hear in Japanese (kanji or kana).</p>
+          <textarea id="dictation" placeholder="聞いた文を書いてください"></textarea>
+          <p><button class="primary" id="checkDictation">Check</button></p>
+          <div id="dictationResult"></div>`;
+        $("checkDictation").onclick = () => {
+          const typed = norm($("dictation").value);
+          const ok = typed && (typed === norm(item.jp) || typed === norm(item.kana));
+          $("dictationResult").innerHTML = ok
+            ? `<p class="result ok">Correct. ${item.jp}</p>`
+            : `<p class="result bad">Not yet.</p><p class="kana">Kanji: ${item.jp}</p><p class="kana">Kana: ${item.kana}</p>`;
+          if (ok) {
+            state.showScript = true;
+            renderScript();
+          }
+          mark("dictation", ok);
+        };
+      } else {
+        panel.innerHTML = `<div class="quiz"><p class="en">${item.quiz.q}</p>${item.quiz.choices.map((c, i) =>
+          `<button class="choice" data-i="${i}">${c}</button>`).join("")}<div id="quizResult"></div></div>`;
+        panel.querySelectorAll(".choice").forEach((btn) => {
+          btn.onclick = () => {
+            const i = Number(btn.dataset.i);
+            const ok = i === item.quiz.answer;
+            panel.querySelectorAll(".choice").forEach((b, j) => {
+              if (j === item.quiz.answer) b.classList.add("correct");
+            });
+            if (!ok) btn.classList.add("wrong");
+            $("quizResult").innerHTML = ok
+              ? `<p class="result ok">Yes.</p>`
+              : `<p class="result bad">The answer is: ${item.quiz.choices[item.quiz.answer]}</p>`;
+            state.showScript = true;
+            renderScript();
+            mark("quiz", ok);
+          };
+        });
+      }
+    }
+    function renderProgress() {
+      const all = window.LESSONS || [];
+      const heard = all.filter((x) => (state.stats[x.id] || {}).shadow || (state.stats[x.id] || {}).dictation || (state.stats[x.id] || {}).quiz).length;
+      $("progress").textContent = `Clips touched: ${heard} / ${all.length} · this track ${lessons().length} clips`;
+    }
+    function render() {
+      renderTracks();
+      renderList();
+      renderScript();
+      renderMode();
+      renderProgress();
+      loadAudio();
+    }
+    function play() {
+      const player = $("player");
+      player.playbackRate = Number($("speed").value);
+      player.currentTime = 0;
+      player.play();
+    }
+    function move(delta) {
+      const n = lessons().length;
+      state.index = (state.index + delta + n) % n;
+      state.showScript = state.mode !== "shadow";
+      render();
+    }
+
+    document.addEventListener("click", (e) => {
+      const track = e.target.closest("[data-track]");
+      if (track) {
+        state.track = track.dataset.track;
+        state.index = 0;
+        state.showScript = false;
+        render();
+      }
+      const item = e.target.closest(".item");
+      if (item) {
+        state.index = Number(item.dataset.i);
+        state.showScript = state.mode !== "shadow";
+        render();
+      }
+      const mode = e.target.closest(".mode");
+      if (mode) {
+        state.mode = mode.dataset.mode;
+        state.showScript = state.mode !== "shadow";
+        render();
+      }
+    });
+    $("play").onclick = play;
+    $("toggleScript").onclick = () => {
+      state.showScript = !state.showScript;
+      renderScript();
+    };
+    $("speed").onchange = () => {
+      $("player").playbackRate = Number($("speed").value);
+    };
+    document.addEventListener("keydown", (e) => {
+      if (e.target.matches("textarea, input")) return;
+      if (e.code === "Space") { e.preventDefault(); play(); }
+      if (e.key === "ArrowRight") move(1);
+      if (e.key === "ArrowLeft") move(-1);
+      if (e.key === "s" || e.key === "S") {
+        state.showScript = !state.showScript;
+        renderScript();
+      }
+    });
+
+    if (!window.LESSONS) {
+      document.querySelector(".stage").innerHTML = "<p>Could not load lessons.js. Open this folder via the HTML file, and keep lessons.js and audio/ next to it.</p>";
+    } else {
+      render();
+    }
+  </script>
+</body>
+</html>

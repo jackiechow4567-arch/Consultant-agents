@@ -93,3 +93,5 @@ Add `cheat-sheet.md` per course when ready (PDFs stay in OneDrive).
 
 - `deidentify-brief` — high → de-identified summary  
 - `decision-one-pager` — exec decision memo  
+- `japanese-teacher` — fast **Desktop** Japanese text tutor (not Cloud Agents; no audio)
+- [Japanese Listening Lab](personal/japanese-listening-lab/README.md) — browser shadowing / dictation / quiz with neural Japanese audio
