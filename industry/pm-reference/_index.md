@@ -20,9 +20,11 @@
 | [hk-hospitals-landscape.md](hk-hospitals-landscape.md) | Key HK hospitals for field/access planning (no PII) |
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
 | [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
+| [vendor-ma-onboarding-pack.md](vendor-ma-onboarding-pack.md) | What to share with a market-access vendor (Wave 1 papers vs hold-until-CDA); Medical training agenda; claim-safe answers on pathway / PI / evidence / positioning / HK experience |
 
 ## Prohibitions for agents
 
 - Do not treat reference summaries as permission to invent claims — always cross-check PI + global lexicon
 - Do not quote advisory-board transcript content (not in this folder)
 - Do not paste internal pricing/PSP uptake into external tools
+- Do not email named-patient or case-level HK experience to vendors; use the Wave 1 / Wave 2 split in `vendor-ma-onboarding-pack.md`
