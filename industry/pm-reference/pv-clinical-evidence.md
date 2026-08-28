@@ -9,7 +9,7 @@
 | Hydroxyurea (HU) | **Yes, if citing named RCT** | PROUD-PV / CONTINUATION-PV |
 | Phlebotomy alone (low-risk PV) | **Yes, if citing named RCT** | Low-PV / NEJM Evidence 2023 |
 | Pegasys / other IFN / China ropeg | **No superiority claims** | No head-to-head; PI potency warning |
-| Anagrelide | **No** | No cited RCT in user's library |
+| Anagrelide | **No (PV promo)** | No PV head-to-head. SURPASS-ET vs anagrelide is **ET-only** — see `et-clinical-evidence.md`; do not import those numbers into PV materials |
 
 ## PROUD-PV / CONTINUATION-PV (Gisslinger et al., Leukemia 2023)
 
