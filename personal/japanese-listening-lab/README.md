@@ -2,17 +2,29 @@
 
 Cursor Cloud Agents are a bad Japanese teacher: they boot slowly, answer in text, and **cannot play audio**. This folder is the listening replacement.
 
-## Open it
+## Open it (no GitHub login needed)
 
-Double-click `index.html` in Chrome or Edge (Windows: the file should open in the browser). Keep `lessons.js` and `audio/` next to it.
+**Easiest:** double-click `japanese-listening-lab.html` (single file, audio already inside). Use Chrome or Edge.
 
-If scripts are blocked, from this folder:
+That one-file copy is built with:
+
+```powershell
+python generate_standalone.py
+```
+
+If you only have the folder: double-click `index.html` and keep `lessons.js` plus `audio/` next to it.
+
+If scripts are blocked:
 
 ```powershell
 python -m http.server 8765
 ```
 
 Then open `http://localhost:8765`.
+
+Do **not** use a `localhost` address from a Cursor Cloud Agent chat — that server is on the remote machine, not your PC.
+
+## What is here
 
 ## What is here
 
