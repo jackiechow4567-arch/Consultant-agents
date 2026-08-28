@@ -305,7 +305,7 @@
       $("jp").innerHTML = item.ruby;
       $("kana").textContent = item.kana;
       $("en").textContent = item.en;
-      $("scriptBox").classList.toggle("hidden-script", !state.showScript && state.mode === "shadow");
+        $("scriptBox").classList.toggle("hidden-script", !state.showScript);
       $("toggleScript").textContent = state.showScript ? "Hide script" : "Show script";
     }
     function loadAudio() {
@@ -322,7 +322,7 @@
           <button class="primary" id="markShadow">I shadowed this clip</button>`;
         $("markShadow").onclick = () => mark("shadow", true);
       } else if (state.mode === "dictation") {
-        panel.innerHTML = `<p class="en">Play the clip, then type what you hear in Japanese (kanji or kana).</p>
+        panel.innerHTML = `<p class="en">Play the clip with the script hidden, then type what you hear (kanji or kana). Punctuation is ignored.</p>
           <textarea id="dictation" placeholder="聞いた文を書いてください"></textarea>
           <p><button class="primary" id="checkDictation">Check</button></p>
           <div id="dictationResult"></div>`;
@@ -381,7 +381,7 @@
     function move(delta) {
       const n = lessons().length;
       state.index = (state.index + delta + n) % n;
-      state.showScript = state.mode !== "shadow";
+      state.showScript = false;
       render();
     }
 
@@ -396,13 +396,13 @@
       const item = e.target.closest(".item");
       if (item) {
         state.index = Number(item.dataset.i);
-        state.showScript = state.mode !== "shadow";
+        state.showScript = false;
         render();
       }
       const mode = e.target.closest(".mode");
       if (mode) {
         state.mode = mode.dataset.mode;
-        state.showScript = state.mode !== "shadow";
+        state.showScript = false;
         render();
       }
     });
