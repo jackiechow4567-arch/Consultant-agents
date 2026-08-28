@@ -69,6 +69,7 @@ SURPASS-ET and EXCEED-ET used **HIDAT 250–350–500 µg q2w**. That is the **t
 
 - SURPASS-ET enrolled sites in **Hong Kong** (public in the paper). Do not name investigators or patients in the vendor pack.
 - Local ET named-patient or trial-patient experience: **Medical, de-identified, after CDA** — same rule as PV cases.
+- **Current HK options (public):** see [`et-hk-treatment-options.md`](et-hk-treatment-options.md) — HU (General), anagrelide (Special), peginterferon alfa (Special; hepatitis PI), ruxolitinib (SFI/CCF for MF not ET), BESREMi not labelled for ET.
 - Any local ET indication or HA submission must be **pre-routed through HQ Global Medical/Regulatory**. PM does not originate ET claims.
 - Trial inspection / CAPA for SURPASS ET is a **Clinical PM** matter (`role-clinical-pm.md`) — not part of the MA vendor reading pack.
 
