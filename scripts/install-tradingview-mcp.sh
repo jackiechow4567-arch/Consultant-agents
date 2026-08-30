@@ -13,4 +13,5 @@ pip install "tradingview-assistant" "mcp[cli]>=1.12.0,<2"
 echo "Smoke test..."
 uvx --from tradingview-assistant --with "mcp[cli]>=1.12.0,<2" tradingview-mcp --help
 
-echo "OK. Restart Cursor fully, then check Settings -> Tools & MCP -> tradingview (green dot)."
+echo "OK. Open Consultant-agents/ in Cursor (File -> Open Folder), not only investment/."
+echo "Restart Cursor fully, then check Settings -> Tools & MCP -> tradingview (green dot)."
