@@ -45,7 +45,7 @@ Modes: **Shadow** (script hidden) → **Dictation** → **Quiz**. Speed 0.7x–1
 2. 5 minutes **spoken** Japanese: ChatGPT Advanced Voice or Gemini Live
 3. Optional: one story on [NHK News Web Easy](https://www3.nhk.or.jp/news/easy/)
 
-For grammar and text correction, use Cursor **Desktop** chat with the `japanese-teacher` skill. Do not launch a Cloud Agent for that.
+For daily **phone** text lessons, use xAI Grok Bot **Sensei** — paste the profile in `personal/grok-bot-sensei/`. For desktop grammar, use Cursor **Desktop** chat with the `japanese-teacher` skill. Do not launch a Cloud Agent for tutoring.
 
 ## Regenerate audio
 
