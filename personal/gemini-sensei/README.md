@@ -17,13 +17,20 @@ Gemini **cannot see this Cursor repo**. You must upload a knowledge file into th
 1. Open [Gemini Gems](https://gemini.google.com/gems/view) on your **personal** Google account.
 2. **New Gem** → Name: `Sensei`.
 3. Paste [gem-instructions.md](gem-instructions.md) into **Instructions**.
-4. Under **Knowledge**, upload [knowledge-listening-lab.md](knowledge-listening-lab.md) (the 36 clips from the Cursor listening lab). Rebuild it anytime with `python export_knowledge.py`.
+4. Under **Knowledge**, upload **all markdown files** in [upload-this/](upload-this/) (listening lab + generic clinic Japanese). Rebuild with `python pack_for_gemini.py`.
 5. Save. Text lesson: send the line in [first-message.md](first-message.md).
 6. Voice: open **this same Gem**, then **Live**. Say you want clip `n4-03` (or today's N4 track). Live follows Gem knowledge more reliably if you start from the Gem, not from a blank Gemini chat.
 
-Do **not** upload the hematology PDFs in this repo to the Sensei Gem. Those are work papers, not Japanese lessons.
+The repo has **no other Japanese textbooks**. The files added via GitHub upload are hematology PDFs and a clinic contact spreadsheet. Those do **not** go into personal Sensei.
 
-To add more of your own textbooks later: put Low-sensitivity files in `personal/japanese-lessons/` and ask Cursor to fold them into `knowledge-listening-lab.md`.
+| Repo upload | Gemini destination |
+|-------------|--------------------|
+| Listening lab + `knowledge-clinic-public-jp.md` | Personal Sensei Gem |
+| `mba-notes/` + `gem-knowledge-pack/` | Six **work** Gems (already built) |
+| Root `*.pdf` papers | Work Gem 04 / Gemini **Enterprise** only if you need them. Not Sensei. |
+| `BESREMi_Clinic_Contact_Report_Jackie.xlsx` | **Nowhere.** High. Local only. |
+
+To add real textbooks later: drop Low-sensitivity `.md` / `.txt` / `.pdf` into `personal/japanese-lessons/`, run `python pack_for_gemini.py`, then upload the new `upload-this/` files.
 
 ## Privacy
 
