@@ -36,7 +36,10 @@ This repo ships the full setup: vault content at the repo root plus Cursor integ
 git clone https://github.com/jackiechow4567-arch/Consultant-agents.git
 ```
 
-Open the cloned folder in Cursor. Skills in `.cursor/skills/` and subagents in `.cursor/agents/` load automatically for that workspace.
+In Cursor: **File → Open Folder** → select **`Consultant-agents/`** (the repo root).  
+Or open `Consultant-agents.code-workspace`.
+
+Do **not** open only `investment/`. Skills in `.cursor/skills/` and subagents in `.cursor/agents/` load from the repo root. Opening the nested folder hides the rest of the vault.
 
 **Option B — global skills only (use vault elsewhere)**
 

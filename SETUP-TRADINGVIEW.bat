@@ -8,7 +8,8 @@ echo ============================================
 echo.
 
 cd /d "%~dp0"
-echo Working folder: %CD%
+echo Working folder (repo root): %CD%
+echo Open this Consultant-agents folder in Cursor, not investment\
 echo.
 
 where uvx >nul 2>&1
@@ -30,7 +31,7 @@ echo [3/4] Writing .cursor\mcp.json ...
 if not exist ".cursor" mkdir ".cursor"
 copy /Y ".cursor\mcp.windows.json" ".cursor\mcp.json" >nul
 if errorlevel 1 (
-  echo ERROR: missing .cursor\mcp.windows.json - open this folder in Cursor from the git repo.
+  echo ERROR: missing .cursor\mcp.windows.json - open Consultant-agents\ (repo root) in Cursor.
   pause
   exit /b 1
 )
@@ -47,7 +48,7 @@ echo ============================================
 echo  DONE - finish in Cursor:
 echo ============================================
 echo  1. Open Cursor
-echo  2. File -^> Open Folder -^> select:
+echo  2. File -^> Open Folder -^> select Consultant-agents (repo root), NOT investment:
 echo     %CD%
 echo  3. Quit Cursor completely, reopen
 echo  4. Settings -^> Tools ^& MCP -^> tradingview = GREEN
