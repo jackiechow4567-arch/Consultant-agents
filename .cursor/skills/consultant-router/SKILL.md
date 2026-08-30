@@ -5,10 +5,20 @@ description: >-
   sensitivity tier, and tool (Cursor, Gemini Enterprise, Perplexity). Use when
   the user asks for a consultant, chief of staff routing, which agent to use,
   privacy/sensitivity tier, or starts a strategy, finance, operations, clinical
-  PM, product, GM, tech strategy, or geopolitics decision task.
+  PM, product, GM, tech strategy, or geopolitics decision task. Do not use for
+  Japanese teaching — that is `@japanese-teacher` / Gemini Sensei only.
 ---
 
 # Consultant Router
+
+## Japanese teaching is out of scope
+
+If the user asks for Japanese, JLPT, 日本語, Sensei, listening practice, or language drills:
+
+- Stop. Do **not** route to SM / FA / OC / PG / TG.
+- Tell them to use `@japanese-teacher`, the personal Gemini Gem **Sensei**, or `personal/japanese-listening-lab/`.
+- Do not load `personal/japanese-*` into a work consultant.
+- Do not load work files (`industry/`, `mba-notes/`, `gem-knowledge-pack/`, root PDFs, clinic contacts) into a Japanese agent.
 
 ## Instructions
 

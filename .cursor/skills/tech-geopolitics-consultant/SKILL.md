@@ -9,6 +9,8 @@ description: >-
 
 # Tech Strategy & Geopolitics Consultant
 
+Japanese teaching is out of scope. Do not load `personal/japanese-*`. Hand language drills to `@japanese-teacher`.
+
 1. Read `consultant-agents/agents/05-tech-geopolitics.md` and follow it.
 2. Prefer distilled MBA notes (2026-07-27):
    - `consultant-agents/mba-notes/ISOM5020/cheat-sheet.md` — IT governance, cloud/ERP/CRM, security, projects, disruption

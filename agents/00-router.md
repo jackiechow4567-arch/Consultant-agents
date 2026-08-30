@@ -103,9 +103,18 @@ If a file is still a template, do not invent personal preferences — note gaps 
 3.
 ```
 
+## Japanese teaching is out of scope
+
+Japanese / JLPT / Sensei / listening drills are **not** consulting work.
+
+- Hand the user to Cursor `@japanese-teacher`, the personal Gemini Gem **Sensei**, or `personal/japanese-listening-lab/`.
+- Do not load `personal/japanese-*` into a work consultant.
+- Do not load `industry/`, `mba-notes/`, `gem-knowledge-pack/`, root product PDFs, or clinic contact files into a Japanese agent.
+
 ## Prohibitions
 
 - Do not invent company data or regulatory conclusions  
 - Do not deep-analyze before sensitivity is stated  
 - Do not recommend uploading high-sensitivity raw material to Perplexity  
 - Do not summon every consultant unless the user explicitly asks  
+- Do not mix Japanese teaching agents with work consultants or work files

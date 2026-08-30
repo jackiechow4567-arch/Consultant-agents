@@ -8,6 +8,8 @@ description: >-
 
 # Operations & Clinical PM Consultant
 
+Japanese teaching is out of scope. Do not load `personal/japanese-*`. Hand language drills to `@japanese-teacher`.
+
 1. Read `consultant-agents/agents/03-operations-clinical-pm.md` and follow it.
 2. If role lens is CPM, read `consultant-agents/industry/role-clinical-pm.md` and `consultant-agents/industry/cpm-reference/_index.md` (load topic files as needed).
 3. **ISOM5700 (loaded):** Always read `consultant-agents/mba-notes/ISOM5700/cheat-sheet.md` for ops/process questions. Use `frameworks.md` for deeper structure; `career-hooks.md` for HK healthcare CPM/PM/GM applications.
