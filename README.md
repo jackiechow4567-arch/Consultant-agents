@@ -93,6 +93,11 @@ Add `cheat-sheet.md` per course when ready (PDFs stay in OneDrive).
 
 - `deidentify-brief` — high → de-identified summary  
 - `decision-one-pager` — exec decision memo  
+
+### Japanese teaching (isolated — do not mix with consultants)
+
+Japanese agents use **only** files under `personal/japanese-listening-lab/` and `personal/japanese-lessons/`. They must not load work consultants, MBA notes, product PDFs, or clinic contacts. Work consultants must not load those Japanese folders.
+
 - `japanese-teacher` — fast **Desktop** Japanese text tutor (not Cloud Agents; no audio)
 - [Japanese Listening Lab](personal/japanese-listening-lab/README.md) — browser shadowing / dictation / quiz with neural Japanese audio
 - [Grok Bot Sensei](personal/grok-bot-sensei/README.md) — paste-ready xAI Grok Bot profile for daily phone lessons

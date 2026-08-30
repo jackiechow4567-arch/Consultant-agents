@@ -9,6 +9,8 @@ description: >-
 
 # Strategy & Marketing Consultant
 
+Japanese teaching is out of scope. Do not load `personal/japanese-*`. Hand language drills to `@japanese-teacher`.
+
 1. Read `consultant-agents/agents/01-strategy-marketing.md` and follow it.
 2. If role lens is PM, read `consultant-agents/industry/role-pm.md` and `consultant-agents/industry/pm-reference/_index.md` (load topic files as needed).
 3. Prefer `mba-notes/MGMT5410`, `MARK5120`, `ECON5110` cheat-sheets when present. **All three are ready** — read relevant cheat-sheets for full strategy + marketing + economics coverage.

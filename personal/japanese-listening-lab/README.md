@@ -26,16 +26,13 @@ Do **not** use a `localhost` address from a Cursor Cloud Agent chat — that ser
 
 ## What is here
 
-## What is here
-
-36 original clips with Microsoft neural Japanese TTS (Nanami / Keita):
+Japanese listening only. The Gemini / Grok / Cursor Japanese agents use N5–N3 daily clips. They do not load work files.
 
 | Track | Use for |
 |-------|---------|
 | N5 daily | Greetings, time, shopping, commute |
 | N4 daily | Appointments, directions, bookings |
-| N3 work | Meetings, email follow-up, trips |
-| Clinic / healthcare | Generic clinic Japanese (no real names or products) |
+| N3 | Meetings, email, trips |
 
 Modes: **Shadow** (script hidden) → **Dictation** → **Quiz**. Speed 0.7x–1.15x. Progress is stored in the browser only.
 

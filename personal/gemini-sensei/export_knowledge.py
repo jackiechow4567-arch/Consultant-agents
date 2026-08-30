@@ -12,9 +12,9 @@ OUT = ROOT / "knowledge-listening-lab.md"
 TRACKS = {
     "n5": "N5 daily",
     "n4": "N4 daily",
-    "n3": "N3 work",
-    "med": "Clinic / healthcare (generic only)",
+    "n3": "N3 daily / meetings / travel",
 }
+SKIP_TRACKS = {"med"}
 
 
 def main() -> None:
@@ -24,17 +24,18 @@ def main() -> None:
         "# Jackie Japanese curriculum (from Cursor listening lab)",
         "",
         "Source: Consultant-agents `personal/japanese-listening-lab/`.",
-        "Sensitivity: Low. Original learner sentences. No real patient, physician, hospital, or product names.",
+        "Japanese teaching only. Do not mix with other agents or work files.",
         "",
         "How to teach from this file:",
         "- Recycle these sentences. Do not invent a parallel textbook.",
         "- One sitting = 2–4 clips from the same track.",
         "- For dictation, hide the English until he answers.",
-        "- Clinic track is generic medical Japanese only.",
         "",
     ]
     current = None
     for item in lessons:
+        if item["track"] in SKIP_TRACKS:
+            continue
         if item["track"] != current:
             current = item["track"]
             lines += [f"## {TRACKS.get(current, current)}", ""]
@@ -49,8 +50,9 @@ def main() -> None:
             f"- Answer: {answer}",
             "",
         ]
+    used = [x for x in lessons if x["track"] not in SKIP_TRACKS]
     OUT.write_text("\n".join(lines), encoding="utf-8")
-    print(f"wrote {OUT} ({OUT.stat().st_size} bytes, {len(lessons)} clips)")
+    print(f"wrote {OUT} ({OUT.stat().st_size} bytes, {len(used)} clips)")
 
 
 if __name__ == "__main__":

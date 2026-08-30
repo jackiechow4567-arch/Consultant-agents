@@ -1,13 +1,12 @@
 # Jackie Japanese curriculum (from Cursor listening lab)
 
 Source: Consultant-agents `personal/japanese-listening-lab/`.
-Sensitivity: Low. Original learner sentences. No real patient, physician, hospital, or product names.
+Japanese teaching only. Do not mix with other agents or work files.
 
 How to teach from this file:
 - Recycle these sentences. Do not invent a parallel textbook.
 - One sitting = 2–4 clips from the same track.
 - For dictation, hide the English until he answers.
-- Clinic track is generic medical Japanese only.
 
 ## N5 daily
 
@@ -153,7 +152,7 @@ How to teach from this file:
 - Check: What does the speaker want to do in Kyoto?
 - Answer: Visit temples
 
-## N3 work
+## N3 daily / meetings / travel
 
 ### n3-01 — Online meeting
 - Japanese: 本日の会議は三時から、オンラインで行います。資料は事前に共有します。
@@ -210,61 +209,3 @@ How to teach from this file:
 - English: Thank you for your time today. I look forward to continuing to work together.
 - Check: What is the tone of this line?
 - Answer: A closing thanks
-
-## Clinic / healthcare (generic only)
-
-### med-01 — Explain how to use
-- Japanese: 先生、本日はお薬の使い方について、簡単にご説明いたします。
-- Kana: せんせい、ほんじつはおくすりのつかいかたについて、かんたんにごせつめいいたします。
-- English: Doctor, today I will briefly explain how to use the medicine.
-- Check: What will be explained?
-- Answer: How to use the medicine
-
-### med-02 — Used in blood diseases
-- Japanese: このお薬は、血液の病気の治療に使われることがあります。
-- Kana: このおくすりは、けつえきのびょうきのちりょうにつかわれることがあります。
-- English: This medicine is sometimes used in the treatment of blood diseases.
-- Check: What kind of illness is mentioned?
-- Answer: Blood diseases
-
-### med-03 — Main side effects
-- Japanese: 主な副作用として、発熱やだるさが出ることがあります。
-- Kana: おもなふくさようとして、はつねつやだるさがでることがあります。
-- English: The main side effects can include fever and fatigue.
-- Check: Which side effects are named?
-- Answer: Fever and fatigue
-
-### med-04 — Rest after injection
-- Japanese: 注射のあと、しばらく安静にしてください。
-- Kana: ちゅうしゃのあと、しばらくあんせいにしてください。
-- English: After the injection, please rest for a while.
-- Check: What should the listener do after the injection?
-- Answer: Rest for a while
-
-### med-05 — Next visit in two weeks
-- Japanese: 次回の診察は二週間後になります。ご都合はいかがですか。
-- Kana: じかいのしんさつはにしゅうかんごになります。ごつごうはいかがですか。
-- English: The next consultation will be in two weeks. How is your schedule?
-- Check: When is the next visit?
-- Answer: In two weeks
-
-### med-06 — Results next week
-- Japanese: 検査の結果は、来週改めてご説明します。
-- Kana: けんさのけっかは、らいしゅうあらためてごせつめいします。
-- English: I will explain the test results again next week.
-- Check: When will the results be explained?
-- Answer: Next week
-
-### med-07 — Please ask anytime
-- Japanese: ご不明な点がございましたら、いつでもご質問ください。
-- Kana: ごふめいなてんがございましたら、いつでもごしつもんください。
-- English: If anything is unclear, please ask a question at any time.
-- Check: What is the listener invited to do?
-- Answer: Ask questions
-
-### med-08 — Contact if symptoms appear
-- Japanese: 安全が第一です。気になる症状があれば、すぐにご連絡ください。
-- Kana: あんぜんがだいいちです。きになるしょうじょうがあれば、すぐにごれんらくください。
-- English: Safety comes first. If any symptoms concern you, please contact us right away.
-- Check: What should you do if symptoms are worrying?
-- Answer: Contact them right away

@@ -8,6 +8,8 @@ description: >-
 
 # Product / GM Decision Consultant
 
+Japanese teaching is out of scope. Do not load `personal/japanese-*`. Hand language drills to `@japanese-teacher`.
+
 1. Read `consultant-agents/agents/04-product-gm.md` and follow it.
 2. Load `industry/role-pm.md` or `industry/role-gm.md` by role lens (prefer GM file’s biweekly HQ skeleton and tie-break when role = GM).
 3. Prefer related `mba-notes` cheat-sheets when present — **load order by question type:**

@@ -7,7 +7,7 @@ Save the process we just used as a skill called "Daily Japanese Lesson".
 
 When to use: Jackie asks for today's lesson, or the weekday 21:00 HKT routine runs.
 
-Inputs: level (default N4). Optional theme: daily / work / clinic.
+Inputs: level (default N4). Optional theme: daily / travel / shopping. Japanese lessons only — never work or clinic topics from other agents.
 
 Steps:
 1. 5 target words (kanji, kana, English).
