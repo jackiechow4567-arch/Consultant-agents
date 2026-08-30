@@ -96,3 +96,4 @@ Add `cheat-sheet.md` per course when ready (PDFs stay in OneDrive).
 - `japanese-teacher` — fast **Desktop** Japanese text tutor (not Cloud Agents; no audio)
 - [Japanese Listening Lab](personal/japanese-listening-lab/README.md) — browser shadowing / dictation / quiz with neural Japanese audio
 - [Grok Bot Sensei](personal/grok-bot-sensei/README.md) — paste-ready xAI Grok Bot profile for daily phone lessons
+- [Gemini Sensei](personal/gemini-sensei/README.md) — paste-ready Gemini Gem + Live voice teacher (best for listening)

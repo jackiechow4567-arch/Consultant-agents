@@ -2,7 +2,7 @@
 
 This is **xAI Grok Bot** (`x.ai/bot`), not Cursor Cloud Agents and not **Grot Bot** (investing).
 
-Grok Bot is the right daily tutor: it stays on your phone, keeps memory, and can post a weekday lesson. It still **cannot play audio**. Keep the [listening lab](../japanese-listening-lab/README.md) for ears.
+Grok Bot is a good **text** tutor on the phone (memory + weekday routine). It **cannot play audio**. Prefer **Gemini Live** for speaking/listening. Keep the [listening lab](../japanese-listening-lab/README.md) for dictation.
 
 ## 4-minute setup
 
@@ -19,10 +19,10 @@ Do **not** give Sensei work email, Salesforce, or IB TWS. Those stay on Grot Bot
 
 | Need | Tool |
 |------|------|
-| Daily text lesson on the phone | **Grok Bot Sensei** |
+| Daily text lesson on the phone | Grok Bot Sensei **or** Gemini Gem Sensei |
 | Fast desktop grammar drill | Cursor Desktop + `japanese-teacher` skill |
 | Listening / shadowing | `japanese-listening-lab.html` |
-| Live speaking | ChatGPT Advanced Voice or Gemini Live |
+| Live speaking / listening | **Gemini Live** (best) or ChatGPT Advanced Voice |
 | Stock/bond screens | Grot Bot (`grot-bot-investor`) |
 
 ## Docs
