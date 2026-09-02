@@ -9,7 +9,7 @@ description: >-
 # Product / GM Decision Consultant
 
 1. Read `consultant-agents/agents/04-product-gm.md` and follow it.
-2. Load `industry/role-pm.md` or `industry/role-gm.md` by role lens (prefer GM file’s biweekly HQ skeleton and tie-break when role = GM).
+2. Load `industry/role-pm.md` or `industry/role-gm.md` by role lens (prefer GM file’s biweekly HQ skeleton and tie-break when role = GM). If role = PM, also read `industry/pm-reference/_index.md` and load topic files as needed (`hk-nda-registration.md` for HK NDA / “1+” / CTD).
 3. Prefer related `mba-notes` cheat-sheets when present — **load order by question type:**
    - CEO / board / HQ decision & communication → `mba-notes/MGMT6501T/cheat-sheet.md`
    - Healthcare innovation / venture / partner bet → `mba-notes/MGMT6501W/cheat-sheet.md`

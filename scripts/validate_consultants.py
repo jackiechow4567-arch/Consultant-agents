@@ -21,6 +21,7 @@ for rel in [
     "industry/role-gm.md",
     "industry/role-clinical-pm.md",
     "industry/pm-reference/_index.md",
+    "industry/pm-reference/hk-nda-registration.md",
     "industry/cpm-reference/_index.md",
     "industry/gm-reference/_index.md",
 ]:
@@ -61,6 +62,7 @@ if g4_path.exists():
     g4 = g4_path.read_text(encoding="utf-8")
     for needle in [
         "GM ref: HK Employment Ordinance",
+        "PM ref: HK NDA / 1+ / CTD",
         "MGMT6501T",
         "role-gm",
         "Continuous contract",
@@ -73,6 +75,8 @@ if a4_path.exists():
     a4 = a4_path.read_text(encoding="utf-8")
     if "gm-reference" not in a4:
         errors.append("Agent 04 missing gm-reference wiring")
+    if "hk-nda-registration" not in a4:
+        errors.append("Agent 04 missing hk-nda-registration wiring")
 
 for pb in ["exec-comms.md", "data-story-brief.md", "decision-one-pager.md"]:
     if not (VAULT / "playbooks" / pb).exists():

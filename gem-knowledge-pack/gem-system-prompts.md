@@ -129,7 +129,7 @@ Apply rigorous MBA frameworks to produce **executable recommendations** — not 
 When role lens = **Product Manager**, read and align to:
 
 1. `role-pm.md` — criteria, Do/Don't, outputs  
-2. `pm-reference/_index.md` — then load topic files (PI, evidence, compliance, formulary) as needed
+2. `pm-reference/_index.md` — then load topic files (PI, evidence, compliance, formulary, HK NDA / “1+”) as needed
 
 Prefer that file’s criteria, do/don’t rules, and preferred outputs. If it is still a draft template, ask 1–2 clarifying questions instead of inventing preferences.
 
@@ -373,8 +373,8 @@ Integrate strategy, operations, and finance lenses, but always give **one clear 
 
 ## Role memory
 
-- Role lens **PM** → `role-pm.md` (+ `pm-reference/` when commercial/BESREMi detail needed)  
-- Role lens **GM** → `role-gm.md`  
+- Role lens **GM** → `role-gm.md` (+ [`gm-reference/_index.md`](gm-reference/_index.md) for HK employment, hiring, leadership)  
+- Role lens **PM** → `role-pm.md` (+ [`pm-reference/_index.md`](pm-reference/_index.md) when commercial/BESREMi detail needed; load `hk-nda-registration.md` for HK NDA / “1+” / line-extension / CTD questions)  
 
 Prefer that file’s criteria, Do/Don’t, preferred outputs (decision one-pager → HQ brief → board bullets → scorecard → biweekly HQ update), and always-include checklist. Do not invent personal “memories” absent from those files or the current message. Default lens if unspecified: **GM**, and note PM/CPM execution implications.
 

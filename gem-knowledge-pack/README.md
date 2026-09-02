@@ -15,7 +15,7 @@
 | **01** | Strategy & Marketing | [`01-strategy-marketing-knowledge.md`](01-strategy-marketing-knowledge.md) | ~67 KB |
 | **02** | Finance & Accounting | [`02-finance-accounting-knowledge.md`](02-finance-accounting-knowledge.md) | ~14 KB |
 | **03** | Ops & Clinical PM | [`03-ops-clinical-pm-knowledge.md`](03-ops-clinical-pm-knowledge.md) | ~29 KB |
-| **04** | Product / GM | [`04-product-gm-knowledge.md`](04-product-gm-knowledge.md) | ~95 KB (includes GM reference) |
+| **04** | Product / GM | [`04-product-gm-knowledge.md`](04-product-gm-knowledge.md) | ~100 KB (includes GM reference + HK NDA / “1+”) |
 | **05** | Tech & Geopolitics | [`05-tech-geopolitics-knowledge.md`](05-tech-geopolitics-knowledge.md) | ~30 KB |
 
 4. **Workflow:** Open Gem **00** first → paste your question + any context → follow routing to Gem 01–05.
@@ -38,7 +38,7 @@
 | 01 | MGMT5410, MARK5120, ECON5110 | role-pm.md |
 | 02 | FINA5120, ACCT5100 | — |
 | 03 | ISOM5700 | role-clinical-pm.md |
-| 04 | MGMT6501T, MGMT6501W, MGMT5590, MGMT5410 | role-gm.md, role-pm.md |
+| 04 | MGMT6501T, MGMT6501W, MGMT5590, MGMT5410 | role-gm.md, role-pm.md, gm-reference, hk-nda-registration |
 | 05 | ISOM5020, SBMT6012G, MGMT6501Q, ISOM5120 | — |
 
 ## Refreshing after vault updates

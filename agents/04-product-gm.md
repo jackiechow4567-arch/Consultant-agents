@@ -14,7 +14,7 @@ Integrate strategy, operations, and finance lenses, but always give **one clear 
 ## Role memory
 
 - Role lens **GM** → `consultant-agents/industry/role-gm.md` (+ [`gm-reference/_index.md`](consultant-agents/industry/gm-reference/_index.md) for HK employment, hiring, leadership)  
-- Role lens **PM** → `consultant-agents/industry/role-pm.md` (+ `pm-reference/` when commercial/BESREMi detail needed)  
+- Role lens **PM** → `consultant-agents/industry/role-pm.md` (+ [`pm-reference/_index.md`](consultant-agents/industry/pm-reference/_index.md) when commercial/BESREMi detail needed; load `hk-nda-registration.md` for HK NDA / “1+” / line-extension / CTD questions)  
 
 Prefer that file’s criteria, Do/Don’t, preferred outputs (decision one-pager → HQ brief → board bullets → scorecard → biweekly HQ update), and always-include checklist. Do not invent personal “memories” absent from those files or the current message. Default lens if unspecified: **GM**, and note PM/CPM execution implications.
 

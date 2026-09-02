@@ -1,7 +1,7 @@
 # Gem 01 — Strategy & Marketing Knowledge Pack
 
-> Generated 2026-07-28 12:02 for Gemini Gem Knowledge upload.
-> Rebuilt: 2026-07-28 12:02 · Run `python build.py` after vault or gm-reference updates.
+> Generated 2026-09-02 06:43 for Gemini Gem Knowledge upload.
+> Rebuilt: 2026-09-02 06:43 · Run `python build.py` after vault or gm-reference updates.
 > Paste the matching system instruction from `gem-system-prompts.md`.
 
 Prefer these MBA cheat sheets over generic recall. Role memory when lens = PM.
@@ -159,6 +159,7 @@ Prefer these MBA cheat sheets over generic recall. Role memory when lens = PM.
 - **ET regional prevalence (future market-sizing)** — track Taiwan/regional epidemiology as forward-looking input only; not for current EVC modeling
 - **Global lexicon updates** — any harmonized messaging revision requiring re-clearance of existing HK materials
 - **HKAPI Code / UMAO regulatory changes** — hospitality limits, promotional item rules, advertising ordinance amendments
+- **HK NDA / “1+” (from 31 Mar 2026)** — abridged vs verification vs primary; Pre-NDA meetings; 150/100 WD stop-clock; NDA-2B if a new indication (e.g. ET/MF) is ever localised — see `pm-reference/hk-nda-registration.md`
 - **Competitor formulary listing status** — HU generics, ruxolitinib, other PV/MPN cytoreductives gaining or losing HA formulary standing
 
 ## Sensitivity notes
@@ -175,7 +176,7 @@ Prefer these MBA cheat sheets over generic recall. Role memory when lens = PM.
 
 - **Last distilled:** 2026-07-27
 - **Source:** Forward capture via Cursor interview (not full Perplexity Space export)
-- **Reference library:** `pm-reference/_index.md` (distilled from Space PDFs/CSVs in Downloads)
+- **Reference library:** `pm-reference/_index.md` (distilled Space notes + in-repo HK NDA / “1+” / CTD PDFs under `pm-reference/source/`)
 - **High-sensitivity originals:** indexed in `work-briefs/pm/README.md` — not copied into reference summaries
 
 
