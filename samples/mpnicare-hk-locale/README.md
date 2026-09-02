@@ -70,7 +70,7 @@ The live `/en` locale currently:
 - Empties the three article columns
 - Still cites Taiwan PDPA Articles 3, 10 and 11
 
-Suggested overlay: Home, Hematology, Health information, Lifestyle, Patient education, Useful links; WHO/ASH disease names (myeloproliferative neoplasm, polycythemia vera, essential thrombocythemia); original articles kept with a “Content from another region” label.
+Suggested overlay: the **same seven top-level items as Chinese** (Home, About MPN, Patient education, Hematology, Health information, Lifestyle, Useful links). Hide 新網頁, the extra 關於 items, Search, and the Wix More overflow. Translate every dropdown line. Keep WHO/ASH disease names. Keep original articles with a “Content from another region” label. Put LINE in its own footer column so it does not cover the privacy text.
 
 | File | Contents |
 |---|---|

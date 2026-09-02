@@ -105,7 +105,28 @@ def build_change_log():
     para(doc, "不要把現有 /en Google 翻譯原樣上線。機器翻譯已出現臨床錯誤（把「原發性血小板過多症」譯成 thrombocytopenia「血小板過低」；把「病友故事」譯成 myelopathy「脊髓病」），亦把「血腫專欄」譯成 Hematoma（血腫／瘀傷）。")
     para(doc, "建議：用人工修訂的英文介面用語覆蓋現有字串；文章欄顯示中文原文＋「Content from another region」標示。日後如需英文全文，只挑重點文章交專業醫學翻譯，不要整站機翻。")
 
-    heading(doc, "2. 必須改掉的錯誤（臨床／品牌）", 1)
+    heading(doc, "2. 選單必須與中文版同一結構", 1)
+    para(doc, "中文版頂層只有 7 項：首頁、關於MPN▾、衛教專區▾、血腫專欄、健康照護、品味生活、友善連結。英文版多了「新網頁」（報名系統）、兩個「關於」、搜尋結果，標籤又較長，Wix 才出現 More，More 裡再堆兩個中文「關於」。")
+    add_table(
+        doc,
+        ["中文版（準則）", "現有 /en（不要保留）", "建議英文"],
+        [
+            ["首頁", "front page", "Home"],
+            ["（無此項）", "新網頁 → /en/報名系統", "刪除，不要出現在選單"],
+            ["關於MPN▾（5 個中文下拉）", "關於MPN（下拉仍全中文）", "About MPN▾ + 5 個英文下拉"],
+            ["衛教專區▾（4 個中文下拉）", "關於 + 副本 副本 衛教手冊…", "Patient education▾ + 4 個英文下拉"],
+            ["血腫專欄", "Hematoma column", "Hematology"],
+            ["健康照護", "health care", "Health information"],
+            ["品味生活", "Lifestyle", "Lifestyle"],
+            ["友善連結", "關於（連到 about-4）", "Useful links"],
+            ["（條款只在頁尾）", "關於（連到 about-5 條款）", "刪除選單項；條款留在頁尾"],
+            ["（無搜尋項）", "搜尋結果 + More", "刪除"],
+        ],
+        [5.5, 6.5, 5.0],
+    )
+    para(doc, "Wix 操作：英文語系隱藏未對應中文選單的頁；關閉自動加入新頁；選單列不要用 More 溢出。頁尾 LINE 與私隱／Cookies 分兩欄，不要用會重疊的絕對定位。")
+
+    heading(doc, "3. 必須改掉的錯誤（臨床／品牌）", 1)
     add_table(
         doc,
         ["頁面", "現有 /en（Google 翻譯）", "建議英文", "為何要改"],
@@ -130,17 +151,23 @@ def build_change_log():
             ["條款", "PharmaEssence / PharmaEssential / PharmaEs / PharmaWorld / Yaohua Pharmaceutical", "PharmaEssentia（首次可加 藥華醫藥）", "公司名被機翻拆壞。"],
             ["條款", "Article 3 / 10 / 11 of the Personal Data Protection Act", "按香港《個人資料（私隱）條例》（第486章）重寫", "與香港中文版同一法律問題。"],
             ["三欄文章", "No posts published in this language yet", "顯示原文＋地區標示", "不要清空欄目。"],
+            ["頂層選單", "新網頁（連到報名系統）", "刪除。中文版沒有此項", "Wix 多語系把未上架頁加進英文選單。"],
+            ["頂層選單", "兩個額外「關於」（友善連結／條款）", "刪除。條款只放頁尾；友善連結用 Useful links", "More 裡出現兩個關於，即因此。"],
+            ["頂層選單", "搜尋結果 + More", "刪除。中文版沒有搜尋項；More 是溢出選單", "英文標籤較長，Wix 把多出的項推進 More。"],
+            ["關於MPN 下拉", "血液數據怎麼看／什麼是MPN？／真性紅血球增生症…（全中文）", "How to read blood results / What is MPN? / Polycythemia vera (PV) / Essential thrombocythemia (ET) / Primary myelofibrosis (PMF)", "下拉必須與中文版同一 5 項，並譯成英文。"],
+            ["衛教下拉（現標成「關於」）", "副本 副本 衛教手冊／副本 衛教手冊／副本 認識紅血球增多症", "Patient education▾：Myeloproliferative neoplasms / Understanding polycythemia vera / Understanding essential thrombocythemia / Patient stories", "清掉 Wix「副本」頁名；不要把衛教專區譯成 About。"],
+            ["頁尾排版", "LINE 歡迎句與 cookies／私隱政策重疊", "LINE 改短句並獨立一欄：Official MPN LINE / Latest updates", "英文比中文長，Wix 絕對定位會撞字。"],
         ],
         [2.6, 4.6, 4.4, 5.4],
     )
 
-    heading(doc, "3. 首頁建議英文（可直接貼上 Wix）", 1)
+    heading(doc, "4. 首頁建議英文（可直接貼上 Wix）", 1)
     para(doc, "This is a patient education website on myeloproliferative neoplasms (MPN).", bold=True)
     para(doc, "MPN is a bone marrow disease caused by genetic mutations in hematopoietic stem cells, leading to abnormal overproduction of blood cells. Symptoms are often nonspecific, but over time the disease can cause serious — even life-threatening — complications. For this reason it is sometimes called a silent killer.")
     para(doc, "Here you can find information about MPN, treatment updates, and care guidance to help you understand the condition more clearly.")
     para(doc, "現有英文單張申請句已通順，建議保留：An English version of the patient education leaflet is available. Please complete the form below, and we will send you a digital copy via email.")
 
-    heading(doc, "4. 關於MPN 建議英文", 1)
+    heading(doc, "5. 關於MPN 建議英文", 1)
     para(doc, "What is MPN?")
     para(doc, "MPN stands for myeloproliferative neoplasm. It is a blood cancer in which abnormal hematopoietic stem cells in the bone marrow cause abnormal blood counts. Most patients have a known driver mutation, such as JAK2, CALR, or MPL. The three most common MPNs are:")
     para(doc, "1. Polycythemia vera (PV): mainly overproduction of red blood cells, often with elevated platelets and white blood cells.")
@@ -148,26 +175,26 @@ def build_change_log():
     para(doc, "3. Primary myelofibrosis (PMF): overgrowth of fibroblasts in the bone marrow, which prevents normal blood-cell production. It is divided into prefibrotic PMF (pre-PMF) and overt PMF.")
     para(doc, "Learn more about MPN")
 
-    heading(doc, "5. 頁尾／選單建議", 1)
+    heading(doc, "6. 頁尾／選單建議", 1)
     add_table(
         doc,
         ["位置", "現有 /en", "建議"],
         [
             ["最新文章", "Latest articles", "Latest articles（可保留）"],
-            ["LINE", "Join the official MPN Line account / We will provide you with the latest information.", "Add the official MPN LINE account / We will send you the latest updates."],
+            ["LINE", "Join the official MPN Line account / We will provide you with the latest information.（與私隱政策重疊）", "Official MPN LINE / Latest updates（獨立右欄，不要蓋住條款）"],
             ["Cookies", "…cookie policy terms set out on our legal and privacy pages.", "This website uses cookies to provide a better experience. By continuing, you agree to our cookie policy."],
             ["友善連結機構名", "Taiwan Myeloproliferative Tumor Care Association", "Taiwan Myeloproliferative Neoplasm Care Association（或保留該會官方英文名）"],
         ],
         [4.0, 7.0, 6.0],
     )
 
-    heading(doc, "6. 不要改的範圍", 1)
+    heading(doc, "7. 不要改的範圍", 1)
     para(doc, "• 三欄文章正文、藥名、劑量、研究數據、醫院及產品名稱：不要用 Google 翻譯改寫。")
     para(doc, "• 版面、分欄、顏色、LINE 頁尾位置。")
     para(doc, "• 病人教育專區：只改分類名稱，不加地區橫幅（與香港中文版相同）。")
     para(doc, "• 不加 BESREMi 或其他新產品聲稱。")
 
-    heading(doc, "7. 審閱負責人", 1)
+    heading(doc, "8. 審閱負責人", 1)
     add_table(
         doc,
         ["項目", "負責人", "待決"],
