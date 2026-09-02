@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MPNicare｜香港中文版互動樣本</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal: #b8e0e0;
+      --teal-deep: #8fcbcb;
+      --hero: #eaf2f5;
+      --seafoam: #cde6e0;
+      --ink: #2b2b2b;
+      --muted: #5b5b5b;
+      --pink: #d81b60;
+      --pink-bg: #f7c6d8;
+      --coral: #c45c54;
+      --chip: #9eb8c8;
+      --green: #1a6d18;
+      --line: #06c755;
+      --white: #fff;
+      --card: #fff;
+      --warn: #8a5a12;
+      --warn-bg: #fff4dc;
+      --tag: #0b6e6e;
+      --tag-bg: #dff4f1;
+      --shadow: 0 10px 28px rgba(32, 64, 64, .12);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Noto Sans TC", "PingFang HK", "Microsoft JhengHei", sans-serif;
+      color: var(--ink);
+      background: var(--teal);
+      min-height: 100vh;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+
+    .sample-bar {
+      background: #12353a;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 10px 24px;
+      font-size: 13px;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .sample-bar strong { color: #9ef0e4; }
+    .sample-bar .actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .sample-bar button, .ghost {
+      border: 0;
+      background: #1f5c63;
+      color: #fff;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 12px;
+    }
+    .sample-bar button.active { background: #d81b60; }
+
+    header.site {
+      background: var(--teal);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 20px 8px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-width: 180px;
+      cursor: pointer;
+    }
+    .logo img { height: 52px; width: auto; }
+    nav.main {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      flex: 1;
+      flex-wrap: nowrap;
+      min-width: 0;
+    }
+    .nav-item {
+      position: relative;
+      background: none;
+      border: 0;
+      padding: 10px 10px;
+      font-size: 15px;
+      color: #333;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    html[data-locale="en"] .nav-item { font-size: 13px; padding: 10px 7px; }
+    .nav-item.home-active {
+      background: var(--pink-bg);
+      color: var(--pink);
+      font-weight: 700;
+    }
+    .nav-item:hover { background: rgba(255,255,255,.45); }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      min-width: 280px;
+      box-shadow: var(--shadow);
+      border-radius: 10px;
+      padding: 8px;
+      z-index: 20;
+      white-space: normal;
+    }
+    html[data-locale="en"] .dropdown { min-width: 300px; }
+    .has-drop:hover .dropdown, .has-drop:focus-within .dropdown { display: block; }
+    .dropdown a, .dropdown button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: 0;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .dropdown a:hover, .dropdown button:hover { background: var(--hero); }
+
+    .lang {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      margin-left: auto;
+    }
+    .lang button {
+      border: 1px solid #7aabb0;
+      background: rgba(255,255,255,.55);
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+    .lang button.on {
+      background: #12353a;
+      color: #fff;
+      border-color: #12353a;
+    }
+
+    main { background: var(--hero); min-height: 520px; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 48px 24px 64px; }
+
+    .hero-copy { text-align: center; max-width: 880px; margin: 0 auto; }
+    .hero-copy p { font-size: 22px; line-height: 1.85; margin: 0 0 22px; }
+    .en-note { color: #c0392b; font-size: 18px; font-weight: 500; }
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--coral);
+      color: #fff;
+      border: 0;
+      border-radius: 28px;
+      padding: 12px 22px;
+      font-size: 16px;
+      margin-top: 8px;
+    }
+
+    .latest {
+      background: var(--teal);
+      padding: 48px 24px 28px;
+    }
+    .latest h2 { text-align: center; font-size: 42px; margin: 0 0 22px; font-weight: 700; }
+    .chips { display: flex; justify-content: center; gap: 18px; margin-bottom: 28px; flex-wrap: wrap; }
+    .chip {
+      background: var(--chip);
+      color: #fff;
+      border: 0;
+      border-radius: 999px;
+      padding: 8px 22px;
+      font-size: 16px;
+    }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; max-width: 1120px; margin: 0 auto; }
+    .card {
+      background: var(--card);
+      border-radius: 4px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+      cursor: pointer;
+      min-height: 430px;
+    }
+    .card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+    .card .body { padding: 16px 18px 22px; }
+    .meta { color: #888; font-size: 13px; margin-bottom: 8px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .card h3 { font-size: 22px; line-height: 1.4; margin: 0 0 10px; }
+    .card p { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 0; }
+
+    .banner {
+      max-width: 1120px;
+      margin: 0 auto 18px;
+      background: #f7f7f7;
+      border-left: 3px solid #9eb8c8;
+      color: #555;
+      padding: 8px 14px;
+      font-size: 14px;
+      line-height: 1.6;
+      display: none;
+    }
+    html[data-locale="zh-HK"] .banner.regional,
+    html[data-locale="en"] .banner.regional { display: block; }
+    .banner b { font-weight: 700; margin-right: 6px; }
+    .tag {
+      display: none;
+      background: var(--tag-bg);
+      color: var(--tag);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: .02em;
+    }
+    html[data-locale="zh-HK"] .tag,
+    html[data-locale="en"] .tag { display: inline-flex; }
+    .cat-name { color: #c45c54; font-weight: 700; font-size: 13px; }
+    .article-flag {
+      display: none;
+      color: var(--tag);
+      font-size: 14px;
+      margin: 6px 0 16px;
+      font-weight: 600;
+    }
+    html[data-locale="zh-HK"] .article-flag,
+    html[data-locale="en"] .article-flag { display: block; }
+
+    .scene {
+      background: var(--teal);
+      text-align: center;
+      padding: 0 0 8px;
+    }
+    .scene img { width: min(920px, 92%); height: auto; }
+
+    footer.site { background: var(--seafoam); padding: 28px 24px 40px; }
+    .foot-grid {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+      gap: 32px;
+      align-items: start;
+    }
+    .pec { height: 22px; }
+    .legal { font-size: 12px; line-height: 1.8; color: #444; max-width: 100%; }
+    .legal a { text-decoration: underline; }
+    .line-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      text-align: right;
+      max-width: 280px;
+    }
+    .line-btn {
+      background: var(--line);
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      padding: 12px 18px;
+      font-weight: 700;
+      font-size: 18px;
+      white-space: nowrap;
+    }
+    .line-copy { font-weight: 700; font-size: 16px; line-height: 1.45; max-width: 100%; }
+
+    .page-title { font-size: 40px; margin: 0 0 18px; text-align: center; }
+    .prose { max-width: 820px; margin: 0 auto; font-size: 18px; line-height: 1.9; }
+    .prose h2 { font-size: 24px; margin: 28px 0 8px; }
+    .edu-grid, .link-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; max-width: 900px; margin: 24px auto 0; }
+    .edu-card, .link-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      min-height: 180px;
+    }
+    .edu-card .cover {
+      height: 150px;
+      display: flex;
+      align-items: flex-end;
+      padding: 14px;
+      color: #fff;
+      font-weight: 700;
+      background: linear-gradient(160deg, #6aa7c7, #2d6a88);
+    }
+    .edu-card:nth-child(2) .cover { background: linear-gradient(160deg, #e39b63, #c45c54); }
+    .edu-card:nth-child(3) .cover { background: linear-gradient(160deg, #7bc3a5, #2f7a62); }
+    .edu-card:nth-child(4) .cover { background: linear-gradient(160deg, #c9a0d8, #7a4e92); }
+    .edu-card .label, .link-card { padding: 14px 16px; font-size: 18px; font-weight: 700; }
+    .link-card a { color: #0b5f8a; }
+
+    .article .kicker { color: var(--coral); font-weight: 700; margin-bottom: 8px; }
+    .article h1 { font-size: 32px; line-height: 1.4; margin: 0 0 8px; }
+    .article .byline { color: #777; margin-bottom: 18px; }
+    .article .bodycopy { background: #fff; padding: 28px; border-radius: 12px; }
+
+    .matrix { width: 100%; border-collapse: collapse; background: #fff; font-size: 14px; }
+    .matrix th, .matrix td { border: 1px solid #d7e6e6; padding: 10px; vertical-align: top; }
+    .matrix th { background: #12353a; color: #fff; }
+    .matrix tr:nth-child(even) { background: #f4fbfb; }
+    .old { color: #a33; text-decoration: line-through; }
+    .new { color: #0b6e3f; font-weight: 700; }
+
+    @media (max-width: 900px) {
+      .cards, .edu-grid, .foot-grid, .link-list { grid-template-columns: 1fr; }
+      .hero-copy p { font-size: 18px; }
+      header.site { flex-wrap: wrap; }
+      nav.main { flex-wrap: wrap; }
+      .foot-grid { grid-template-columns: 1fr; }
+      .line-box { align-items: flex-start; text-align: left; max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sample-bar">
+    <div>樣本：英文選單與中文版同一組 7 項（刪「新網頁」、多餘「關於」、More）。下拉改英文。LINE 與私隱政策分欄，不再重疊。</div>
+    <div class="actions">
+      <button type="button" data-go="matrix">用字對照</button>
+      <button type="button" data-go="home">返回首頁</button>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="logo" data-go="home">
+      <img src="https://static.wixstatic.com/media/85270a_b63b64c651c347c4bcbff1bbda779006~mv2.png/v1/fill/w_196,h_136,al_c,q_85,usm_0.66_1.00_0.01/好醫相髓.png" alt="MPNicare 好醫相髓" />
+    </div>
+    <nav class="main" id="nav"></nav>
+    <div class="lang" aria-label="語言">
+      <button type="button" id="btn-tw" class="on">中文</button>
+      <button type="button" id="btn-hk">中文（香港）</button>
+      <button type="button" id="btn-en">English</button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <section class="scene">
+    <img src="https://static.wixstatic.com/media/85270a_0af9115ccf274f9087fd5c64730c8412~mv2.jpg/v1/fill/w_1132,h_379,al_c,q_85,usm_0.66_1.00_0.01/%E7%99%BD%E5%A4%A9-01.jpg" alt="" />
+  </section>
+
+  <footer class="site">
+    <div class="foot-grid">
+      <div>
+        <img class="pec" src="https://static.wixstatic.com/media/85705e_61d00682fabe486086902982412e5009~mv2.png/v1/fill/w_260,h_46,al_c,q_85/260530-PEC-VIS-V1100-6.png" alt="PharmaEssentia" />
+        <p><a href="#" data-go="terms" id="termsLink"></a></p>
+        <p>© 2020 PharmaEssentia. All Rights Reserved.</p>
+        <p class="legal" id="cookieText"></p>
+        <p class="legal" id="ipText"></p>
+      </div>
+      <div class="line-box">
+        <button class="line-btn" type="button" id="lineBtn">LINE 加入好友</button>
+        <div class="line-copy" id="lineText"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const I18N = {
+      "zh-TW": {
+        home: "首頁",
+        about: "關於MPN▾",
+        edu: "衛教專區▾",
+        medical: "血腫專欄",
+        health: "健康照護",
+        lifeMenu: "品味生活",
+        lifeTitle: "生活品味",
+        links: "友善連結",
+        terms: "使用條款與隱私權政策",
+        hero1: "這裡是骨髓增生性腫瘤(Myeloproliferative neoplasm, MPN)疾病衛教網站！",
+        hero2: "MPN是一種因造血幹細胞基因突變而導致血球異常增生的骨髓疾病，臨床症狀大多不具特異性，但罹病多時易引發嚴重併發症甚至危及生命，因此又被視為健康的沉默殺手。",
+        hero3: "您可以透過此網站取得MPN相關的疾病資訊、治療新知及照護建議，幫助您對MPN有更深入的了解。",
+        latest: "最新文章",
+        line: "加入MPN官方line帳號\n將提供最新資訊給您",
+        cookie: "為提供您最佳的服務，本網站會使用Cookies，繼續使用本網站即表示您同意Cookies政策條款。",
+        ip: "如要轉載使用，應事先經本網站或其權利人之合法授權，不得擅自重製、傳輸、改作、編輯或以其他任何形式、基於任何目的加以使用。為了尊重授權使用之智慧財產權，非本網站所有之資訊，本網站附原始來源出處，如需引用該等資料，利用人應自行與該權利人接洽。",
+        aboutH: "關於MPN",
+        aboutLead: "什麼是MPN?",
+        aboutBody: "MPN 中文學名為：骨髓增生性腫瘤，是骨髓中造血幹細胞不正常，導致血球數異常的血液腫瘤。大部分的病人帶有已知的基因突變，例如：JAK2、CALR、MPL。常見的MPN疾病有以下三種：",
+        pv: "1.真性紅血球增多症(PV)：主要是紅血球增生，但也有血小板與白血球增多的問題。",
+        et: "2.原發性血小板過多症(ET)：主要是血小板增生。",
+        pmf: "3.原發性骨髓纖維化症(PMF)：主要是骨髓內的纖維母細胞增生，導致其他血球無法正常製造。又分為：骨髓纖維化早前期(pre-PMF) 及骨髓纖維化明顯期(overt PMF)。",
+        more: "按我了解更多MPN",
+        eduH: "衛教專區",
+        edu1: "骨髓增生性腫瘤",
+        edu2: "認識紅血球增生症",
+        edu3: "認識原發性血小板過多症",
+        edu4: "有愛相髓：走過疾病，走進希望",
+        aboutBlood: "血液數據怎麼看",
+        aboutWhat: "什麼是MPN？",
+        aboutPV: "真性紅血球增多症(PV)",
+        aboutET: "原發性血小板過多症(ET)",
+        aboutPMF: "原發性骨髓纖維化(PMF)",
+        bloodH: "血液數據怎麼看",
+        bloodBody: "此頁解說常見血液檢查數值（例如紅血球、白血球、血小板、血比容）。樣本只示範選單結構，內文維持原文教育用途。",
+        catBannerTitle: "",
+        catBanner: "",
+        articleFlag: "",
+        cardTag: "其他地區內容",
+        lineBtn: "LINE 加入好友",
+        linksNote: "此頁用字未見必須修改。現有其他地區機構連結可保留；如日後新增香港機構，加在現有列表即可。"
+      },
+      "zh-HK": {
+        home: "首頁",
+        about: "關於MPN▾",
+        edu: "病人教育專區▾",
+        medical: "血液腫瘤專欄",
+        health: "健康資訊",
+        lifeMenu: "品味生活",
+        lifeTitle: "品味生活",
+        links: "友善連結",
+        terms: "使用條款與私隱政策",
+        hero1: "這裡是骨髓增生性腫瘤(Myeloproliferative neoplasm, MPN)疾病衛教網站！",
+        hero2: "MPN是一種因造血幹細胞基因突變而導致血球異常增生的骨髓疾病，臨床症狀大多不具特異性，但罹病多時易引發嚴重併發症甚至危及生命，因此又被視為健康的沉默殺手。",
+        hero3: "您可以透過此網站取得MPN相關的疾病資訊、治療新知及照護建議，幫助您對MPN有更深入的了解。",
+        latest: "最新文章",
+        line: "加入MPN官方line賬號\n將提供最新資料給您",
+        cookie: "為提供您最佳的服務，本網站會使用Cookies，繼續使用本網站即表示您同意Cookies政策條款。",
+        ip: "如要轉載使用，應事先經本網站或其權利人之合法授權，不得擅自重製、傳輸、改作、編輯或以其他任何形式、基於任何目的加以使用。為了尊重授權使用之知識產權，非本網站所有之資料，本網站附原始來源出處，如需引用該等資料，利用人應自行與該權利人接洽。",
+        aboutH: "關於MPN",
+        aboutLead: "什麼是MPN?",
+        aboutBody: "MPN 中文學名為：骨髓增生性腫瘤，是骨髓中造血幹細胞不正常，導致血球數異常的血液腫瘤。大部分的病人帶有已知的基因突變，例如：JAK2、CALR、MPL。常見的MPN疾病有以下三種：",
+        pv: "1.真性紅血球增多症(PV)：主要是紅血球增生，但也有血小板與白血球增多的問題。",
+        et: "2.原發性血小板過多症(ET)：主要是血小板增生。",
+        pmf: "3.原發性骨髓纖維化症(PMF)：主要是骨髓內的纖維母細胞增生，導致其他血球無法正常製造。又分為：骨髓纖維化早前期(pre-PMF) 及骨髓纖維化明顯期(overt PMF)。",
+        more: "按此了解更多MPN",
+        eduH: "病人教育專區",
+        edu1: "骨髓增生性腫瘤",
+        edu2: "認識紅血球增多症",
+        edu3: "認識原發性血小板過多症",
+        edu4: "病友故事集",
+        aboutBlood: "血液數據怎麼看",
+        aboutWhat: "什麼是MPN？",
+        aboutPV: "真性紅血球增多症(PV)",
+        aboutET: "原發性血小板過多症(ET)",
+        aboutPMF: "原發性骨髓纖維化(PMF)",
+        bloodH: "血液數據怎麼看",
+        bloodBody: "此頁解說常見血液檢查數值（例如紅血球、白血球、血小板、血比容）。樣本只示範選單結構，內文維持原文教育用途。",
+        catBannerTitle: "其他地區內容提示",
+        catBanner: "本欄文章由香港以外地區的團隊或醫護專業人員提供，內容未必適用於香港，僅供一般參考。",
+        articleFlag: "其他地區內容｜原文保留，內容未必適用於香港。",
+        cardTag: "其他地區內容",
+        lineBtn: "LINE 加入好友",
+        linksNote: "此頁用字未見必須修改。現有其他地區機構連結可保留；如日後新增香港機構，加在現有列表即可。"
+      },
+      en: {
+        home: "Home",
+        about: "About MPN▾",
+        edu: "Patient education▾",
+        medical: "Hematology",
+        health: "Health information",
+        lifeMenu: "Lifestyle",
+        lifeTitle: "Lifestyle",
+        links: "Useful links",
+        terms: "Terms of use and privacy policy",
+        hero1: "This is a patient education website on myeloproliferative neoplasms (MPN).",
+        hero2: "MPN is a bone marrow disease caused by genetic mutations in hematopoietic stem cells, leading to abnormal overproduction of blood cells. Symptoms are often nonspecific, but over time the disease can cause serious — even life-threatening — complications. For this reason it is sometimes called a silent killer.",
+        hero3: "Here you can find information about MPN, treatment updates, and care guidance to help you understand the condition more clearly.",
+        latest: "Latest articles",
+        line: "Official MPN LINE\nLatest updates",
+        cookie: "This website uses cookies to provide a better experience. By continuing, you agree to our cookie policy.",
+        ip: "Reproduction or reuse requires prior authorisation from this website or the rights holder. Do not copy, transmit, adapt, edit, or otherwise use the content without permission. For material not owned by this site, the original source is credited; please contact the rights holder directly if you wish to reuse it.",
+        aboutH: "About MPN",
+        aboutLead: "What is MPN?",
+        aboutBody: "MPN stands for myeloproliferative neoplasm. It is a blood cancer in which abnormal hematopoietic stem cells in the bone marrow cause abnormal blood counts. Most patients have a known driver mutation, such as JAK2, CALR, or MPL. The three most common MPNs are:",
+        pv: "1. Polycythemia vera (PV): mainly overproduction of red blood cells, often with elevated platelets and white blood cells.",
+        et: "2. Essential thrombocythemia (ET): mainly overproduction of platelets.",
+        pmf: "3. Primary myelofibrosis (PMF): overgrowth of fibroblasts in the bone marrow, which prevents normal blood-cell production. It is divided into prefibrotic PMF (pre-PMF) and overt PMF.",
+        more: "Learn more about MPN",
+        eduH: "Patient education",
+        edu1: "Myeloproliferative neoplasms",
+        edu2: "Understanding polycythemia vera",
+        edu3: "Understanding essential thrombocythemia",
+        edu4: "Patient stories",
+        aboutBlood: "How to read blood results",
+        aboutWhat: "What is MPN?",
+        aboutPV: "Polycythemia vera (PV)",
+        aboutET: "Essential thrombocythemia (ET)",
+        aboutPMF: "Primary myelofibrosis (PMF)",
+        bloodH: "How to read blood results",
+        bloodBody: "This page explains common blood-test values (red cells, white cells, platelets, haematocrit). The sample shows the menu only; clinical article bodies stay in the original language.",
+        catBannerTitle: "Content from another region",
+        catBanner: "Articles in this section are written by teams or healthcare professionals outside Hong Kong. They may not apply in Hong Kong and are for general information only.",
+        articleFlag: "Content from another region | Original text kept. This content may not apply in Hong Kong.",
+        cardTag: "Content from another region",
+        lineBtn: "Add on LINE",
+        linksNote: "Organisation names below keep their official titles. Add Hong Kong organisations later as extra rows; no wording change is required on this page."
+      }
+    };
+
+    const ARTICLES = {
+      medical: {
+        date: "3小時前",
+        title: "原發性血小板增多症的治療新視野：從預防血栓到全面長期疾病管理",
+        excerpt: "曾任高雄榮民總醫院血腫科主任 現任澳門仁伯爵綜合醫院血液腫瘤科 余明生醫師 許多原發性血小板增多症（Essential Thrombocythemia, ET）病人可能會問：「是不是只要把血小板降下來就好了？」",
+        img: "https://static.wixstatic.com/media/85705e_1d85c8e482ad4c97837a12e8d49fb82b~mv2.jpg/v1/fill/w_734,h_320,fp_0.50_0.50,q_80/85705e_1d85c8e482ad4c97837a12e8d49fb82b~mv2.jpg",
+        author: "余明生醫師　曾任高雄榮民總醫院血腫科主任　現任澳門仁伯爵綜合醫院血液腫瘤科",
+        body: `<p>許多原發性血小板增多症（Essential Thrombocythemia, ET）病人可能會問：「是不是只要把血小板降下來就好了？」其實，現代 ET 治療的核心並不光是追求某一個血小板數字，而是降低血栓與出血風險、改善症狀，並兼顧長期治療安全性與生活品質。</p>
+        <p>隨著我們對 ET 的理解增加，醫學界也開始思考更長遠的問題：除了控制血球之外，治療是否可能進一步影響造成疾病的異常造血細胞，甚至改變疾病的自然病程？這就是目前所謂的「疾病修飾（disease modification）」概念。</p>
+        <p><b>ET 不只是血小板升高</b><br>ET 是一種慢性骨髓增生性腫瘤（Myeloproliferative Neoplasm, MPN），多數病友具有 JAK2、CALR 或 MPL 等驅動基因變化。因此，ET 並非單純的血小板過高，而是異常造血細胞長期增生所造成的慢性疾病。除了血栓與出血之外，少部分病友長期可能進展為骨髓纖維化或急性骨髓性白血病。</p>`
+      },
+      health: {
+        date: "7月16日",
+        title: "別讓「皮蛇」纏上身！守護免疫防線，骨髓增生性腫瘤病友的帶狀皰疹全方位防護指南",
+        excerpt: "杏倫皮膚科院長 林軼群院長 在骨髓增生性腫瘤（MPN）的長期治療路徑中，病友們往往將重心放在血球計數的穩定與脾臟體積的縮減。",
+        img: "https://static.wixstatic.com/media/85705e_c6d03b2f29454d16af1822a01f3cb1f0~mv2.jpg/v1/fill/w_734,h_320,fp_0.50_0.50,q_80/85705e_c6d03b2f29454d16af1822a01f3cb1f0~mv2.jpg",
+        author: "杏倫皮膚科院長　林軼群院長",
+        body: `<p>在骨髓增生性腫瘤（MPN）的長期治療路徑中，病友們往往將重心放在血球計數的穩定與脾臟體積的縮減。然而，對於真性紅血球增多症（PV）、原發性血小板增多症（ET）及骨髓纖維化（MF）的病友而言，另一個不容忽視的併發症—帶狀皰疹（Herpes Zoster，俗稱「皮蛇」），正悄悄威脅著大家的生活品質。</p>
+        <p>本文將帶領病友深入了解 MPN 與帶狀皰疹的關係，並著重於「早期發現」與「精準預防」的關鍵策略。</p>`
+      },
+      life: {
+        date: "2025年6月12日",
+        title: "從大阪看世界，從世博看台灣",
+        excerpt: "作者：陳愫儀 世界博覽會又稱萬國博覽會，1951年在英國初次舉辦，自2000年起每5年舉行一次。",
+        img: "https://static.wixstatic.com/media/85270a_4f96420fb0574e72aa83623ac12876ee~mv2.jpg/v1/fill/w_734,h_320,fp_0.50_0.50,q_80/85270a_4f96420fb0574e72aa83623ac12876ee~mv2.jpg",
+        author: "作者：陳愫儀",
+        body: `<p>世界博覽會又稱萬國博覽會，1951年在英國初次舉辦，自2000年起每5年舉行一次，由國際展覽局（BIE）的157個會員國提出申請主辦，主辦的目的在於向全世界展現各自國家的文化與特色。</p>
+        <p>1971年，台灣以中華民國的名義第一次參加匈牙利布達佩斯世界博覽會……</p>`
+      }
+    };
+
+    const TERMS_TW = `
+      <h1 class="page-title">使用條款與隱私權政策</h1>
+      <div class="prose">
+        <p>本網站由PharmaEssentia藥華醫藥股份有限公司（以下簡稱藥華醫藥）所建立經營。我們重視每一個使用者所享有的服務，特此說明本網站的使用政策，以保障您的權益，請您細讀本使用條款的內容：</p>
+        <h2>一般性資訊</h2>
+        <p>對於本站所含資訊的存取或使用，您受下列條款和條件以及所有適用法律所規範。經由存取或瀏覽本網站，您無限制或無條件地接受這些條款和條件，並確認其將取代您和藥華藥之間其他任何的協議。</p>
+        <h2>醫療性資訊</h2>
+        <p>本網站之醫療相關資訊僅供科學資訊或衛教目的使用。由於醫療科技的發展日新月異，本公司不能保證資訊百份百正確無誤。任何疾病治療、醫學問題及專業知識，應諮詢您的專業醫師及護理人員，本站不提供任何診斷、用藥或是治療的建議。</p>
+        <h2>隱私權政策</h2>
+        <p>您可以行使個人資料保護法第三條規定之請求查詢、製給複製本、補充或更正、停止蒐集、處理及利用、刪除您的個資等權利。本公司得依個人資料保護法第10條、第11條規定，執行業務所必須及法定保存期間等考量，決定是否接受申請。</p>
+        <p>當藥華醫藥接收到個人辨識資訊時，我們可能將資訊用於合理商業用途，如同非網際網路事業的使用方式。</p>
+        <p>請聯絡我們： sales@museshc.com</p>
+      </div>`;
+
+    const TERMS_HK = `
+      <h1 class="page-title">使用條款與私隱政策</h1>
+      <div class="prose">
+        <p>本網站由 PharmaEssentia 藥華醫藥股份有限公司（以下簡稱「藥華醫藥」）所建立經營。我們重視每一位使用者所享有的服務，特此說明本網站的使用政策，以保障您的權益，請您細讀本使用條款的內容。</p>
+        <p style="background:#fff4dc;padding:12px 14px;border-radius:8px;font-size:15px;"><b>法律審閱稿。</b> 此段已按香港《個人資料（私隱）條例》（第486章）重寫，不能只替換法規名稱而保留台灣法第3、10、11條。上線前須經法律／合規審閱。</p>
+        <h2>一般性資料</h2>
+        <p>對於本站所載資料的取覽或使用，您受下列條款和條件以及所有適用法律所規範。經由取覽或瀏覽本網站，您無限制或無條件地接受這些條款和條件，並確認其將取代您和藥華醫藥之間其他任何的協議。</p>
+        <h2>醫療資料</h2>
+        <p>本網站之醫療相關資料僅供科學資料或病人教育目的使用。由於醫療科技的發展日新月異，本公司無法保證資料百分百正確無誤。任何疾病治療、醫學問題及專業知識，應諮詢您的專業醫生及護士，本站不提供任何診斷、用藥或治療建議。</p>
+        <h2>私隱政策（香港）</h2>
+        <p>藥華醫藥尊重訪客私隱，並按香港法例第486章《個人資料（私隱）條例》（下稱「《條例》」）的保障資料原則處理個人資料。</p>
+        <p>您可向本公司提出：</p>
+        <ul>
+          <li>查閱資料要求（Data Access Request，《條例》第18條）；以及</li>
+          <li>改正資料要求（Data Correction Request，《條例》第22條）。</li>
+        </ul>
+        <p>本公司會在《條例》規定的時限內回覆。在第20條所列明的情況下，本公司可拒絕依從查閱資料要求；在第24條所列明的情況下，可拒絕依從改正資料要求。本公司亦可按第28條收取不超逾直接成本的合理費用。</p>
+        <p>《條例》並無賦予與台灣《個人資料保護法》第3條相同的概括「刪除／停止處理」法定權利。本公司仍會按保障資料第2原則（保留期間）及第3原則（使用限制），在不再需要時刪除或停止使用個人資料。您亦可要求退出通訊服務。是否接納個別申請，須視乎執行業務所必須、法定保存期間及《條例》准許的豁免而定。</p>
+        <h2>個人資料的使用</h2>
+        <p>個人資料包括您的姓名、地址、電話號碼、電郵地址，或其他可合理用於識別您的資料。藥華醫藥只在您自願提供時收集該等資料。</p>
+        <p>當藥華醫藥收到個人資料時，我們可能將資料用於合理商業用途，如同非網上業務的使用方式。例如，我們可能透過通訊軟件或定期訊息聯絡您。為提供準確服務，收集的資料亦可能用於編製統計及分析，但不會公開可識別個別人士的資料。</p>
+        <p>您的資料可能傳送至位於其他國家的藥華醫藥附屬機構處理。藥華醫藥不會出售或出租個人資料，除非事先通知並取得您的明確同意。</p>
+        <p>請聯絡我們： sales@museshc.com</p>
+      </div>`;
+
+    const TERMS_EN = `
+      <h1 class="page-title">Terms of use and privacy policy</h1>
+      <div class="prose">
+        <p>This website is operated by PharmaEssentia Corporation (「藥華醫藥」; referred to below as “PharmaEssentia”). Please read these terms carefully. They explain how you may use the site and how we handle personal data.</p>
+        <p style="background:#fff4dc;padding:12px 14px;border-radius:8px;font-size:15px;"><b>Legal review draft.</b> This English page must not keep Taiwan’s Personal Data Protection Act Articles 3, 10 and 11, and must not use machine-translated company names (PharmaEssence, PharmaEssential, PharmaWorld, Yaohua). Rewrite under Hong Kong’s Personal Data (Privacy) Ordinance (Cap. 486). Do not publish until Legal signs off.</p>
+        <h2>General information</h2>
+        <p>Your access to or use of this website is governed by these terms and all applicable laws. By browsing the site, you accept these terms without limitation. They replace any earlier agreement between you and PharmaEssentia about this website.</p>
+        <h2>Medical information</h2>
+        <p>Medical content on this website is for scientific information and patient education only. Medical science changes quickly, so we cannot guarantee that every item is complete or current. For diagnosis, medication, or treatment, please consult your doctor or nurse. This website does not give medical advice.</p>
+        <h2>Privacy policy (Hong Kong)</h2>
+        <p>PharmaEssentia respects your privacy and handles personal data in line with the data protection principles of the Personal Data (Privacy) Ordinance (Cap. 486) (the “Ordinance”).</p>
+        <p>You may make:</p>
+        <ul>
+          <li>a data access request (section 18 of the Ordinance); and</li>
+          <li>a data correction request (section 22 of the Ordinance).</li>
+        </ul>
+        <p>We will reply within the time allowed by the Ordinance. We may refuse a data access request in the cases listed in section 20, or a correction request in the cases listed in section 24. We may charge a fee that does not exceed the direct cost of complying (section 28).</p>
+        <p>The Ordinance does not give the same general statutory right to deletion or to stop processing as Article 3 of Taiwan’s Personal Data Protection Act. We still delete or stop using personal data when we no longer need it, in line with Data Protection Principles 2 (retention) and 3 (use limitation). You may also ask to opt out of communications. Whether we can accept a request depends on what we need to run the service, any statutory retention period, and exemptions allowed by the Ordinance.</p>
+        <h2>How we use personal data</h2>
+        <p>Personal data includes your name, address, telephone number, email address, or other information that can reasonably identify you. We collect it only when you choose to give it to us.</p>
+        <p>We may use it for reasonable business purposes, in the same way as for non-online activities — for example, to contact you by messaging apps or periodic updates. We may also use it for statistics and analysis, without publishing information that identifies you.</p>
+        <p>Your data may be sent to PharmaEssentia affiliates in other countries for processing. We will not sell or rent personal data unless we tell you first and you give clear consent.</p>
+        <p>Please contact us: sales@museshc.com</p>
+      </div>`;
+
+    const params = new URLSearchParams(location.search);
+    const allowed = ["zh-TW", "zh-HK", "en"];
+    let locale = allowed.includes(params.get("lang")) ? params.get("lang") : "zh-TW";
+    let page = params.get("page") || "home";
+    let currentArticle = params.get("article") || "medical";
+
+    const $ = (id) => document.getElementById(id);
+    const t = () => I18N[locale];
+
+    function navHtml() {
+      const x = t();
+      return `
+        <button class="nav-item ${page === "home" ? "home-active" : ""}" data-go="home">${x.home}</button>
+        <div class="nav-item has-drop">
+          ${x.about}
+          <div class="dropdown">
+            <button data-go="blood">${x.aboutBlood}</button>
+            <button data-go="about">${x.aboutWhat}</button>
+            <button data-go="about">${x.aboutPV}</button>
+            <button data-go="about">${x.aboutET}</button>
+            <button data-go="about">${x.aboutPMF}</button>
+          </div>
+        </div>
+        <div class="nav-item has-drop">
+          ${x.edu}
+          <div class="dropdown">
+            <button data-go="edu">${x.edu1}</button>
+            <button data-go="edu">${x.edu2}</button>
+            <button data-go="edu">${x.edu3}</button>
+            <button data-go="edu">${x.edu4}</button>
+          </div>
+        </div>
+        <button class="nav-item" data-go="medical">${x.medical}</button>
+        <button class="nav-item" data-go="health">${x.health}</button>
+        <button class="nav-item" data-go="life">${x.lifeMenu}</button>
+        <button class="nav-item" data-go="links">${x.links}</button>
+      `;
+    }
+
+    function catName(key) {
+      const x = t();
+      return key === "medical" ? x.medical : key === "health" ? x.health : x.lifeTitle;
+    }
+
+    function card(key) {
+      const a = ARTICLES[key];
+      return `<article class="card" data-article="${key}">
+        <img src="${a.img}" alt="">
+        <div class="body">
+          <div class="meta"><span class="cat-name">${catName(key)}</span><span class="tag">${t().cardTag}</span><span>${a.date}</span></div>
+          <h3>${a.title}</h3>
+          <p>${a.excerpt}</p>
+        </div>
+      </article>`;
+    }
+
+    function listPage(key) {
+      const x = t();
+      const title = catName(key);
+      const extras = extraCards(key);
+      return `<section class="wrap">
+        <h1 class="page-title">${title}</h1>
+        <div class="banner regional"><b>${x.catBannerTitle}</b>${x.catBanner}</div>
+        <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">${card(key)}${extras}</div>
+      </section>`;
+    }
+
+    function extraCards(key) {
+      if (key === "medical") {
+        return `<article class="card" data-article="medical">
+          <img src="${ARTICLES.medical.img}" alt="">
+          <div class="body">
+            <div class="meta"><span class="cat-name">${catName("medical")}</span><span class="tag">${t().cardTag}</span><span>讀畢需時 5 分鐘</span></div>
+            <h3>骨髓增生性腫瘤（MPN）常見治療方法</h3>
+            <p>余明生醫師 曾任高雄榮民總醫院血腫科主任……</p>
+          </div>
+        </article>`;
+      }
+      if (key === "health") {
+        return `<article class="card" data-article="health">
+          <img src="${ARTICLES.health.img}" alt="">
+          <div class="body">
+            <div class="meta"><span class="cat-name">${catName("health")}</span><span class="tag">${t().cardTag}</span><span>讀畢需時 2 分鐘</span></div>
+            <h3>從心找到力量</h3>
+            <p>朱怡苹臨床心理師 伴旅心理治療所／初色心理治療所……</p>
+          </div>
+        </article>`;
+      }
+      return `<article class="card" data-article="life">
+        <img src="${ARTICLES.life.img}" alt="">
+        <div class="body">
+            <div class="meta"><span class="cat-name">${catName("life")}</span><span class="tag">${t().cardTag}</span><span>讀畢需時 3 分鐘</span></div>
+          <h3>欲賞鬱金香花宴，庫肯霍夫花園見</h3>
+          <p>鬱金香與荷蘭有著非比尋常的愛恨情仇……</p>
+        </div>
+      </article>`;
+    }
+
+    function render() {
+      const x = t();
+      document.documentElement.lang = locale === "en" ? "en" : locale === "zh-HK" ? "zh-HK" : "zh-Hant";
+      document.documentElement.dataset.locale = locale;
+      document.title = locale === "en" ? "MPNicare | English overlay sample" : "MPNicare｜香港中文版互動樣本";
+      $("nav").innerHTML = navHtml();
+      $("termsLink").textContent = x.terms;
+      $("cookieText").textContent = x.cookie;
+      $("ipText").textContent = x.ip;
+      $("lineText").innerHTML = x.line.replace("\n", "<br>");
+      $("lineBtn").textContent = x.lineBtn;
+      $("btn-tw").classList.toggle("on", locale === "zh-TW");
+      $("btn-hk").classList.toggle("on", locale === "zh-HK");
+      $("btn-en").classList.toggle("on", locale === "en");
+
+      const app = $("app");
+      if (page === "home") {
+        app.innerHTML = `
+          <section class="wrap">
+            <div class="hero-copy">
+              <p>${x.hero1}</p>
+              <p>${x.hero2}</p>
+              <p>${x.hero3}</p>
+              <p class="en-note">An English version of the patient education leaflet is available. Please complete the form below, and we will send you a digital copy via email.</p>
+              <button class="cta" type="button">Complete the Form →</button>
+            </div>
+          </section>
+          <section class="latest">
+            <h2>${x.latest}</h2>
+            <div class="chips">
+              <button class="chip" data-go="medical">${x.medical}</button>
+              <button class="chip" data-go="health">${x.health}</button>
+              <button class="chip" data-go="life">${x.lifeTitle}</button>
+            </div>
+            <div class="cards">
+              ${card("medical")}${card("health")}${card("life")}
+            </div>
+          </section>`;
+      } else if (page === "blood") {
+        app.innerHTML = `<section class="wrap">
+          <h1 class="page-title">${x.bloodH}</h1>
+          <div class="prose"><p>${x.bloodBody}</p></div>
+        </section>`;
+      } else if (page === "about") {
+        app.innerHTML = `<section class="wrap">
+          <h1 class="page-title">${x.aboutH}</h1>
+          <div class="prose">
+            <h2>${x.aboutLead}</h2>
+            <p>${x.aboutBody}</p>
+            <p>${x.pv}</p>
+            <p>${x.et}</p>
+            <p>${x.pmf}</p>
+            <p><button class="cta" data-go="edu">${x.more}</button></p>
+          </div>
+        </section>`;
+      } else if (page === "edu") {
+        app.innerHTML = `<section class="wrap">
+          <h1 class="page-title">${x.eduH}</h1>
+          <div class="edu-grid">
+            <div class="edu-card"><div class="cover">${x.edu1}</div><div class="label">${x.edu1}</div></div>
+            <div class="edu-card"><div class="cover">${x.edu2}</div><div class="label">${x.edu2}</div></div>
+            <div class="edu-card"><div class="cover">${x.edu3}</div><div class="label">${x.edu3}</div></div>
+            <div class="edu-card"><div class="cover">${x.edu4}</div><div class="label">${x.edu4}</div></div>
+          </div>
+        </section>`;
+      } else if (page === "medical" || page === "health" || page === "life") {
+        app.innerHTML = listPage(page);
+      } else if (page === "links") {
+        app.innerHTML = `<section class="wrap">
+          <h1 class="page-title">${x.links}</h1>
+          <p class="prose" style="text-align:center;color:#555;">${x.linksNote}</p>
+          <div class="link-list">
+            <div class="link-card"><a href="http://www.tbmt.org.tw/" target="_blank" rel="noopener">中華民國血液及骨髓移植學會</a></div>
+            <div class="link-card"><a href="https://www.tmpna.tw/" target="_blank" rel="noopener">台灣骨髓增生性腫瘤關懷協會</a></div>
+            <div class="link-card"><a href="http://www.hematology.org.tw/web2/project/" target="_blank" rel="noopener">中華民國血液病學會</a></div>
+          </div>
+        </section>`;
+      } else if (page === "terms") {
+        app.innerHTML = `<section class="wrap">${locale === "zh-HK" ? TERMS_HK : locale === "en" ? TERMS_EN : TERMS_TW}</section>`;
+      } else if (page === "article") {
+        const a = ARTICLES[currentArticle];
+        const cat = currentArticle === "medical" ? x.medical : currentArticle === "health" ? x.health : x.lifeTitle;
+        app.innerHTML = `<section class="wrap article">
+          <div class="kicker">${cat} <span class="tag">${x.cardTag}</span></div>
+          <h1>${a.title}</h1>
+          <div class="article-flag">${x.articleFlag}</div>
+          <div class="byline">${a.author}　｜　${a.date}</div>
+          <div class="bodycopy">${a.body}</div>
+        </section>`;
+      } else if (page === "matrix") {
+        app.innerHTML = renderMatrix();
+      }
+      bind();
+    }
+
+    function renderMatrix() {
+      const hkRows = [
+        ["全站選單", "血腫專欄", "血液腫瘤專欄", "只改選單；文章正文不改"],
+        ["全站選單", "健康照護", "健康資訊", "只改選單；文章正文不改"],
+        ["選單／標題", "品味生活／生活品味", "統一「品味生活」", "消除字序不一致"],
+        ["頁尾", "智慧財產權／資訊／帳號", "知識產權／資料／賬號", "全站共用頁尾"],
+        ["首頁", "並發症（現行香港機翻）", "併發症", "醫學正字"],
+        ["關於MPN", "紅細胞／白細胞／按我了解更多", "紅血球／白血球／按此了解更多", "避免機翻把原文改差"],
+        ["病人教育專區", "衛教專區／紅細胞增多症／有愛相髓…", "病人教育專區／紅血球增多症／病友故事集", "只改分類名稱"],
+        ["血腫／健康／品味 欄目頁", "（無標示）", "標題下加一欄「其他地區內容提示」", "不套用到病人教育專區"],
+        ["該三欄文章卡／文章頁", "（無標示）", "分類名旁標籤；標題下加一行", "正文、藥物、數據不改"],
+        ["使用條款", "個資／個資法3、10、11條／百份百／藥華藥", "個人資料／《私隱》條例重寫／百分百／藥華醫藥", "法律稿，須合規審閱"]
+      ];
+      const enRows = [
+        ["Menu", "front page / Hematoma column / health care", "Home / Hematology / Health information", "Hematoma is a bruise, not 血液腫瘤"],
+        ["About MPN", "myeloproliferative tumor / Erythrocytosis vera / Click me", "myeloproliferative neoplasm / polycythemia vera / Learn more", "Use WHO / ASH names"],
+        ["Patient education", "thrombocytopenia / Patients with Myelopathy", "essential thrombocythemia / Patient stories", "Those two machine translations are clinically wrong"],
+        ["Terms", "Medical sexual information / PharmaEssence / Taiwan PDPA Arts 3, 10, 11", "Medical information / PharmaEssentia / Cap. 486 rewrite", "Legal review draft"],
+        ["Three columns", "No posts published in this language yet", "Keep original articles + region label", "Do not empty the rails"],
+        ["Top menu", "新網頁 / two extra 關於 / 搜尋結果 / More", "Same 7 items as Chinese; hide extras", "新網頁 is not on the Chinese site"],
+        ["About MPN dropdown", "血液數據怎麼看 / 什麼是MPN？ / Chinese disease names", "How to read blood results / What is MPN? / PV, ET, PMF", "Do not leave Chinese inside English menus"],
+        ["Education dropdown", "關於 + 副本 副本 衛教手冊", "Patient education + 4 English titles", "關於 was a mistranslated 衛教專區"],
+        ["Footer", "LINE text overlaps privacy / cookies", "LINE stacked on the right; legal text in its own column", "Wix absolute boxes collide in English"]
+      ];
+      return `<section class="wrap">
+        <h1 class="page-title">${locale === "en" ? "Wording overlay (sample)" : "用字對照（樣本）"}</h1>
+        <p class="prose" style="margin-bottom:18px;">${locale === "en"
+          ? "Use the language buttons to switch chrome copy. Article bodies in Hematology / Health information / Lifestyle stay in the original Chinese."
+          : "點右上角語言後，固定頁用字會即時切換；三欄文章正文維持原文。"}</p>
+        <h2>${locale === "en" ? "Hong Kong Chinese" : "香港中文"}</h2>
+        <table class="matrix">
+          <tr><th>位置</th><th>現行／原文</th><th>香港版</th><th>說明</th></tr>
+          ${hkRows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td class="new">${r[2]}</td><td>${r[3]}</td></tr>`).join("")}
+        </table>
+        <h2 style="margin-top:28px;">${locale === "en" ? "English (replace live Google Translate)" : "英文（取代現有 Google 翻譯）"}</h2>
+        <table class="matrix">
+          <tr><th>Place</th><th>Live /en today</th><th>Suggested English</th><th>Why</th></tr>
+          ${enRows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td class="new">${r[2]}</td><td>${r[3]}</td></tr>`).join("")}
+        </table>
+      </section>`;
+    }
+
+    function bind() {
+      document.querySelectorAll("[data-go]").forEach((el) => {
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          page = el.getAttribute("data-go");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          render();
+        });
+      });
+      document.querySelectorAll("[data-article]").forEach((el) => {
+        el.addEventListener("click", () => {
+          currentArticle = el.getAttribute("data-article");
+          page = "article";
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          render();
+        });
+      });
+    }
+
+    function syncUrl() {
+      const next = new URL(location.href);
+      next.searchParams.set("lang", locale);
+      next.searchParams.set("page", page);
+      if (page === "article") next.searchParams.set("article", currentArticle);
+      else next.searchParams.delete("article");
+      history.replaceState(null, "", next);
+    }
+    $("btn-tw").onclick = () => { locale = "zh-TW"; render(); };
+    $("btn-hk").onclick = () => { locale = "zh-HK"; render(); };
+    $("btn-en").onclick = () => { locale = "en"; render(); };
+    const _render = render;
+    render = function wrappedRender() { syncUrl(); _render(); };
+    _render();
+  </script>
+</body>
+</html>
