@@ -1,6 +1,6 @@
 # HK regulatory & compliance reference (PM)
 
-> Distilled from HKAPI CoP (21st ed.), UMAO, PPB ADR guidance, Code of Professional Conduct, NDA registration notes. Full PDFs indexed in `local-source-index.md`.
+> Distilled from HKAPI CoP (21st ed.), UMAO, PPB ADR guidance, Code of Professional Conduct. NDA / “1+” / CTD detail lives in [`hk-nda-registration.md`](hk-nda-registration.md). Full PDFs indexed in `local-source-index.md`.
 
 ## Primary instruments
 
@@ -9,7 +9,7 @@
 | **HKAPI Code of Practice** | `21st-edition_HKAPI-Code-of-Practice.pdf` | Promo materials, HCP interactions, hospitality, PSP, symposia |
 | **UMAO** | Cap. 231 (Undesirable Medical Advertisements Ordinance) | All HCP/patient-facing advertising |
 | **ADR reporting** | `PPB_Guidance_ADR_Industry_en.pdf`, `ADR_Report_Form_en.pdf` | Suspected ADR timelines; Drug Office online system |
-| **PPB NDA guidance** | `guidance_notes_registration-of-nda.pdf` (v1.0, Mar 2026) | Registration context for imported products |
+| **PPB NDA guidance** | `source/guidance_notes_nda_31_Mar_2026.pdf` (v1.0, 31 Mar 2026) | Registration / line-extension / “1+” — see [`hk-nda-registration.md`](hk-nda-registration.md) |
 | **Personal Data (Privacy)** | Cap. 486 | ADR reports and HCP/patient data handling |
 | **Pharmacy & Poisons Code of Professional Conduct** | `Code-of-Professional-Conduct.pdf` | Professional standards |
 

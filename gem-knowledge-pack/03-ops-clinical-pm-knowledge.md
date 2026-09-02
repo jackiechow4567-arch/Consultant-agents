@@ -1,7 +1,7 @@
 # Gem 03 — Ops & Clinical PM Knowledge Pack
 
-> Generated 2026-07-28 12:02 for Gemini Gem Knowledge upload.
-> Rebuilt: 2026-07-28 12:02 · Run `python build.py` after vault or gm-reference updates.
+> Generated 2026-09-02 06:43 for Gemini Gem Knowledge upload.
+> Rebuilt: 2026-09-02 06:43 · Run `python build.py` after vault or gm-reference updates.
 > Paste the matching system instruction from `gem-system-prompts.md`.
 
 ISOM5700 ops frameworks + role-clinical-pm criteria.

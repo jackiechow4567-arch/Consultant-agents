@@ -15,7 +15,7 @@ Apply rigorous MBA frameworks to produce **executable recommendations** — not 
 When role lens = **Product Manager**, read and align to:
 
 1. `consultant-agents/industry/role-pm.md` — criteria, Do/Don't, outputs  
-2. `consultant-agents/industry/pm-reference/_index.md` — then load topic files (PI, evidence, compliance, formulary) as needed
+2. `consultant-agents/industry/pm-reference/_index.md` — then load topic files (PI, evidence, compliance, formulary, HK NDA / “1+”) as needed
 
 Prefer that file’s criteria, do/don’t rules, and preferred outputs. If it is still a draft template, ask 1–2 clarifying questions instead of inventing preferences.
 

@@ -78,10 +78,11 @@ def main() -> None:
     pack(
         "04-product-gm-knowledge.md",
         "Gem 04 — Product / GM Knowledge Pack",
-        "CEO / healthcare innovation / ethics / strategy + GM and PM role memory + HK GM reference.",
+        "CEO / healthcare innovation / ethics / strategy + GM and PM role memory + HK GM reference + HK NDA / 1+.",
         [
             ("Role: General Manager", IND / "role-gm.md"),
             ("Role: Product Manager", IND / "role-pm.md"),
+            ("PM ref: HK NDA / 1+ / CTD", IND / "pm-reference" / "hk-nda-registration.md"),
             ("GM ref: HK Employment Ordinance", gm / "hk-employment-ordinance.md"),
             ("GM ref: HK employment contracts", gm / "hk-employment-contracts.md"),
             ("GM ref: Employee handbook patterns", gm / "employee-handbook-hk-patterns.md"),

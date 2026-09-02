@@ -2,7 +2,7 @@
 
 > **For agents:** When role lens = PM, read this index then load only the files relevant to the question.  
 > **Sensitivity:** Public/regulatory/clinical publications = Mid/Low. Internal transcripts and draft dossiers = see `work-briefs/pm/README.md` (High — local only).  
-> **Last built:** 2026-07-27 from user's Perplexity Space file set (Downloads).
+> **Last built:** 2026-09-02 — added HK NDA / “1+” / CTD source PDFs + distill. Prior Space distill: 2026-07-27.
 
 ## Load order
 
@@ -19,7 +19,8 @@
 | [ha-formulary-access.md](ha-formulary-access.md) | HADF mechanics, HA drug spend context, formulary submission logic |
 | [hk-hospitals-landscape.md](hk-hospitals-landscape.md) | Key HK hospitals for field/access planning (no PII) |
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
-| [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
+| [hk-nda-registration.md](hk-nda-registration.md) | PPB NDA v1.0 (31 Mar 2026), “1+” / abridged / verification / primary routes, Pre-NDA meetings, stop-clock, CTD modules |
+| [local-source-index.md](local-source-index.md) | Map to in-repo `source/` PDFs and remaining originals on this machine (`Downloads/`) |
 
 ## Prohibitions for agents
 
