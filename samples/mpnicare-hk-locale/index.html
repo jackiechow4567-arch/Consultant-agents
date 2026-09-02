@@ -205,7 +205,8 @@
       line-height: 1.6;
       display: none;
     }
-    html[data-locale="zh-HK"] .banner.regional { display: block; }
+    html[data-locale="zh-HK"] .banner.regional,
+    html[data-locale="en"] .banner.regional { display: block; }
     .banner b { font-weight: 700; margin-right: 6px; }
     .tag {
       display: none;
@@ -217,7 +218,8 @@
       border-radius: 999px;
       letter-spacing: .02em;
     }
-    html[data-locale="zh-HK"] .tag { display: inline-flex; }
+    html[data-locale="zh-HK"] .tag,
+    html[data-locale="en"] .tag { display: inline-flex; }
     .cat-name { color: #c45c54; font-weight: 700; font-size: 13px; }
     .article-flag {
       display: none;
@@ -226,7 +228,8 @@
       margin: 6px 0 16px;
       font-weight: 600;
     }
-    html[data-locale="zh-HK"] .article-flag { display: block; }
+    html[data-locale="zh-HK"] .article-flag,
+    html[data-locale="en"] .article-flag { display: block; }
 
     .scene {
       background: var(--teal);
@@ -307,7 +310,7 @@
 </head>
 <body>
   <div class="sample-bar">
-    <div>香港版樣本：<strong>病人教育專區只改名稱、不加地區提示</strong>。地區提示只出現在血液腫瘤專欄／健康資訊／品味生活的欄目頁、文章卡及文章頁。</div>
+    <div>樣本：香港中文只改介面用語；英文改寫現有 Google 翻譯。三欄文章正文維持原文，只加地區標示。病人教育專區不加地區提示。</div>
     <div class="actions">
       <button type="button" data-go="matrix">用字對照</button>
       <button type="button" data-go="home">返回首頁</button>
@@ -322,7 +325,7 @@
     <div class="lang" aria-label="語言">
       <button type="button" id="btn-tw" class="on">中文</button>
       <button type="button" id="btn-hk">中文（香港）</button>
-      <button type="button" title="English leaflet remains a form request, as on the live site">EN</button>
+      <button type="button" id="btn-en">English</button>
     </div>
   </header>
 
@@ -342,7 +345,7 @@
         <p class="legal" id="ipText"></p>
       </div>
       <div class="line-box">
-        <button class="line-btn" type="button">LINE 加入好友</button>
+        <button class="line-btn" type="button" id="lineBtn">LINE 加入好友</button>
         <div class="line-copy" id="lineText"></div>
       </div>
     </div>
@@ -381,7 +384,10 @@
         edu4: "有愛相髓病友故事集",
         catBannerTitle: "",
         catBanner: "",
-        articleFlag: ""
+        articleFlag: "",
+        cardTag: "其他地區內容",
+        lineBtn: "LINE 加入好友",
+        linksNote: "此頁用字未見必須修改。現有其他地區機構連結可保留；如日後新增香港機構，加在現有列表即可。"
       },
       "zh-HK": {
         home: "首頁",
@@ -414,7 +420,46 @@
         edu4: "病友故事集",
         catBannerTitle: "其他地區內容提示",
         catBanner: "本欄文章由香港以外地區的團隊或醫護專業人員提供，內容未必適用於香港，僅供一般參考。",
-        articleFlag: "其他地區內容｜原文保留，內容未必適用於香港。"
+        articleFlag: "其他地區內容｜原文保留，內容未必適用於香港。",
+        cardTag: "其他地區內容",
+        lineBtn: "LINE 加入好友",
+        linksNote: "此頁用字未見必須修改。現有其他地區機構連結可保留；如日後新增香港機構，加在現有列表即可。"
+      },
+      en: {
+        home: "Home",
+        about: "About MPN▾",
+        edu: "Patient education▾",
+        medical: "Hematology",
+        health: "Health information",
+        lifeMenu: "Lifestyle",
+        lifeTitle: "Lifestyle",
+        links: "Useful links",
+        terms: "Terms of use and privacy policy",
+        hero1: "This is a patient education website on myeloproliferative neoplasms (MPN).",
+        hero2: "MPN is a bone marrow disease caused by genetic mutations in hematopoietic stem cells, leading to abnormal overproduction of blood cells. Symptoms are often nonspecific, but over time the disease can cause serious — even life-threatening — complications. For this reason it is sometimes called a silent killer.",
+        hero3: "Here you can find information about MPN, treatment updates, and care guidance to help you understand the condition more clearly.",
+        latest: "Latest articles",
+        line: "Add the official MPN LINE account\nWe will send you the latest updates.",
+        cookie: "This website uses cookies to provide a better experience. By continuing, you agree to our cookie policy.",
+        ip: "Reproduction or reuse requires prior authorisation from this website or the rights holder. Do not copy, transmit, adapt, edit, or otherwise use the content without permission. For material not owned by this site, the original source is credited; please contact the rights holder directly if you wish to reuse it.",
+        aboutH: "About MPN",
+        aboutLead: "What is MPN?",
+        aboutBody: "MPN stands for myeloproliferative neoplasm. It is a blood cancer in which abnormal hematopoietic stem cells in the bone marrow cause abnormal blood counts. Most patients have a known driver mutation, such as JAK2, CALR, or MPL. The three most common MPNs are:",
+        pv: "1. Polycythemia vera (PV): mainly overproduction of red blood cells, often with elevated platelets and white blood cells.",
+        et: "2. Essential thrombocythemia (ET): mainly overproduction of platelets.",
+        pmf: "3. Primary myelofibrosis (PMF): overgrowth of fibroblasts in the bone marrow, which prevents normal blood-cell production. It is divided into prefibrotic PMF (pre-PMF) and overt PMF.",
+        more: "Learn more about MPN",
+        eduH: "Patient education",
+        edu1: "Myeloproliferative neoplasms",
+        edu2: "Understanding polycythemia vera",
+        edu3: "Understanding essential thrombocythemia",
+        edu4: "Patient stories",
+        catBannerTitle: "Content from another region",
+        catBanner: "Articles in this section are written by teams or healthcare professionals outside Hong Kong. They may not apply in Hong Kong and are for general information only.",
+        articleFlag: "Content from another region | Original text kept. This content may not apply in Hong Kong.",
+        cardTag: "Content from another region",
+        lineBtn: "Add on LINE",
+        linksNote: "Organisation names below keep their official titles. Add Hong Kong organisations later as extra rows; no wording change is required on this page."
       }
     };
 
@@ -488,8 +533,34 @@
         <p>請聯絡我們： sales@museshc.com</p>
       </div>`;
 
+    const TERMS_EN = `
+      <h1 class="page-title">Terms of use and privacy policy</h1>
+      <div class="prose">
+        <p>This website is operated by PharmaEssentia Corporation (「藥華醫藥」; referred to below as “PharmaEssentia”). Please read these terms carefully. They explain how you may use the site and how we handle personal data.</p>
+        <p style="background:#fff4dc;padding:12px 14px;border-radius:8px;font-size:15px;"><b>Legal review draft.</b> This English page must not keep Taiwan’s Personal Data Protection Act Articles 3, 10 and 11, and must not use machine-translated company names (PharmaEssence, PharmaEssential, PharmaWorld, Yaohua). Rewrite under Hong Kong’s Personal Data (Privacy) Ordinance (Cap. 486). Do not publish until Legal signs off.</p>
+        <h2>General information</h2>
+        <p>Your access to or use of this website is governed by these terms and all applicable laws. By browsing the site, you accept these terms without limitation. They replace any earlier agreement between you and PharmaEssentia about this website.</p>
+        <h2>Medical information</h2>
+        <p>Medical content on this website is for scientific information and patient education only. Medical science changes quickly, so we cannot guarantee that every item is complete or current. For diagnosis, medication, or treatment, please consult your doctor or nurse. This website does not give medical advice.</p>
+        <h2>Privacy policy (Hong Kong)</h2>
+        <p>PharmaEssentia respects your privacy and handles personal data in line with the data protection principles of the Personal Data (Privacy) Ordinance (Cap. 486) (the “Ordinance”).</p>
+        <p>You may make:</p>
+        <ul>
+          <li>a data access request (section 18 of the Ordinance); and</li>
+          <li>a data correction request (section 22 of the Ordinance).</li>
+        </ul>
+        <p>We will reply within the time allowed by the Ordinance. We may refuse a data access request in the cases listed in section 20, or a correction request in the cases listed in section 24. We may charge a fee that does not exceed the direct cost of complying (section 28).</p>
+        <p>The Ordinance does not give the same general statutory right to deletion or to stop processing as Article 3 of Taiwan’s Personal Data Protection Act. We still delete or stop using personal data when we no longer need it, in line with Data Protection Principles 2 (retention) and 3 (use limitation). You may also ask to opt out of communications. Whether we can accept a request depends on what we need to run the service, any statutory retention period, and exemptions allowed by the Ordinance.</p>
+        <h2>How we use personal data</h2>
+        <p>Personal data includes your name, address, telephone number, email address, or other information that can reasonably identify you. We collect it only when you choose to give it to us.</p>
+        <p>We may use it for reasonable business purposes, in the same way as for non-online activities — for example, to contact you by messaging apps or periodic updates. We may also use it for statistics and analysis, without publishing information that identifies you.</p>
+        <p>Your data may be sent to PharmaEssentia affiliates in other countries for processing. We will not sell or rent personal data unless we tell you first and you give clear consent.</p>
+        <p>Please contact us: sales@museshc.com</p>
+      </div>`;
+
     const params = new URLSearchParams(location.search);
-    let locale = params.get("lang") === "zh-HK" ? "zh-HK" : "zh-TW";
+    const allowed = ["zh-TW", "zh-HK", "en"];
+    let locale = allowed.includes(params.get("lang")) ? params.get("lang") : "zh-TW";
     let page = params.get("page") || "home";
     let currentArticle = params.get("article") || "medical";
 
@@ -533,7 +604,7 @@
       return `<article class="card" data-article="${key}">
         <img src="${a.img}" alt="">
         <div class="body">
-          <div class="meta"><span class="cat-name">${catName(key)}</span><span class="tag">其他地區內容</span><span>${a.date}</span></div>
+          <div class="meta"><span class="cat-name">${catName(key)}</span><span class="tag">${t().cardTag}</span><span>${a.date}</span></div>
           <h3>${a.title}</h3>
           <p>${a.excerpt}</p>
         </div>
@@ -556,7 +627,7 @@
         return `<article class="card" data-article="medical">
           <img src="${ARTICLES.medical.img}" alt="">
           <div class="body">
-            <div class="meta"><span class="cat-name">${catName("medical")}</span><span class="tag">其他地區內容</span><span>讀畢需時 5 分鐘</span></div>
+            <div class="meta"><span class="cat-name">${catName("medical")}</span><span class="tag">${t().cardTag}</span><span>讀畢需時 5 分鐘</span></div>
             <h3>骨髓增生性腫瘤（MPN）常見治療方法</h3>
             <p>余明生醫師 曾任高雄榮民總醫院血腫科主任……</p>
           </div>
@@ -566,7 +637,7 @@
         return `<article class="card" data-article="health">
           <img src="${ARTICLES.health.img}" alt="">
           <div class="body">
-            <div class="meta"><span class="cat-name">${catName("health")}</span><span class="tag">其他地區內容</span><span>讀畢需時 2 分鐘</span></div>
+            <div class="meta"><span class="cat-name">${catName("health")}</span><span class="tag">${t().cardTag}</span><span>讀畢需時 2 分鐘</span></div>
             <h3>從心找到力量</h3>
             <p>朱怡苹臨床心理師 伴旅心理治療所／初色心理治療所……</p>
           </div>
@@ -575,7 +646,7 @@
       return `<article class="card" data-article="life">
         <img src="${ARTICLES.life.img}" alt="">
         <div class="body">
-          <div class="meta"><span class="cat-name">${catName("life")}</span><span class="tag">其他地區內容</span><span>讀畢需時 3 分鐘</span></div>
+            <div class="meta"><span class="cat-name">${catName("life")}</span><span class="tag">${t().cardTag}</span><span>讀畢需時 3 分鐘</span></div>
           <h3>欲賞鬱金香花宴，庫肯霍夫花園見</h3>
           <p>鬱金香與荷蘭有著非比尋常的愛恨情仇……</p>
         </div>
@@ -584,15 +655,18 @@
 
     function render() {
       const x = t();
-      document.documentElement.lang = locale === "zh-HK" ? "zh-HK" : "zh-Hant";
+      document.documentElement.lang = locale === "en" ? "en" : locale === "zh-HK" ? "zh-HK" : "zh-Hant";
       document.documentElement.dataset.locale = locale;
+      document.title = locale === "en" ? "MPNicare | English overlay sample" : "MPNicare｜香港中文版互動樣本";
       $("nav").innerHTML = navHtml();
       $("termsLink").textContent = x.terms;
       $("cookieText").textContent = x.cookie;
       $("ipText").textContent = x.ip;
       $("lineText").innerHTML = x.line.replace("\n", "<br>");
+      $("lineBtn").textContent = x.lineBtn;
       $("btn-tw").classList.toggle("on", locale === "zh-TW");
       $("btn-hk").classList.toggle("on", locale === "zh-HK");
+      $("btn-en").classList.toggle("on", locale === "en");
 
       const app = $("app");
       if (page === "home") {
@@ -644,7 +718,7 @@
       } else if (page === "links") {
         app.innerHTML = `<section class="wrap">
           <h1 class="page-title">${x.links}</h1>
-          <p class="prose" style="text-align:center;color:#555;">此頁用字未見必須修改。現有其他地區機構連結可保留；如日後新增香港機構，加在現有列表即可。</p>
+          <p class="prose" style="text-align:center;color:#555;">${x.linksNote}</p>
           <div class="link-list">
             <div class="link-card"><a href="http://www.tbmt.org.tw/" target="_blank" rel="noopener">中華民國血液及骨髓移植學會</a></div>
             <div class="link-card"><a href="https://www.tmpna.tw/" target="_blank" rel="noopener">台灣骨髓增生性腫瘤關懷協會</a></div>
@@ -652,12 +726,12 @@
           </div>
         </section>`;
       } else if (page === "terms") {
-        app.innerHTML = `<section class="wrap">${locale === "zh-HK" ? TERMS_HK : TERMS_TW}</section>`;
+        app.innerHTML = `<section class="wrap">${locale === "zh-HK" ? TERMS_HK : locale === "en" ? TERMS_EN : TERMS_TW}</section>`;
       } else if (page === "article") {
         const a = ARTICLES[currentArticle];
         const cat = currentArticle === "medical" ? x.medical : currentArticle === "health" ? x.health : x.lifeTitle;
         app.innerHTML = `<section class="wrap article">
-          <div class="kicker">${cat} <span class="tag">其他地區內容</span></div>
+          <div class="kicker">${cat} <span class="tag">${x.cardTag}</span></div>
           <h1>${a.title}</h1>
           <div class="article-flag">${x.articleFlag}</div>
           <div class="byline">${a.author}　｜　${a.date}</div>
@@ -670,7 +744,7 @@
     }
 
     function renderMatrix() {
-      const rows = [
+      const hkRows = [
         ["全站選單", "血腫專欄", "血液腫瘤專欄", "只改選單；文章正文不改"],
         ["全站選單", "健康照護", "健康資訊", "只改選單；文章正文不改"],
         ["選單／標題", "品味生活／生活品味", "統一「品味生活」", "消除字序不一致"],
@@ -682,12 +756,27 @@
         ["該三欄文章卡／文章頁", "（無標示）", "分類名旁標籤；標題下加一行", "正文、藥物、數據不改"],
         ["使用條款", "個資／個資法3、10、11條／百份百／藥華藥", "個人資料／《私隱》條例重寫／百分百／藥華醫藥", "法律稿，須合規審閱"]
       ];
+      const enRows = [
+        ["Menu", "front page / Hematoma column / health care", "Home / Hematology / Health information", "Hematoma is a bruise, not 血液腫瘤"],
+        ["About MPN", "myeloproliferative tumor / Erythrocytosis vera / Click me", "myeloproliferative neoplasm / polycythemia vera / Learn more", "Use WHO / ASH names"],
+        ["Patient education", "thrombocytopenia / Patients with Myelopathy", "essential thrombocythemia / Patient stories", "Those two machine translations are clinically wrong"],
+        ["Terms", "Medical sexual information / PharmaEssence / Taiwan PDPA Arts 3, 10, 11", "Medical information / PharmaEssentia / Cap. 486 rewrite", "Legal review draft"],
+        ["Three columns", "No posts published in this language yet", "Keep original articles + region label", "Do not empty the rails"]
+      ];
       return `<section class="wrap">
-        <h1 class="page-title">香港用字對照（樣本）</h1>
-        <p class="prose" style="margin-bottom:18px;">點右上角「中文（香港）」後，下列固定頁用字會即時切換；血腫／健康／生活欄目的文章正文維持原文。</p>
+        <h1 class="page-title">${locale === "en" ? "Wording overlay (sample)" : "用字對照（樣本）"}</h1>
+        <p class="prose" style="margin-bottom:18px;">${locale === "en"
+          ? "Use the language buttons to switch chrome copy. Article bodies in Hematology / Health information / Lifestyle stay in the original Chinese."
+          : "點右上角語言後，固定頁用字會即時切換；三欄文章正文維持原文。"}</p>
+        <h2>${locale === "en" ? "Hong Kong Chinese" : "香港中文"}</h2>
         <table class="matrix">
           <tr><th>位置</th><th>現行／原文</th><th>香港版</th><th>說明</th></tr>
-          ${rows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td class="new">${r[2]}</td><td>${r[3]}</td></tr>`).join("")}
+          ${hkRows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td class="new">${r[2]}</td><td>${r[3]}</td></tr>`).join("")}
+        </table>
+        <h2 style="margin-top:28px;">${locale === "en" ? "English (replace live Google Translate)" : "英文（取代現有 Google 翻譯）"}</h2>
+        <table class="matrix">
+          <tr><th>Place</th><th>Live /en today</th><th>Suggested English</th><th>Why</th></tr>
+          ${enRows.map(r => `<tr><td>${r[0]}</td><td>${r[1]}</td><td class="new">${r[2]}</td><td>${r[3]}</td></tr>`).join("")}
         </table>
       </section>`;
     }
@@ -721,6 +810,7 @@
     }
     $("btn-tw").onclick = () => { locale = "zh-TW"; render(); };
     $("btn-hk").onclick = () => { locale = "zh-HK"; render(); };
+    $("btn-en").onclick = () => { locale = "en"; render(); };
     const _render = render;
     render = function wrappedRender() { syncUrl(); _render(); };
     _render();

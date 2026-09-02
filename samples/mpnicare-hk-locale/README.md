@@ -1,6 +1,6 @@
 # MPNicare Hong Kong Chinese locale sample
 
-Interactive overlay of [mpnicare.org](https://www.mpnicare.org/). Layout, page structure, and column placement stay the same. Switching to **中文（香港）** changes chrome copy, adds regional-content labels, and rewrites the terms page for Hong Kong law.
+Interactive overlay of [mpnicare.org](https://www.mpnicare.org/). Layout, page structure, and column placement stay the same. Switching to **中文（香港）** or **English** changes chrome copy, adds regional-content labels, and rewrites the terms page for Hong Kong law. The live `/en` Google Translate pack should not stay as the public English experience.
 
 ## Open the sample
 
@@ -9,8 +9,8 @@ If you only need to review the look: open **`REVIEW.html`** (static screenshots,
 To try the language toggle: open `index.html` in a browser.
 
 1. Default view = current Traditional Chinese chrome (Taiwan source site).
-2. Click **中文（香港）** in the top-right language control.
-3. Walk Home, About MPN, Patient education, the three columns, Friendly links, Terms, and one article.
+2. Click **中文（香港）** or **English** in the top-right language control.
+3. Walk Home, About MPN, Patient education, the three columns, Useful links, Terms, and one article.
 
 ## What changes in Hong Kong Chinese
 
@@ -55,7 +55,27 @@ This sample is the recommended overlay: keep the original articles, label them, 
 | `screenshots/sample-hk-terms.png` | Cap. 486 privacy rewrite (legal review draft) |
 | `original-homepage.png` | Live mpnicare.org homepage captured for layout matching |
 
-Direct HK homepage link when served locally: `index.html?lang=zh-HK&page=home`
+Direct HK homepage: `index.html?lang=zh-HK&page=home`  
+Direct English homepage: `index.html?lang=en&page=home`
+
+## What changes in English (replace live Google Translate)
+
+The live `/en` locale currently:
+
+- Translates 血腫專欄 as **Hematoma column** (a bruise, not haematology-oncology)
+- Translates 原發性血小板過多症 as **thrombocytopenia** (low platelets — the opposite disease)
+- Translates 病友故事 as **Patients with Myelopathy** (spinal-cord disease)
+- Translates 醫療性資訊 as **Medical sexual information**
+- Breaks the company name into PharmaEssence / PharmaEssential / PharmaWorld / Yaohua
+- Empties the three article columns
+- Still cites Taiwan PDPA Articles 3, 10 and 11
+
+Suggested overlay: Home, Hematology, Health information, Lifestyle, Patient education, Useful links; WHO/ASH disease names (myeloproliferative neoplasm, polycythemia vera, essential thrombocythemia); original articles kept with a “Content from another region” label.
+
+| File | Contents |
+|---|---|
+| `word/MPNicare-EN-wording-change-log.docx` | Live `/en` vs suggested English (menu, about, education, footer). Article bodies marked as unchanged. |
+| `word/MPNicare-EN-terms-privacy-rewrite.docx` | English Cap. 486 terms draft (legal review, not final). |
 
 ## Word files (change log)
 
