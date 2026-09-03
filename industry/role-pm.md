@@ -164,4 +164,5 @@
 - **Last distilled:** 2026-07-27
 - **Source:** Forward capture via Cursor interview (not full Perplexity Space export)
 - **Reference library:** `pm-reference/_index.md` (distilled from Space PDFs/CSVs in Downloads)
+- **PM competency pack:** `pm-training/` (curriculum, closed-book test, answer key, interactive HTML)
 - **High-sensitivity originals:** indexed in `work-briefs/pm/README.md` — not copied into reference summaries

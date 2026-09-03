@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BESREMi PM competency training</title>
+  <style>
+    :root {
+      --ink: #12263a;
+      --muted: #4a5d73;
+      --line: #d5deea;
+      --paper: #f6f8fb;
+      --card: #ffffff;
+      --teal: #0e6b6b;
+      --teal-dark: #0a4f4f;
+      --gold: #b45309;
+      --danger: #9b1c1c;
+      --ok: #166534;
+      --soft: #e8f3f3;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+    header {
+      background: linear-gradient(160deg, #0b3a3a 0%, #12263a 70%);
+      color: #fff;
+      padding: 2.2rem 1.25rem 1.6rem;
+    }
+    header .wrap, main, footer .wrap { max-width: 920px; margin: 0 auto; }
+    .eyebrow {
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      opacity: 0.8;
+      margin: 0 0 0.4rem;
+    }
+    h1 { font-size: 1.85rem; line-height: 1.2; margin: 0 0 0.6rem; }
+    header p { margin: 0; max-width: 42rem; color: #d7e4e4; }
+    nav {
+      position: sticky; top: 0; z-index: 5;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+    nav .wrap {
+      max-width: 920px; margin: 0 auto;
+      display: flex; gap: 0.6rem; flex-wrap: wrap;
+      padding: 0.55rem 1.25rem;
+    }
+    nav a {
+      color: var(--teal-dark);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 1.4rem 1.25rem 3rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.15rem 1.2rem 1.3rem;
+      margin: 0 0 1rem;
+    }
+    h2 { margin: 0 0 0.7rem; font-size: 1.25rem; color: var(--teal-dark); }
+    h3 { margin: 1.1rem 0 0.4rem; font-size: 1.02rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 0.4rem 0 0.8rem; }
+    th, td { border: 1px solid var(--line); padding: 0.45rem 0.55rem; vertical-align: top; text-align: left; }
+    th { background: var(--soft); }
+    .callout {
+      background: #fff7ed;
+      border-left: 4px solid var(--gold);
+      padding: 0.7rem 0.85rem;
+      margin: 0.7rem 0;
+    }
+    .redline {
+      background: #fef2f2;
+      border-left: 4px solid var(--danger);
+      padding: 0.7rem 0.85rem;
+      margin: 0.7rem 0;
+    }
+    .okline {
+      background: #f0fdf4;
+      border-left: 4px solid var(--ok);
+      padding: 0.7rem 0.85rem;
+      margin: 0.7rem 0;
+    }
+    code { font-size: 0.9em; }
+    .q {
+      border-top: 1px solid var(--line);
+      padding: 0.9rem 0 0.3rem;
+    }
+    .q:first-of-type { border-top: 0; }
+    label { display: block; margin: 0.25rem 0; cursor: pointer; }
+    textarea {
+      width: 100%; min-height: 7rem;
+      font: inherit; padding: 0.6rem;
+      border: 1px solid var(--line); border-radius: 8px;
+    }
+    button.primary {
+      background: var(--teal);
+      color: #fff; border: 0;
+      padding: 0.7rem 1.1rem;
+      border-radius: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 0.8rem;
+    }
+    button.primary:hover { background: var(--teal-dark); }
+    #scorebox { display: none; margin-top: 1rem; }
+    #scorebox.show { display: block; }
+    .mark-ok { color: var(--ok); font-weight: 700; }
+    .mark-bad { color: var(--danger); font-weight: 700; }
+    footer { padding: 1rem 1.25rem 2rem; color: var(--muted); font-size: 0.85rem; }
+    ul { margin: 0.3rem 0 0.8rem 1.1rem; }
+    .pocket { font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="eyebrow">PharmaEssentia Hong Kong · Product Manager · Sensitivity: Mid</p>
+      <h1>BESREMi competency training</h1>
+      <p>On-label commercial fluency for ropeginterferon alfa-2b in polycythaemia vera. Not a medical degree. Not permission to invent claims. Study the eight modules, then sit the closed-book test.</p>
+    </div>
+  </header>
+  <nav>
+    <div class="wrap">
+      <a href="#m1">1 Identity</a>
+      <a href="#m2">2 Market</a>
+      <a href="#m3">3 Evidence</a>
+      <a href="#m4">4 Dosing</a>
+      <a href="#m5">5 Access</a>
+      <a href="#m6">6 Compliance</a>
+      <a href="#m7">7 Competition</a>
+      <a href="#m8">8 Operating</a>
+      <a href="#pocket">Pocket card</a>
+      <a href="#test">Self-test</a>
+    </div>
+  </nav>
+  <main>
+    <section>
+      <h2>How to use this pack</h2>
+      <p><strong>Do</strong> the modules in order; <strong>do not</strong> skip Module 1 or Module 6. Then scroll to the test without scrolling back. Pass bar: 18–20 field-ready; 16–17 competent; ≤15 repeat. Miss any hard-constraint item (IFN-to-IFN superiority, ET/MF proactive use, branded POM giveaways, off-label promo) and you restudy Modules 1 and 6 even if the score looks fine.</p>
+      <p>Sources: HK PI distill, published PROUD-PV / CONTINUATION-PV / Low-PV, HKAPI/UMAO, and PM role memory already in this vault. List price, PSP structure, and the ~500-patient figure are planning facts — not automatic slide copy.</p>
+    </section>
+
+    <section id="m1">
+      <h2>Module 1 — Product identity and on-label boundary</h2>
+      <table>
+        <tr><th>Brand / INN</th><td>Besremi® / ropeginterferon alfa-2b</td></tr>
+        <tr><th>Form</th><td>SC injection, prefilled syringe 500 mcg/mL (1 mL); 50–500 mcg adjustable</td></tr>
+        <tr><th>Excipients (known effect)</th><td>Benzyl alcohol 10 mg/mL; polysorbate 80 0.05 mg/mL</td></tr>
+        <tr><th>HK indication</th><td><strong>Monotherapy in adults</strong> for <strong>polycythaemia vera without symptomatic splenomegaly</strong></td></tr>
+      </table>
+      <div class="redline">
+        <strong>Potency warning (PI):</strong> do not compare potency to another pegylated or non-pegylated protein of the same class. No “stronger than Pegasys,” no China-ropeg rank, no unit-for-unit IFN conversion.
+      </div>
+      <div class="callout">
+        <strong>Titration honesty:</strong> mean titration ~3.7 months (ropeg) vs ~2.6 months (HU). HU may be preferred when early count reduction is needed. Do not sell “faster than HU.”
+      </div>
+      <p>ET, MF, and other non-PV indications are <strong>not</strong> in the HK PI. Reactive scientific exchange only: the HCP asked; you log it in Veeva; you cite current PI; you do not leave ET slides behind.</p>
+      <p>Local PM authority: pricing execution, PSP, HA dossier packaging, HK compliance. <strong>Zero</strong> authority to originate scientific claims. If a sentence is not in PI + global lexicon, it does not go on a slide.</p>
+    </section>
+
+    <section id="m2">
+      <h2>Module 2 — PV as a commercial problem</h2>
+      <p>Planning assumptions: ~<strong>500</strong> PV patients in HK; post–Oct 2025 launch; list price <strong>HK$36,000 / injection</strong>; #1 milestone = HA Drug Advisory Board + Drug List inclusion.</p>
+      <p><strong>Journey:</strong> private diagnosis → PSP-supported treatment → HA formulary-listed public access.</p>
+      <table>
+        <tr><th>Segment</th><th>Who</th><th>What they buy</th></tr>
+        <tr><td>Private early adopters</td><td>Disease-modification-minded patients; HKSH / private hematology</td><td>Durable control, phlebotomy relief, q2w→q4w convenience, JAK2 story where lexicon-cleared</td></tr>
+        <tr><td>HA population (pre-listing)</td><td>Cluster hospitals and budget holders</td><td>Value / budget impact on ~500 patients — HA drug spend fell in 2024–25</td></tr>
+      </table>
+      <p><strong>Working positioning:</strong> for adults with PV without symptomatic splenomegaly who need cytoreduction beyond phlebotomy, BESREMi is licensed ropeginterferon alfa-2b monotherapy with RCT evidence versus HU and versus phlebotomy in low-risk PV — <em>not</em> an IFN-class potency play.</p>
+      <p>Public cluster names for planning only: QMH, PYEH, PWH, QEH, UCH, TKOH, TMH. Do not add prescriber or patient names to this pack.</p>
+    </section>
+
+    <section id="m3">
+      <h2>Module 3 — Evidence you may use</h2>
+      <p>HKAPI §3.5: comparative claims need an adequate, well-controlled, statistically significant study that <strong>names the comparator</strong> — then still need lexicon + PI clearance.</p>
+      <table>
+        <tr><th>Comparator</th><th>Promo?</th><th>Core numbers</th></tr>
+        <tr><td>Hydroxyurea</td><td>Yes, named RCT</td><td>6y CHR 54.5% vs 34.9% (p=0.02); EFS 0.94 vs 0.82 (p=0.04); JAK2 MR 66.0% vs 19.4%</td></tr>
+        <tr><td>Phlebotomy alone (low-risk)</td><td>Yes, named RCT</td><td>Hct control 81% vs 51%; phlebotomies 2.9 vs 4.2 / year</td></tr>
+        <tr><td>Pegasys / other IFN / China ropeg</td><td><strong>No superiority</strong></td><td>No head-to-head; PI potency warning</td></tr>
+        <tr><td>Anagrelide</td><td>No</td><td>No cited RCT in this library</td></tr>
+      </table>
+      <p><strong>PROUD-PV / CONTINUATION-PV</strong> (Gisslinger, <em>Leukemia</em> 2023): Phase III vs HU; PI 12-month disease response (ropeg arm) 43.1%. Use 6-year comparatives for the vs-HU story.</p>
+      <p><strong>Low-PV</strong> (Barbui, <em>NEJM Evidence</em> 2023): Phase 2, n=127, ropeg 100 mcg q2w vs phlebotomy-only.</p>
+      <p>PARADIGM (Phase 4): do not expand beyond cleared lexicon. Regional ET epidemiology is future sizing only — not current EVC; raw ad-board text stays in <code>work-briefs/</code>.</p>
+    </section>
+
+    <section id="m4">
+      <h2>Module 4 — Dosing and safety (field-safe, not a protocol)</h2>
+      <table>
+        <tr><th>Start</th><td>100 mcg SC; <strong>50 mcg</strong> if already on other cytoreductive therapy</td></tr>
+        <tr><th>Titration</th><td>+50 mcg every 2 weeks; taper other cytoreductive in parallel</td></tr>
+        <tr><th>Targets</th><td>Hct &lt;45%, platelets &lt;400×10⁹/L, WBC &lt;10×10⁹/L</td></tr>
+        <tr><th>Max</th><td>500 mcg every 2 weeks</td></tr>
+        <tr><th>Maintenance</th><td>q2w ≥1.5 years at stable dose; may then extend to q4w</td></tr>
+      </table>
+      <p><strong>Contraindication hand-off list:</strong> decompensated cirrhosis (Child-Pugh B/C); ESRD GFR &lt;15; severe psychiatric history; severe uncontrolled CV disease; autoimmune disease; transplant immunosuppression; telbivudine combination; hypersensitivity.</p>
+      <p>ADR: Drug Office <a href="http://www.drugoffice.gov.hk/adr.html">adr.html</a>. Never bury safety in a brand conversation.</p>
+    </section>
+
+    <section id="m5">
+      <h2>Module 5 — Access, price, PSP, formulary</h2>
+      <table>
+        <tr><th>Private list</th><td>HK$36,000 / injection (planning figure)</td></tr>
+        <tr><th>Base Case PSP</th><td>Buy 5 get 1 free</td></tr>
+        <tr><th>Private Sector PSP</th><td>Buy 2 get 1 free; private only; first year; <strong>expires end 2026</strong></td></tr>
+        <tr><th>HA</th><td>#1 milestone: Drug Advisory Board + Drug List inclusion. Every dossier through global Medical/Regulatory first.</td></tr>
+      </table>
+      <div class="redline">Do not extend or modify Private Sector terms without legal/compliance — even informally for a KOL.</div>
+      <p>HADF types: General / Special (authorization, typically 12-month) / SFI-safety net. Do not invent the listing type HA will grant. EVC is PV-only for ~500 patients; ET out of current model.</p>
+      <p>Public climate: 2024–25 HA drug spend fell ~HKD 377M (~2.8%). Argue value, not volume. CDCC/community formulary is a separate track from acute HADF.</p>
+      <p><strong>Tie-break:</strong> Compliance → Formulary/public access → HQ strategic fit → Affordability → Timeline → Revenue → Team capacity.</p>
+    </section>
+
+    <section id="m6">
+      <h2>Module 6 — Compliance operating system</h2>
+      <ul>
+        <li>UMAO Cap. 231 + HKAPI Code (21st ed.) + global lexicon + PPB ADR + PDPO.</li>
+        <li>Every promo piece: abbreviated PI (indication, dosage, contraindications, side effects, <strong>approval date</strong>).</li>
+        <li>Hospitality: breakfast/lunch <strong>HK$400</strong>; dinner <strong>HK$800</strong> per attendee. No entertainment.</li>
+        <li>Ad boards: ≥ <strong>two-thirds</strong> science; agenda in advance; written FMV contracts — no “thank you” fees.</li>
+        <li><strong>No product-branded items</strong> to HCPs for a POM (HKAPI §6.2).</li>
+        <li>AI may draft; a human signs lexicon + Code review.</li>
+      </ul>
+    </section>
+
+    <section id="m7">
+      <h2>Module 7 — “Why your drug?” without a Code breach</h2>
+      <ol>
+        <li>Licensed HK indication — not the same object as off-label class IFN.</li>
+        <li>Named comparators only: HU and (where relevant) phlebotomy, using cleared numbers.</li>
+        <li>Refuse IFN-to-IFN efficacy/potency ranking.</li>
+        <li>Practical: titration schedule, possible q4w after 1.5y, PSP as currently written.</li>
+        <li>Access: private + PSP now; HA listing is the goal — no date promise.</li>
+      </ol>
+      <p>Supply disruption of another IFN is an operational fact, not an efficacy claim. China ropeg is a perception watch-item, not a superiority slide.</p>
+    </section>
+
+    <section id="m8">
+      <h2>Module 8 — How you operate as PM</h2>
+      <table>
+        <tr><th>Hat</th><th>You own</th><th>You do not own</th></tr>
+        <tr><td>PM</td><td>Local tactics: price execution, PSP, HA strategy, promo compliance</td><td>Trial protocols, global label</td></tr>
+        <tr><td>Clinical PM</td><td>HK sites, IRB, enrollment, local vendors</td><td>Global SAP / whether data expands the label</td></tr>
+        <tr><td>GM</td><td>HK P&amp;L, headcount, commercial vs clinical trade-offs</td><td>Global pricing corridors, supply, R&amp;D portfolio</td></tr>
+      </table>
+      <p>Every PM output: lexicon caveat, ET/MF reactive-only line, HA impact line, which PSP (+ 2026 expiry), sensitivity tag, assumptions, top risks, next actions by <em>role</em>.</p>
+    </section>
+
+    <section id="pocket" class="pocket">
+      <h2>Pocket card</h2>
+      <p><strong>Indication:</strong> adult monotherapy, PV without symptomatic splenomegaly.<br />
+      <strong>Start / max:</strong> 100 mcg (50 if on other cytoreductive) → +50 mcg q2w → max 500 mcg q2w; q4w after ≥1.5y stable.<br />
+      <strong>Vs HU (6y):</strong> CHR 54.5% vs 34.9% (p=0.02); EFS 94% vs 82% (p=0.04).<br />
+      <strong>Vs phlebotomy:</strong> Hct 81% vs 51%.<br />
+      <strong>Never:</strong> IFN-to-IFN superiority; proactive ET/MF; branded POM giveaways; informal PSP tweaks.<br />
+      <strong>PSP:</strong> Base 5+1; Private 2+1 (private, first year, ends 2026).<br />
+      <strong>North star:</strong> HA Drug List. <strong>Tie-break:</strong> compliance first.</p>
+    </section>
+
+    <section id="test">
+      <h2>Closed-book self-test (20 items)</h2>
+      <p>Answer without scrolling up. Hard-constraint items: Q5, Q9, Q10, Q15, Q18.</p>
+
+      <form id="quiz">
+        <div class="q" data-hard="0"><p><strong>Q1.</strong> HK licensed indication?</p>
+          <label><input type="radio" name="q1" value="0"> Combination therapy for any MPN</label>
+          <label><input type="radio" name="q1" value="B"> Monotherapy in adults for PV without symptomatic splenomegaly</label>
+          <label><input type="radio" name="q1" value="0"> First-line ET</label>
+          <label><input type="radio" name="q1" value="0"> PV including symptomatic splenomegaly</label>
+        </div>
+        <div class="q"><p><strong>Q2.</strong> Correct HK presentation?</p>
+          <label><input type="radio" name="q2" value="0"> Lyophilized vial 250 mcg IV</label>
+          <label><input type="radio" name="q2" value="B"> PFS 500 mcg/mL (1 mL), SC, 50–500 mcg adjustable</label>
+          <label><input type="radio" name="q2" value="0"> Auto-injector 180 mcg weekly</label>
+          <label><input type="radio" name="q2" value="0"> Oral 500 mcg daily</label>
+        </div>
+        <div class="q"><p><strong>Q3.</strong> Starting dose if already on another cytoreductive?</p>
+          <label><input type="radio" name="q3" value="A"> 50 mcg</label>
+          <label><input type="radio" name="q3" value="0"> 100 mcg</label>
+          <label><input type="radio" name="q3" value="0"> 250 mcg</label>
+          <label><input type="radio" name="q3" value="0"> 500 mcg</label>
+        </div>
+        <div class="q"><p><strong>Q4.</strong> After ≥1.5 years at a stable q2w dose, PI may allow:</p>
+          <label><input type="radio" name="q4" value="0"> Automatic switch to oral HU</label>
+          <label><input type="radio" name="q4" value="B"> Extend interval to q4w</label>
+          <label><input type="radio" name="q4" value="0"> Double the microgram dose</label>
+          <label><input type="radio" name="q4" value="0"> Stop hematocrit monitoring</label>
+        </div>
+        <div class="q" data-hard="1"><p><strong>Q5.</strong> HCP: “1 mcg BESREMi is more potent than 1 mcg Pegasys.”</p>
+          <label><input type="radio" name="q5" value="0"> Agree — next-generation IFN</label>
+          <label><input type="radio" name="q5" value="0"> Agree privately, not on slides</label>
+          <label><input type="radio" name="q5" value="C"> Refuse — PI forbids potency comparison within the class</label>
+          <label><input type="radio" name="q5" value="0"> Quote China ropeg instead</label>
+        </div>
+        <div class="q"><p><strong>Q6.</strong> Mean titration phase in the PI:</p>
+          <label><input type="radio" name="q6" value="0"> Faster on BESREMi than HU (2.6 vs 3.7 months)</label>
+          <label><input type="radio" name="q6" value="B"> Longer on BESREMi than HU (3.7 vs 2.6 months)</label>
+          <label><input type="radio" name="q6" value="0"> Identical at 12 weeks</label>
+          <label><input type="radio" name="q6" value="0"> Unmentioned, so claim “rapid control”</label>
+        </div>
+        <div class="q"><p><strong>Q7.</strong> ~6-year CHR, ropeg vs HU/control:</p>
+          <label><input type="radio" name="q7" value="0"> 43.1% vs 43.1%</label>
+          <label><input type="radio" name="q7" value="0"> 81% vs 51%</label>
+          <label><input type="radio" name="q7" value="C"> 54.5% vs 34.9% (p=0.02)</label>
+          <label><input type="radio" name="q7" value="0"> 94% vs 82% (that pair is EFS)</label>
+        </div>
+        <div class="q"><p><strong>Q8.</strong> ~6-year event-free survival:</p>
+          <label><input type="radio" name="q8" value="A"> 0.94 vs 0.82 (p=0.04)</label>
+          <label><input type="radio" name="q8" value="0"> 0.55 vs 0.35</label>
+          <label><input type="radio" name="q8" value="0"> 81% vs 51%</label>
+          <label><input type="radio" name="q8" value="0"> Not significant, unusable</label>
+        </div>
+        <div class="q" data-hard="1"><p><strong>Q9.</strong> May HK promo claim superiority vs Pegasys or China ropeg?</p>
+          <label><input type="radio" name="q9" value="0"> Yes, class effect</label>
+          <label><input type="radio" name="q9" value="0"> Yes, if a KOL said it at dinner</label>
+          <label><input type="radio" name="q9" value="C"> No — no head-to-head; PI potency warning; HKAPI §3.5 not met</label>
+          <label><input type="radio" name="q9" value="0"> Yes, if you add “in our experience”</label>
+        </div>
+        <div class="q" data-hard="1"><p><strong>Q10.</strong> ET on a proposed HK detail aid?</p>
+          <label><input type="radio" name="q10" value="0"> Keep — ET is an MPN</label>
+          <label><input type="radio" name="q10" value="0"> Keep as specialist appendix</label>
+          <label><input type="radio" name="q10" value="C"> Remove; ET is reactive-only, logged, PI-cited</label>
+          <label><input type="radio" name="q10" value="0"> Replace with myelofibrosis</label>
+        </div>
+        <div class="q"><p><strong>Q11.</strong> Low-PV hematocrit control over 12 months:</p>
+          <label><input type="radio" name="q11" value="0"> 54.5% vs 34.9%</label>
+          <label><input type="radio" name="q11" value="B"> 81% vs 51%</label>
+          <label><input type="radio" name="q11" value="0"> 43.1% vs HU</label>
+          <label><input type="radio" name="q11" value="0"> 66% vs 19.4%</label>
+        </div>
+        <div class="q"><p><strong>Q12.</strong> Base Case PSP:</p>
+          <label><input type="radio" name="q12" value="0"> Buy 2 get 1, private, ends 2026</label>
+          <label><input type="radio" name="q12" value="B"> Buy 5 get 1 free</label>
+          <label><input type="radio" name="q12" value="0"> 50% off for all HA patients</label>
+          <label><input type="radio" name="q12" value="0"> Unlimited free drug for KOLs</label>
+        </div>
+        <div class="q"><p><strong>Q13.</strong> Private Sector PSP:</p>
+          <label><input type="radio" name="q13" value="A"> Buy 2 get 1; private only; first year; expires end 2026</label>
+          <label><input type="radio" name="q13" value="0"> Same as Base Case</label>
+          <label><input type="radio" name="q13" value="0"> Auto-extended if a KOL asks</label>
+          <label><input type="radio" name="q13" value="0"> Available for ET</label>
+        </div>
+        <div class="q"><p><strong>Q14.</strong> #1 PM milestone:</p>
+          <label><input type="radio" name="q14" value="0"> Max private revenue first</label>
+          <label><input type="radio" name="q14" value="B"> HA Drug Advisory Board + Drug List inclusion</label>
+          <label><input type="radio" name="q14" value="0"> Open an ET indication locally</label>
+          <label><input type="radio" name="q14" value="0"> Beat China ropeg on a slide</label>
+        </div>
+        <div class="q" data-hard="1"><p><strong>Q15.</strong> BESREMi-branded sticky notes for hematologists?</p>
+          <label><input type="radio" name="q15" value="0"> Yes, under HK$50</label>
+          <label><input type="radio" name="q15" value="0"> Yes, if scientific content is printed</label>
+          <label><input type="radio" name="q15" value="C"> No — HKAPI §6.2, no branded POM items to HCPs</label>
+          <label><input type="radio" name="q15" value="0"> Yes at private hospitals only</label>
+        </div>
+        <div class="q"><p><strong>Q16.</strong> HKAPI meal caps:</p>
+          <label><input type="radio" name="q16" value="0"> Lunch HK$800 / dinner HK$1,600</label>
+          <label><input type="radio" name="q16" value="B"> Breakfast/lunch HK$400; dinner HK$800 per attendee</label>
+          <label><input type="radio" name="q16" value="0"> No cap if educational</label>
+          <label><input type="radio" name="q16" value="0"> Public-hospital doctors only</label>
+        </div>
+        <div class="q"><p><strong>Q17.</strong> Advisory board scientific-content minimum:</p>
+          <label><input type="radio" name="q17" value="0"> One interesting slide</label>
+          <label><input type="radio" name="q17" value="0"> At least half</label>
+          <label><input type="radio" name="q17" value="C"> At least two-thirds; agenda in advance</label>
+          <label><input type="radio" name="q17" value="0"> Optional if FMV is paid</label>
+        </div>
+        <div class="q" data-hard="1"><p><strong>Q18.</strong> Private hematologist asks if BESREMi can be used for ET:</p>
+          <label><input type="radio" name="q18" value="0"> Leave a five-slide ET leave-behind</label>
+          <label><input type="radio" name="q18" value="B"> Reactive MedInfo process, cite HK PI, log in Veeva, do not convert to ET promotion</label>
+          <label><input type="radio" name="q18" value="0"> Promise a named-patient ET program</label>
+          <label><input type="radio" name="q18" value="0"> Quote MF data instead</label>
+        </div>
+        <div class="q">
+          <p><strong>Q19.</strong> Write a one-minute compliant answer to: “Your drug is many times the price of pegylated IFN we already use off-label. Convince me.” Name what you will <em>not</em> claim.</p>
+          <textarea name="q19" id="q19" placeholder="4–6 sentences"></textarea>
+          <p>Self-check after you write (required beats):</p>
+          <label><input type="checkbox" name="q19b" value="ind"> Licensed HK indication vs off-label class IFN</label>
+          <label><input type="checkbox" name="q19b" value="rct"> Named HU / Low-PV numbers only</label>
+          <label><input type="checkbox" name="q19b" value="noifn"> Explicit refusal of IFN-to-IFN ranking</label>
+          <label><input type="checkbox" name="q19b" value="psp"> PSP as written; no listing-date promise</label>
+        </div>
+        <div class="q">
+          <p><strong>Q20.</strong> Market access wants to “quietly” keep Private Sector 2+1 for one KOL after end-2026 because listing is delayed. What do you recommend, using the tie-break order?</p>
+          <textarea name="q20" id="q20" placeholder="4–6 sentences"></textarea>
+          <p>Self-check after you write:</p>
+          <label><input type="checkbox" name="q20b" value="no"> Do not informally extend 2+1</label>
+          <label><input type="checkbox" name="q20b" value="tb"> Compliance before timeline/revenue</label>
+          <label><input type="checkbox" name="q20b" value="esc"> Escalate to Legal/Compliance and market access/finance</label>
+          <label><input type="checkbox" name="q20b" value="ha"> Redirect to HA dossier / a Code-aligned successor, not a shadow PSP</label>
+        </div>
+        <button type="submit" class="primary">Score my test</button>
+      </form>
+      <div id="scorebox" class="callout"></div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">BESREMi PM training pack · vault files in <code>industry/pm-training/</code> · do not paste into Perplexity · claims still require global lexicon + local PI clearance before any HCP use.</div>
+  </footer>
+  <script>
+    const keys = {
+      q1: "B", q2: "B", q3: "A", q4: "B", q5: "C", q6: "B", q7: "C", q8: "A",
+      q9: "C", q10: "C", q11: "B", q12: "B", q13: "A", q14: "B", q15: "C",
+      q16: "B", q17: "C", q18: "B"
+    };
+    const hard = ["q5", "q9", "q10", "q15", "q18"];
+    const why = {
+      q1: "HK PI: adult monotherapy for PV without symptomatic splenomegaly.",
+      q2: "PFS 500 mcg/mL, SC, 50–500 mcg adjustable.",
+      q3: "50 mcg if already on another cytoreductive; otherwise 100 mcg.",
+      q4: "q4w only after ≥1.5 years at a stable q2w dose — not a promise at initiation.",
+      q5: "PI potency warning. Hard constraint.",
+      q6: "3.7 vs 2.6 months. Do not sell faster-than-HU.",
+      q7: "CHR 54.5% vs 34.9% (p=0.02). 81 vs 51 is Low-PV; 94 vs 82 is EFS.",
+      q8: "EFS 0.94 vs 0.82 (p=0.04).",
+      q9: "No head-to-head; HKAPI §3.5 not met. Hard constraint.",
+      q10: "ET is reactive-only. MF is not a substitute. Hard constraint.",
+      q11: "Low-PV Hct control 81% vs 51%.",
+      q12: "Base Case = buy 5 get 1.",
+      q13: "Private 2+1, first year, ends 2026. Not ET, not KOL-extendable.",
+      q14: "HA Drug List inclusion is the north star.",
+      q15: "HKAPI §6.2. Hard constraint.",
+      q16: "HK$400 lunch / HK$800 dinner per attendee.",
+      q17: "≥ two-thirds science; agenda in advance.",
+      q18: "Reactive, logged, PI-cited. Hard constraint."
+    };
+    document.getElementById("quiz").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.target;
+      let score = 0;
+      const lines = [];
+      let hardMiss = [];
+      for (const [q, ans] of Object.entries(keys)) {
+        const picked = (form.querySelector('input[name="' + q + '"]:checked') || {}).value;
+        const ok = picked === ans;
+        if (ok) score += 1;
+        else if (hard.includes(q)) hardMiss.push(q.toUpperCase());
+        lines.push(
+          '<div>' + q.toUpperCase() + ': ' +
+          (ok ? '<span class="mark-ok">Correct</span>' : '<span class="mark-bad">Incorrect</span>') +
+          ' — ' + why[q] + '</div>'
+        );
+      }
+      const b19 = form.querySelectorAll('input[name="q19b"]:checked').length;
+      const t19 = (form.q19.value || "").trim().length > 80;
+      const s19 = t19 && b19 >= 4;
+      if (s19) score += 1;
+      else if (t19 && b19 >= 2) score += 0.5;
+      lines.push('<div>Q19: ' + (s19 ? '<span class="mark-ok">Full marks</span>' : '<span class="mark-bad">Partial / incomplete</span>') +
+        ' Required beats: licensed indication; HU/Low-PV only; refuse IFN-to-IFN rank; PSP as written, no listing promise. Do not claim “stronger than Pegasys.”</div>');
+
+      const b20 = form.querySelectorAll('input[name="q20b"]:checked').length;
+      const t20 = (form.q20.value || "").trim().length > 80;
+      const s20 = t20 && b20 >= 4;
+      if (s20) score += 1;
+      else if (t20 && b20 >= 2) score += 0.5;
+      lines.push('<div>Q20: ' + (s20 ? '<span class="mark-ok">Full marks</span>' : '<span class="mark-bad">Partial / incomplete</span>') +
+        ' Do not quietly extend 2+1. Compliance first. Escalate to Legal/Compliance and market access. Redirect to HA dossier.</div>');
+
+      let band = "Repeat the pack (≤15).";
+      if (score >= 18) band = "Field-ready (18–20).";
+      else if (score >= 16) band = "Competent (16–17) — restudy misses.";
+      let override = "";
+      if (hardMiss.length) {
+        override = '<p class="mark-bad">Hard-constraint miss: ' + hardMiss.join(", ") +
+          '. Restudy Module 1 and Module 6 even if the total looks acceptable.</p>';
+      }
+      const box = document.getElementById("scorebox");
+      box.className = "callout show";
+      box.innerHTML = "<h3>Score: " + score + " / 20 — " + band + "</h3>" + override + lines.join("");
+      box.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

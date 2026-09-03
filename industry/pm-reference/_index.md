@@ -21,6 +21,12 @@
 | [hkapi-policy-updates.md](hkapi-policy-updates.md) | 2025 PHC sharing session, 2026 CoP TTT workshop themes |
 | [local-source-index.md](local-source-index.md) | Map to original files on this machine (`Downloads/`) |
 
+## Self-study
+
+| File | Use when |
+|------|----------|
+| [../pm-training/README.md](../pm-training/README.md) | PM competency curriculum, pocket card, and 20-item closed-book test |
+
 ## Prohibitions for agents
 
 - Do not treat reference summaries as permission to invent claims — always cross-check PI + global lexicon

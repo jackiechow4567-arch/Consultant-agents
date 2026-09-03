@@ -65,6 +65,7 @@ Create one Gem per agent file (`00`–`05`) and paste the system prompt from eac
 | File | Role |
 |------|------|
 | [industry/role-pm.md](industry/role-pm.md) | Product Manager |
+| [industry/pm-training/](industry/pm-training/README.md) | BESREMi PM competency training + self-test |
 | [industry/role-gm.md](industry/role-gm.md) | General Manager |
 | [industry/role-clinical-pm.md](industry/role-clinical-pm.md) | Clinical PM / quality lens |
 
