@@ -14,6 +14,7 @@
 | File | Use when |
 |------|----------|
 | [besremi-hk-pi-summary.md](besremi-hk-pi-summary.md) | Indication, dosing, contraindications, PI-bound claims, IFN potency warning |
+| [ropeg-mechanism-pharmacist-qa.md](ropeg-mechanism-pharmacist-qa.md) | Molecule / IFNAR MoA, JAK2i trap, PK, pharmacist Q&A drill for hospital pharmacy |
 | [pv-clinical-evidence.md](pv-clinical-evidence.md) | PROUD-PV, Low-PV, comparative stats vs HU/phlebotomy, claim boundaries |
 | [regulatory-compliance.md](regulatory-compliance.md) | UMAO, HKAPI CoP, promo rules, hospitality, ADR reporting |
 | [ha-formulary-access.md](ha-formulary-access.md) | HADF mechanics, HA drug spend context, formulary submission logic |
