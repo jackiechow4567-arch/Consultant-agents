@@ -93,3 +93,4 @@ Add `cheat-sheet.md` per course when ready (PDFs stay in OneDrive).
 
 - `deidentify-brief` — high → de-identified summary  
 - `decision-one-pager` — exec decision memo  
+- `jlaw-investor` — personal US-equity screen, news/催化劑, daily watchlist (see [investment/README.md](investment/README.md); Grok Bot setup in [investment/grok-bot/SETUP.md](investment/grok-bot/SETUP.md))  

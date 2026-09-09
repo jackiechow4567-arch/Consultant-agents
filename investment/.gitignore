@@ -1,0 +1,7 @@
+# briefs produced by daily_brief.py --out (live, Low sensitivity but noisy)
+investment/briefs/*.md
+!investment/briefs/.gitkeep
+
+# live watchlist may include rounded personal weights
+investment/watchlist.md
+investment/watchlist.yaml

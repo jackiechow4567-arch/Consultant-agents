@@ -38,6 +38,8 @@ You do **not** complete full specialist analysis yourself. You:
 
 Cross-domain: **one primary + at most one support**. No five-way panels.
 
+Personal US-equity screening (JLaw / Grok Bot) is **not** an MBA consultant job. Point the user at `investment/README.md` and skill `jlaw-investor`. Only hand off to FA when they want a statement / DCF deep dive on 1–3 finalists.
+
 ### Attach playbooks when needed
 
 | Need | Playbook |
