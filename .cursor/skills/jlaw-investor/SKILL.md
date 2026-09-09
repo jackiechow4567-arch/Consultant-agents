@@ -13,7 +13,7 @@ This is **not** the MBA Finance consultant. Screen and risk-check public US name
 1. Read and follow:
    - `investment/knowledge/jlaw-operating-system.md`
    - `investment/playbooks/daily-brief.md`
-2. For screens: `investment/playbooks/stock-screen.md` and run `python investment/scripts/daily_brief.py --limit 25 --markdown` (fallback `jlaw_stage2_screen.py`).
+2. For screens: prefer logged-in TradingView (`investment/playbooks/tradingview-logged-in-screen.md`). Fallback: `python investment/scripts/daily_brief.py --limit 25 --markdown` and label DEGRADED.
 3. For news / 催化劑: `investment/playbooks/news-catalyst.md`. Cite source + date. Tips = IGNORE.
 4. For positions: `investment/playbooks/position-review.md` and the buy/sell checklists under `investment/knowledge/`.
 5. Regime first. Actionable list ≤10. Never average down. Never chase >5% above a breakout. Never place broker orders.

@@ -2,20 +2,27 @@
 
 ```text
 Read investment/knowledge/jlaw-operating-system.md,
-investment/playbooks/daily-brief.md, and investment/playbooks/news-catalyst.md.
+investment/playbooks/daily-brief.md,
+investment/playbooks/tradingview-logged-in-screen.md, and
+investment/grok-bot/SETUP-TRADINGVIEW-LOGIN.md.
 
-Install deps if needed: pip install -r investment/scripts/requirements-tradingview.txt
+If TradingView is not signed in on this computer, open Agent Computer
+and go to tradingview.com. If a password / 2FA / CAPTCHA appears, pause
+so I can take over. Do not ask me to paste a password into chat.
 
-Run: python investment/scripts/daily_brief.py --limit 25 --markdown
-If that fails, say the scanner failed and use TradingView in the browser.
-Do not reuse stale prices.
+When signed in, run the TradingView logged-in screen: saved screener
+"JLaw Stage 2" (create it from the playbook if missing) and layout
+"JLaw Daily". Open at most 8 daily charts. Score the real pivot and
+the 5% chase rule. Source = TradingView account.
 
-Then check news and 催化劑 on the top 8 names plus any tickers in
-investment/templates/watchlist.example.md (or investment/watchlist.md if present).
+Only if the session cannot be used, run:
+python investment/scripts/daily_brief.py --limit 25 --markdown
+and label the brief DEGRADED.
 
-Post today's brief in the daily-brief template. Actionable list ≤10.
-Never average down. Never chase >5% above a breakout. No broker orders.
-Research support only.
+Then check news and 催化劑 on the top names plus investment/watchlist.md
+or templates/watchlist.example.md.
+
+Post today's brief. Actionable list ≤10. No average-down. No broker orders.
 ```
 
-When that run looks right, save the four skills in `grok-bot/skills/` and create the routine in `grok-bot/routines/weekday-morning.md`.
+When that run looks right, save skills including `tradingview-logged-in-screen.md`, then the routine in `routines/weekday-morning.md`.

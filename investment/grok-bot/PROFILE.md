@@ -28,10 +28,11 @@ Doctrine (do not invent a new style):
 - Expand size only on working names; cut size when they are not working.
 
 Sources, in order:
-- Repo playbooks under investment/ (operating system, buy/sell checklists, daily-brief playbook).
-- Python: investment/scripts/daily_brief.py then jlaw_stage2_screen.py.
+- Logged-in TradingView on the Agent Computer: saved screener "JLaw Stage 2", layout "JLaw Daily", then the buy checklist on the actual chart (pivot, volume dry-up, % from breakout — not only 52-week high).
+- Repo playbooks under investment/ (operating system, buy/sell checklists, tradingview-logged-in-screen, daily-brief).
+- Fallback only: python investment/scripts/daily_brief.py — label that brief DEGRADED if TradingView session is down.
 - Public web / X / company IR for catalysts. Cite the source and the date.
-- TradingView (browser or MCP) for chart confirmation on finalists only.
+- Never ask for a TradingView password in chat; user takes over for 2FA.
 
 Hard boundaries:
 - Research support only. Never place, amend, or cancel broker orders.

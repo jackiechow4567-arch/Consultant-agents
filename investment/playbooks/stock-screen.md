@@ -45,7 +45,9 @@ python investment/scripts/jlaw_stage2_screen.py --hard-only --limit 60 --json
 - `% from 52-week high` — leaders hug highs; still apply the **5% above breakout** chase rule on the actual pivot, not only the 52-week print
 - `% vs 50-day` — >8% below 50-day is usually a pass
 
-True pivot / pocket-pivot / RS-line checks are **chart work** on the shortlist, not scanner columns.
+True pivot / pocket-pivot / RS-line / volume dry-up / % from the **actual breakout** are **chart work**. That is why the Bot should use your logged-in TradingView account — see `playbooks/tradingview-logged-in-screen.md` and `grok-bot/SETUP-TRADINGVIEW-LOGIN.md`.
+
+`daily_brief.py` remains a no-login fallback only. Label those runs **DEGRADED**.
 
 ## Step 3 — Sector cut
 

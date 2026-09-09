@@ -10,7 +10,7 @@ Personal US-equity desk: **screen leaders**, **check news / 催化劑**, **revie
 
 | If you use | Do this |
 |------------|---------|
-| **Grok Bot app** | Follow **[`grok-bot/SETUP.md`](grok-bot/SETUP.md)** (create Bot → skills → weekday routine) |
+| **Grok Bot app** | Follow **[`grok-bot/SETUP.md`](grok-bot/SETUP.md)** then **[`grok-bot/SETUP-TRADINGVIEW-LOGIN.md`](grok-bot/SETUP-TRADINGVIEW-LOGIN.md)** (your TV account = accurate screen) |
 | **Cursor** | Open the **repo root**, then `Use jlaw-investor.` |
 
 Paste-ready Bot profile: [`grok-bot/PROFILE.md`](grok-bot/PROFILE.md)
@@ -26,12 +26,15 @@ Paste-ready Bot profile: [`grok-bot/PROFILE.md`](grok-bot/PROFILE.md)
 | [`knowledge/sell-checklist.md`](knowledge/sell-checklist.md) | Lock-profit vs risk-control |
 | [`playbooks/daily-brief.md`](playbooks/daily-brief.md) | Morning output template |
 | [`playbooks/stock-screen.md`](playbooks/stock-screen.md) | Stage 2 quant workflow |
+| [`playbooks/tradingview-logged-in-screen.md`](playbooks/tradingview-logged-in-screen.md) | **Accurate path:** your TV saved screener + charts |
+| [`grok-bot/SETUP-TRADINGVIEW-LOGIN.md`](grok-bot/SETUP-TRADINGVIEW-LOGIN.md) | Sign the Bot into TradingView (you type the password) |
+| [`tradingview/jlaw-stage2-flags.pine`](tradingview/jlaw-stage2-flags.pine) | Optional Pine Screener helper (Premium) |
 | [`playbooks/news-catalyst.md`](playbooks/news-catalyst.md) | 催化劑 vs 消息 |
 | [`playbooks/position-review.md`](playbooks/position-review.md) | Daily holdings / watchlist |
 | [`scripts/daily_brief.py`](scripts/daily_brief.py) | Scanner + sector rank + optional earnings dates |
 | [`scripts/jlaw_stage2_screen.py`](scripts/jlaw_stage2_screen.py) | TradingView Stage 2 screen (no API key) |
 | [`templates/watchlist.example.md`](templates/watchlist.example.md) | Copy to `watchlist.md` (gitignored) |
-| TradingView MCP | Live quotes in Cursor (see repo `SETUP-TRADINGVIEW.bat`) |
+The Cursor `tradingview` MCP in this repo is the **public** scanner (no login). Accurate JLaw chart work is Grok Bot’s signed-in browser session, not that MCP.
 
 ---
 
@@ -57,8 +60,8 @@ python investment/scripts/daily_brief.py --limit 25 --out investment/briefs/$(da
 ## Weekday loop (Hong Kong)
 
 ```text
-07:30 HKT  Grok routine posts the brief (prior US session)
-           You mark 0–2 names for charts
+07:30 HKT  Grok routine: logged-in TradingView screen + 催化劑 brief
+           You mark 0–2 names (Bot should already have opened those charts)
 20:30 HKT  Optional pre-US-open card (see grok-bot/routines/pre-us-open.md)
 After fill Stop is live the same day. Never average down.
 ```
@@ -81,10 +84,12 @@ After fill Stop is live the same day. Never average down.
 flowchart TB
   You[You] --> Bot[JLaw Daily Grok Bot or Cursor jlaw-investor]
   Bot --> OS[knowledge operating system]
-  Bot --> Screen[daily_brief.py / TradingView]
+  Bot --> Screen[Logged-in TradingView screener plus charts]
+  Bot --> Fallback[daily_brief.py only if TV session is down]
   Bot --> News[Web / X / IR catalysts]
   Bot --> Gate[buy and sell checklists]
   Screen --> Brief[Daily markdown brief]
+  Fallback --> Brief
   News --> Brief
   Gate --> You
   Brief --> FA[Optional finance-accounting-consultant on 1-3 names]
@@ -97,5 +102,6 @@ Personal investing is **not** routed through the MBA consultant panel unless you
 ## Related
 
 - [Grok Bot setup](grok-bot/SETUP.md)
+- [Sign into TradingView](grok-bot/SETUP-TRADINGVIEW-LOGIN.md)
 - [Finance consultant](../agents/02-finance-accounting.md) (finalists only)
 - [Privacy policy](../privacy-policy.md)

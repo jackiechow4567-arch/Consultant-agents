@@ -10,8 +10,9 @@ Sensitivity: default **Low** (public prices and news).
 
 | Step | Skill / script | Output |
 |------|----------------|--------|
-| 0 | Regime call | Easy / grind / late-stage caution |
-| 1 | `daily_brief.py` or Daily JLaw screen | Leaders + sector rank |
+| 0 | Regime call (index chart on TV) | Easy / grind / late-stage caution |
+| 1 | **TradingView logged-in screen** (saved `JLaw Stage 2` + charts) | Leaders + sector rank + pivot notes |
+| 1b | `daily_brief.py` only if TV session is down | Same table, marked **DEGRADED** |
 | 2 | News & 催化劑 | Calendar + IGNORE vs USE |
 | 3 | Position / watchlist review | Stops, trims, drops |
 | 4 | (On demand) Buy / sell gate | PASS / FAIL / WAIT on one ticker |
@@ -30,7 +31,8 @@ Research support only — not investment advice. No orders placed.
 
 ## Tape
 - Regime: easy / grind / late-stage caution
-- Evidence: (index location vs 50/200, leadership breadth — cite source)
+- Evidence: (index location vs 50/200, leadership breadth — cite TradingView chart)
+- Screen source: TradingView JLaw Stage 2 + charts / DEGRADED daily_brief.py
 - Implication: screen aggressively / hibernate / raise cash language
 
 ## Sector leadership
@@ -67,7 +69,8 @@ Research support only — not investment advice. No orders placed.
 ## Quality bar
 
 - [ ] Regime first
-- [ ] Script or TradingView cited
+- [ ] Screen source cited (TradingView saved screener **or** DEGRADED script)
+- [ ] Actionable names had charts opened when TV session was live
 - [ ] ≤10 actionable names
 - [ ] Each catalyst has a date + source
 - [ ] Earnings inside 10 days tagged HOLD-SIZE-RISK

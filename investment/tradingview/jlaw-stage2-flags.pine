@@ -1,0 +1,22 @@
+//@version=6
+// Original helper flags for a logged-in Pine Screener pass.
+// Not a reprint of any commercial JLaw / IBD product.
+// Overlay=false so plots can be filtered in Pine Screener.
+indicator("JLaw Stage2 flags", overlay=false, max_bars_back=500)
+
+sma20 = ta.sma(close, 20)
+sma50 = ta.sma(close, 50)
+sma200 = ta.sma(close, 200)
+pctFromHigh = (close / ta.highest(high, 252) - 1.0) * 100.0
+range10 = (ta.highest(high, 10) - ta.lowest(low, 10)) / close * 100.0
+pctVs50 = (close / sma50 - 1.0) * 100.0
+maStack = close > sma50 and sma50 > sma200 ? 1.0 : 0.0
+tight = range10 <= 10.0 ? 1.0 : 0.0
+nearHigh = pctFromHigh >= -5.0 ? 1.0 : 0.0
+
+plot(pctFromHigh, "pct_from_high")
+plot(range10, "range10_pct")
+plot(pctVs50, "pct_vs_sma50")
+plot(maStack, "ma_stack")
+plot(tight, "tight10")
+plot(nearHigh, "near_52w_high")

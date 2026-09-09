@@ -13,6 +13,7 @@ Cursor users can skip to [../README.md](../README.md) and invoke `jlaw-investor`
 | Piece | Lives where | Does what |
 |-------|-------------|-----------|
 | Bot **JLaw Daily** | Grok Bot sidebar | Owns the job and the routine |
+| **Your TradingView login** | Shared Agent Computer browser | Accurate screen + charts — [`SETUP-TRADINGVIEW-LOGIN.md`](SETUP-TRADINGVIEW-LOGIN.md) |
 | Skills (`/` menu) | Settings → Plugins → Yours | How to screen, check 催化劑, review positions, run buy/sell checks |
 | Weekday routine | That Bot → Conversation details → Routines | 07:30 Asia/Hong_Kong brief (change if you prefer pre-US-open) |
 | This git repo | Bot computer **or** Cursor workspace | Scripts + knowledge files |
@@ -53,6 +54,8 @@ Run a one-off: python investment/scripts/daily_brief.py --limit 25 --markdown
 
 If clone is awkward, attach the `investment/` folder (or at least `knowledge/` + `playbooks/` + `scripts/`) as files the Bot can read.
 
+**Then sign TradingView in on the Bot computer** — this is what makes screening accurate. Follow [`SETUP-TRADINGVIEW-LOGIN.md`](SETUP-TRADINGVIEW-LOGIN.md). You take over for password / 2FA; never paste the password into chat.
+
 On Windows in **Cursor** (parallel setup, not Grok Bot):
 
 ```bat
@@ -69,14 +72,15 @@ Paste-ready text:
 
 | Skill | File | When |
 |-------|------|------|
-| Daily JLaw screen | [`skills/daily-screen.md`](skills/daily-screen.md) | Idea generation |
+| TradingView logged-in screen | [`skills/tradingview-logged-in-screen.md`](skills/tradingview-logged-in-screen.md) | **Primary** screen (your TV account) |
+| Daily JLaw screen | [`skills/daily-screen.md`](skills/daily-screen.md) | Fallback if TV session is down |
 | News & 催化劑 | [`skills/news-catalyst.md`](skills/news-catalyst.md) | Shortlist + holdings |
 | Position / watchlist review | [`skills/position-review.md`](skills/position-review.md) | After the screen |
 | Buy / sell gate | [`skills/buy-sell-gate.md`](skills/buy-sell-gate.md) | Before any order discussion |
 
 Enable each skill for **this** Bot under **Settings → Plugins → Yours** if it does not show in `/`.
 
-Optional: **Teach a task** (browser, ≤10 min) while you open TradingView, run the screen, and check an earnings calendar. Then add the written decision rules from the files above — a recording is only a draft.
+**Teach a task** (browser, ≤10 min) after TradingView is signed in: load saved screener `JLaw Stage 2`, then open the top names on layout `JLaw Daily`. Add the written rules from `skills/tradingview-logged-in-screen.md` — a recording is only a draft.
 
 ---
 
@@ -88,8 +92,10 @@ Paste:
 Read investment/knowledge/jlaw-operating-system.md and
 investment/playbooks/daily-brief.md.
 
-Run python investment/scripts/daily_brief.py --limit 25 --markdown
-If the script fails, say so and use TradingView in the browser instead.
+If TradingView is signed in on this computer, run the TradingView
+logged-in screen (saved screener "JLaw Stage 2" + layout "JLaw Daily").
+Only if the session is down, run python investment/scripts/daily_brief.py
+--limit 25 --markdown and label the brief DEGRADED.
 
 Then run the News & 催化劑 skill on the top 8 names plus any tickers
 in investment/templates/watchlist.example.md.
@@ -107,10 +113,14 @@ Correct the output once (too many names, missed earnings, wrong regime). Only th
 Ask **this** Bot (not a different one):
 
 ```text
-Every weekday at 07:30 Asia/Hong_Kong, run the Daily JLaw screen skill,
-then News & 催化劑, then Position / watchlist review.
+Every weekday at 07:30 Asia/Hong_Kong, run TradingView logged-in screen
+(saved "JLaw Stage 2" + charts). If TradingView asks for login, pause
+for take-over. Only if the session is dead, fall back to Daily JLaw screen
+/ daily_brief.py and label DEGRADED.
 
-Inputs: latest daily_brief.py output; watchlist file if present;
+Then News & 催化劑, then Position / watchlist review.
+
+Inputs: TradingView saved screener; watchlist file if present;
 public web/X for catalysts.
 
 Output: one markdown brief in this conversation, ≤10 actionable names.
@@ -152,7 +162,8 @@ Keep the live watchlist short. Copy [`templates/watchlist.example.md`](../templa
 | Symptom | Fix |
 |---------|-----|
 | Routine did not fire | Conversation details → Routines: enabled? time zone Hong Kong? |
-| Empty / stale screen | Re-run `daily_brief.py`; if TradingView scanner blocks, use the browser |
+| Empty / stale screen | Re-run logged-in TV screener; if session expired, take over and sign in; `daily_brief.py` is degraded fallback |
+| TV login / 2FA loop | Take over Agent Computer; never paste the password into chat — see `SETUP-TRADINGVIEW-LOGIN.md` |
 | 40-name dump | Remind the Bot: actionable list ≤10; rest is appendix |
 | Chasing extended names | Enforce the 5% breakout rule in the profile; fail those rows |
 | Bot wants to buy a tip | Kill — low-quality source |
