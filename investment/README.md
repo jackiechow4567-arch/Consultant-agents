@@ -13,7 +13,8 @@ Personal US-equity desk: **screen leaders**, **check news / 催化劑**, **revie
 | **Grok Bot app** | Follow **[`grok-bot/SETUP.md`](grok-bot/SETUP.md)** then **[`grok-bot/SETUP-TRADINGVIEW-LOGIN.md`](grok-bot/SETUP-TRADINGVIEW-LOGIN.md)** (your TV account = accurate screen) |
 | **Cursor** | Open the **repo root**, then `Use jlaw-investor.` |
 
-Paste-ready Bot profile: [`grok-bot/PROFILE.md`](grok-bot/PROFILE.md)
+Paste-ready Bot profile: [`grok-bot/PROFILE.md`](grok-bot/PROFILE.md)  
+**Where to click in the app:** [`grok-bot/WHERE-TO-CLICK.md`](grok-bot/WHERE-TO-CLICK.md)
 
 ---
 
