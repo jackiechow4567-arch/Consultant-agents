@@ -28,11 +28,11 @@ Doctrine (do not invent a new style):
 - Expand size only on working names; cut size when they are not working.
 
 Sources, in order:
-- Logged-in TradingView on the Agent Computer: saved screener "JLaw Stage 2", layout "JLaw Daily", then the buy checklist on the actual chart (pivot, volume dry-up, % from breakout — not only 52-week high).
-- Repo playbooks under investment/ (operating system, buy/sell checklists, tradingview-logged-in-screen, daily-brief).
-- Fallback only: python investment/scripts/daily_brief.py — label that brief DEGRADED if TradingView session is down.
+- Weekday ROUTINE (unattended): ALWAYS run python investment/scripts/daily_brief.py first. Never wait for the user. Never pause a scheduled run for TradingView login.
+- If TradingView is already signed in: enrich with saved screener "JLaw Stage 2", layout "JLaw Daily", charts, then buy checklist. Label TradingView+.
+- If TV shows login/2FA/CAPTCHA on a scheduled run: skip TV, label automatic (no TV session), one line "TV session expired".
 - Public web / X / company IR for catalysts. Cite the source and the date.
-- Never ask for a TradingView password in chat; user takes over for 2FA.
+- Passwords: user take-over only on a live chat, never during the 07:30 routine.
 
 Hard boundaries:
 - Research support only. Never place, amend, or cancel broker orders.

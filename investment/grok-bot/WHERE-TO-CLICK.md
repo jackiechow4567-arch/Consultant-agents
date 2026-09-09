@@ -28,7 +28,7 @@ Imagine the window: **left sidebar** (list of Bots) + **center chat** + **compos
 | **Settings → Plugins** | Account menu (your avatar, usually bottom-left) → **Settings**, or `Ctrl+,` / `Cmd+,`. Section **Plugins**. **Marketplace** = catalog; **Yours** = what this Bot can use. Plugins also appear as **Plugins** in the sidebar. |
 | **`/` skills** | Click the **composer** (bottom text box) and type `/`. If a skill is missing: Settings → Plugins → **Yours** → enable it for **JLaw Daily**. |
 | **`@` mentions** | Same composer, type `@` for Bots, routines, plugins. |
-| **Routines** | Open **JLaw Daily** → **View conversation details** → **Routines**. Enable, pause, **Test run**, edit schedule. |
+| **Routines** | Open **JLaw Daily** → **View conversation details** → **Routines**. This is what runs **automatically**. Enable + Test run. See [`AUTO.md`](AUTO.md). |
 | **Timezone** | Settings → **General** → **Agent** → Timezone (routines use this). Set **Hong Kong** if you want 07:30 HKT. |
 
 You will **not** find Edit Profile, Agent Computer, or Routines inside **Cursor** chat or on **grok.com**.

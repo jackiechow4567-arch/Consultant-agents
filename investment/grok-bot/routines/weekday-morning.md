@@ -1,34 +1,32 @@
 # Routine — weekday morning brief (Hong Kong)
 
-Paste this to **JLaw Daily** after the skills work on a one-off run.
+This is the **automatic** job. Paste it only after one manual screen has looked right.
+
+**Rule:** weekday runs never wait for you. TradingView is extra, not a gate.
 
 ```text
-Every weekday at 07:30 Asia/Hong_Kong, run TradingView logged-in screen
-(saved screener "JLaw Stage 2" + layout "JLaw Daily" + up to 8 charts).
-If TradingView asks for login, 2FA, or CAPTCHA, pause for take-over.
-Do not type passwords. Only if the session is dead, fall back to
-python investment/scripts/daily_brief.py --limit 25 --markdown and
-label the brief DEGRADED.
+Create a routine. Do not wait for me on weekday runs.
 
-Then run News & 催化劑, then Position / watchlist review.
+Every weekday at 07:30 Asia/Hong_Kong:
+1) ALWAYS run: python investment/scripts/daily_brief.py --limit 25 --markdown
+   This is the automatic screen. It must finish even if I am asleep.
+2) If TradingView is already signed in (no login wall), ALSO load
+   saved screener "JLaw Stage 2", open up to 8 charts on "JLaw Daily",
+   and sync watchlist "JLaw Watch" (≤12). Label source: TradingView+.
+3) If TradingView shows login, 2FA, or CAPTCHA: do NOT pause and do
+   NOT type passwords. Skip TV. Label source: automatic (no TV session).
+   Add one line: TV session expired — take over when convenient.
+4) News & 催化劑 on the shortlist. Post one brief in this conversation,
+   ≤10 names. Never place trades. Never touch other watchlists.
 
-Inputs:
-- TradingView saved screener "JLaw Stage 2"
-- investment/watchlist.md if it exists, else investment/templates/watchlist.example.md
-- public web / X for catalysts on the shortlist and watchlist
-
-Output: one markdown brief in this conversation, format from
-investment/playbooks/daily-brief.md. Actionable table ≤10 names.
-Source line must say TradingView or DEGRADED.
-
-If scanner or web data is unavailable, report the failure in the thread.
-Do not treat yesterday’s prices as live. Never place trades or send
-external messages. Research support only.
+If the Python scanner fails, say SCANNER FAILED in the thread.
+Do not reuse yesterday’s prices.
 ```
 
-After the Bot creates it: **Test run** → then enable.
+Then: **View conversation details** → **Routines** → **Test run** → **Enable**.  
+Timezone: Settings → General → Agent → **Asia/Hong_Kong**.  
+Turn on notifications for this Bot.
 
 Owner: JLaw Daily  
-Timezone: Asia/Hong_Kong  
-Approval: draft only  
-Missing data: fail visibly
+Missing data: post failure, do not block  
+Approval: draft only — no orders

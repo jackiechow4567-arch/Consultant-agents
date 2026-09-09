@@ -25,4 +25,4 @@ or templates/watchlist.example.md.
 Post today's brief. Actionable list ≤10. No average-down. No broker orders.
 ```
 
-When that run looks right, save skills including `tradingview-logged-in-screen.md`, then the routine in `routines/weekday-morning.md`.
+When that run looks right, save skills, then paste [`AUTO.md`](AUTO.md) / [`routines/weekday-morning.md`](routines/weekday-morning.md) so screening runs **without you**. Until a Routine exists, nothing is automatic.

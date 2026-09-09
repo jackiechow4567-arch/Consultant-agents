@@ -110,36 +110,33 @@ Correct the output once (too many names, missed earnings, wrong regime). Only th
 
 ---
 
-## 5. Create the weekday routine
+## 5. Create the weekday routine (this is what makes it automatic)
 
-Ask **this** Bot (not a different one):
+Until this exists, **nothing runs by itself**. Full text: [`AUTO.md`](AUTO.md) and [`routines/weekday-morning.md`](routines/weekday-morning.md).
+
+Paste **this** (do not use an older “pause for take-over” version):
 
 ```text
-Every weekday at 07:30 Asia/Hong_Kong, run TradingView logged-in screen
-(saved "JLaw Stage 2" + charts). If TradingView asks for login, pause
-for take-over. Only if the session is dead, fall back to Daily JLaw screen
-/ daily_brief.py and label DEGRADED.
+Create a routine. Do not wait for me on weekday runs.
 
-Then News & 催化劑, then Position / watchlist review.
-
-Inputs: TradingView saved screener; watchlist file if present;
-public web/X for catalysts.
-
-Output: one markdown brief in this conversation, ≤10 actionable names.
-
-If the scanner or web data is down, report the failure. Do not reuse
-stale prices as live. Never place trades or send messages outside
-this thread. Research support only.
+Every weekday at 07:30 Asia/Hong_Kong:
+1) ALWAYS run: python investment/scripts/daily_brief.py --limit 25 --markdown
+2) If TradingView is already signed in, also use "JLaw Stage 2" + charts
+   and sync "JLaw Watch". If login/2FA appears, skip TV and still post the brief.
+3) News & 催化劑. ≤10 names. No trades.
 ```
+
+Then **View conversation details** → **Routines** → **Test run** → **Enable**.  
+Settings → General → Agent → timezone **Asia/Hong_Kong**. Turn on this Bot’s **notifications**.
 
 Confirm: owner, time zone, inputs, output, approval boundary, missing-data behaviour.
 
-Then **Test run** (a test run does real work). Check:
+A test run does real work. Check:
 
-- Regime is stated first
-- Table is sourced (script or TradingView)
-- Earnings dates are dated
-- It stopped at “draft brief,” no orders
+- A table appeared **without** you clicking Screen
+- Source is `automatic` or `TradingView+`
+- It did not sit waiting for 2FA
+- No orders
 
 Optional second routine (pre-US cash session): see [`routines/pre-us-open.md`](routines/pre-us-open.md).
 

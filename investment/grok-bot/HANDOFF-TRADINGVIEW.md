@@ -86,18 +86,33 @@ Optional: **Teach a task** (Agent Computer open) while you load the screener and
 
 ---
 
-## Message 4 — weekday automation (only after Message 3 looks right)
+## Message 4 — turn on automatic screening (required)
+
+Messages 1–3 do **not** run tomorrow by themselves. Automation is a **Routine**.
+
+Paste this (also in [`AUTO.md`](AUTO.md) and [`routines/weekday-morning.md`](routines/weekday-morning.md)):
 
 ```text
-Every weekday at 07:30 Asia/Hong_Kong, run skill "TradingView logged-in screen",
-then News & 催化劑, then update JLaw Watch as in the last successful run.
+Create a routine. Do not wait for me on weekday runs.
 
-If TradingView wants login/2FA, pause for take-over.
-If the session is dead and I am not here, skip TradingView, do not guess,
-and post DEGRADED (no account). Never place trades. Never touch other lists.
+Every weekday at 07:30 Asia/Hong_Kong:
+1) ALWAYS run: python investment/scripts/daily_brief.py --limit 25 --markdown
+   This is the automatic screen. It must finish even if I am asleep.
+2) If TradingView is already signed in (no login wall), ALSO load
+   saved screener "JLaw Stage 2", open up to 8 charts on "JLaw Daily",
+   and sync watchlist "JLaw Watch" (≤12). Label source: TradingView+.
+3) If TradingView shows login, 2FA, or CAPTCHA: do NOT pause and do
+   NOT type passwords. Skip TV. Label source: automatic (no TV session).
+   Add one line: TV session expired — take over when convenient.
+4) News & 催化劑 on the shortlist. Post one brief in this conversation,
+   ≤10 names. Never place trades. Never touch other watchlists.
+
+If the Python scanner fails, say SCANNER FAILED in the thread.
+Do not reuse yesterday’s prices.
 ```
 
-Then **View conversation details** → **Routines** → **Test run** → enable.
+Then **View conversation details** → **Routines** → **Test run** → **Enable**.  
+Laptop can be closed. If there is no routine, nothing is automatic.
 
 ---
 

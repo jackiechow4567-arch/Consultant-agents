@@ -11,5 +11,6 @@ and refresh only:
 
 Do not rebuild a 40-name screen. Post a short “session card”:
 regime, 0–5 names in buy zone, names to leave alone, earnings tonight.
-No orders. If the morning brief is missing, say so and stop.
+No orders. If TradingView wants login, skip charts and use this morning’s
+table. If the morning brief is missing, say so and stop. Never wait on 2FA.
 ```

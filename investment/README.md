@@ -61,11 +61,13 @@ python investment/scripts/daily_brief.py --limit 25 --out investment/briefs/$(da
 ## Weekday loop (Hong Kong)
 
 ```text
-07:30 HKT  Grok routine: logged-in TradingView screen + 催化劑 brief
-           You mark 0–2 names (Bot should already have opened those charts)
-20:30 HKT  Optional pre-US-open card (see grok-bot/routines/pre-us-open.md)
-After fill Stop is live the same day. Never average down.
+07:30 HKT  AUTOMATIC: Grok routine runs daily_brief.py (+ TV charts if already logged in)
+           Brief appears in the JLaw Daily thread. You only read it.
+20:30 HKT  Optional pre-US-open card (same: never wait on login)
+After fill You set the stop. Never average down.
 ```
+
+How to turn that on: [`grok-bot/AUTO.md`](grok-bot/AUTO.md)
 
 ---
 

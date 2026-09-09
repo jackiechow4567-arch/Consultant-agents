@@ -1,39 +1,32 @@
 # Skill — TradingView logged-in screen
 
-Save in Grok Bot as **TradingView logged-in screen**. This is the **primary** daily screen when a TradingView session exists.
+Save in Grok Bot as **TradingView logged-in screen**.
+
+On a **live chat** (user present): use TradingView charts.  
+On a **routine / 07:30 run**: never wait for login. Script first.
 
 ```text
-When to use: weekday idea generation whenever TradingView is signed in
-on the Agent Computer. Prefer this over daily_brief.py.
+When to use: enrich a Stage 2 list with the user's signed-in TradingView.
 
 Required inputs:
-- Signed-in TradingView (user completes password / 2FA via take-over;
-  never ask for a password in chat)
-- Saved Stock Screener named "JLaw Stage 2"
-- Chart layout named "JLaw Daily"
 - investment/playbooks/tradingview-logged-in-screen.md
 - investment/knowledge/buy-checklist.md
+- Saved screener "JLaw Stage 2" and layout "JLaw Daily" when session is live
 
-Sequence:
-1. Open tradingview.com. If a login wall, CAPTCHA, or 2FA appears:
-   pause, ask the user to take over, then continue. Do not type secrets.
-2. Open SPX or NQ on layout "JLaw Daily". State tape regime with
-   evidence (price vs 50/200). If grind, keep the list tiny.
-3. Open Products → Stock Screener → load "JLaw Stage 2".
-   Record how many rows. If huge, also load "JLaw Near-high".
-4. Cluster by sector. Prefer groups with several leaders.
-5. Open at most 8 daily charts on "JLaw Daily". Score pivot tightness,
-   volume dry-up, RS if an RS pane exists, and % above the ACTUAL
-   breakout/pivot (fail if >5%). 52-week high is only a location hint.
-6. Build ≤10 actionable rows. Source line must say
-   "TradingView JLaw Stage 2 + charts".
-7. If the session is expired and the user is not available, run
-   python investment/scripts/daily_brief.py --limit 25 --markdown
-   and label the brief DEGRADED (no TradingView account).
+Scheduled / routine sequence (unattended):
+1. ALWAYS run python investment/scripts/daily_brief.py --limit 25 --markdown
+   first. This is the automatic screen.
+2. Open tradingview.com. If already signed in, load "JLaw Stage 2",
+   open up to 8 charts on "JLaw Daily", score the real pivot / 5% rule,
+   sync "JLaw Watch" (≤12). Label source TradingView+.
+3. If login, 2FA, or CAPTCHA: do not pause, do not type secrets.
+   Post the script brief. Label automatic (no TV session).
+   One line: TV session expired — take over when convenient.
+4. Never block the weekday post on a human. No orders.
 
-Validate:
-- You actually opened charts for the actionable names (not scanner-only).
-- No invented OHLC. No average-down. No broker orders.
+Live chat sequence (user is here):
+1. If login wall, ask them to take over (no passwords in chat).
+2. Then screener + charts as in the playbook.
 
-Approval: none for research. Stop for login/2FA.
+Validate: no invented OHLC; ≤10 actionable names; no average-down.
 ```
