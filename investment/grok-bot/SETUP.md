@@ -1,6 +1,7 @@
 # Set up Grok Bot for daily JLaw work
 
-**Lost?** [`WHERE-TO-CLICK.md`](WHERE-TO-CLICK.md) maps every label (New, Edit Profile, Agent Computer, Plugins, Routines) to the actual button. Those live in the **Grok Bot desktop app**, not in Cursor.
+**Lost?** [`WHERE-TO-CLICK.md`](WHERE-TO-CLICK.md) maps every label.  
+**Want it automatic?** [`AUTO.md`](AUTO.md) — a Routine; weekday runs never wait for login.
 
 You already have the screen in this repo (`investment/scripts/`). This page is the **Grok Bot app** path: one named Bot, a few skills, one weekday routine.
 
