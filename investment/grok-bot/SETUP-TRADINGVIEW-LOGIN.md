@@ -22,6 +22,8 @@ The account does **not** magically compute Train-the-Trader pivots. Accuracy com
 
 ## 1. Sign in once (you type the password)
 
+**Paste-ready sequence (sign-in → create lists → first screen):** [`HANDOFF-TRADINGVIEW.md`](HANDOFF-TRADINGVIEW.md)
+
 All Grok Bots share **one** computer and **one** browser. A TradingView login is visible to every Bot on your account.
 
 In the **JLaw Daily** thread:

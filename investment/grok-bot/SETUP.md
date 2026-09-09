@@ -56,7 +56,7 @@ Run a one-off: python investment/scripts/daily_brief.py --limit 25 --markdown
 
 If clone is awkward, attach the `investment/` folder (or at least `knowledge/` + `playbooks/` + `scripts/`) as files the Bot can read.
 
-**Then sign TradingView in on the Bot computer** — this is what makes screening accurate. Follow [`SETUP-TRADINGVIEW-LOGIN.md`](SETUP-TRADINGVIEW-LOGIN.md). You take over for password / 2FA; never paste the password into chat.
+**Then sign TradingView in on the Bot computer** — this is what makes screening accurate. Follow [`SETUP-TRADINGVIEW-LOGIN.md`](SETUP-TRADINGVIEW-LOGIN.md) and paste the four messages in [`HANDOFF-TRADINGVIEW.md`](HANDOFF-TRADINGVIEW.md). You take over for password / 2FA; never paste the password into chat.
 
 On Windows in **Cursor** (parallel setup, not Grok Bot):
 
