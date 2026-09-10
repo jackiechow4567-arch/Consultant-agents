@@ -5,9 +5,10 @@ Use when a **Product Manager** must show field progress to GM / HQ without sendi
 **Pair with:** [exec-comms](exec-comms.md) (ask first) · [data-story-brief](data-story-brief.md) (one message per view) · role memory `industry/role-pm.md`
 
 **Files:**
-- Present / print: [`hq-field-progress-slides.html`](hq-field-progress-slides.html) (16:9, five slides)
-- Edit in PowerPoint: [`hq-field-progress-slides.pptx`](hq-field-progress-slides.pptx)
-- Rebuild PPTX: `python3 scripts/generate_hq_field_progress_pptx.py`
+- **Open this:** [`hq-field-progress-slides.pdf`](hq-field-progress-slides.pdf) (5 pages — works in any browser)
+- Present in browser: [`hq-field-progress-slides.html`](hq-field-progress-slides.html)
+- PowerPoint: [`hq-field-progress-slides.pptx`](hq-field-progress-slides.pptx)
+- Rebuild PPTX from shapes (optional): `python3 scripts/generate_hq_field_progress_pptx.py`
 
 **Sensitivity:** Mid as a method. High the moment you paste named HCPs, patient stories, unpublished dossier data, or exact unreleased figures. Strip those before any forwardable send.
 
