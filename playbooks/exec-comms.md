@@ -48,6 +48,8 @@ Attach whenever the audience is HQ, board, C-suite, or a difficult 1:1 / meeting
 ## Parking lot items (explicitly out of scope today)
 ```
 
+Field progress to HQ (PM): use [`hq-field-progress-slides.md`](hq-field-progress-slides.md) — five slides, ask first, RAG vs plan, not a trip report.
+
 ## Quality bar
 
 - [ ] Ask / recommendation appears in the first 5 lines  

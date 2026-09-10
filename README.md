@@ -76,6 +76,7 @@ Fill these over time (forward distillation is fine; full Perplexity history expo
 - [Project risk & resources](playbooks/project-risk-resource.md)
 - [Finance Q&A brief](playbooks/finance-qa-brief.md)
 - [Executive communication](playbooks/exec-comms.md)
+- [HQ field progress slides](playbooks/hq-field-progress-slides.md) (PM → HQ: editable [PPTX blank](playbooks/hq-field-progress-slides-blank.pptx) + [example](playbooks/hq-field-progress-slides.pptx))
 - [Data story brief](playbooks/data-story-brief.md)
 - [Perplexity Space distill](playbooks/perplexity-space-distill.md) (optional)
 - [Notion agent databases + prompts](playbooks/notion-agent-db.md)
