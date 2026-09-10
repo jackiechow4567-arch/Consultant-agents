@@ -13,6 +13,8 @@ News exists to **time risk** and to **confirm** a leader. It is not an entry sys
 
 If the chart already fails the buy checklist, a bullish headline does **not** rescue it.
 
+Official JLaw posts distilled in `investment/inbox/digests/` are **pointers** (setup / sector / earnings). They are not buys. Still require a date + primary source when used on the calendar. Other members’ Circle chat stays IGNORE.
+
 ---
 
 ## Per ticker (10-session window)

@@ -4,7 +4,7 @@ The setup steps mix **three products**. If a label is missing, you are probably 
 
 | You are here | What it looks like | Use it for |
 |--------------|--------------------|------------|
-| **Grok Bot app** | Separate desktop app named Grok Bot (not Cursor, not grok.com chat) | Create **JLaw Daily**, Agent Computer, skills, routines |
+| **Grok Bot app** | Separate desktop app named Grok Bot (not Cursor, not grok.com chat) | Create **JLaw Daily** and **JLaw Inbox**, Agent Computer, skills, routines |
 | **This git repo** | Cursor window, or GitHub folder `investment/grok-bot/` | Copy-paste PROFILE, skills, playbooks |
 | **TradingView website** | tradingview.com in a **browser** (on the Bot computer or yours) | Saved screener **JLaw Stage 2**, layout **JLaw Daily** |
 
@@ -23,7 +23,7 @@ Imagine the window: **left sidebar** (list of Bots) + **center chat** + **compos
 | Paste the **description** | That Edit Profile / Agent settings **Description** box. Copy the fenced block from [`PROFILE.md`](PROFILE.md) in the repo. |
 | **Pin** | Same Bot menu → Pin (keeps it at the top of the sidebar). |
 | **Agent Computer** | Inside **that Bot’s conversation**, a control named **Agent Computer** (computer / desktop preview). This is a **cloud** desktop, not your laptop. |
-| **Take over** | After Agent Computer is open, the takeover control on that preview. Use it for TradingView password / 2FA. |
+| **Take over** | After Agent Computer is open, the takeover control on that preview. Use it for TradingView, Circle, Kajabi, or Patreon password / 2FA. |
 | **Teach a task** | One-to-one chat **with Agent Computer open**. If you do not see it, skip — paste the skill text instead (rollout is gradual). |
 | **Settings → Plugins** | Account menu (your avatar, usually bottom-left) → **Settings**, or `Ctrl+,` / `Cmd+,`. Section **Plugins**. **Marketplace** = catalog; **Yours** = what this Bot can use. Plugins also appear as **Plugins** in the sidebar. |
 | **`/` skills** | Click the **composer** (bottom text box) and type `/`. If a skill is missing: Settings → Plugins → **Yours** → enable it for **JLaw Daily**. |
@@ -47,6 +47,8 @@ investment/
     WHERE-TO-CLICK.md     ← you are here
     SETUP.md
     PROFILE.md            ← copy Description from here
+    PROFILE-inbox.md      ← second Bot: JLaw Inbox
+    HANDOFF-INBOX.md      ← sign Circle / Kajabi / Patreon (take over)
     FIRST-MESSAGE.md
     SETUP-TRADINGVIEW-LOGIN.md
     skills/               ← paste these into the Bot
@@ -60,8 +62,10 @@ investment/
 | I said | File to open |
 |--------|----------------|
 | Profile text | `investment/grok-bot/PROFILE.md` |
+| Inbox Bot profile | `investment/grok-bot/PROFILE-inbox.md` |
 | First message | `investment/grok-bot/FIRST-MESSAGE.md` |
 | TV login steps | `investment/grok-bot/SETUP-TRADINGVIEW-LOGIN.md` |
+| Circle / Kajabi / Patreon | `investment/grok-bot/HANDOFF-INBOX.md` |
 | Saved-screener recipe | `investment/playbooks/tradingview-logged-in-screen.md` |
 | Skill texts | `investment/grok-bot/skills/*.md` |
 
@@ -88,3 +92,4 @@ In the **Agent Computer** browser (not necessarily Chrome on your laptop):
 4. In that chat, open **Agent Computer** → take over → sign in to TradingView.
 5. Still in that chat, paste `FIRST-MESSAGE.md`.
 6. Later: **View conversation details** → **Routines** for the 07:30 job.
+7. Second Bot: **New** → **Create new agent** → paste `PROFILE-inbox.md` → [`HANDOFF-INBOX.md`](HANDOFF-INBOX.md).

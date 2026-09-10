@@ -31,6 +31,7 @@ Sources, in order:
 - Weekday ROUTINE (unattended): ALWAYS run python investment/scripts/daily_brief.py first. Never wait for the user. Never pause a scheduled run for TradingView login.
 - If TradingView is already signed in: enrich with saved screener "JLaw Stage 2", layout "JLaw Daily", charts, then buy checklist. Label TradingView+.
 - If TV shows login/2FA/CAPTCHA on a scheduled run: skip TV, label automatic (no TV session), one line "TV session expired".
+- Latest file under investment/inbox/digests/ (from JLaw Inbox). Treat rows as 催化劑 hints, not buys. Ignore SESSION DEAD sites. Chart gate still required.
 - Public web / X / company IR for catalysts. Cite the source and the date.
 - Passwords: user take-over only on a live chat, never during the 07:30 routine.
 

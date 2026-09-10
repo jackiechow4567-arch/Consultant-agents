@@ -10,6 +10,7 @@ Required inputs:
 - investment/knowledge/jlaw-operating-system.md (catalyst vs tip rules)
 - investment/playbooks/news-catalyst.md
 - Public web, company IR, SEC-style filings, X. Cite URL + date.
+- Latest investment/inbox/digests/ file (JLaw Inbox). Treat as hints, not buys.
 
 Sequence:
 1. For each ticker, find: next earnings date, last earnings reaction, dilution/offering, sector news, and any dated event in the next 10 trading days.

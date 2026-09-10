@@ -16,6 +16,7 @@ Cursor users can skip to [../README.md](../README.md) and invoke `jlaw-investor`
 | Piece | Lives where | Does what |
 |-------|-------------|-----------|
 | Bot **JLaw Daily** | Grok Bot sidebar | Owns the job and the routine |
+| Bot **JLaw Inbox** | Grok Bot sidebar | Circle / Kajabi / Patreon digest — [`HANDOFF-INBOX.md`](HANDOFF-INBOX.md) |
 | **Your TradingView login** | Shared Agent Computer browser | Accurate screen + charts — [`SETUP-TRADINGVIEW-LOGIN.md`](SETUP-TRADINGVIEW-LOGIN.md) |
 | Skills (`/` menu) | Settings → Plugins → Yours | How to screen, check 催化劑, review positions, run buy/sell checks |
 | Weekday routine | That Bot → Conversation details → Routines | 07:30 Asia/Hong_Kong brief (change if you prefer pre-US-open) |
@@ -157,6 +158,16 @@ Keep the live watchlist short. Copy [`templates/watchlist.example.md`](../templa
 
 ---
 
+## 7. Second Bot: JLaw Inbox (Circle, Kajabi, Patreon)
+
+Daily does **not** log into those sites. Create a second agent named **JLaw Inbox**.
+
+Follow [`HANDOFF-INBOX.md`](HANDOFF-INBOX.md): you take over Agent Computer for passwords / 2FA once. Then enable the 08:15 and 21:00 HKT routines in [`routines/community-poll.md`](routines/community-poll.md).
+
+Git only stores digest rows under [`../inbox/`](../inbox/). Full lessons and `sources.md` stay out of git. No Gmail.
+
+---
+
 ## Troubleshooting
 
 | Symptom | Fix |
@@ -168,6 +179,7 @@ Keep the live watchlist short. Copy [`templates/watchlist.example.md`](../templa
 | Chasing extended names | Enforce the 5% breakout rule in the profile; fail those rows |
 | Bot wants to buy a tip | Kill — low-quality source |
 | High-sensitivity paste | Stop; move to `work-briefs/` in Cursor |
+| Circle/Kajabi/Patreon login wall | That is **JLaw Inbox**. Take over there; Daily still screens |
 
 ---
 

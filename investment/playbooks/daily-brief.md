@@ -14,6 +14,7 @@ Sensitivity: default **Low** (public prices and news).
 | 1 | **TradingView logged-in screen** (saved `JLaw Stage 2` + charts) | Leaders + sector rank + pivot notes |
 | 1b | `daily_brief.py` only if TV session is down | Same table, marked **DEGRADED** |
 | 2 | News & 催化劑 | Calendar + IGNORE vs USE |
+| 2b | Latest `investment/inbox/digests/` (JLaw Inbox) | Official community 催化劑 hints — not buys |
 | 3 | Position / watchlist review | Stops, trims, drops |
 | 4 | (On demand) Buy / sell gate | PASS / FAIL / WAIT on one ticker |
 
@@ -45,6 +46,11 @@ Research support only — not investment advice. No orders placed.
 |--------|--------|-------|-----------------|----------|----|-------------|-----------------|-----------|-------|
 | | | | | | | | | | |
 
+## Community digest (JLaw Inbox)
+| time_hkt | source | tickers | catalyst | idea | USE or IGNORE |
+|----------|--------|---------|----------|------|---------------|
+| | | | | | none / SESSION DEAD |
+
 ## Catalyst calendar (next 10 sessions)
 | Date | Ticker | Event | USE or IGNORE | Source |
 |------|--------|-------|---------------|--------|
@@ -73,5 +79,6 @@ Research support only — not investment advice. No orders placed.
 - [ ] Actionable names had charts opened when TV session was live
 - [ ] ≤10 actionable names
 - [ ] Each catalyst has a date + source
+- [ ] Community digest section filled or marked none / SESSION DEAD
 - [ ] Earnings inside 10 days tagged HOLD-SIZE-RISK
 - [ ] Disclaimer present

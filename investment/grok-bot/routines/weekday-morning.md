@@ -16,7 +16,9 @@ Every weekday at 07:30 Asia/Hong_Kong:
 3) If TradingView shows login, 2FA, or CAPTCHA: do NOT pause and do
    NOT type passwords. Skip TV. Label source: automatic (no TV session).
    Add one line: TV session expired — take over when convenient.
-4) News & 催化劑 on the shortlist. Post one brief in this conversation,
+4) If investment/inbox/digests/ has a file, fold those rows into
+   News & 催化劑 as hints (not buys). Chart gate still required.
+5) News & 催化劑 on the shortlist. Post one brief in this conversation,
    ≤10 names. Never place trades. Never touch other watchlists.
 
 If the Python scanner fails, say SCANNER FAILED in the thread.

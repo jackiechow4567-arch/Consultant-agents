@@ -16,6 +16,7 @@ Official: [Skills and routines](https://docs.x.ai/grok-bot/skills-routines-and-a
 | Web/X 催化劑 on the shortlist | TV session expired (CAPTCHA) — brief still posts |
 | Markdown brief in the JLaw Daily thread | You execute broker orders |
 | Recommended adds/drops for `JLaw Watch` | Optional: click TV watchlist if session was dead |
+| Read latest `investment/inbox/digests/` as 催化劑 hints | Circle/Kajabi/Patreon login — that is **JLaw Inbox**, not this Bot |
 
 TradingView charts stay **best-effort**. If the site asks for login at 07:30, the Bot **must not wait**. It posts the script brief and one line: `TV session expired`. That is how screening stays automatic.
 
@@ -39,7 +40,9 @@ Every weekday at 07:30 Asia/Hong_Kong:
 3) If TradingView shows login, 2FA, or CAPTCHA: do NOT pause and do
    NOT type passwords. Skip TV. Label source: automatic (no TV session).
    Add one line: TV session expired — take over when convenient.
-4) News & 催化劑 on the shortlist. Post one brief in this conversation,
+4) If investment/inbox/digests/ has a file, fold those rows into
+   News & 催化劑 as hints (not buys). Chart gate still required.
+5) News & 催化劑 on the shortlist. Post one brief in this conversation,
    ≤10 names. Never place trades. Never touch other watchlists.
 
 If the Python scanner fails, say SCANNER FAILED in the thread.
@@ -73,3 +76,14 @@ If there is **no** routine, nothing will run by itself.
 ## Optional second automatic pass
 
 Pre-US-open card: [`routines/pre-us-open.md`](routines/pre-us-open.md) at 20:30 HKT. Same rule: never wait on login.
+
+---
+
+## JLaw Inbox (separate Bot)
+
+Community polls are **not** this Bot. Create **JLaw Inbox**, then:
+
+1. [`HANDOFF-INBOX.md`](HANDOFF-INBOX.md) — you sign in to Circle, Kajabi, Patreon once (take over).
+2. [`routines/community-poll.md`](routines/community-poll.md) — weekday **08:15** and **21:00** HKT.
+
+That Bot writes digest rows; this Bot reads them at 07:30. No Gmail.
