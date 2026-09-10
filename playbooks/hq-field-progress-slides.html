@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HQ Field Progress — Slide Template</title>
+  <style>
+    :root {
+      --navy: #0e2744;
+      --navy-deep: #081a2e;
+      --ink: #1c2a3a;
+      --muted: #5b6b7c;
+      --line: #d8d2c6;
+      --paper: #f4f1ea;
+      --white: #fffcf7;
+      --teal: #1b7a6e;
+      --teal-soft: #e4f3ef;
+      --gold: #b8860b;
+      --gold-soft: #f8eed3;
+      --red: #b42318;
+      --red-soft: #f8e4e1;
+      --green: #1f7a4d;
+      --green-soft: #e3f3ea;
+      --amber: #b86e13;
+      --amber-soft: #f8edd6;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      background: #1a2330;
+      color: var(--ink);
+      font-family: "Segoe UI", Calibri, "Helvetica Neue", Arial, sans-serif;
+      height: 100%;
+      overflow: hidden;
+    }
+    .app {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .chrome {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 18px;
+      background: #121a26;
+      color: #e8e4dc;
+      font-size: 13px;
+      z-index: 5;
+    }
+    .chrome strong { font-weight: 600; letter-spacing: 0.02em; }
+    .chrome-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .chrome button, .dot {
+      font: inherit;
+      border: 1px solid #3a4658;
+      background: #1c2736;
+      color: #e8e4dc;
+      border-radius: 999px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    .chrome button.active, .chrome button:hover { background: var(--teal); border-color: var(--teal); color: white; }
+    .dots { display: flex; gap: 6px; }
+    .dot { width: 10px; height: 10px; padding: 0; border-radius: 50%; }
+    .dot.on { background: #e8c36a; border-color: #e8c36a; }
+    .viewport {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      padding: 16px;
+    }
+    .stage {
+      width: 1920px;
+      height: 1080px;
+      transform-origin: center center;
+      position: relative;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+    }
+    .slide {
+      position: absolute;
+      inset: 0;
+      display: none;
+      background: var(--paper);
+      overflow: hidden;
+    }
+    .slide.on { display: flex; flex-direction: column; }
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 48px 0;
+      color: var(--muted);
+      font-size: 15px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .topbar .brand { color: var(--navy); }
+    .body {
+      flex: 1;
+      padding: 18px 48px 12px;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 48px 22px;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      margin: 8px 48px 0;
+      padding-top: 12px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 46px;
+      line-height: 1.15;
+      color: var(--navy);
+      font-weight: 600;
+      margin: 6px 0 18px;
+    }
+    .kicker {
+      color: var(--teal);
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .ask-box {
+      background: var(--navy);
+      color: var(--white);
+      padding: 28px 32px;
+      border-radius: 8px;
+      margin-bottom: 22px;
+    }
+    .ask-box .kicker { color: #e8c36a; }
+    .ask-box p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 34px;
+      line-height: 1.28;
+      margin-top: 8px;
+    }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; }
+    .fill-grid { flex: 1; align-items: stretch; min-height: 0; }
+    .fill-grid > .card { height: 100%; }
+    .card {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px 24px;
+    }
+    .snapshot { margin-top: 18px; }
+    .snapshot .card { min-height: 118px; }
+    .card h2 {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .card p, .card li { font-size: 22px; line-height: 1.35; color: var(--ink); }
+    .meta-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: auto;
+    }
+    .meta {
+      border-top: 2px solid var(--navy);
+      padding-top: 10px;
+    }
+    .meta span { display: block; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    .meta b { display: block; margin-top: 4px; font-size: 22px; font-weight: 600; color: var(--navy); }
+    .rag {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .rag-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .rag h2 { font-size: 15px; letter-spacing: 0.08em; }
+    .pill {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .g { background: var(--green-soft); color: var(--green); }
+    .a { background: var(--amber-soft); color: var(--amber); }
+    .r { background: var(--red-soft); color: var(--red); }
+    .rag .status {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      line-height: 1.2;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+    .rag .def, .note { font-size: 18px; line-height: 1.4; color: var(--muted); }
+    .delta {
+      margin-top: auto;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .signal h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+    .signal dl { display: grid; gap: 12px; }
+    .signal dt {
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      font-weight: 700;
+    }
+    .signal dd { font-size: 20px; line-height: 1.35; color: var(--ink); margin: 4px 0 0; }
+    .funnel {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      justify-content: center;
+    }
+    .step {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 16px 12px;
+      border-radius: 4px;
+      margin: 0 auto;
+    }
+    .step small { display: block; opacity: 0.75; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; }
+    .step b { font-size: 22px; font-weight: 600; }
+    .stall { outline: 3px solid #e8c36a; outline-offset: 2px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 20px;
+    }
+    th {
+      text-align: left;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 0 12px 10px 0;
+    }
+    td {
+      padding: 12px 12px 12px 0;
+      border-top: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .option { min-height: 0; }
+    .option.pick {
+      border: 2px solid var(--teal);
+      background: var(--teal-soft);
+    }
+    .option .tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 8px;
+    }
+    .option h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .option p { font-size: 20px; }
+    .risks {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin: 16px 0;
+    }
+    .actions td:last-child { font-weight: 600; color: var(--navy); }
+    .cover-flag {
+      align-self: flex-start;
+      background: var(--gold-soft);
+      color: #6b4e00;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .hint { display: none; }
+    body.template .hint { display: inline; color: var(--gold); font-weight: 600; }
+    @media print {
+      html, body { background: white; overflow: visible; height: auto; }
+      .chrome { display: none !important; }
+      .viewport { padding: 0; display: block; }
+      .stage { transform: none !important; width: 1920px; height: auto; box-shadow: none; }
+      .slide { position: relative; display: flex !important; page-break-after: always; height: 1080px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="chrome">
+      <div><strong>HQ Field Progress</strong> · 5 slides · Ask → Scorecard → Signals → Barriers → Decision</div>
+      <div class="chrome-actions">
+        <button type="button" id="btn-example" class="active">Example</button>
+        <button type="button" id="btn-template">Empty template</button>
+        <div class="dots" id="dots"></div>
+        <button type="button" id="prev">Prev</button>
+        <button type="button" id="next">Next</button>
+        <button type="button" id="print">Print / PDF</button>
+      </div>
+    </div>
+    <div class="viewport">
+      <div class="stage" id="stage">
+        <section class="slide on" data-slide="1"></section>
+        <section class="slide" data-slide="2"></section>
+        <section class="slide" data-slide="3"></section>
+        <section class="slide" data-slide="4"></section>
+        <section class="slide" data-slide="5"></section>
+      </div>
+    </div>
+  </div>
+  <script>
+    const EXAMPLE = {
+      flag: "SAMPLE — replace with this cycle before sending to HQ",
+      cycle: "Biweekly · [DD Mon – DD Mon YYYY]",
+      product: "BESREMi · HK PV · PM field pack",
+      sensitivity: "Mid · Internal · De-identified",
+      ask: "Concentrate the next two weeks on initiation barriers in priority private accounts. Do not treat call volume as the progress metric.",
+      whyNow: "Private-sector PSP expiry (end-2026) is already changing close conversations. Formulary packaging needs field themes, not visit counts, while the evidence window is still open.",
+      rec: "Do: report 3 conversion signals mapped to uptake / formulary / compliance. Do not: send trip logs, named HCPs, or CRM dumps.",
+      decisionBy: "[YYYY-MM-DD]",
+      owner: "PM, with GM for HQ send",
+      channel: "Standing biweekly HQ update",
+      snapshot: [
+        { label: "Formulary this cycle", value: "No change to dossier — themes usable, no new unlock" },
+        { label: "PSP in play", value: "Base Case + Private Sector (expires end-2026)" },
+        { label: "Compliance", value: "Green · PV-only lexicon · ET/MF reactive-only" }
+      ],
+      insight: "Initiation, not awareness, is the stall.",
+      rags: [
+        { name: "Uptake vs plan", rag: "a", label: "Amber", status: "Awareness holds; initiation is slow.", def: "Definition: private uptake vs agreed HQ plan — not vs last week’s call count.", delta: "Vs last cycle: unchanged conversion quality." },
+        { name: "Formulary trajectory", rag: "a", label: "Amber", status: "Field themes are usable; dossier not advanced this cycle.", def: "Definition: whether this cycle strengthened, delayed, or did not change HADF packaging.", delta: "Vs last cycle: no new evidence gap; no new unlock." },
+        { name: "Compliance", rag: "g", label: "Green", status: "No uncleared claims. ET/MF stayed reactive-only.", def: "Definition: materials cleared; no open UMAO/HKAPI issues; lexicon intact.", delta: "Vs last cycle: clean. Keep raw notes in the vault." }
+      ],
+      signals: [
+        { title: "Affordability is understood; initiation is not.", observed: "Priority private accounts can repeat PSP logic, then still do not start.", soWhat: "Uptake risk sits after the affordability pitch, not before it.", implication: "Next cycle: onboarding friction, not more awareness meetings." },
+        { title: "Price vs traditional IFN is the #1 close-blocker.", observed: "Same objection across accounts: why pay a premium vs off-label IFN.", soWhat: "Differentiation must stay inside approved PV evidence and dosing convenience.", implication: "No IFN-to-IFN superiority claim. Standing lexicon response only." },
+        { title: "Two PSP paths are creating two close motions.", observed: "Base Case vs Private Sector (expires end-2026) are used as different close paths.", soWhat: "Expiry is now a sequencing issue for HQ, not a slogan for the field.", implication: "Do not informal-tweak terms. Confirm eligibility before quoting." }
+      ],
+      funnel: [
+        { w: "92%", label: "Awareness", note: "Holding" },
+        { w: "78%", label: "Intent", note: "Holding" },
+        { w: "52%", label: "Initiation", note: "Stall", stall: true },
+        { w: "40%", label: "Persistency", note: "Too early to claim" }
+      ],
+      barriers: [
+        ["1", "Initiation / onboarding after PSP explanation", "Uptake", "New this month as the pattern"],
+        ["2", "Price vs traditional IFN — lexicon-bound answer only", "Uptake + compliance", "Unchanged"],
+        ["3", "Private Sector PSP clock changing urgency unevenly", "Access / PSP", "Rising"],
+        ["4", "[Fourth barrier or delete row]", "—", "—"]
+      ],
+      moved: "Stopped spreading coverage. Next two weeks: initiation checklist on the named priority-account list (titles only, no HCP names on this slide).",
+      options: [
+        { tag: "Not recommended", title: "A. Keep activity reports", text: "Visit counts and trip notes. Easy to write; HQ cannot see the thesis." },
+        { tag: "Recommended", title: "B. Signal → implication → ask", text: "This pack. Three patterns, RAG vs plan, one decision date.", pick: true },
+        { tag: "Not recommended", title: "C. CRM dump", text: "Looks rigorous, usually unreadable, often too sensitive to forward." }
+      ],
+      risks: [
+        "Someone still scores the team on call volume, so activity theatre returns.",
+        "A named KOL or patient-adjacent story leaks into a forwardable deck."
+      ],
+      actions: [
+        ["Rewrite last trip report into this 5-slide pack; strip names", "PM", "This week"],
+        ["Lock RAG definitions with GM (uptake / formulary / compliance)", "PM + GM", "Next HQ cycle"],
+        ["Compliance pass: no ET/MF promotion, no uncleared claims", "PM + Legal/Compliance", "Before send"]
+      ]
+    };
+
+    const TEMPLATE = {
+      flag: "TEMPLATE — fill every [bracket] · delete unused rows",
+      cycle: "Biweekly · [DD Mon – DD Mon YYYY]",
+      product: "[Product] · [Market] · PM field pack",
+      sensitivity: "[Low / Mid / High] · Internal · De-identified",
+      ask: "[One sentence: what HQ must decide or note. Lead with the action.]",
+      whyNow: "[Window, competitor, PSP clock, or formulary cycle that makes this cycle material.]",
+      rec: "Do: [X]. Do not: [Y].",
+      decisionBy: "[YYYY-MM-DD]",
+      owner: "[PM / GM / HQ role]",
+      channel: "[Biweekly HQ update / ad-hoc escalation]",
+      snapshot: [
+        { label: "Formulary this cycle", value: "[Strengthened / delayed / no change]" },
+        { label: "PSP in play", value: "[Base Case / Private Sector / both] · expiry note" },
+        { label: "Compliance", value: "[G/A/R] · lexicon / reactive-only status" }
+      ],
+      insight: "[Insight title: the stall or the unlock — not a chart title.]",
+      rags: [
+        { name: "Uptake vs plan", rag: "a", label: "[G / A / R]", status: "[One line vs agreed plan.]", def: "Definition: [your HQ plan metric]. Not call volume.", delta: "Vs last cycle: [improved / unchanged / worsened]." },
+        { name: "Formulary trajectory", rag: "a", label: "[G / A / R]", status: "[Strengthened / delayed / no change to dossier.]", def: "Definition: HADF packaging status this cycle.", delta: "Vs last cycle: [one line]." },
+        { name: "Compliance", rag: "g", label: "[G / A / R]", status: "[Cleared materials? Open issues? Reactive-only held?]", def: "Definition: UMAO/HKAPI + lexicon. Red if any open promo risk.", delta: "Vs last cycle: [one line]." }
+      ],
+      signals: [
+        { title: "[Pattern 1 — not a visit count]", observed: "[What repeated across accounts.]", soWhat: "[Which HQ KPI it hits.]", implication: "[What we will do differently.]" },
+        { title: "[Pattern 2]", observed: "[…]", soWhat: "[…]", implication: "[…]" },
+        { title: "[Pattern 3 or delete card]", observed: "[…]", soWhat: "[…]", implication: "[…]" }
+      ],
+      funnel: [
+        { w: "90%", label: "Awareness", note: "[G/A/R]" },
+        { w: "75%", label: "Intent", note: "[G/A/R]" },
+        { w: "55%", label: "Initiation", note: "[G/A/R]", stall: true },
+        { w: "40%", label: "Persistency", note: "[G/A/R]" }
+      ],
+      barriers: [
+        ["1", "[Barrier]", "[Uptake / Formulary / Compliance]", "[New / Unchanged / Rising]"],
+        ["2", "[Barrier]", "[…]", "[…]"],
+        ["3", "[Barrier]", "[…]", "[…]"],
+        ["4", "[Delete if unused]", "—", "—"]
+      ],
+      moved: "[What you stopped, started, or sequenced because of last cycle’s signals.]",
+      options: [
+        { tag: "Option A", title: "[Option A]", text: "[Cost of this path.]" },
+        { tag: "Recommended", title: "[Option B]", text: "[Why this is the recommendation.]", pick: true },
+        { tag: "Option C", title: "[Option C]", text: "[Cost of this path.]" }
+      ],
+      risks: [
+        "[Most likely reason this pack fails or the stall persists.]",
+        "[Compliance / privacy fail mode if raw field notes are forwarded.]"
+      ],
+      actions: [
+        ["[Action]", "[Role]", "[Date]"],
+        ["[Action]", "[Role]", "[Date]"],
+        ["[Action]", "[Role]", "[Date]"]
+      ]
+    };
+
+    const slides = [...document.querySelectorAll(".slide")];
+    const dots = document.getElementById("dots");
+    let i = 0;
+    let data = EXAMPLE;
+
+    function ragClass(code) {
+      if (code === "g") return "g";
+      if (code === "r") return "r";
+      return "a";
+    }
+
+    function shell(inner, n) {
+      return `
+        <div class="topbar">
+          <span class="brand">${data.product}</span>
+          <span>${data.cycle} · ${data.sensitivity}</span>
+        </div>
+        <div class="body">${inner}</div>
+        <div class="footer">
+          <span>Patterns only · no named HCPs, patient stories, unpublished dossier data, or exact unreleased figures</span>
+          <span>${n} / 5</span>
+        </div>`;
+    }
+
+    function render() {
+      document.body.classList.toggle("template", data === TEMPLATE);
+      slides[0].innerHTML = shell(`
+        <div class="cover-flag">${data.flag}</div>
+        <div class="kicker">The ask · first 30 seconds</div>
+        <div class="ask-box">
+          <div class="kicker">HQ should do this</div>
+          <p>${data.ask}</p>
+        </div>
+        <div class="grid-2">
+          <article class="card"><h2>Why now</h2><p>${data.whyNow}</p></article>
+          <article class="card"><h2>Recommendation</h2><p>${data.rec}</p></article>
+        </div>
+        <div class="grid-3 snapshot">
+          ${data.snapshot.map(s => `<article class="card"><h2>${s.label}</h2><p>${s.value}</p></article>`).join("")}
+        </div>
+        <div class="meta-row">
+          <div class="meta"><span>Decision needed by</span><b>${data.decisionBy}</b></div>
+          <div class="meta"><span>Owner</span><b>${data.owner}</b></div>
+          <div class="meta"><span>Goes into</span><b>${data.channel}</b></div>
+        </div>
+      `, 1);
+
+      slides[1].innerHTML = shell(`
+        <div class="kicker">Five-second scorecard</div>
+        <h1>${data.insight}</h1>
+        <div class="grid-3 fill-grid">
+          ${data.rags.map(r => `
+            <article class="card rag">
+              <div class="rag-head">
+                <h2>${r.name}</h2>
+                <span class="pill ${ragClass(r.rag)}">${r.label}</span>
+              </div>
+              <div class="status">${r.status}</div>
+              <p class="def">${r.def}</p>
+              <div class="delta">${r.delta}</div>
+            </article>
+          `).join("")}
+        </div>
+      `, 2);
+
+      slides[2].innerHTML = shell(`
+        <div class="kicker">Field signals · max three</div>
+        <h1>What repeated in the field — not who we visited</h1>
+        <div class="grid-3 fill-grid">
+          ${data.signals.map(s => `
+            <article class="card signal">
+              <h3>${s.title}</h3>
+              <dl>
+                <div><dt>Observed</dt><dd>${s.observed}</dd></div>
+                <div><dt>So what for HQ</dt><dd>${s.soWhat}</dd></div>
+                <div><dt>Implication</dt><dd>${s.implication}</dd></div>
+              </dl>
+            </article>
+          `).join("")}
+        </div>
+      `, 3);
+
+      slides[3].innerHTML = shell(`
+        <div class="kicker">Conversion, not coverage</div>
+        <h1>Where field time dies</h1>
+        <div class="grid-2 fill-grid">
+          <article class="card" style="display:flex; flex-direction:column; gap:8px;">
+            <h2>Account motion (qualitative)</h2>
+            <div class="funnel">
+              ${data.funnel.map(f => `
+                <div class="step ${f.stall ? "stall" : ""}" style="width:${f.w}">
+                  <small>${f.note}</small>
+                  <b>${f.label}</b>
+                </div>
+              `).join("")}
+            </div>
+            <p class="note" style="margin-top:8px;">Widths are illustrative of where accounts stall. Replace with your qualitative read — do not invent counts.</p>
+          </article>
+          <article class="card">
+            <h2>Ranked barriers (max 4)</h2>
+            <table>
+              <thead><tr><th>#</th><th>Barrier</th><th>Hits</th><th>Vs last cycle</th></tr></thead>
+              <tbody>
+                ${data.barriers.map(row => `<tr><td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td><td>${row[3]}</td></tr>`).join("")}
+              </tbody>
+            </table>
+            <p class="delta" style="margin-top:18px;">Moved this cycle: ${data.moved}</p>
+          </article>
+        </div>
+      `, 4);
+
+      slides[4].innerHTML = shell(`
+        <div class="kicker">Decision page</div>
+        <h1>Options, risks, and the HQ ask</h1>
+        <div class="grid-3">
+          ${data.options.map(o => `
+            <article class="card option ${o.pick ? "pick" : ""}">
+              <div class="tag">${o.tag}</div>
+              <h3>${o.title}</h3>
+              <p>${o.text}</p>
+            </article>
+          `).join("")}
+        </div>
+        <div class="risks">
+          <article class="card"><h2>Pre-mortem</h2><p>If this fails, it is most likely because: ${data.risks[0]}</p></article>
+          <article class="card"><h2>Shareable-pack risk</h2><p>${data.risks[1]}</p></article>
+        </div>
+        <article class="card" style="flex:1;">
+          <h2>Next actions</h2>
+          <table class="actions">
+            <thead><tr><th>Action</th><th>Owner (role)</th><th>When</th></tr></thead>
+            <tbody>
+              ${data.actions.map(row => `<tr><td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td></tr>`).join("")}
+            </tbody>
+          </table>
+        </article>
+      `, 5);
+
+      show(i);
+    }
+
+    function show(n) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach((s, idx) => s.classList.toggle("on", idx === i));
+      [...dots.children].forEach((d, idx) => d.classList.toggle("on", idx === i));
+      const url = new URL(location.href);
+      url.searchParams.set("slide", String(i + 1));
+      history.replaceState(null, "", url);
+    }
+
+    function scale() {
+      const vp = document.querySelector(".viewport");
+      const s = Math.min(vp.clientWidth / 1920, vp.clientHeight / 1080);
+      document.getElementById("stage").style.transform = `scale(${s})`;
+    }
+
+    slides.forEach((_, idx) => {
+      const b = document.createElement("button");
+      b.className = "dot";
+      b.type = "button";
+      b.addEventListener("click", () => show(idx));
+      dots.appendChild(b);
+    });
+
+    document.getElementById("prev").onclick = () => show(i - 1);
+    document.getElementById("next").onclick = () => show(i + 1);
+    document.getElementById("print").onclick = () => window.print();
+    document.getElementById("btn-example").onclick = function () {
+      data = EXAMPLE;
+      this.classList.add("active");
+      document.getElementById("btn-template").classList.remove("active");
+      render();
+    };
+    document.getElementById("btn-template").onclick = function () {
+      data = TEMPLATE;
+      this.classList.add("active");
+      document.getElementById("btn-example").classList.remove("active");
+      render();
+    };
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight" || e.key === " ") { e.preventDefault(); show(i + 1); }
+      if (e.key === "ArrowLeft") show(i - 1);
+      if (e.key === "p" || e.key === "P") window.print();
+      if (e.key === "t" || e.key === "T") document.getElementById("btn-template").click();
+      if (e.key === "e" || e.key === "E") document.getElementById("btn-example").click();
+    });
+    window.addEventListener("resize", scale);
+
+    const params = new URL(location.href).searchParams;
+    const start = Number(params.get("slide") || "1");
+    const mode = params.get("mode");
+    if (mode === "template") {
+      data = TEMPLATE;
+      document.getElementById("btn-template").classList.add("active");
+      document.getElementById("btn-example").classList.remove("active");
+    }
+    if (params.get("chrome") === "0") {
+      document.querySelector(".chrome").style.display = "none";
+      document.querySelector(".viewport").style.padding = "0";
+    }
+    render();
+    show(Math.min(Math.max(start, 1), 5) - 1);
+    scale();
+  </script>
+</body>
+</html>
