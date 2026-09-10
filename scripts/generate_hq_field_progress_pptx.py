@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Generate the HQ field-progress 16:9 PowerPoint template."""
+"""Generate editable HQ field-progress PowerPoint decks (example + blank)."""
 
 from pathlib import Path
 
 from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
-from pptx.enum.text import PP_ALIGN
-from pptx.oxml.ns import qn
+from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.util import Inches, Pt
 
 NAVY = RGBColor(0x0E, 0x27, 0x44)
@@ -24,69 +23,102 @@ TEAL_SOFT = RGBColor(0xE4, 0xF3, 0xEF)
 GREEN_SOFT = RGBColor(0xE3, 0xF3, 0xEA)
 AMBER_SOFT = RGBColor(0xF8, 0xED, 0xD6)
 WHITE_CARD = RGBColor(0xFF, 0xFF, 0xFF)
+FLAG_BG = RGBColor(0xF8, 0xEE, 0xD3)
+FLAG_FG = RGBColor(0x6B, 0x4E, 0x00)
 
 W = Inches(13.333)
 H = Inches(7.5)
-MARGIN = Inches(0.45)
+M = Inches(0.45)
+OUT_DIR = Path(__file__).resolve().parents[1] / "playbooks"
 
 
-def set_run(run, size=14, bold=False, color=INK, font="Calibri", italic=False):
+def set_font(run, size=14, bold=False, color=INK, name="Calibri"):
+    run.font.name = name
     run.font.size = Pt(size)
     run.font.bold = bold
-    run.font.italic = italic
     run.font.color.rgb = color
-    run.font.name = font
-    rPr = run._r.get_or_add_rPr()
-    ea = rPr.find(qn("a:ea"))
-    if ea is None:
-        ea = rPr.makeelement(qn("a:ea"), {})
-        rPr.append(ea)
-    ea.set("typeface", font)
 
 
-def add_text(shape, lines, default_size=14, default_color=INK, default_bold=False):
-    tf = shape.text_frame
+def textbox(slide, name, left, top, width, height, lines, valign=MSO_ANCHOR.TOP, align=None):
+    """Editable text box (always on top of decorative shapes)."""
+    box = slide.shapes.add_textbox(left, top, width, height)
+    box.name = name
+    tf = box.text_frame
     tf.word_wrap = True
+    tf.vertical_anchor = valign
     tf.clear()
-    for idx, item in enumerate(lines):
+    for i, item in enumerate(lines):
         if isinstance(item, str):
-            text, size, bold, color = item, default_size, default_bold, default_color
+            txt, size, bold, color = item, 14, False, INK
         else:
-            text = item[0]
-            size = item[1] if len(item) > 1 else default_size
-            bold = item[2] if len(item) > 2 else default_bold
-            color = item[3] if len(item) > 3 else default_color
-        p = tf.paragraphs[0] if idx == 0 else tf.add_paragraph()
-        p.space_after = Pt(4)
+            txt = item[0]
+            size = item[1] if len(item) > 1 else 14
+            bold = item[2] if len(item) > 2 else False
+            color = item[3] if len(item) > 3 else INK
+        p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
+        if align:
+            p.alignment = align
+        p.space_after = Pt(3)
         run = p.add_run()
-        run.text = text
-        set_run(run, size=size, bold=bold, color=color)
+        run.text = txt
+        set_font(run, size=size, bold=bold, color=color)
+    return box
 
 
-def fill(shape, color):
-    shape.fill.solid()
-    shape.fill.fore_color.rgb = color
-    shape.line.fill.background()
-
-
-def card(slide, l, t, w, h, fill_color=WHITE_CARD):
-    sh = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, l, t, w, h)
-    fill(sh, fill_color)
-    sh.line.color.rgb = LINE
-    sh.adjustments[0] = 0.08
+def rect(slide, name, left, top, width, height, fill, line=LINE):
+    sh = slide.shapes.add_shape(MSO_SHAPE.RECTANGLE, left, top, width, height)
+    sh.name = name
+    sh.fill.solid()
+    sh.fill.fore_color.rgb = fill
+    if line is None:
+        sh.line.fill.background()
+    else:
+        sh.line.color.rgb = line
     return sh
 
 
-def footer(slide, n):
-    bar = slide.shapes.add_shape(
-        MSO_SHAPE.RECTANGLE, MARGIN, Inches(7.18), Inches(12.43), Inches(0.22)
+def rounded(slide, name, left, top, width, height, fill, line=LINE):
+    sh = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, left, top, width, height)
+    sh.name = name
+    sh.fill.solid()
+    sh.fill.fore_color.rgb = fill
+    if line is None:
+        sh.line.fill.background()
+    else:
+        sh.line.color.rgb = line
+    return sh
+
+
+def slide_bg(slide):
+    rect(slide, "bg", 0, 0, W, H, PAPER, None)
+
+
+def header(slide, d):
+    textbox(slide, "hdr_left", M, Inches(0.14), Inches(7.0), Inches(0.3), [(d["product"], 11, True, NAVY)])
+    textbox(
+        slide,
+        "hdr_right",
+        Inches(7.2),
+        Inches(0.14),
+        Inches(5.7),
+        Inches(0.3),
+        [(d["cycle"], 11, True, MUTED)],
+        align=PP_ALIGN.RIGHT,
     )
-    fill(bar, PAPER)
-    add_text(
-        bar,
+
+
+def footer(slide, n):
+    rect(slide, "footer_rule", M, Inches(7.05), Inches(12.43), Inches(0.02), LINE, None)
+    textbox(
+        slide,
+        "footer",
+        M,
+        Inches(7.08),
+        Inches(12.43),
+        Inches(0.28),
         [
             (
-                f"Patterns only · no named HCPs, patient stories, unpublished dossier data  ·  {n} / 5",
+                f"Patterns only - no named HCPs, patient stories, unpublished dossier data  |  {n} / 5",
                 10,
                 False,
                 MUTED,
@@ -95,313 +127,232 @@ def footer(slide, n):
     )
 
 
-def header(slide, left, right):
-    a = slide.shapes.add_textbox(MARGIN, Inches(0.16), Inches(7.2), Inches(0.32))
-    add_text(a, [(left, 11, True, NAVY)])
-    b = slide.shapes.add_textbox(Inches(7.4), Inches(0.16), Inches(5.5), Inches(0.32))
-    tf = b.text_frame
-    tf.clear()
-    p = tf.paragraphs[0]
-    p.alignment = PP_ALIGN.RIGHT
-    run = p.add_run()
-    run.text = right
-    set_run(run, size=11, bold=True, color=MUTED)
+EXAMPLE = {
+    "product": "BESREMi | HK PV | PM field pack",
+    "cycle": "Biweekly | [dates] | Mid | Internal | De-identified",
+    "flag": "SAMPLE - replace before sending to HQ",
+    "ask_kicker": "THE ASK - FIRST 30 SECONDS",
+    "ask_label": "HQ SHOULD DO THIS",
+    "ask": "Concentrate the next two weeks on initiation barriers in priority private accounts. Do not treat call volume as the progress metric.",
+    "why_now": "Private-sector PSP expiry (end-2026) is already changing close conversations. Formulary packaging needs field themes, not visit counts, while the evidence window is still open.",
+    "rec": "Do: report 3 conversion signals mapped to uptake / formulary / compliance. Do not: send trip logs, named HCPs, or CRM dumps.",
+    "snap_formulary": "No change to dossier - themes usable, no new unlock",
+    "snap_psp": "Base Case + Private Sector (expires end-2026)",
+    "snap_compliance": "Green | PV-only lexicon | ET/MF reactive-only",
+    "decision_by": "[YYYY-MM-DD]",
+    "owner": "PM, with GM for HQ send",
+    "channel": "Standing biweekly HQ update",
+    "insight": "Initiation, not awareness, is the stall.",
+    "rag": [
+        ("UPTAKE VS PLAN", "AMBER", AMBER_SOFT, AMBER, "Awareness holds; initiation is slow.", "Definition: private uptake vs agreed HQ plan - not call volume.", "Vs last cycle: unchanged conversion quality."),
+        ("FORMULARY TRAJECTORY", "AMBER", AMBER_SOFT, AMBER, "Field themes are usable; dossier not advanced this cycle.", "Definition: strengthened / delayed / no change to HADF packaging.", "Vs last cycle: no new evidence gap; no new unlock."),
+        ("COMPLIANCE", "GREEN", GREEN_SOFT, GREEN, "No uncleared claims. ET/MF stayed reactive-only.", "Definition: materials cleared; no open UMAO/HKAPI issues.", "Vs last cycle: clean. Keep raw notes in the vault."),
+    ],
+    "signals": [
+        ("Affordability is understood; initiation is not.", "Observed: Priority accounts repeat PSP logic, then still do not start.", "So what: Uptake risk sits after affordability, not before it.", "Implication: Next cycle = onboarding friction, not more awareness meetings."),
+        ("Price vs traditional IFN is the #1 close-blocker.", "Observed: Same objection across accounts: why pay a premium vs off-label IFN.", "So what: Stay inside approved PV evidence and dosing convenience.", "Implication: No IFN-to-IFN superiority claim. Lexicon response only."),
+        ("Two PSP paths are creating two close motions.", "Observed: Base Case vs Private Sector (expires end-2026) used as different close paths.", "So what: Expiry is a sequencing issue for HQ, not a slogan.", "Implication: Do not informal-tweak terms. Confirm eligibility before quoting."),
+    ],
+    "funnel": ["Awareness - holding", "Intent - holding", "Initiation - STALL", "Persistency - too early"],
+    "barriers": [
+        "1  Initiation / onboarding after PSP explanation  -> Uptake  | New as the pattern",
+        "2  Price vs traditional IFN - lexicon-bound answer only  -> Uptake + compliance  | Unchanged",
+        "3  Private Sector PSP clock changing urgency unevenly  -> Access / PSP  | Rising",
+        "4  [Fourth barrier or delete row]",
+    ],
+    "moved": "Moved this cycle: Stopped spreading coverage. Next two weeks: initiation checklist on the priority-account list (titles only; no HCP names on this slide).",
+    "options": [
+        ("NOT RECOMMENDED", "A. Keep activity reports", "Visit counts and trip notes. Easy to write; HQ cannot see the thesis.", WHITE_CARD),
+        ("RECOMMENDED", "B. Signal -> implication -> ask", "This pack. Three patterns, RAG vs plan, one decision date.", TEAL_SOFT),
+        ("NOT RECOMMENDED", "C. CRM dump", "Looks rigorous, usually unreadable, often too sensitive to forward.", WHITE_CARD),
+    ],
+    "premortem": "If this fails: someone still scores the team on call volume, so activity theatre returns.",
+    "share_risk": "A named KOL or patient-adjacent story leaks into a forwardable deck.",
+    "actions": [
+        "1  Rewrite last trip report into this 5-slide pack; strip names  |  PM  |  This week",
+        "2  Lock RAG definitions with GM (uptake / formulary / compliance)  |  PM + GM  |  Next HQ cycle",
+        "3  Compliance pass: no ET/MF promotion, no uncleared claims  |  PM + Legal/Compliance  |  Before send",
+    ],
+}
+
+BLANK = {
+    "product": "[Product] | [Market] | PM field pack",
+    "cycle": "Biweekly | [DD Mon - DD Mon YYYY] | [Low/Mid/High] | Internal | De-identified",
+    "flag": "TEMPLATE - fill every [bracket] before sending to HQ",
+    "ask_kicker": "THE ASK - FIRST 30 SECONDS",
+    "ask_label": "HQ SHOULD DO THIS",
+    "ask": "[One sentence: what HQ must decide or note. Lead with the action.]",
+    "why_now": "[Window, competitor, PSP clock, or formulary cycle that makes this cycle material.]",
+    "rec": "Do: [X]. Do not: [Y].",
+    "snap_formulary": "[Strengthened / delayed / no change]",
+    "snap_psp": "[Base Case / Private Sector / both] + expiry note",
+    "snap_compliance": "[G/A/R] | lexicon | reactive-only status",
+    "decision_by": "[YYYY-MM-DD]",
+    "owner": "[PM / GM / HQ role]",
+    "channel": "[Biweekly HQ update / ad-hoc escalation]",
+    "insight": "[Insight title: the stall or the unlock - not a chart title]",
+    "rag": [
+        ("UPTAKE VS PLAN", "[G/A/R]", AMBER_SOFT, AMBER, "[One line vs agreed plan.]", "Definition: [your HQ plan metric]. Not call volume.", "Vs last cycle: [improved / unchanged / worsened]."),
+        ("FORMULARY TRAJECTORY", "[G/A/R]", AMBER_SOFT, AMBER, "[Strengthened / delayed / no change.]", "Definition: HADF packaging status this cycle.", "Vs last cycle: [one line]."),
+        ("COMPLIANCE", "[G/A/R]", GREEN_SOFT, GREEN, "[Cleared materials? Open issues? Reactive-only held?]", "Definition: UMAO/HKAPI + lexicon.", "Vs last cycle: [one line]."),
+    ],
+    "signals": [
+        ("[Pattern 1 - not a visit count]", "Observed: [What repeated across accounts.]", "So what: [Which HQ KPI it hits.]", "Implication: [What we will do differently.]"),
+        ("[Pattern 2]", "Observed: […]", "So what: […]", "Implication: […]"),
+        ("[Pattern 3 or delete card]", "Observed: […]", "So what: […]", "Implication: […]"),
+    ],
+    "funnel": ["Awareness - [status]", "Intent - [status]", "Initiation - [STALL?]", "Persistency - [status]"],
+    "barriers": [
+        "1  [Barrier]  -> [Uptake / Formulary / Compliance]  | [New / Unchanged / Rising]",
+        "2  [Barrier]  -> […]  | […]",
+        "3  [Barrier]  -> […]  | […]",
+        "4  [Delete if unused]",
+    ],
+    "moved": "Moved this cycle: [what changed]. Next two weeks: [concrete action].",
+    "options": [
+        ("OPTION A", "[Option A title]", "[Cost of this path.]", WHITE_CARD),
+        ("RECOMMENDED", "[Option B title]", "[Why this is the recommendation.]", TEAL_SOFT),
+        ("OPTION C", "[Option C title]", "[Cost of this path.]", WHITE_CARD),
+    ],
+    "premortem": "[Most likely reason this pack fails or the stall persists.]",
+    "share_risk": "[Compliance / privacy fail mode if raw field notes are forwarded.]",
+    "actions": [
+        "1  [Action]  |  [Role]  |  [Date]",
+        "2  [Action]  |  [Role]  |  [Date]",
+        "3  [Action]  |  [Role]  |  [Date]",
+    ],
+}
 
 
-def kicker(slide, text, top=Inches(0.48)):
-    box = slide.shapes.add_textbox(MARGIN, top, Inches(12.4), Inches(0.28))
-    add_text(box, [(text.upper(), 11, True, TEAL)])
+def build_slide1(slide, d):
+    slide_bg(slide)
+    header(slide, d)
+    rounded(slide, "flag_bg", M, Inches(0.42), Inches(7.2), Inches(0.34), FLAG_BG, None)
+    textbox(slide, "flag", M + Inches(0.12), Inches(0.46), Inches(6.9), Inches(0.26), [(d["flag"], 11, True, FLAG_FG)])
+    textbox(slide, "kicker", M, Inches(0.82), Inches(12.4), Inches(0.26), [(d["ask_kicker"], 11, True, TEAL)])
+    rounded(slide, "ask_bg", M, Inches(1.12), Inches(12.43), Inches(1.55), NAVY, None)
+    textbox(slide, "ask_label", M + Inches(0.2), Inches(1.2), Inches(12.0), Inches(0.24), [(d["ask_label"], 11, True, GOLD)])
+    textbox(slide, "ask", M + Inches(0.2), Inches(1.48), Inches(12.0), Inches(1.1), [(d["ask"], 22, True, WHITE)])
+    rounded(slide, "why_bg", M, Inches(2.85), Inches(6.05), Inches(1.95), WHITE_CARD)
+    rounded(slide, "rec_bg", Inches(6.83), Inches(2.85), Inches(6.05), Inches(1.95), WHITE_CARD)
+    textbox(slide, "why_now", M + Inches(0.16), Inches(2.95), Inches(5.75), Inches(1.75), [("WHY NOW", 11, True, MUTED), (d["why_now"], 16, False, INK)])
+    textbox(slide, "recommendation", Inches(6.99), Inches(2.95), Inches(5.75), Inches(1.75), [("RECOMMENDATION", 11, True, MUTED), (d["rec"], 16, False, INK)])
+    for i, (label, val) in enumerate(
+        [("FORMULARY THIS CYCLE", d["snap_formulary"]), ("PSP IN PLAY", d["snap_psp"]), ("COMPLIANCE", d["snap_compliance"])]
+    ):
+        left = M + Inches(i * 4.3)
+        rounded(slide, f"snap_bg_{i+1}", left, Inches(4.95), Inches(3.85), Inches(1.05), WHITE_CARD)
+        textbox(slide, f"snap_{i+1}", left + Inches(0.14), Inches(5.02), Inches(3.55), Inches(0.9), [(label, 10, True, MUTED), (val, 13, True, NAVY)])
+    textbox(slide, "meta", M, Inches(6.15), Inches(12.43), Inches(0.8), [
+        (f"DECISION NEEDED BY:  {d['decision_by']}", 11, True, MUTED),
+        (f"OWNER:  {d['owner']}", 11, True, MUTED),
+        (f"GOES INTO:  {d['channel']}", 11, True, MUTED),
+    ])
+    footer(slide, 1)
 
 
-def title(slide, text, top=Inches(0.72), height=Inches(0.7)):
-    box = slide.shapes.add_textbox(MARGIN, top, Inches(12.4), height)
-    add_text(box, [(text, 26, True, NAVY)])
+def build_slide2(slide, d):
+    slide_bg(slide)
+    header(slide, d)
+    textbox(slide, "kicker", M, Inches(0.46), Inches(12.4), Inches(0.26), [("FIVE-SECOND SCORECARD", 11, True, TEAL)])
+    textbox(slide, "title", M, Inches(0.72), Inches(12.4), Inches(0.65), [(d["insight"], 26, True, NAVY)])
+    for i, (name, label, pill_bg, pill_fg, status, defin, delta) in enumerate(d["rag"]):
+        left = M + Inches(i * 4.3)
+        rounded(slide, f"rag_bg_{i+1}", left, Inches(1.48), Inches(3.85), Inches(5.35), WHITE_CARD)
+        rounded(slide, f"rag_pill_{i+1}", left + Inches(2.35), Inches(1.58), Inches(1.2), Inches(0.3), pill_bg, None)
+        textbox(slide, f"rag_name_{i+1}", left + Inches(0.16), Inches(1.58), Inches(2.1), Inches(0.28), [(name, 11, True, MUTED)])
+        textbox(slide, f"rag_pill_txt_{i+1}", left + Inches(2.42), Inches(1.6), Inches(1.05), Inches(0.26), [(label, 10, True, pill_fg)])
+        textbox(slide, f"rag_body_{i+1}", left + Inches(0.16), Inches(1.95), Inches(3.55), Inches(4.7), [
+            (status, 18, True, NAVY), (defin, 13, False, MUTED), (delta, 14, True, INK),
+        ])
+    footer(slide, 2)
 
 
-def notes(slide, text):
-    slide.notes_slide.notes_text_frame.text = text
+def build_slide3(slide, d):
+    slide_bg(slide)
+    header(slide, d)
+    textbox(slide, "kicker", M, Inches(0.46), Inches(12.4), Inches(0.26), [("FIELD SIGNALS - MAX THREE", 11, True, TEAL)])
+    textbox(slide, "title", M, Inches(0.72), Inches(12.4), Inches(0.65), [("What repeated in the field - not who we visited", 26, True, NAVY)])
+    for i, (title_t, obs, so, impl) in enumerate(d["signals"]):
+        left = M + Inches(i * 4.3)
+        rounded(slide, f"sig_bg_{i+1}", left, Inches(1.48), Inches(3.85), Inches(5.35), WHITE_CARD)
+        textbox(slide, f"signal_{i+1}", left + Inches(0.14), Inches(1.58), Inches(3.55), Inches(5.1), [
+            (title_t, 16, True, NAVY), (obs, 13, False, INK), (so, 13, False, INK), (impl, 13, True, TEAL),
+        ])
+    footer(slide, 3)
 
 
-def build():
+def build_slide4(slide, d):
+    slide_bg(slide)
+    header(slide, d)
+    textbox(slide, "kicker", M, Inches(0.46), Inches(12.4), Inches(0.26), [("CONVERSION, NOT COVERAGE", 11, True, TEAL)])
+    textbox(slide, "title", M, Inches(0.72), Inches(12.4), Inches(0.65), [("Where field time dies", 26, True, NAVY)])
+    rounded(slide, "funnel_bg", M, Inches(1.48), Inches(5.9), Inches(5.35), WHITE_CARD)
+    textbox(slide, "funnel_title", M + Inches(0.16), Inches(1.58), Inches(5.5), Inches(0.28), [("ACCOUNT MOTION (QUALITATIVE)", 11, True, MUTED)])
+    widths = [Inches(5.0), Inches(4.2), Inches(3.4), Inches(2.7)]
+    tops = [Inches(2.05), Inches(2.95), Inches(3.85), Inches(4.75)]
+    lefts = [Inches(0.7), Inches(1.1), Inches(1.5), Inches(2.0)]
+    for i, (label, w, t, l) in enumerate(zip(d["funnel"], widths, tops, lefts)):
+        stall = "STALL" in label.upper()
+        rounded(slide, f"funnel_bar_{i+1}", l, t, w, Inches(0.68), NAVY, GOLD if stall else None)
+        textbox(slide, f"funnel_txt_{i+1}", l + Inches(0.08), t + Inches(0.12), w - Inches(0.16), Inches(0.5), [(label, 13, True, WHITE)])
+    textbox(slide, "funnel_note", M + Inches(0.16), Inches(5.55), Inches(5.5), Inches(0.55), [
+        ("Widths are illustrative. Replace with your qualitative read - do not invent counts.", 11, False, MUTED),
+    ])
+    rounded(slide, "barrier_bg", Inches(6.7), Inches(1.48), Inches(6.18), Inches(5.35), WHITE_CARD)
+    lines = [("RANKED BARRIERS (MAX 4)", 11, True, MUTED)] + [(b, 14, False, INK) for b in d["barriers"]] + [(d["moved"], 14, True, NAVY)]
+    textbox(slide, "barriers", Inches(6.86), Inches(1.58), Inches(5.85), Inches(5.1), lines)
+    footer(slide, 4)
+
+
+def build_slide5(slide, d):
+    slide_bg(slide)
+    header(slide, d)
+    textbox(slide, "kicker", M, Inches(0.46), Inches(12.4), Inches(0.26), [("DECISION PAGE", 11, True, TEAL)])
+    textbox(slide, "title", M, Inches(0.72), Inches(12.4), Inches(0.65), [("Options, risks, and the HQ ask", 26, True, NAVY)])
+    for i, (tag, ttl, body, col) in enumerate(d["options"]):
+        left = M + Inches(i * 4.3)
+        rounded(slide, f"opt_bg_{i+1}", left, Inches(1.42), Inches(3.85), Inches(2.05), col)
+        textbox(slide, f"option_{i+1}", left + Inches(0.14), Inches(1.5), Inches(3.55), Inches(1.85), [
+            (tag, 10, True, TEAL), (ttl, 15, True, NAVY), (body, 12, False, INK),
+        ])
+    rounded(slide, "premortem_bg", M, Inches(3.62), Inches(6.05), Inches(1.25), WHITE_CARD)
+    rounded(slide, "risk_bg", Inches(6.83), Inches(3.62), Inches(6.05), Inches(1.25), WHITE_CARD)
+    textbox(slide, "premortem", M + Inches(0.14), Inches(3.7), Inches(5.75), Inches(1.05), [
+        ("PRE-MORTEM", 11, True, MUTED), (d["premortem"], 13, False, INK),
+    ])
+    textbox(slide, "share_risk", Inches(6.97), Inches(3.7), Inches(5.75), Inches(1.05), [
+        ("SHAREABLE-PACK RISK", 11, True, MUTED), (d["share_risk"], 13, False, INK),
+    ])
+    rounded(slide, "actions_bg", M, Inches(5.05), Inches(12.43), Inches(1.85), WHITE_CARD)
+    textbox(slide, "actions", M + Inches(0.14), Inches(5.12), Inches(12.1), Inches(1.7), [
+        ("NEXT ACTIONS  |  role + date, not names", 11, True, MUTED),
+    ] + [(a, 14, False, INK) for a in d["actions"]])
+    footer(slide, 5)
+
+
+def build_deck(data, filename):
     prs = Presentation()
     prs.slide_width = W
     prs.slide_height = H
     blank = prs.slide_layouts[6]
-
-    # --- Slide 1 ---
-    s = prs.slides.add_slide(blank)
-    bg = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, W, H)
-    fill(bg, PAPER)
-    header(s, "BESREMi · HK PV · PM field pack", "Biweekly · [dates] · Mid · Internal · De-identified")
-    flag = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, MARGIN, Inches(0.48), Inches(6.6), Inches(0.32))
-    fill(flag, RGBColor(0xF8, 0xEE, 0xD3))
-    add_text(flag, [("SAMPLE — replace before sending to HQ", 11, True, RGBColor(0x6B, 0x4E, 0x00))])
-    kicker(s, "The ask · first 30 seconds", Inches(0.88))
-    ask = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, MARGIN, Inches(1.18), Inches(12.43), Inches(1.7))
-    fill(ask, NAVY)
-    add_text(
-        ask,
-        [
-            ("HQ SHOULD DO THIS", 11, True, GOLD),
-            (
-                "Concentrate the next two weeks on initiation barriers in priority private accounts. Do not treat call volume as the progress metric.",
-                22,
-                True,
-                WHITE,
-            ),
-        ],
-    )
-    c1 = card(s, MARGIN, Inches(3.08), Inches(6.05), Inches(2.2))
-    add_text(
-        c1,
-        [
-            ("WHY NOW", 11, True, MUTED),
-            (
-                "Private-sector PSP expiry (end-2026) is already changing close conversations. Formulary packaging needs field themes, not visit counts, while the evidence window is still open.",
-                16,
-                False,
-                INK,
-            ),
-        ],
-    )
-    c2 = card(s, Inches(6.83), Inches(3.08), Inches(6.05), Inches(2.2))
-    add_text(
-        c2,
-        [
-            ("RECOMMENDATION", 11, True, MUTED),
-            (
-                "Do: report 3 conversion signals mapped to uptake / formulary / compliance. Do not: send trip logs, named HCPs, or CRM dumps.",
-                16,
-                False,
-                INK,
-            ),
-        ],
-    )
-    snaps = [
-        ("FORMULARY THIS CYCLE", "No change to dossier — themes usable, no new unlock", MARGIN),
-        ("PSP IN PLAY", "Base Case + Private Sector (expires end-2026)", Inches(4.75)),
-        ("COMPLIANCE", "Green · PV-only lexicon · ET/MF reactive-only", Inches(9.05)),
-    ]
-    for label, value, left in snaps:
-        card(s, left, Inches(5.4), Inches(3.85), Inches(1.15))
-        add_text(
-            s.shapes.add_textbox(left + Inches(0.16), Inches(5.46), Inches(3.55), Inches(1.0)),
-            [(label, 10, True, MUTED), (value, 13, True, NAVY)],
-        )
-    for label, value, left in [
-        ("DECISION NEEDED BY", "[YYYY-MM-DD]", MARGIN),
-        ("OWNER", "PM, with GM for HQ send", Inches(4.75)),
-        ("GOES INTO", "Standing biweekly HQ update", Inches(9.05)),
-    ]:
-        box = s.shapes.add_textbox(left, Inches(6.68), Inches(3.9), Inches(0.42))
-        add_text(box, [(f"{label}:  {value}", 11, True, MUTED)])
-    footer(s, 1)
-    notes(
-        s,
-        "Remember: one ask. Feel: HK is in control and compliant. Do: approve concentration on initiation, not more calls. Strip names before send.",
-    )
-
-    # --- Slide 2 ---
-    s = prs.slides.add_slide(blank)
-    bg = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, W, H)
-    fill(bg, PAPER)
-    header(s, "BESREMi · HK PV · PM field pack", "Biweekly · [dates] · Mid · Internal · De-identified")
-    kicker(s, "Five-second scorecard")
-    title(s, "Initiation, not awareness, is the stall.")
-    rags = [
-        (
-            "UPTAKE VS PLAN",
-            "AMBER",
-            AMBER_SOFT,
-            AMBER,
-            "Awareness holds; initiation is slow.",
-            "Definition: private uptake vs agreed HQ plan — not vs last week’s call count.",
-            "Vs last cycle: unchanged conversion quality.",
-            MARGIN,
-        ),
-        (
-            "FORMULARY TRAJECTORY",
-            "AMBER",
-            AMBER_SOFT,
-            AMBER,
-            "Field themes are usable; dossier not advanced this cycle.",
-            "Definition: whether this cycle strengthened, delayed, or did not change HADF packaging.",
-            "Vs last cycle: no new evidence gap; no new unlock.",
-            Inches(4.75),
-        ),
-        (
-            "COMPLIANCE",
-            "GREEN",
-            GREEN_SOFT,
-            GREEN,
-            "No uncleared claims. ET/MF stayed reactive-only.",
-            "Definition: materials cleared; no open UMAO/HKAPI issues; lexicon intact.",
-            "Vs last cycle: clean. Keep raw notes in the vault.",
-            Inches(9.05),
-        ),
-    ]
-    for name, label, pill_bg, pill_fg, status, defin, delta, left in rags:
-        card(s, left, Inches(1.55), Inches(3.85), Inches(5.3))
-        head = s.shapes.add_textbox(left + Inches(0.2), Inches(1.7), Inches(2.4), Inches(0.4))
-        add_text(head, [(name, 11, True, MUTED)])
-        pill = s.shapes.add_shape(
-            MSO_SHAPE.ROUNDED_RECTANGLE, left + Inches(2.45), Inches(1.72), Inches(1.15), Inches(0.32)
-        )
-        fill(pill, pill_bg)
-        add_text(pill, [(label, 10, True, pill_fg)])
-        body = s.shapes.add_textbox(left + Inches(0.2), Inches(2.2), Inches(3.45), Inches(4.3))
-        add_text(
-            body,
-            [
-                (status, 18, True, NAVY),
-                (defin, 13, False, MUTED),
-                (delta, 14, True, INK),
-            ],
-        )
-    footer(s, 2)
-    notes(s, "Lock RAG definitions with GM once. Green is not optimism. Missing definition = Amber.")
-
-    # --- Slide 3 ---
-    s = prs.slides.add_slide(blank)
-    bg = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, W, H)
-    fill(bg, PAPER)
-    header(s, "BESREMi · HK PV · PM field pack", "Biweekly · [dates] · Mid · Internal · De-identified")
-    kicker(s, "Field signals · max three")
-    title(s, "What repeated in the field — not who we visited")
-    signals = [
-        (
-            "Affordability is understood; initiation is not.",
-            "Observed: Priority private accounts can repeat PSP logic, then still do not start.",
-            "So what: Uptake risk sits after the affordability pitch, not before it.",
-            "Implication: Next cycle = onboarding friction, not more awareness meetings.",
-            MARGIN,
-        ),
-        (
-            "Price vs traditional IFN is the #1 close-blocker.",
-            "Observed: Same objection across accounts: why pay a premium vs off-label IFN.",
-            "So what: Stay inside approved PV evidence and dosing convenience.",
-            "Implication: No IFN-to-IFN superiority claim. Standing lexicon response only.",
-            Inches(4.75),
-        ),
-        (
-            "Two PSP paths are creating two close motions.",
-            "Observed: Base Case vs Private Sector (expires end-2026) used as different close paths.",
-            "So what: Expiry is a sequencing issue for HQ, not a slogan.",
-            "Implication: Do not informal-tweak terms. Confirm eligibility before quoting.",
-            Inches(9.05),
-        ),
-    ]
-    for title_t, obs, so, impl, left in signals:
-        card(s, left, Inches(1.55), Inches(3.85), Inches(5.3))
-        box = s.shapes.add_textbox(left + Inches(0.18), Inches(1.7), Inches(3.5), Inches(4.9))
-        add_text(
-            box,
-            [
-                (title_t, 16, True, NAVY),
-                (obs, 13, False, INK),
-                (so, 13, False, INK),
-                (impl, 13, True, TEAL),
-            ],
-        )
-    footer(s, 3)
-    notes(s, "Three patterns maximum. ET/MF questions stay off this slide except as 'reactive-only, logged.'")
-
-    # --- Slide 4 ---
-    s = prs.slides.add_slide(blank)
-    bg = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, W, H)
-    fill(bg, PAPER)
-    header(s, "BESREMi · HK PV · PM field pack", "Biweekly · [dates] · Mid · Internal · De-identified")
-    kicker(s, "Conversion, not coverage")
-    title(s, "Where field time dies")
-    card(s, MARGIN, Inches(1.55), Inches(5.9), Inches(5.3))
-    add_text(
-        s.shapes.add_textbox(MARGIN + Inches(0.2), Inches(1.68), Inches(5.5), Inches(0.3)),
-        [("ACCOUNT MOTION (QUALITATIVE)", 11, True, MUTED)],
-    )
-    steps = [
-        ("Awareness · holding", Inches(0.7), Inches(2.15)),
-        ("Intent · holding", Inches(1.1), Inches(3.05)),
-        ("Initiation · STALL — mark this bar", Inches(1.6), Inches(3.95)),
-        ("Persistency · too early to claim", Inches(2.1), Inches(4.85)),
-    ]
-    widths = [Inches(5.1), Inches(4.3), Inches(3.5), Inches(2.8)]
-    for (label, left, top), width in zip(steps, widths):
-        sh = s.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, left, top, width, Inches(0.72))
-        fill(sh, NAVY)
-        add_text(sh, [(label, 13, True, WHITE)])
-    card(s, Inches(6.7), Inches(1.55), Inches(6.18), Inches(5.3))
-    tbl_box = s.shapes.add_textbox(Inches(6.9), Inches(1.7), Inches(5.8), Inches(4.9))
-    add_text(
-        tbl_box,
-        [
-            ("RANKED BARRIERS (MAX 4)", 11, True, MUTED),
-            ("1  Initiation / onboarding after PSP explanation  → Uptake  · New as the pattern", 14, False, INK),
-            ("2  Price vs traditional IFN — lexicon-bound answer only  → Uptake + compliance  · Unchanged", 14, False, INK),
-            ("3  Private Sector PSP clock changing urgency unevenly  → Access / PSP  · Rising", 14, False, INK),
-            ("4  [Fourth barrier or delete row]", 14, False, MUTED),
-            (
-                "Moved this cycle: Stopped spreading coverage. Next two weeks: initiation checklist on the priority-account list (titles only; no HCP names on this slide).",
-                14,
-                True,
-                NAVY,
-            ),
-        ],
-    )
-    footer(s, 4)
-    notes(s, "Funnel widths are illustrative. Do not invent patient or account counts. HA formulary line belongs in RAG, not as a fourth vanity chart.")
-
-    # --- Slide 5 ---
-    s = prs.slides.add_slide(blank)
-    bg = s.shapes.add_shape(MSO_SHAPE.RECTANGLE, 0, 0, W, H)
-    fill(bg, PAPER)
-    header(s, "BESREMi · HK PV · PM field pack", "Biweekly · [dates] · Mid · Internal · De-identified")
-    kicker(s, "Decision page")
-    title(s, "Options, risks, and the HQ ask")
-    opts = [
-        ("NOT RECOMMENDED", "A. Keep activity reports", "Visit counts and trip notes. Easy to write; HQ cannot see the thesis.", MARGIN, WHITE_CARD),
-        ("RECOMMENDED", "B. Signal → implication → ask", "This pack. Three patterns, RAG vs plan, one decision date.", Inches(4.75), TEAL_SOFT),
-        ("NOT RECOMMENDED", "C. CRM dump", "Looks rigorous, usually unreadable, often too sensitive to forward.", Inches(9.05), WHITE_CARD),
-    ]
-    for tag, ttl, body, left, col in opts:
-        card(s, left, Inches(1.48), Inches(3.85), Inches(2.15), col)
-        box = s.shapes.add_textbox(left + Inches(0.16), Inches(1.55), Inches(3.55), Inches(2.0))
-        add_text(box, [(tag, 10, True, TEAL), (ttl, 15, True, NAVY), (body, 12, False, INK)])
-    card(s, MARGIN, Inches(3.78), Inches(6.05), Inches(1.35))
-    add_text(
-        s.shapes.add_textbox(MARGIN + Inches(0.16), Inches(3.86), Inches(5.75), Inches(1.2)),
-        [
-            ("PRE-MORTEM", 11, True, MUTED),
-            ("If this fails: someone still scores the team on call volume, so activity theatre returns.", 13, False, INK),
-        ],
-    )
-    card(s, Inches(6.83), Inches(3.78), Inches(6.05), Inches(1.35))
-    add_text(
-        s.shapes.add_textbox(Inches(7.0), Inches(3.86), Inches(5.75), Inches(1.2)),
-        [
-            ("SHAREABLE-PACK RISK", 11, True, MUTED),
-            ("A named KOL or patient-adjacent story leaks into a forwardable deck.", 13, False, INK),
-        ],
-    )
-    card(s, MARGIN, Inches(5.25), Inches(12.43), Inches(1.75))
-    add_text(
-        s.shapes.add_textbox(MARGIN + Inches(0.16), Inches(5.32), Inches(12.1), Inches(1.6)),
-        [
-            ("NEXT ACTIONS  ·  role + date, not names", 11, True, MUTED),
-            ("1  Rewrite last trip report into this 5-slide pack; strip names  ·  PM  ·  This week", 14, False, INK),
-            ("2  Lock RAG definitions with GM (uptake / formulary / compliance)  ·  PM + GM  ·  Next HQ cycle", 14, False, INK),
-            ("3  Compliance pass: no ET/MF promotion, no uncleared claims  ·  PM + Legal/Compliance  ·  Before send", 14, False, INK),
-        ],
-    )
-    footer(s, 5)
-    notes(
-        s,
-        "Always: PSP Base Case vs Private Sector (end-2026), HA formulary impact line, PV-only lexicon, sensitivity Mid unless raw notes are attached (then High — do not attach).",
-    )
-
-    out = Path(__file__).resolve().parents[1] / "playbooks" / "hq-field-progress-slides.pptx"
+    slides = [prs.slides.add_slide(blank) for _ in range(5)]
+    build_slide1(slides[0], data)
+    build_slide2(slides[1], data)
+    build_slide3(slides[2], data)
+    build_slide4(slides[3], data)
+    build_slide5(slides[4], data)
+    out = OUT_DIR / filename
     prs.save(out)
-    print(f"Wrote {out}")
+    return out
+
+
+def main():
+    example = build_deck(EXAMPLE, "hq-field-progress-slides.pptx")
+    blank = build_deck(BLANK, "hq-field-progress-slides-blank.pptx")
+    print(f"Wrote {example}")
+    print(f"Wrote {blank}")
 
 
 if __name__ == "__main__":
-    build()
+    main()
