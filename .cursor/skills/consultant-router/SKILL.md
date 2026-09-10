@@ -25,7 +25,8 @@ description: >-
    - TG → `agents/05-tech-geopolitics.md`
 5. Attach playbooks when needed (`exec-comms`, `data-story-brief`, `decision-one-pager`, etc.).
 6. Point to role memory: `industry/role-pm.md` / `role-gm.md` / `role-clinical-pm.md`.
-7. Output in the router’s fixed format. Do not deep-analyze before sensitivity is set.
+7. Personal investing (stock screen, 催化劑, JLaw daily desk) → `investment/README.md` and skill `jlaw-investor`. Do not treat that as HQ finance unless the user asks for a finalist DCF.
+8. Output in the router’s fixed format. Do not deep-analyze before sensitivity is set.
 
 ## After routing
 

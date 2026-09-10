@@ -1,5 +1,7 @@
-# TradingView screener + MCP bridge for Cursor
+# TradingView screener + MCP bridge for Cursor / Grok Bot
 tradingview-assistant>=0.9.1
 tradingview-screener>=3.2.0
 mcp[cli]>=1.12.0,<2
 uv>=0.4.0
+pandas>=2.0.0
+yfinance>=0.2.40

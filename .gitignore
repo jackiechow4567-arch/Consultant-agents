@@ -1,3 +1,16 @@
 # Consultant agents — local-only paths
 work-briefs/**
 !work-briefs/README.md
+
+# Personal investing live files (public tickers OK; keep weights local)
+investment/watchlist.md
+investment/watchlist.yaml
+investment/briefs/*.md
+!investment/briefs/.gitkeep
+
+# JLaw Inbox: member URLs + full lesson dumps stay local
+investment/inbox/sources.md
+investment/inbox/raw/
+
+__pycache__/
+*.pyc
