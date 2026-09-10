@@ -71,12 +71,17 @@
       overflow: hidden;
       padding: 16px;
     }
+    .stage-wrap {
+      width: 1920px;
+      height: 1080px;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.45);
+    }
     .stage {
       width: 1920px;
       height: 1080px;
-      transform-origin: center center;
+      transform-origin: top left;
       position: relative;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.45);
     }
     .slide {
       position: absolute;
@@ -323,7 +328,8 @@
       html, body { background: white; overflow: visible; height: auto; }
       .chrome { display: none !important; }
       .viewport { padding: 0; display: block; }
-      .stage { transform: none !important; width: 1920px; height: auto; box-shadow: none; }
+      .stage-wrap { width: 1920px !important; height: auto !important; overflow: visible; box-shadow: none; }
+      .stage { transform: none !important; width: 1920px; height: auto; }
       .slide { position: relative; display: flex !important; page-break-after: always; height: 1080px; }
     }
   </style>
@@ -342,12 +348,14 @@
       </div>
     </div>
     <div class="viewport">
+      <div class="stage-wrap" id="stage-wrap">
       <div class="stage" id="stage">
         <section class="slide on" data-slide="1"></section>
         <section class="slide" data-slide="2"></section>
         <section class="slide" data-slide="3"></section>
         <section class="slide" data-slide="4"></section>
         <section class="slide" data-slide="5"></section>
+      </div>
       </div>
     </div>
   </div>
@@ -616,8 +624,12 @@
 
     function scale() {
       const vp = document.querySelector(".viewport");
+      const wrap = document.getElementById("stage-wrap");
+      const stage = document.getElementById("stage");
       const s = Math.min(vp.clientWidth / 1920, vp.clientHeight / 1080);
-      document.getElementById("stage").style.transform = `scale(${s})`;
+      wrap.style.width = `${1920 * s}px`;
+      wrap.style.height = `${1080 * s}px`;
+      stage.style.transform = `scale(${s})`;
     }
 
     slides.forEach((_, idx) => {
