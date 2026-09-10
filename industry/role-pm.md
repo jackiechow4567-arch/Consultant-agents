@@ -118,7 +118,7 @@
 ## Hard-won lessons (from practice)
 
 1. **Premium vs off-label traditional IFN:** Physicians repeatedly ask why BESREMi costs many times more than traditional interferons used off-label for PV. Without head-to-head data, we cannot claim superior efficacy vs Pegasys or China ropeginterferon — differentiation must stay within approved PV evidence, dosing convenience, and lexicon-approved disease-modifying narrative, not comparative superiority claims.
-2. **Competitive noise (Pegasys, China ropeginterferon):** Each physician interaction surfaces "why your drug?" — need a standing, compliant response framework for price/value questions that does not imply unsupported comparative outcomes.
+2. **Competitive noise (Pegasys, China ropeginterferon):** Each physician interaction surfaces "why your drug?" — need a standing, compliant response framework for price/value questions that does not imply unsupported comparative outcomes. **Standing tool:** `pm-reference/pegasys-mpd-rc-112-vs-proud.md` — MPD-RC 112 is a *defensive* citation (failed 12-month primary, mixed ET/PV, supply-stopped, no event difference), not a Besremi-vs-Pegasys efficacy claim.
 3. *(TBD — add formulary, PSP, or compliance lessons as they emerge)*
 
 ## Frameworks I actually use as PM
