@@ -8,7 +8,7 @@
 |------------|---------------------------|-------|
 | Hydroxyurea (HU) | **Yes, if citing named RCT** | PROUD-PV / CONTINUATION-PV |
 | Phlebotomy alone (low-risk PV) | **Yes, if citing named RCT** | Low-PV / NEJM Evidence 2023 |
-| Pegasys / other IFN / China ropeg | **No superiority claims** | No head-to-head; PI potency warning |
+| Pegasys / other IFN / China ropeg | **No superiority claims** | No head-to-head; PI potency warning. For HCP “I’ll use Pegasys” → `pegasys-mpd-rc-112-vs-proud.md` |
 | Anagrelide | **No** | No cited RCT in user's library |
 
 ## PROUD-PV / CONTINUATION-PV (Gisslinger et al., Leukemia 2023)
@@ -27,6 +27,14 @@
 - **Symptoms / splenomegaly:** Lower moderate/severe symptoms and splenomegaly in ropeg responders
 - **Phlebotomy burden:** Non-responders switched to ropeg needed high phlebotomy (4.7/patient/year cited in abstract context)
 - **PM use:** Early-intervention / phlebotomy-burden narrative where lexicon permits
+
+## MPD-RC 112 — Pegasys vs HU (Mascarenhas et al., *Blood* 2022)
+
+- **Design:** Investigator Phase 3, peg-rIFN-α-2a weekly vs HU; treatment-naïve high-risk **ET or PV**; n=168 (planned 300); NCT01259856
+- **Primary:** ELN CR at 12 months (counts + spleen + symptoms) — **35% PEG vs 37% HU, p=0.80**
+- **Stopped early** when manufacturer halted PEG access; conditional power 12% to 300 patients
+- **Events:** 5 total; 24-month thrombosis 2% vs 2% — no EFS claim
+- **PM use:** **Do not volunteer** when asked “difference vs Pegasys.” **Reactive only** if the HCP cites this trial. Do **not** use for IFN-to-IFN superiority. Full framework: `pegasys-mpd-rc-112-vs-proud.md`
 
 ## Other papers in library (index — load full PDF locally when needed)
 
