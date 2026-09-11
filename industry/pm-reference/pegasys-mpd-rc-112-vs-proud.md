@@ -1,7 +1,8 @@
 # MPD-RC 112 (Pegasys vs HU) vs PROUD / CONTINUATION-PV (ropeg vs HU)
 
-> **Use:** Reactive scientific exchange when an HCP says “I’ll just use Pegasys.”  
-> **Not for:** Promotional IFN-to-IFN superiority, detail aids, or HA dossier comparative claims vs peginterferon alfa-2a.  
+> **Default: do not volunteer this paper.** If an HCP asks “what is the difference vs Pegasys?”, answer with on-label PV, q2w/q4w dosing, and Besremi’s **own** vs-HU / vs-phlebotomy package. MPD-RC 112 is **not** a difference story.  
+> **Use only if they cite it first** (“Pegasys already has an RCT vs HU” / they name Mascarenhas *Blood* 2022 / NCT01259856). Then deflate over-read — do not pivot into IFN-to-IFN efficacy.  
+> **Not for:** Promotional IFN-to-IFN superiority, detail aids, HA dossier vs peginterferon alfa-2a, or any “us vs Pegasys” opening.  
 > **Sources:** Mascarenhas et al., *Blood* 2022;139(19):2931–2941 (DOI 10.1182/blood.2021012743; NCT01259856); Gisslinger et al. PROUD-PV / CONTINUATION-PV as already distilled in `pv-clinical-evidence.md` and HK PI.  
 > **Sensitivity:** Mid (published trials + commercial objection handling). Keep PSP uptake and unpublished KOL names out of HCP materials.
 
@@ -19,7 +20,14 @@
 
 ## One-line PM read
 
-MPD-RC 112 does **not** make Pegasys equivalent to Besremi. It shows weekly peg-IFN-α-2a and HU are both active at 12 months in a mixed **ET+PV**, **underpowered**, **supply-stopped** trial, with **no event difference** and **more grade 3/4 AEs** on PEG. The Besremi edge vs that objection is **label + PV-only 6-year vs-HU evidence + dosing/supply**, not a cross-trial efficacy win.
+**Do not mention this paper to explain Besremi vs Pegasys.** It has no head-to-head, month 12 does not favour ropeg over Pegasys vs HU, and citing it hands the HCP Pegasys haematocrit and JAK2-vs-HU findings you cannot beat on-label. Keep it in your pocket only to correct over-read if **they** bring the trial up. The actual difference answer is **label + PV-only 6-year vs-HU package + q2w/q4w + supply** — none of which requires naming MPD-RC 112.
+
+### When to open your mouth about 112
+
+| Physician says | You | Why |
+|----------------|-----|-----|
+| “What’s the difference vs Pegasys?” / “Why not just use Pegasys?” | **Do not name this paper.** Stay on PI, dosing, PROUD/CONT-PV vs HU, Low-PV vs phlebotomy, access/PSP. | 112 is Pegasys vs HU, not vs you. Naming it invites a cross-trial fight you cannot win compliantly. |
+| “Pegasys already has a Phase 3 vs HU” / they cite *Blood* 2022 or NCT01259856 | **Then** use 112: mixed ET/PV, 12-month CR tie, five events, stopped for supply. Do not add “so we are better.” | You are correcting what **that trial** can and cannot show, not comparing products. |
 
 ## Side-by-side (do not promote as head-to-head)
 
