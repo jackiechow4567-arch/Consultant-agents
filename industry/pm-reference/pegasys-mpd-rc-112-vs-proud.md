@@ -48,6 +48,21 @@ MPD-RC 112 CR required **symptom resolution** and **ultrasound spleen** (splenom
 
 Mascarenhas et al. wrote that Ro-PEG “was not inferior” to HU at 12 months. The PROUD-PV **primary non-inferiority endpoint (CHR + spleen) was not met**. Benefit vs HU in the lexicon is the **long-term CONTINUATION-PV / 6-year** package, not a 12-month NI win. Correct gently if a KOL quotes the *Blood* sentence.
 
+### FAQ — “At month 12, is Pegasys vs HU worse than ropeg vs HU?”
+
+**No. Do not say that.** Month 12 is the **wrong** place to claim a Besremi edge over Pegasys.
+
+| 12-month readout | Pegasys vs HU (MPD-RC 112) | Ropeg vs HU (PROUD-PV) |
+|------------------|----------------------------|-------------------------|
+| Primary / composite | CR **35% vs 37%**, p=0.80 — **no difference** | CHR + spleen **21.3% vs 27.6%** — **NI not met** (HU numerically higher) |
+| PV counts | PV CR **28% vs 30%**; Hct control **65% vs 43%, p=0.04** (**PEG better**) | PI 12-month disease response **43.1%** (ropeg arm); HU often preferred for **early** control (titration ~2.6 vs 3.7 mo) |
+
+Read each IFN **only against HU in its own trial**. Cross-trial 35% vs 21% is invalid (different CR definitions, ET mixed in, different NI vs superiority designs).
+
+**What month 12 actually says (class, not brand):** neither IFN beat HU on a strict 12-month composite. If an HCP argues Pegasys is “already as good as HU at 1 year,” 112 supports that for CR; it does **not** mean Pegasys lost to ropeg.
+
+**Where Besremi *does* separate from the Pegasys *evidence package*:** not month 12, but **completed PV-only follow-up vs HU to 6 years (CHR + EFS)** plus label / q2w dosing / supply. 112 never delivered that long-term vs-HU event analysis.
+
 ## What is a real edge when physicians mention Pegasys
 
 Use in this order (strongest → weakest for **compliant** conversation):
