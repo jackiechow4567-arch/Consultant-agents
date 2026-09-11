@@ -34,7 +34,7 @@
 - **Primary:** ELN CR at 12 months (counts + spleen + symptoms) — **35% PEG vs 37% HU, p=0.80**
 - **Stopped early** when manufacturer halted PEG access; conditional power 12% to 300 patients
 - **Events:** 5 total; 24-month thrombosis 2% vs 2% — no EFS claim
-- **PM use:** **Reactive only** when HCPs cite Pegasys. Do **not** use for IFN-to-IFN superiority. Full objection framework: `pegasys-mpd-rc-112-vs-proud.md`
+- **PM use:** **Do not volunteer** when asked “difference vs Pegasys.” **Reactive only** if the HCP cites this trial. Do **not** use for IFN-to-IFN superiority. Full framework: `pegasys-mpd-rc-112-vs-proud.md`
 
 ## Other papers in library (index — load full PDF locally when needed)
 
