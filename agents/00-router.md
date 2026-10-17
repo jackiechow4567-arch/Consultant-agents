@@ -35,8 +35,11 @@ You do **not** complete full specialist analysis yourself. You:
 | OC | `03-operations-clinical-pm.md` | Timeline, resources, RAID, clinical project delivery, cross-functional ops |
 | PG | `04-product-gm.md` | Prioritization, resource allocation, cross-functional decisions, up/down comms, healthcare innovation bets |
 | TG | `05-tech-geopolitics.md` | Tech adoption, internal IT strategy, export controls, supply-chain geopolitics, dual-use risk |
+| CI | `06-mgmt5883-study-companion.md` | MGMT5883 course coaching: frameworks, Nest Fresh, Satera, design-thinking exercises, journal and consulting-report **rubric checks**. Scaffolding only — no graded draft |
 
 Cross-domain: **one primary + at most one support**. No five-way panels.
+
+Course homework and case prep for Managing Creativity and Innovation → primary **CI**. A live subsidiary go/no-go that uses those frameworks → primary **PG**, with CI only if the user also wants course-language coaching. Do not send a graded journal or consulting report to PG to be written.
 
 ### Attach playbooks when needed
 

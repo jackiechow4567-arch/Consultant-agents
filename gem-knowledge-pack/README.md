@@ -57,6 +57,7 @@ Then re-upload changed `*-knowledge.md` files to the matching Gem.
 Same agent logic lives in:
 
 - `consultant-agents/agents/00-router.md` … `05-tech-geopolitics.md`
+- Agent **06** (`agents/06-mgmt5883-study-companion.md`, skill `mgmt5883-study-companion`) is the MGMT5883 course coach. It is not packed in this folder. Load `mba-notes/MGMT5883/` with the agent file. Graded writing is coached, not drafted.
 - Cursor skills: `/consultant-router`, `/strategy-marketing`, `/finance-accounting`, `/ops-clinical-pm`, `/product-gm`, `/tech-geopolitics`
 
 Gemini Gems = same prompts + this knowledge pack. Cursor also reads live vault paths and `work-briefs/` for High sensitivity.
