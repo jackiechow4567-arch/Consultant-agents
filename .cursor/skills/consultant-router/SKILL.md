@@ -23,6 +23,7 @@ description: >-
    - OC → `agents/03-operations-clinical-pm.md`
    - PG → `agents/04-product-gm.md`
    - TG → `agents/05-tech-geopolitics.md`
+   - CI → `agents/06-mgmt5883-study-companion.md` (MGMT5883 course coaching and rubric checks; scaffolding only)
 5. Attach playbooks when needed (`exec-comms`, `data-story-brief`, `decision-one-pager`, etc.).
 6. Point to role memory: `industry/role-pm.md` / `role-gm.md` / `role-clinical-pm.md`.
 7. Output in the router’s fixed format. Do not deep-analyze before sensitivity is set.

@@ -13,7 +13,7 @@ MBA × industry consultant agents for Hong Kong subsidiary work (Clinical PM / P
 **Rule:** high-sensitivity raw → process locally → export only de-identified conclusions.  
 See [privacy-policy.md](privacy-policy.md).
 
-## Agents (6)
+## Agents (7)
 
 | File | Cursor skill | Role |
 |------|--------------|------|
@@ -23,6 +23,7 @@ See [privacy-policy.md](privacy-policy.md).
 | [agents/03-operations-clinical-pm.md](agents/03-operations-clinical-pm.md) | `ops-clinical-pm-consultant` | Operations + clinical PM delivery |
 | [agents/04-product-gm.md](agents/04-product-gm.md) | `product-gm-consultant` | Product / GM / healthcare decisions |
 | [agents/05-tech-geopolitics.md](agents/05-tech-geopolitics.md) | `tech-geopolitics-consultant` | Tech strategy + emerging-tech geopolitics |
+| [agents/06-mgmt5883-study-companion.md](agents/06-mgmt5883-study-companion.md) | `mgmt5883-study-companion` | MGMT5883 creativity course coach (scaffolding only) |
 
 Job titles (CPM / PM / GM) are **role lenses**, not separate personas.
 
@@ -58,7 +59,7 @@ Get-ChildItem $src -Directory | ForEach-Object {
 
 ### Gemini Enterprise
 
-Create one Gem per agent file (`00`–`05`) and paste the system prompt from each markdown file.
+Create one Gem per agent file (`00`–`06`) and paste the system prompt from each markdown file. For the creativity course, start with `Use mgmt5883-study-companion.` Graded writing is coached, not drafted.
 
 ## Role memory
 
