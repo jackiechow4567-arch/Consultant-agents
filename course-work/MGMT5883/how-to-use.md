@@ -14,7 +14,7 @@ Turnover is named, then set aside. Vacancies are hard to fill except with new gr
 The course asks for one recommendation per problem. The extra ideas are the steps inside those two recommendations.
 
 1. Staff the cap. Request headcount equal to active trials divided by five, minus current associates. Raise salary so experienced people will join. Give every study two associates with access. The second person's authority is limited to a written list of items that cannot wait.
-2. Move routine administration off the associates. University interns collect, file, and prepare hospital payments. AI drafts routine reports, categorizes documents, and prepares payment steps. Associates still judge completeness, accuracy, and whether the payment is right (Session 4, Doshi and Hauser, 2024). The database status update then has time in the week.
+2. Move internal work, and documentation support, to university interns. That work does not face the client. Interns help associates with documents and with internal database updates, and they learn the trial through that work. They do not handle payments. AI drafts routine reports, categorizes documents, and prepares payment steps for an associate to approve (Session 4, Doshi and Hauser, 2024).
 
 ## Check in Word
 

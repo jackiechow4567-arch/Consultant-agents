@@ -193,34 +193,36 @@ def main():
     )
 
     rec2 = (
-        "For the failure of help, I recommend taking routine administration off the associates, so they have slack for "
-        "work that is not on a client deadline. University interns would do defined administration: collecting and filing "
-        "hospital documents, and preparing the papers in a payment to a hospital. An AI system would draft routine "
-        "reports, categorize documents, and prepare the hospital payment steps. Associates keep the judgment: whether "
-        "the file is complete, whether the report is accurate, and whether the payment is right. Session 4 teaches that "
-        "a model can raise the output of a piece of work and can also make the drafts more alike, while the decision "
-        "that something is useful stays with the person who knows the study (Doshi and Hauser, 2024, as taught). That "
-        "freed time is the slack IDEO says helping requires (Amabile, Fisher, and Pillemer, 2014). The database update "
-        "can then sit in the week, owned by a named person, because the hour is no longer lost to filing."
+        "For the failure of help, I recommend moving internal work, and the documentation that supports it, to university "
+        "interns. That work faces the company, not the client. Interns would support the associate on documentation: "
+        "collecting hospital files, checking that a set is complete against a list, and uploading it. They would also "
+        "keep the internal database current for audits. They would not handle payments. Through the documents and the "
+        "status updates they would learn how a trial actually runs, which is the industry knowledge a narrow job never "
+        "shows them. An AI system would still draft routine reports, categorize documents, and prepare hospital payment "
+        "steps. Associates keep the judgment, including whether a payment is right. Session 4 teaches that a model can "
+        "raise output and can also make drafts more alike, while usefulness stays with the person who knows the study "
+        "(Doshi and Hauser, 2024, as taught). The hour freed is the slack IDEO says helping requires (Amabile, Fisher, "
+        "and Pillemer, 2014)."
     )
 
     rec2b = (
-        "The intern's list would be written, and it would stop short of client decisions. Amabile's challenge rule is "
-        "to match the task to the person: an intern learns the administration, and the associate is no longer the only "
-        "one who can touch a document (Amabile, 1998). The AI tools would start on three streams only: report drafts, "
-        "document categories, and hospital payments. The associate clinical project manager would still read the date "
-        "of the last database update, so a stale status is visible before an audit. Thompson's chapter is why that "
-        "line exists: the fact has to leave one person's queue. Interns and the tools can start in the same quarter as "
-        "the headcount request. They ease the present team while the new associates are being found."
+        "The intern's list would be written: documentation support and internal updates, and no payments. Amabile's "
+        "challenge rule is to match the task to the person. An intern can learn the trial from the files without "
+        "carrying client risk, and the associate is no longer the only one who can complete a document set (Amabile, "
+        "1998). The AI tools would start on three streams: report drafts, document categories, and payment preparation "
+        "for an associate to approve. The associate clinical project manager would still read the date of the last "
+        "database update. Thompson's chapter is why that line exists: the fact has to leave one person's queue. Interns "
+        "and the tools can start in the same quarter as the headcount request. They ease the present team while the "
+        "new associates are being found."
     )
 
     close = (
         "Creativity in this organization is a useful improvement in how a trial is run: a complete document set, a "
         "status a manager can trust, and a second associate who can cover the items that cannot wait. The two actions "
         "are a staffed cap near five, with pay that can attract experienced people and two-person access on every "
-        "study, and a shift of routine administration to interns and to AI so that regular staff have time to see the "
-        "whole trial. Headcount, pay, access, interns, and tools are one design. Each piece fails if the others are "
-        "left out."
+        "study, and a shift of internal documentation to interns and of routine drafting to AI, so that regular staff "
+        "have time to see the whole trial. Payments stay with the associates. Headcount, pay, access, interns, and "
+        "tools are one design. Each piece fails if the others are left out."
     )
 
     blocks = [
