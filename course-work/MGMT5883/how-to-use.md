@@ -4,15 +4,17 @@ The report does not name the company. If the marker requires a name, add it only
 
 ## The two obstacles
 
-1. Eight to ten trials at once, against about five in peer companies. Active trials crowd out hospital-document uploads. Backup cover fails because study access stays with the responsible associate. Course: Amabile (1998) resource threshold; Amabile et al. (2002) time pressure, as taught in Session 4.
-2. Help loses to client work because internal database updates are not billable, so management sees a stale status. Each person keeps a small piece of the trial. Course: Amabile (1998) on help and information; Amabile, Fisher, and Pillemer (2014) on IDEO helping and slack; Thompson, chapter 9, on unique information.
+1. Eight to ten trials at once, against about five in peer companies. Active trials crowd out hospital-document uploads. Backup cover fails because study access stays with one associate. Course: Amabile (1998) resource threshold; Amabile et al. (2002) time pressure, as taught in Session 4.
+2. Internal database updates lose to client work because they are not billable. Each person keeps a small piece of the trial. Course: Amabile, Fisher, and Pillemer (2014); Thompson, chapter 9.
 
-Turnover is named, then set aside as the condition that keeps both problems staffed with new graduates.
+Turnover is named, then set aside. Vacancies are hard to fill except with new graduates or people seeking faster promotion.
 
-## The two actions
+## One recommendation for each obstacle
 
-1. Cap active trials near five. Give quiet trials a weekly block for hospital documents. Grant the backup study access before leave, limited to a written list.
-2. Give each study a named assistant and a short weekly slot for the status update. Match new graduates to a smaller active load and have them follow one document from hospital to database to status line.
+The course asks for one recommendation per problem. The extra ideas are the steps inside those two recommendations.
+
+1. Staff the cap. Request headcount equal to active trials divided by five, minus current associates. Raise salary so experienced people will join. Give every study two associates with access. The second person's authority is limited to a written list of items that cannot wait.
+2. Move routine administration off the associates. University interns collect, file, and prepare hospital payments. AI drafts routine reports, categorizes documents, and prepares payment steps. Associates still judge completeness, accuracy, and whether the payment is right (Session 4, Doshi and Hauser, 2024). The database status update then has time in the week.
 
 ## Check in Word
 
