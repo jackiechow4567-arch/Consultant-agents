@@ -1,10 +1,10 @@
-# Creativity under Trial Overload in a Multinational Clinical Research Organization
+# Creativity under Trial Overload at IQVIA RDS Limited
 
 *A consulting report  |  October 2026*
 
 ## Introduction
 
-This report concerns a multinational clinical-research organization where I worked for six and a half years, first as a Clinical Research Associate and later as an Associate Clinical Project Manager. The company runs clinical trials and delivers results to internal functions and to external clients. Creativity here means a novel and useful improvement in how a trial is run. Innovation means that improvement is carried out. I identify the obstacles that kept staff from that kind of creativity, then recommend one feasible action for each of the two most serious obstacles, and the steps I would use to put those actions in place.
+This report concerns IQVIA RDS Limited, part of IQVIA Holdings Inc., an international contract research organization listed in the United States under the ticker IQV. The listed parent had a market capitalization of about $44 billion in mid-October 2026. I worked there for six and a half years, first as a Clinical Research Associate and later as an Associate Clinical Project Manager. The company runs clinical trials and delivers results to internal functions and to external clients. Creativity here means a novel and useful improvement in how a trial is run. Innovation means that improvement is carried out. I identify the obstacles that kept staff from that kind of creativity, then recommend one feasible action for each of the two most serious obstacles, and the steps I would use to put those actions in place.
 
 ## Obstacles to creativity and innovation
 

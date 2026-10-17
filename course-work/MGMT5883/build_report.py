@@ -127,16 +127,18 @@ def add_p(doc, text, *, size=12, bold=False, italic=False, center=False,
 
 
 def main():
-    title = "Creativity under Trial Overload in a Multinational Clinical Research Organization"
+    title = "Creativity under Trial Overload at IQVIA RDS Limited"
     subtitle = "A consulting report  |  October 2026"
 
     intro = (
-        "This report concerns a multinational clinical-research organization where I worked for six and a half years, "
-        "first as a Clinical Research Associate and later as an Associate Clinical Project Manager. The company runs "
-        "clinical trials and delivers results to internal functions and to external clients. Creativity here means a "
-        "novel and useful improvement in how a trial is run. Innovation means that improvement is carried out. I "
-        "identify the obstacles that kept staff from that kind of creativity, then recommend one feasible action for "
-        "each of the two most serious obstacles, and the steps I would use to put those actions in place."
+        "This report concerns IQVIA RDS Limited, part of IQVIA Holdings Inc., an international contract research "
+        "organization listed in the United States under the ticker IQV. The listed parent had a market capitalization "
+        "of about $44 billion in mid-October 2026. I worked there for six and a half years, first as a Clinical "
+        "Research Associate and later as an Associate Clinical Project Manager. The company runs clinical trials and "
+        "delivers results to internal functions and to external clients. Creativity here means a novel and useful "
+        "improvement in how a trial is run. Innovation means that improvement is carried out. I identify the obstacles "
+        "that kept staff from that kind of creativity, then recommend one feasible action for each of the two most "
+        "serious obstacles, and the steps I would use to put those actions in place."
     )
 
     obs_open = (
@@ -272,7 +274,7 @@ def main():
 
     header = sec.header.paragraphs[0]
     header.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    r = header.add_run("Clinical research organization  |  Consulting report")
+    r = header.add_run("IQVIA RDS Limited  |  Consulting report")
     set_run_font(r, "Times New Roman", 9, italic=True, color=RGBColor(0x55, 0x55, 0x55))
     header.paragraph_format.line_spacing_rule = WD_LINE_SPACING.SINGLE
 

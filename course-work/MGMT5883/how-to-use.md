@@ -1,6 +1,6 @@
 # How this draft uses your answers
 
-The report does not name the company. If the marker requires a name, add it only in the first sentence.
+The organization is named in the first sentences: IQVIA RDS Limited, part of IQVIA Holdings Inc. (ticker IQV). The market capitalization of about $44 billion is the listed parent's, as of mid-October 2026, not a figure for the RDS subsidiary alone.
 
 ## The two obstacles
 
