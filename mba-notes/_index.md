@@ -18,5 +18,7 @@ Agents should prefer these files over generic textbook recall.
 | SBMT6012G | Geopolitics of Emerging Tech | 05 | **Done** (2026-07-27; AI/semiconductor/quantum, US–China controls, Nvidia case) |
 | MGMT6501Q | Communication for Business Leaders | playbooks/exec-comms | **Done** (2026-07-27; Student Notes; HBR scans unavailable — final) |
 | ISOM5120 | Visualizing Data for Business Decisions | playbooks/data-story-brief | **Done** (2026-07-27; marks/channels, dashboards, chart choice, visual analytics) |
+| EWMBA2962F | Virtual Leadership (Haas / GNAM) | 04, playbooks/exec-comms | **Done** (2026-10-17; Weeks 1 & 4 decks, textpak readings; class coaching in `study-mode.md`) |
 
-Raw lecture PDFs stay in OneDrive. Only distilled markdown belongs here.
+Raw lecture PDFs stay in OneDrive. Only distilled markdown belongs here.  
+EWMBA 296.2F: do not paste these notes into Rumi assignments. See `EWMBA2962F/study-mode.md`.

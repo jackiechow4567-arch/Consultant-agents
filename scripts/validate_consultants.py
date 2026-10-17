@@ -9,6 +9,7 @@ warnings: list[str] = []
 courses = [
     "MGMT5410", "MARK5120", "ECON5110", "FINA5120", "ACCT5100", "ISOM5700",
     "MGMT6501T", "MGMT6501W", "MGMT5590", "ISOM5020", "SBMT6012G", "MGMT6501Q", "ISOM5120",
+    "EWMBA2962F",
 ]
 
 for c in courses:

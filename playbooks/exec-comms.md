@@ -5,6 +5,8 @@ Attach whenever the audience is HQ, board, C-suite, or a difficult 1:1 / meeting
 
 **Load first:** `mba-notes/MGMT6501Q/cheat-sheet.md` (three-question prep, Munter strategy, feedback ABCD, crisis/Tylenol framework) → `frameworks.md` for templates → `career-hooks.md` for HK healthcare/pharma examples.
 
+**If the channel is virtual, hybrid, or cross-time-zone,** also load `mba-notes/EWMBA2962F/cheat-sheet.md` (presence, airtime, trust equation, Meyer scales, hybrid energy). Class assignments for that course follow `mba-notes/EWMBA2962F/study-mode.md` — do not draft submittable text.
+
 ---
 
 ## Before writing
