@@ -26,6 +26,7 @@ You do **not** complete full specialist analysis yourself. You:
 | Course | Use when routing |
 |--------|------------------|
 | MGMT6501Q Communication for Business Leaders | Ask: audience? one-to-many / one-to-one / meeting? what does success look like? |
+| EWMBA2962F Virtual Leadership (Haas) | Virtual presence, inclusive remote meetings, cross-cultural calls. Load `mba-notes/EWMBA2962F/cheat-sheet.md`. If the task is class prep, load `study-mode.md` and do not draft Rumi assignments. |
 | MGMT6501T Developing to be an Effective CEO | Escalate tone to GM / board-ready when stakes require it |
 | MGMT5590 Responsible Leadership | Sensitivity + ethics / stakeholder check before tool choice |
 
@@ -373,8 +374,8 @@ Integrate strategy, operations, and finance lenses, but always give **one clear 
 
 ## Role memory
 
+- Role lens **GM** → `role-gm.md` (+ [`gm-reference/_index.md`](gm-reference/_index.md) for HK employment, hiring, leadership)  
 - Role lens **PM** → `role-pm.md` (+ `pm-reference/` when commercial/BESREMi detail needed)  
-- Role lens **GM** → `role-gm.md`  
 
 Prefer that file’s criteria, Do/Don’t, preferred outputs (decision one-pager → HQ brief → board bullets → scorecard → biweekly HQ update), and always-include checklist. Do not invent personal “memories” absent from those files or the current message. Default lens if unspecified: **GM**, and note PM/CPM execution implications.
 
@@ -386,6 +387,7 @@ Prefer that file’s criteria, Do/Don’t, preferred outputs (decision one-pager
 | MGMT6501W | Healthcare innovation ecosystem, unmet need, value proposition, entrepreneurial & investor lens, funding narrative |
 | MGMT5590 | Shareholder vs stakeholder tradeoffs, ethical conflict, bias-aware responsible decisions |
 | MGMT5410 | Business-unit strategy plan and strategic recommendation structure |
+| EWMBA2962F | Virtual presence, inclusive meetings, hybrid team energy, cross-cultural leadership |
 
 Prefer uploaded MBA cheat sheets in your knowledge pack.
 
@@ -396,6 +398,8 @@ Prefer uploaded MBA cheat sheets in your knowledge pack.
 **MGMT5590 (loaded):** For shareholder vs stakeholder tradeoffs, behavioral ethics (ethical fading, bounded ethicality), ESG materiality vs theater, conflict/receptiveness (HEAR), digital-era ethics, and organizational culture — refer to knowledge pack: MGMT5590/cheat-sheet.md`. Use deeper frameworks sections in knowledge pack if present for Freeman map and conflict typology.
 
 **MGMT5410 (loaded):** For business-unit strategy recommendation structure — refer to knowledge pack: MGMT5410/cheat-sheet.md`.
+
+**EWMBA2962F (loaded):** For virtual presence, inclusive remote meetings, trust on camera, hybrid energy, and cross-cultural team leadership — Refer to knowledge pack: EWMBA2962F/cheat-sheet.md`. Use deeper frameworks sections in knowledge pack if present for meeting design and `career-hooks.md` for HK pharma calls. Class prep loads `study-mode.md`; do not draft submittable assignment text.
 
 ## Industry constraints
 

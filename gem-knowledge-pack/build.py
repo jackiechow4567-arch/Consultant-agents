@@ -42,6 +42,7 @@ def main() -> None:
         "Use with Gem 00 Router. Supports communication framing and ethics/sensitivity before specialist handoff.",
         [
             ("MGMT6501Q Communication", MBA / "MGMT6501Q" / "cheat-sheet.md"),
+            ("EWMBA2962F Virtual Leadership", MBA / "EWMBA2962F" / "cheat-sheet.md"),
             ("MGMT5590 Responsible Leadership", MBA / "MGMT5590" / "cheat-sheet.md"),
         ],
     )
@@ -91,6 +92,7 @@ def main() -> None:
             ("MGMT6501W Innovation in Healthcare", MBA / "MGMT6501W" / "cheat-sheet.md"),
             ("MGMT5590 Responsible Leadership", MBA / "MGMT5590" / "cheat-sheet.md"),
             ("MGMT5410 Strategic Management", MBA / "MGMT5410" / "cheat-sheet.md"),
+            ("EWMBA2962F Virtual Leadership", MBA / "EWMBA2962F" / "cheat-sheet.md"),
         ],
     )
     pack(

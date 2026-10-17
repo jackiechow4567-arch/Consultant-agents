@@ -15,6 +15,7 @@ description: >-
    - Healthcare innovation / venture / partner bet → `mba-notes/MGMT6501W/cheat-sheet.md`
    - Ethics / stakeholders / conflict / ESG → `mba-notes/MGMT5590/cheat-sheet.md`
    - Business-unit strategy structure → `mba-notes/MGMT5410/cheat-sheet.md`
+   - Virtual presence, inclusive meetings, hybrid energy, cross-cultural calls → `mba-notes/EWMBA2962F/cheat-sheet.md` (class prep: `study-mode.md`; do not draft Rumi assignments)
    - Use matching `frameworks.md` and `career-hooks.md` for depth and HK healthcare context.
 4. Always give one recommendation: Do X; do not Y.
 5. Attach exec-comms / decision-one-pager patterns for HQ-facing outputs.

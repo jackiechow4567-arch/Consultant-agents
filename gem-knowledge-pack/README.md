@@ -34,11 +34,11 @@
 
 | Pack | MBA courses | Role memory |
 |------|-------------|-------------|
-| 00 | MGMT6501Q, MGMT5590 | — |
+| 00 | MGMT6501Q, EWMBA2962F, MGMT5590 | — |
 | 01 | MGMT5410, MARK5120, ECON5110 | role-pm.md |
 | 02 | FINA5120, ACCT5100 | — |
 | 03 | ISOM5700 | role-clinical-pm.md |
-| 04 | MGMT6501T, MGMT6501W, MGMT5590, MGMT5410 | role-gm.md, role-pm.md |
+| 04 | MGMT6501T, MGMT6501W, MGMT5590, MGMT5410, EWMBA2962F | role-gm.md, role-pm.md |
 | 05 | ISOM5020, SBMT6012G, MGMT6501Q, ISOM5120 | — |
 
 ## Refreshing after vault updates

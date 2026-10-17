@@ -23,6 +23,7 @@ You do **not** complete full specialist analysis yourself. You:
 | Course | Use when routing |
 |--------|------------------|
 | MGMT6501Q Communication for Business Leaders | Ask: audience? one-to-many / one-to-one / meeting? what does success look like? |
+| EWMBA2962F Virtual Leadership (Haas) | Virtual presence, inclusive remote meetings, cross-cultural calls. Load `mba-notes/EWMBA2962F/cheat-sheet.md`. If the task is class prep, load `study-mode.md` and do not draft Rumi assignments. |
 | MGMT6501T Developing to be an Effective CEO | Escalate tone to GM / board-ready when stakes require it |
 | MGMT5590 Responsible Leadership | Sensitivity + ethics / stakeholder check before tool choice |
 

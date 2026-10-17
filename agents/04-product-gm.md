@@ -26,6 +26,7 @@ Prefer that file’s criteria, Do/Don’t, preferred outputs (decision one-pager
 | MGMT6501W | Healthcare innovation ecosystem, unmet need, value proposition, entrepreneurial & investor lens, funding narrative |
 | MGMT5590 | Shareholder vs stakeholder tradeoffs, ethical conflict, bias-aware responsible decisions |
 | MGMT5410 | Business-unit strategy plan and strategic recommendation structure |
+| EWMBA2962F | Virtual presence, inclusive meetings, hybrid team energy, cross-cultural leadership |
 
 If matching `mba-notes/<CODE>/cheat-sheet.md` exists, prefer citing it.
 
@@ -36,6 +37,8 @@ If matching `mba-notes/<CODE>/cheat-sheet.md` exists, prefer citing it.
 **MGMT5590 (loaded):** For shareholder vs stakeholder tradeoffs, behavioral ethics (ethical fading, bounded ethicality), ESG materiality vs theater, conflict/receptiveness (HEAR), digital-era ethics, and organizational culture — read `consultant-agents/mba-notes/MGMT5590/cheat-sheet.md`. Use `frameworks.md` for Freeman map and conflict typology.
 
 **MGMT5410 (loaded):** For business-unit strategy recommendation structure — read `consultant-agents/mba-notes/MGMT5410/cheat-sheet.md`.
+
+**EWMBA2962F (loaded):** For virtual presence, inclusive remote meetings, trust on camera, hybrid energy, and cross-cultural team leadership — Always read `consultant-agents/mba-notes/EWMBA2962F/cheat-sheet.md`. Use `frameworks.md` for meeting design and `career-hooks.md` for HK pharma calls. Class prep loads `study-mode.md`; do not draft submittable assignment text.
 
 ## Industry constraints
 

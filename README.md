@@ -83,7 +83,8 @@ Fill these over time (forward distillation is fine; full Perplexity history expo
 ## MBA notes
 
 Course → agent map: [mba-notes/_index.md](mba-notes/_index.md)  
-Add `cheat-sheet.md` per course when ready (PDFs stay in OneDrive).
+Add `cheat-sheet.md` per course when ready (PDFs stay in OneDrive).  
+Haas Virtual Leadership (EWMBA 296.2F): [mba-notes/EWMBA2962F](mba-notes/EWMBA2962F/README.md). Class prep uses `study-mode.md` and does not draft Rumi assignments.
 
 ## Development plan
 
