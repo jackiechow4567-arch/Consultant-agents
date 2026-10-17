@@ -18,6 +18,6 @@ Agents should prefer these files over generic textbook recall.
 | SBMT6012G | Geopolitics of Emerging Tech | 05 | **Done** (2026-07-27; AI/semiconductor/quantum, US–China controls, Nvidia case) |
 | MGMT6501Q | Communication for Business Leaders | playbooks/exec-comms | **Done** (2026-07-27; Student Notes; HBR scans unavailable — final) |
 | ISOM5120 | Visualizing Data for Business Decisions | playbooks/data-story-brief | **Done** (2026-07-27; marks/channels, dashboards, chart choice, visual analytics) |
-| MGMT5883 | Managing Creativity and Innovation | 06, 04 | **Done** (2026-10-17; Sessions 1–4 + readings. Thompson Ch.9 OCR'd from a photographed scan. IDEO helping reprint body not OCR'd — Session 4 lecture points used) |
+| MGMT5883 | Managing Creativity and Innovation | 06, 04 | **Done** (2026-10-17; Sessions 1–4 + readings. Thompson Ch.9 and IDEO helping reprint OCR'd from scans. Figure numbers that did not survive OCR are marked) |
 
 Raw lecture PDFs stay in OneDrive or the local upload set. Only distilled markdown belongs here.

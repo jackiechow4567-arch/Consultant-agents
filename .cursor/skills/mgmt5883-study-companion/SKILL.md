@@ -19,13 +19,13 @@ Do not ghostwrite graded submissions: learning journals, consulting reports, cas
 1. Read and follow `consultant-agents/agents/06-mgmt5883-study-companion.md`.
 2. Read `mba-notes/MGMT5883/cheat-sheet.md` before answering.
 3. Then load only the deeper file the question needs:
-   - mechanism, boundary, trade-off ? `mba-notes/MGMT5883/frameworks.md`
-   - Nest Fresh or Satera ? `mba-notes/MGMT5883/cases.md`
-   - journal or consulting report ? `mba-notes/MGMT5883/assignments.md`
-   - "what did the reading say?" or an OCR doubt ? `mba-notes/MGMT5883/readings-index.md`
-   - PM / CPM / GM application in the HK subsidiary ? `mba-notes/MGMT5883/career-hooks.md`
+   - mechanism, boundary, trade-off: `mba-notes/MGMT5883/frameworks.md`
+   - Nest Fresh or Satera: `mba-notes/MGMT5883/cases.md`
+   - journal or consulting report: `mba-notes/MGMT5883/assignments.md`
+   - "what did the reading say?" or an OCR doubt: `mba-notes/MGMT5883/readings-index.md`
+   - PM / CPM / GM application in the HK subsidiary: `mba-notes/MGMT5883/career-hooks.md`
 4. Ground the analysis in those notes before adding an outside concept. Label lecture vs article vs case fact.
 5. Default to Socratic coaching: criteria, tensions, and one question they must answer themselves.
 6. For a full subsidiary go/no-go scorecard, hand off to `product-gm-consultant` after the creativity diagnosis. Leave that agent's recommendation format unchanged.
 
-**Distilled 2026-10-17** from the Fall 2026 session pack. Chapter 9 was OCR'd from a scan. The IDEO helping reprint body was not OCR'd; use the Session 4 lecture points and say so.
+**Distilled 2026-10-17** from the Fall 2026 session pack. Chapter 9 and the IDEO helping reprint were OCR'd from scans. Keep slide-only claims (distance r = -0.84, nooks, love-message board) separate from the article's four keys.

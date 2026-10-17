@@ -1,4 +1,4 @@
-# MGMT5883 — frameworks
+# MGMT5883 â€” frameworks
 
 > Mechanisms, boundary conditions, trade-offs. Cite lecture, article, or case. Paraphrased from the Fall 2026 pack.  
 > Agent start: [cheat-sheet.md](cheat-sheet.md)
@@ -9,12 +9,12 @@
 
 **Lecture and Amabile (1998).** A business idea is creative when it is novel and useful: it changes a product, service, or process. Originality alone is not the course standard. Thompson Ch.9 uses the same pair (novel and useful) and names innovation as the realization of those ideas in products and services.
 
-**Thompson Ch.9 — creative realism (Finke).** Two axes:
+**Thompson Ch.9 â€” creative realism (Finke).** Two axes:
 
 |  | Low structural connectedness (idealistic) | High structural connectedness (realistic) |
 |--|-------------------------------------------|-------------------------------------------|
-| Creative (novel) | Creative idealism — wild, hard to implement | **Creative realism — the target quadrant** |
-| Conservative | (neither novel nor connected) | Conservative realism — works, looks familiar |
+| Creative (novel) | Creative idealism â€” wild, hard to implement | **Creative realism â€” the target quadrant** |
+| Conservative | (neither novel nor connected) | Conservative realism â€” works, looks familiar |
 
 Edison's lighting system is the chapter's example of creative realism: new, and continuous with earlier inventions. The chapter's teaching move is to let a team pass through the other quadrants, including silly ideas, because a realistic idea can grow out of an idealistic one. IDEO language in the chapter: enlightened trial and error; fail early and often.
 
@@ -50,7 +50,7 @@ Cardboard-box exercise in the chapter: three animal-homes score high on fluency 
 
 ---
 
-## 3. Six managerial practices — and what kills each
+## 3. Six managerial practices â€” and what kills each
 
 **Article (Amabile 1998).** KEYS is the 78-item workplace survey behind the categories. Kill patterns are usually systemic, not one villain.
 
@@ -65,7 +65,7 @@ Cardboard-box exercise in the chapter: three animal-homes score high on fluency 
 
 **Article contrast (Team Events Study).** About two dozen teams, seven companies, three industries (high tech, consumer products, chemicals), daily confidential email, expert and member creativity ratings.
 
-- **Chemical Central Research** (pseudonym): goals set by managers after early collaboration, then real process autonomy; teams of 4–9 with professional and ethnic diversity; a failed experiment still eligible for public recognition; GM of the unit gave strategic and technical help and made cross-team support a priority.
+- **Chemical Central Research** (pseudonym): goals set by managers after early collaboration, then real process autonomy; teams of 4â€“9 with professional and ethnic diversity; a failed experiment still eligible for public recognition; GM of the unit gave strategic and technical help and made cross-team support a priority.
 - **National Houseware Products** (pseudonym): after restructuring and senior exits, goals changed between quarterly reviews, a declared number-one project was dropped without explanation, time and resource pressure was arbitrary, and people stopped surfacing radical ideas because evaluation was routinely critical. Early firefighting energy faded once the pressure looked meaningless.
 
 **Trade-off.** Coordination, productivity, and control are legitimate business imperatives. The article's claim is that those imperatives can be met in a design that also keeps the three components intact. The lecture's Session 4 line is the same tension: artists and soldiers both kept, managed differently.
@@ -87,7 +87,7 @@ Cardboard-box exercise in the chapter: three animal-homes score high on fluency 
 | Skill | Article mechanism | Practice the article suggests | Lecture link |
 |-------|-------------------|-------------------------------|--------------|
 | Associating | Connect questions, problems, or ideas across fields. Medici effect. Brain stores experience in networks, so diverse inputs create new links. Jobs: creativity is connecting things. eBay origin story in the article: efficient markets + Pez dispensers + weak classifieds | Grows as the other four skills add raw material | Lecture label is **Combining** (Abba pot-in-pot; iPod + phone + internet). Same mechanism, different word |
-| Questioning | Drucker: the hard job is the right question. Why / why not / what if. Imagine opposites (Martin, *The Opposable Mind*). Impose or remove constraints ("creativity loves constraint" as a Google principle in the article). Dell: parts cost vs PC price | 15–30 minutes a day, 10 questions that challenge the status quo. Ask questions people cannot yet answer | Session 1: high question-to-answer ratio; Jobs fan; iPod "what if" |
+| Questioning | Drucker: the hard job is the right question. Why / why not / what if. Imagine opposites (Martin, *The Opposable Mind*). Impose or remove constraints ("creativity loves constraint" as a Google principle in the article). Dell: parts cost vs PC price | 15â€“30 minutes a day, 10 questions that challenge the status quo. Ask questions people cannot yet answer | Session 1: high question-to-answer ratio; Jobs fan; iPod "what if" |
 | Observing | Anthropologist stance. Small behavioral details in customers, suppliers, other firms. Cook/Quicken: wife's finance frustration + Lisa GUI. Tata Nano from a family on one scooter. Toyota genchi genbutsu | A day in the customer's "job," no premature judgment. Cook's prompt: what was different than you expected? Note-taking; Bezos photographs bad innovations | Workarounds (OpenTable / Templeton); "see but not see" (round manhole covers, turnstiles) |
 | Experimenting | Prototypes and pilots; intellectual exploration; taking things apart; new surroundings. Bezos: decentralize so experiments stay cheap. Cook: harvest the learning from failures. International living: more countries lived in, more likely to turn that into innovative products; one pre-CEO international assignment associated in the cited Gregersen, Carpenter, and Sanders research with about 7% higher market performance | Hypothesis-testing mind-set; out-of-domain seminars; disassemble a product; small frequent experiments | Bezos bookstore experiments; Hyman / Rent the Runway pilots. Lecture line: innovation is discovery, not prediction |
 | Networking | Idea networks, not career networks. TED, Davos, Aspen. CPS ceramic: Polaroid film know-how and sperm-freezing know-how solved manufacturing problems. Credo on the wall: insights often come from outside the field | Five creative people as mentors; idea lunches across functions and industries | Burt structural holes (lecture). Gregory vs Berta diagrams. Burt 2004 as taught: 673 managers, structural holes linked to creativity through diverse early information. Prompt left open in class: how did Joe Morton get a billion-dollar idea? |
@@ -105,13 +105,13 @@ Cardboard-box exercise in the chapter: three animal-homes score high on fluency 
 
 **SCAMPER (lecture examples).** Substitute (Frappuccino). Combine (burger + construction equipment). Adapt (a stand ? fast food). Modify (singing condom microchip). Put to other use (Spence Silver's "failed" glue). Eliminate (tank minus war ? tractor). Reverse (move the checkup).
 
-**In-class combine exercises.** Restaurant assumptions table: Assumptions | Challenge Assumptions | New Ideas (computers-need-a-fan ? Apple II has no fan). Health insurance: illness protection combined with wellness promotion. Toilet + health check; helicopter + automobile. HK hospital scene contrast uses the slide figures 23 hospitals, 8 heart centers, 5000+ beds, HKD 6,240 — the slide does not define the comparison in the text extract, so treat them as slide figures only.
+**In-class combine exercises.** Restaurant assumptions table: Assumptions | Challenge Assumptions | New Ideas (computers-need-a-fan ? Apple II has no fan). Health insurance: illness protection combined with wellness promotion. Toilet + health check; helicopter + automobile. HK hospital scene contrast uses the slide figures 23 hospitals, 8 heart centers, 5000+ beds, HKD 6,240 â€” the slide does not define the comparison in the text extract, so treat them as slide figures only.
 
 ---
 
 ## 5. Design thinking
 
-### Brown (HBR 2008) — article
+### Brown (HBR 2008) â€” article
 
 Design thinking matches people's needs with what is technologically feasible and what a viable business strategy can turn into customer value. Three constraints: **desirability, feasibility, viability.**
 
@@ -120,7 +120,7 @@ Three **spaces**, not a linear stage-gate. Projects loop, especially through the
 | Space | Article content |
 |-------|-----------------|
 | Inspiration | What changed, what the business problem or opportunity is, constraints (time, resources, customer poverty, shrinking market). Observe what people do, think, need. Extreme users. Many disciplines from the start. Project room and stories |
-| Ideation | Organize insights, integrative thinking, sketches, scenarios, brainstorm, prototype–test loops with users and internally |
+| Ideation | Organize insights, integrative thinking, sketches, scenarios, brainstorm, prototypeâ€“test loops with users and internally |
 | Implementation | Experience engineering, communication strategy, the business case, resources to implement, then the next project |
 
 **Personality profile in the article:** empathy (people first, including latent needs), integrative thinking (hold contradictions; Martin), optimism (a better solution exists inside the constraints), experimentalism (not only incremental tweaks), collaboration (interdisciplinary, often multi-skilled individuals). IDEO staffing examples in the article: engineers and marketers, anthropologists and industrial designers, architects and psychologists.
@@ -128,8 +128,8 @@ Three **spaces**, not a linear stage-gate. Projects loop, especially through the
 **Cases inside the article (paraphrased teaching examples).**
 
 - Kaiser: nurses and other staff in workshops, then a small process change in shift handoff with an outsize effect on patient experience, job satisfaction, and productivity; later tied to an electronic-record effort and a "hospital of the future" exploration. The article's point is human-centered process innovation, not a new building.
-- Shimano Coasting (with IDEO): high-end bike growth had flattened (2004). The team studied why about 90% of American adults do not ride. Insight: childhood joy plus adult intimidation (store staff, complexity, cost, road danger, maintenance). Result was a simple bike (backpedal brake, automatic gears, low maintenance) plus retail, brand, and safe-place riding — the bike's look was deferred. Trek, Raleigh, and Giant first; seven more manufacturers in 2008 after a 2007 launch.
-- Aravind: eye-care system, mission to reduce needless blindness including among the rural poor. April 2006–March 2007: more than 2.3 million patients, more than 270,000 surgeries. Eye camps (2006 and early 2007: more than 500,000 screened, nearly 113,000 needed surgery), buses, telemedicine trucks. Systems view: the hospital network is the start of access, not the whole design.
+- Shimano Coasting (with IDEO): high-end bike growth had flattened (2004). The team studied why about 90% of American adults do not ride. Insight: childhood joy plus adult intimidation (store staff, complexity, cost, road danger, maintenance). Result was a simple bike (backpedal brake, automatic gears, low maintenance) plus retail, brand, and safe-place riding â€” the bike's look was deferred. Trek, Raleigh, and Giant first; seven more manufacturers in 2008 after a 2007 launch.
+- Aravind: eye-care system, mission to reduce needless blindness including among the rural poor. April 2006â€“March 2007: more than 2.3 million patients, more than 270,000 surgeries. Eye camps (2006 and early 2007: more than 500,000 screened, nearly 113,000 needed surgery), buses, telemedicine trucks. Systems view: the hospital network is the start of access, not the whole design.
 
 **Lecture intro (Session 1), aligned with the article.** Human-centered integration of people's needs, technical possibility, and business success. Empathy: hear what people say (what they think) and observe what they do (what they feel). Mead's fieldwork; Tom Kelley / IDEO: observe in the native habitat.
 
@@ -143,7 +143,7 @@ Times are the worksheet's. This is the course's operational version of design th
 | 2 Dig deeper | 10 min (5+5) | Probe the unexpected. Stories, emotions, motivations |
 | 3 Capture findings | 5 min | **Needs as verbs.** Insights = unexpected learning about feelings, motivations, worldview |
 | 4 Problem statement | 5 min | "[Name] needs a way to [need]. Unexpectedly, [insight]." Reframe to a short, specific How Might We. Lecture example: teen healthy food vs social acceptance ? "How might we make teenagers feel cool eating healthy food?" An instruction book solves the wrong problem |
-| 5 Ideate | 6 min | Sketch 3–5 radical ways. Pauling: lots of ideas |
+| 5 Ideate | 6 min | Sketch 3â€“5 radical ways. Pauling: lots of ideas |
 | 6 Feedback | 10 min | Learning, not validating or selling |
 | 7 Iterate | 5 min | One big concept |
 | 8 Build | 5 min | A prototype the partner can touch (marker, film canister, clipper, tape on the slide) |
@@ -178,7 +178,7 @@ Times are the worksheet's. This is the course's operational version of design th
 
 No citation is printed on the slide. Describe the drawing. Do not add a precise "optimal percentage."
 
-**Keep task conflict from becoming relationship conflict (slides 18–19).** Shared, agreed goals. More information, fact-based debate. Four or five alternatives. Humor as softener (blunts negative information), lubricant (lowers defensiveness), and catalyst (positive mood, creativity).
+**Keep task conflict from becoming relationship conflict (slides 18â€“19).** Shared, agreed goals. More information, fact-based debate. Four or five alternatives. Humor as softener (blunts negative information), lubricant (lowers defensiveness), and catalyst (positive mood, creativity).
 
 **Thompson Ch.9 link.** The chapter treats **cognitive conflict** as task conflict: diverse members revise assumptions and generate more strategies and more novel solutions. The course pack's preceding chapter ends, on the same scan, with a warning that emotional conflict threatens productivity and should be depersonalized. That is the affective side. Session 3's relationship-conflict curve is the lecture's picture of that risk.
 
@@ -216,7 +216,7 @@ No citation is printed on the slide. Describe the drawing. Do not add a precise 
 
 ---
 
-## 10. Brainstorming — rules, failure, fixes (Thompson Ch.9 + Session 3)
+## 10. Brainstorming â€” rules, failure, fixes (Thompson Ch.9 + Session 3)
 
 **Osborn's four rules (chapter; the lecture's words are expressiveness, non-evaluation, quantity, building).** Criticism is ruled out. Freewheeling is welcome. Quantity is desired. Combination and improvement are encouraged. The chapter is explicit: the session is rule-bound, not a free-for-all.
 
@@ -244,12 +244,12 @@ Typical session on video, as the chapter summarizes it: rules broken, anxiety, s
 | Bucket | Practices |
 |--------|-----------|
 | Cognitive-goal | High quantity goals. An explicit rule set. Paulus's additional rules: stay on task, do not tell stories or explain, restate the problem when the group goes quiet, invite silent members in. One study cited: about 40% more ideas, in the range of nominal groups, and more parsimonious wording. Positive mood. Individual accountability. Analogical reasoning |
-| Social-organizational | Trained facilitator. Brainwriting (simultaneous silent writing; cuts production blocking and social loafing; still needs a later share step). Brief breaks (a 30-minute session improves after a break if the break is not filled with more of the same cognitive load — the chapter's direction). Nominal group technique (solitary writing, then round-robin, then discussion). Anonymous and rotating variants. Delphi. Stepladder |
+| Social-organizational | Trained facilitator. Brainwriting (simultaneous silent writing; cuts production blocking and social loafing; still needs a later share step). Brief breaks (a 30-minute session improves after a break if the break is not filled with more of the same cognitive load â€” the chapter's direction). Nominal group technique (solitary writing, then round-robin, then discussion). Anonymous and rotating variants. Delphi. Stepladder |
 | Structural-environmental | Diversify the team (cognitive / task conflict). Fluid membership (stable teams feel creative and develop "cognitive arthritis"; some turnover raises fluency and flexibility). Organizational networking. Contacts across industries. A space built for the work |
 
-**Lecture practice list (Session 3), compatible with the chapter.** Frame the problem. Warm up — the slide text breaks off at "don't brainstorm during," so the rest of that bullet is not in the extract. Cap the group around 5–6. Defer judgment. Be visual. Encourage stealing and building (the lecture's jazz metaphor). Go for volume, then group and select. Caption exercise: 6 minutes, length free.
+**Lecture practice list (Session 3), compatible with the chapter.** Frame the problem. Warm up â€” the slide text breaks off at "don't brainstorm during," so the rest of that bullet is not in the extract. Cap the group around 5â€“6. Defer judgment. Be visual. Encourage stealing and building (the lecture's jazz metaphor). Go for volume, then group and select. Caption exercise: 6 minutes, length free.
 
-**Analogical reasoning (Thompson; also Session 1).** Tumor problem (Duncker; Gick & Holyoak): high-intensity rays destroy the tumor and the healthy tissue; low-intensity rays spare both. Solution: several low-intensity rays converging on the tumor. About 10% solve it unaided. The fortress story is the structural analog (army split across roads because mines stop a full force). Spontaneous transfer is about 41%. Telling people to think about the earlier problem raises solutions to about 85%. A nearer medical analog reaches about 90%. **Inert knowledge:** the knowledge is already there and is not retrieved because the surface looks different. A separate passage says managers reach for surface-similar problems about 55% of the time and deeply relevant ones about 12% of the time. Apple's jelly-bean factory visit for the iMac shell is the chapter's industry example. Kekulé's snake and Kepler's light-to-orbits analogy are the historical ones.
+**Analogical reasoning (Thompson; also Session 1).** Tumor problem (Duncker; Gick & Holyoak): high-intensity rays destroy the tumor and the healthy tissue; low-intensity rays spare both. Solution: several low-intensity rays converging on the tumor. About 10% solve it unaided. The fortress story is the structural analog (army split across roads because mines stop a full force). Spontaneous transfer is about 41%. Telling people to think about the earlier problem raises solutions to about 85%. A nearer medical analog reaches about 90%. **Inert knowledge:** the knowledge is already there and is not retrieved because the surface looks different. A separate passage says managers reach for surface-similar problems about 55% of the time and deeply relevant ones about 12% of the time. Apple's jelly-bean factory visit for the iMac shell is the chapter's industry example. KekulÃ©'s snake and Kepler's light-to-orbits analogy are the historical ones.
 
 **Janusian thinking.** Hold conflicting ideas, paradoxes, and ambiguity. Open questions ("worst nightmare or nicest dream") and impossible prompts ("live on the moon") are the chapter's drills.
 
@@ -257,7 +257,7 @@ Typical session on video, as the chapter summarizes it: rules broken, anxiety, s
 
 **Electronic brainstorming (chapter).** Parallel entry, anonymity, and a shared screen reduce production blocking and evaluation apprehension and feel more egalitarian. Limits the chapter states: small groups gain less than large ones; social interaction, rapport, and informal coaching drop; anonymity removes credit and can worsen free riding; EBS is not shown to beat the nominal group technique. The chapter's close: face-to-face brainstorming can still be pervasive, and the inhibitory factors (social loafing, production blocking, coordination loss, irrelevant talk) are a large part of why. The recommended path is hybrid: use individual strengths, then a group process with the fixes above. A weekly meeting that adds no new volume is a weak benchmark.
 
-**Mood notes inside the chapter (separate from Session 1).** Positive affect associated with higher creativity (Amabile, Barsade, Mueller & Staw 2005, 222 employees, seven companies, as cited). A downsizing study (Amabile & Conti 1999) found creativity down with the negative mood of the cuts. Byron, Khazanchi & Nazarian 2010, as cited: evaluative stress and creativity are curvilinear — low evaluative contexts raise creativity, highly evaluative ones lower it.
+**Mood notes inside the chapter (separate from Session 1).** Positive affect associated with higher creativity (Amabile, Barsade, Mueller & Staw 2005, 222 employees, seven companies, as cited). A downsizing study (Amabile & Conti 1999) found creativity down with the negative mood of the cuts. Byron, Khazanchi & Nazarian 2010, as cited: evaluative stress and creativity are curvilinear â€” low evaluative contexts raise creativity, highly evaluative ones lower it.
 
 ---
 
@@ -269,17 +269,34 @@ Thought-out experiments and pilots, learning taken, the same failure not repeate
 
 ### Collaborative helping
 
-**Lecture (Session 4).** The assigned reprint *IDEO's Culture of Helping* is an image scan; these points are the ones the slides teach.
+**Article (Amabile, Fisher & Pillemer, HBR Janâ€“Feb 2014, reprint R1401C).** OCR of the image reprint. Creative work cannot be staffed in advance. The useful help changes the idea, and people will not offer it unless the culture makes discretionary help safe. IDEO is the existence proof: about two years of observation, interviews, and surveys; a helping map of one 47-person office; day-by-day tracking on four project teams.
 
-| Lever | As taught |
-|-------|-----------|
-| Help-seeking | Formal and informal routes both count |
-| Distance | Physical distance correlated with interaction likelihood at r = ?.84 |
-| Layout | Nooks around common areas |
-| Help-giving | Senior designers as helpers; spread the load so helping is not one person's tax |
-| Reinforcement | A positive outcome for the seeker; "love messages"; hiring and promotion weigh helpfulness |
+**Four keys, in the article's order**
 
-Amabile's work-group feature "willingness to help through setbacks" is the 1998 version of the same lever.
+1. **Leadership conviction.** Leaders give help and ask for it, including downward. A senior person in an early brainstorm signals that everyone is in the network.
+2. **Both sides of the helping coin.** Seeking and giving both need support. The Bell Labs / Nyquist meals often happened because someone with a hard problem invited the expert. Training willing experts is only half.
+3. **Processes and roles.** Design reviews are required of teams. Reviewers are not compelled to attend. Process reinforces the norm. It does not legislate it. Design community leaders (informal check-ins outranked scheduled ones) and one or two **senior designers assigned as helpers** (not on the team) carry the role. Too many official helpers is a failure mode.
+4. **Slack.** The right person is often unreachable or overloaded, not unwilling. IDEO leaves schedule room, including time that could have been billed, plus frequent informal contact (all-office lunches) so help can arrive before anyone files a request.
+
+**What separates a top helper.** Competence still matters (helpers beat non-helpers). The #1 and #5 helpers look similar on competence. **Trust and accessibility** separate the top helper from the fifth and both from a non-helper (Edmondson: safety to discuss mistakes). About **89%** of that office appeared on someone's top-five helper list. Status did not wall people off: juniors ask seniors, and seniors ask several levels down. The chart's horizontal axis is expert status as rated by colleagues, not formal rank. Bar heights on that chart were not printed. Do not quote them.
+
+**The helping tango.** The same assigned helper (Kathy, a pseudonym) spent a weekend making Ellen's interview data visual and was rated extremely helpful, then dropped in unprepared on Bert and set him back. Timing, preparation, and a shared read of the ask decide the episode. Receiver: pick someone expert enough, available, and safe; brief them; say afterward whether it mattered. Giver: listen before solving, match the phase (wide concepts early, tactical help near the deadline), do not take over the work. A senior who grabbed a junior's computer and reworked the client deck "won" the meeting and cost the project leader ownership.
+
+**Verbs in the change section:** seek, find, give, and receive. There is no diagram labeled "helping cycle."
+
+**What the article says is not the engine.** Fancy collaboration software, and bonuses for "most helpful" (the authors suspect a contest would produce competitive helping). Daily recognition is gratitude and being known as useful. People named more often as helpers reported higher job satisfaction. *The Little Book of IDEO*: "Make others successful." Hiring: Tim Brown listens for "I" versus "we," and for whether the candidate can give and receive help. Helpfulness counts in promotion.
+
+**Slide points that are course connections, not sentences in the article**
+
+| Slide claim | Where it actually lives |
+|-------------|-------------------------|
+| Distance and interaction, r = -0.84 | Session 4 lecture only. The article's evidence is a dense helping map plus informal contact, not that correlation |
+| Nooks around common areas | Lecture. The article says create frequent informal cross-discipline contact and all-office lunches. It does not name nooks |
+| "Love messages" board | Adam Grant's *Give and Take*, a different company. IDEO's own evidence next to that story is gratitude and higher satisfaction among frequent helpers |
+| Senior designers assigned as helpers; don't overload them | In the article |
+| Hire and promote for helpfulness | In the article |
+
+Amabile's 1998 work-group feature "willingness to help through setbacks" is the earlier version of the same lever. The 2014 piece adds the seeker side, slack, and the finding that trust and access beat extra expertise.
 
 ### Workspace (PWE handout, 2026)
 
@@ -296,14 +313,14 @@ The handout's own caveat: many studies measure creative **potential** (employee 
 | Plants | Consistent positive association |
 | Equipment | Low-tech (whiteboards, flip charts) and high-tech (wireless, displays) that support information flow |
 | Window / view | A window beyond the immediate room, and a view of nature, improve creativity |
-| Decorative elements | Personal items, books, lamps, drawable walls, artwork — visual complexity |
+| Decorative elements | Personal items, books, lamps, drawable walls, artwork â€” visual complexity |
 | Materials | One study: manufactured/composite materials negatively correlated, natural materials (wood, marble) positively correlated. Another study did not confirm |
 | Privacy vs visibility | Privacy to concentrate and incubate; visibility for feedback and stimulation. Depends on the activity |
 | Flexibility | Sliding doors, removable partitions, personal elements, a balance of the two modes |
 | Office layout | Open plan spreads information; closed offices give privacy; the combination beats either alone |
 | Size | Three studies: enough space for tools, materials, and colleagues' visits helps. One study: no effect |
 | Relaxing space | Three studies: a place only for rest (a couch, a nap) raises insights. One study: no effect |
-| Disengaged space | Non-work breaks with others: play, café, coffee machine |
+| Disengaged space | Non-work breaks with others: play, cafÃ©, coffee machine |
 | Unusual / fun space | Art, odd geometry, slides, swings, toys. One study: no direct effect |
 
 **Lecture link.** Creative work includes different activities: pull apart and put together. Provide private space and collaborative space. Amabile 1998 ranks physical space below matching and freedom: a beautiful office does not compensate for a killed challenge or a moving goal.
@@ -313,7 +330,7 @@ The handout's own caveat: many studies measure creative **potential** (employee 
 | Study as taught | Finding | Boundary the lecture draws |
 |-----------------|---------|----------------------------|
 | Doshi & Hauser 2024, story writing | GenAI access ? stories rated more creative (enjoyment, plot twists) and more homogeneous. Individual creativity up; collective novelty at risk | Augmentation. The set of stories converges |
-| Jia et al. 2023/2024, credit-card sales persuasion | AI help on customer questions the agent was not trained for. Top agents' gain about 3× the bottom agents' gain | The tool amplifies existing skill differences |
+| Jia et al. 2023/2024, credit-card sales persuasion | AI help on customer questions the agent was not trained for. Top agents' gain about 3Ã— the bottom agents' gain | The tool amplifies existing skill differences |
 | Koivisto & Grassini 2023 | Chatbots' average on creative-uses tasks above the human average; the best humans match or exceed the bots | Human creativity is not fully replaced |
 | Lecture takeaway | AI is a combinatory engine. Human experience and emotion still do work the model does not (Du Fu cottage poem as the illustration). Problem finding and usefulness judgments stay human, and they depend on deep empathy | Use AI inside discovery and drafting. Keep the problem frame and the "is it useful here?" call |
 
@@ -323,7 +340,7 @@ The handout's own caveat: many studies measure creative **potential** (employee 
 
 **Implications taught.** Avoid extreme pressure. When it cannot be avoided, protect people from interruptions (focus) and build a mission mindset (the job is vital). This matches Amabile 1998: real urgency on important work can help; fake or arbitrary urgency kills.
 
-**Pre-crastination vs procrastination (Session 4).** Pre-crastination (start immediately and finish) supports productivity. Procrastination can support creativity (Shin & Grant 2021). Slides 47–48 are result figures; page 48's text extract is only a citation fragment ("1503 1519"). The direction in the spoken slide is the one above. The figure's exact slopes were not recovered.
+**Pre-crastination vs procrastination (Session 4).** Pre-crastination (start immediately and finish) supports productivity. Procrastination can support creativity (Shin & Grant 2021). Slides 47â€“48 are result figures; page 48's text extract is only a citation fragment ("1503 1519"). The direction in the spoken slide is the one above. The figure's exact slopes were not recovered.
 
 ### Organizing people and projects
 
@@ -331,7 +348,7 @@ Lecture metaphors: creative people as artists (monkeys), operators as soldiers (
 
 **Lockheed skunkworks, as listed:** 180-day fighter; hidden location next to a plastics factory; best people; mission; near-absolute control for the unit head; few reports; casual dress and fun.
 
-**Slack time:** 3M, 10–15% of paid time to hatch one's own ideas. Google, 20% on what employees think will most benefit the company (Page & Brin, 2004 IPO letter). Thompson also notes W. L. Gore's 10% "dabble time" and the absence of titles on business cards.
+**Slack time:** 3M, 10â€“15% of paid time to hatch one's own ideas. Google, 20% on what employees think will most benefit the company (Page & Brin, 2004 IPO letter). Thompson also notes W. L. Gore's 10% "dabble time" and the absence of titles on business cards.
 
 **Trade-off with exploitation.** Slack and skunkworks are exploration structures. They still need a delivery owner, a mission, and a decision rule for which experiments graduate. Unbounded slack without a threshold of sufficiency becomes Amabile's resource problem in reverse: activity without a goal.
 

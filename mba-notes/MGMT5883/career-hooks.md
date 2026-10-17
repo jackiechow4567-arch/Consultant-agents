@@ -1,4 +1,4 @@
-# MGMT5883 ? career hooks (Clinical PM / PM / GM · HK healthcare subsidiary)
+# MGMT5883 ? career hooks (Clinical PM / PM / GM Â· HK healthcare subsidiary)
 
 Pair with [MGMT6501W](../MGMT6501W/career-hooks.md) when the question is a healthcare innovation bet, and with [creativity-systems-thinking.md](../../industry/gm-reference/creativity-systems-thinking.md) when the question is Crilly's immersion session (critical / creative / systems modes, systems mapping). That note is a different course. This file is Gong's MGMT5883: components, discovery skills, design-thinking spaces, creative teams, and the management of creative people.
 
@@ -27,7 +27,7 @@ Use subsidiary reality already in the vault (HA as the public-hospital system, H
 | Task vs relationship conflict | A disagreement about endpoint timing is task conflict. A comment about competence is relationship conflict. Four or five real alternatives, then humor that lowers defensiveness |
 | Intelligent failure | A failed site-activation pilot is useful when the hypothesis was written down and the same miss is not repeated |
 | Time pressure | Extreme deadline weeks cut creative thinking on the following days (Amabile et al. 2002, as taught). Protect one uninterrupted block and state why the job is vital |
-| Helping distance | People more than a short walk apart stop asking (lecture: r = ?.84). Put the working paper where the team already stands |
+| Helping distance | Lecture: interaction falls with distance (r = -0.84). Article: failed help is usually "unreachable or overloaded," and trust plus access beat a more famous expert. Put the working paper where the team already stands, and leave slack so the right person can be interrupted |
 
 ---
 
@@ -37,8 +37,8 @@ Use subsidiary reality already in the vault (HA as the public-hospital system, H
 |---------------|------------------|
 | Exploration vs exploitation | Keep a small set of local experiments (access, PSP, evidence gaps) with a delivery owner for the core brand. Slack without a graduation rule becomes activity |
 | Six kill patterns | Moving HQ goals, fake tender deadlines, homogeneous project teams, and criticism as a status signal are the usual subsidiary versions of National Houseware |
-| Transformational leadership × diversity | Educational and functional mix raises team creativity on the Session 3 chart when leadership is high, and lowers it when leadership is low. Diversity is not a substitute for a mission and for individual attention |
-| Skunkworks / 10–20% time | A hidden cell fits a 180-day problem with a unit head, few reports, and a mission. It is a poor fit for pharmacovigilance or a live HA tender |
+| Transformational leadership Ã— diversity | Educational and functional mix raises team creativity on the Session 3 chart when leadership is high, and lowers it when leadership is low. Diversity is not a substitute for a mission and for individual attention |
+| Skunkworks / 10â€“20% time | A hidden cell fits a 180-day problem with a unit head, few reports, and a mission. It is a poor fit for pharmacovigilance or a live HA tender |
 | AI augmentation | Use a model to widen options. Keep problem finding and the usefulness judgment with people who know the ward, the payer, and the label. Expect more homogeneous drafts if everyone uses the same prompt (Doshi & Hauser, as taught) |
 | Artists and soldiers | Medical, RA, and supply need a tight system. Brand and access experiments need a looser touch. Value both. Saturn, in the lecture, is the corporate picture of that split |
 | Cross-functional alignment | A fair team goal uses each function's strength (the Barbara / Joe / Sam test). Pinto's miss was a shared date with no contract for how the two styles would use it |
@@ -50,7 +50,7 @@ Use subsidiary reality already in the vault (HA as the public-hospital system, H
 - **HQ goal stability.** Amabile's freedom is autonomy on means inside a goal that sits still. A quarterly HQ reset is the National Houseware pattern. Name the goal that will not move this quarter, and the means the subsidiary still owns.
 - **Threshold of sufficiency.** Extra budget above the threshold does not buy creativity. A team below it spends its creativity chasing headcount and legal reviews. Say which side of the threshold the project is on.
 - **Intelligent failure and compliance.** A creative miss on a message or a pilot site is not a miss on safety reporting. Separate the sandbox from the controlled process before the experiment starts.
-- **Helping culture across the harbor and the HQ time zone.** Distance is already the lecture's strongest suppressor of help. Build the nook in the tools people actually open, and count help in promotion conversations.
+- **Helping culture across the harbor and the HQ time zone.** The lecture's distance correlation and the article's slack point land in the same place: the expert who is booked or asleep in another time zone is not a helper. Name one or two senior helpers, leave them room, and count helpfulness when you promote. Do not add a "most helpful" bonus. The article suspects that contest produces competitive helping.
 - **Values and margin.** Nest Fresh's "no margin, no mission" is the subsidiary version of a brand that cannot fund medical education, access work, or staff if the tender economics fail. Pursuing the value blindly and dropping the value for a quarter's number are both failures in the Session 2 summary. The value the lecture says to keep is the person's own well-being, including the GM's.
 
 ---

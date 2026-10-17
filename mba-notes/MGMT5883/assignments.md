@@ -1,4 +1,4 @@
-# MGMT5883 — assignment scaffolding
+# MGMT5883 â€” assignment scaffolding
 
 > Rubrics, checklists, and diagnostic questions. No sample journal. No sample consulting report. No rewritten sentences when a draft is pasted.
 
@@ -8,7 +8,7 @@ The prompts below are the ones printed at the end of the session decks and on th
 
 ## Learning journal
 
-**Prompt (Sessions 1–4 close, same three moves).**
+**Prompt (Sessions 1â€“4 close, same three moves).**
 
 1. Summary. Two learning points (insights) from the chosen session. They should be distinct.
 2. Personal significance. One of the two, the most valuable, and why it matters to the writer. The slide's example of significance: how the writer might see or approach a pre-existing problem, task, or project differently.
@@ -43,7 +43,7 @@ Use these as prompts to remember the class, not as sentences to paste.
 | Session | Material the insight can attach to |
 |---------|-------------------------------------|
 | 1 | A specific obstacle (fixedness, premature problem, one thinking language, single path). One component of Amabile. One discovery behavior, named with the article's word or the lecture's word and the difference flagged. One SCAMPER move tried on a real object |
-| 2 | A moment in the gift exercise where the problem statement changed. Nest Fresh: a value, a skill, or a situational constraint — one of them, not the whole decision |
+| 2 | A moment in the gift exercise where the problem statement changed. Nest Fresh: a value, a skill, or a situational constraint â€” one of them, not the whole decision |
 | 3 | Own style vs a teammate's. A time task conflict turned personal, or almost did. Something the HKL exercise showed about unique information. A brainstorming rule the group broke |
 | 4 | One Satera dynamic (style, delay, silence, test data). One of: intelligent failure, helping, space, AI, time pressure, skunkworks. The Shin & Grant direction only if the student can say what the class claimed, since the result figure was not recovered as numbers |
 
@@ -78,7 +78,7 @@ The coach does not supply replacement paragraphs.
 ### Diagnostic questions
 
 1. Are these two problems, or one problem in two departments?
-2. Which Amabile kill pattern, DNA skill gap, Thompson liability, or Session 4 leader behavior is the best fit — and which nearby pattern did you reject?
+2. Which Amabile kill pattern, DNA skill gap, Thompson liability, or Session 4 leader behavior is the best fit â€” and which nearby pattern did you reject?
 3. Does the solution restore intrinsic motivation, or does it add an extrinsic control that the 1998 article warns about?
 4. If this is a team problem: where is task conflict, where is relationship conflict, and where is missing unique information?
 5. What is the threshold of sufficiency (time, people, access)? What happens below it?
@@ -89,7 +89,7 @@ The coach does not supply replacement paragraphs.
 ### Structure the student can fill (headings only)
 
 ```markdown
-## Problem 1 — [name the obstacle]
+## Problem 1 â€” [name the obstacle]
 - What is happening (facts):
 - Course mechanism:
 - Why this is a creativity problem, not only an ops problem:
@@ -100,7 +100,7 @@ The coach does not supply replacement paragraphs.
 - Trade-off and what you will not do:
 - How you will know it worked:
 
-## Problem 2 — [a different obstacle]
+## Problem 2 â€” [a different obstacle]
 [same headings]
 
 ## What I am unsure about
