@@ -163,5 +163,5 @@
 
 - **Last distilled:** 2026-07-27
 - **Source:** Forward capture via Cursor interview (not full Perplexity Space export)
-- **Reference library:** `pm-reference/_index.md` (distilled from Space PDFs/CSVs in Downloads)
+- **Reference library:** `pm-reference/_index.md` (distilled from Space PDFs/CSVs in Downloads). Internal MPN disease training: `pm-reference/mpn-disease-training.md` (Kaushansky 2025). Use it for disease literacy. Do not use it as HCP promotional copy.
 - **High-sensitivity originals:** indexed in `work-briefs/pm/README.md` — not copied into reference summaries

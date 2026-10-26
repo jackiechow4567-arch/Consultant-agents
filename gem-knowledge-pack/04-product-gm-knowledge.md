@@ -1,7 +1,7 @@
 # Gem 04 — Product / GM Knowledge Pack
 
-> Generated 2026-07-28 12:02 for Gemini Gem Knowledge upload.
-> Rebuilt: 2026-07-28 12:02 · Run `python build.py` after vault or gm-reference updates.
+> Generated 2026-10-26 03:36 for Gemini Gem Knowledge upload.
+> Rebuilt: 2026-10-26 03:36 · Run `python build.py` after vault or gm-reference updates.
 > Paste the matching system instruction from `gem-system-prompts.md`.
 
 CEO / healthcare innovation / ethics / strategy + GM and PM role memory + HK GM reference.
@@ -345,7 +345,7 @@ CEO / healthcare innovation / ethics / strategy + GM and PM role memory + HK GM 
 
 - **Last distilled:** 2026-07-27
 - **Source:** Forward capture via Cursor interview (not full Perplexity Space export)
-- **Reference library:** `pm-reference/_index.md` (distilled from Space PDFs/CSVs in Downloads)
+- **Reference library:** `pm-reference/_index.md` (distilled from Space PDFs/CSVs in Downloads). Internal MPN disease training: `pm-reference/mpn-disease-training.md` (Kaushansky 2025). Use it for disease literacy. Do not use it as HCP promotional copy.
 - **High-sensitivity originals:** indexed in `work-briefs/pm/README.md` — not copied into reference summaries
 
 
