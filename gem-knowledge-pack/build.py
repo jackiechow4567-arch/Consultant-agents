@@ -51,6 +51,7 @@ def main() -> None:
         "Prefer these MBA cheat sheets over generic recall. Role memory when lens = PM.",
         [
             ("Role: Product Manager", IND / "role-pm.md"),
+            ("MPN disease training (internal)", IND / "pm-reference" / "mpn-disease-training.md"),
             ("MGMT5410 Strategic Management", MBA / "MGMT5410" / "cheat-sheet.md"),
             ("MARK5120 Marketing Strategy", MBA / "MARK5120" / "cheat-sheet.md"),
             ("ECON5110 Managerial Microeconomics", MBA / "ECON5110" / "cheat-sheet.md"),

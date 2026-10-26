@@ -13,6 +13,7 @@
 | `Hospital-Address-OfficialMapLocationLink.csv` | `hk-hospitals-landscape.md` |
 | `Role-Whattheycareabout-HowIusuallyengage.csv` | `../role-pm.md` § Stakeholders |
 | `20250613-Primary-Healthcare-Sharing-Session-2025_For-HKAPI-Members.pdf`, `20260429-COP-TTT-Workshop_slides-for-members.pdf` | `hkapi-policy-updates.md` |
+| `MPN_Slides_2025_KK_368c.pdf` (Kaushansky 2025 lecture, 57 slides) | `mpn-disease-training.md` — paraphrased internal module; source PDF is not copied into git |
 
 ## High sensitivity — local only (`work-briefs/pm/`)
 

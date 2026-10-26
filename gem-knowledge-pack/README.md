@@ -12,7 +12,7 @@
 | Gem | Name | Knowledge file | Size |
 |-----|------|----------------|------|
 | **00** | Router / Chief of Staff | [`00-router-knowledge.md`](00-router-knowledge.md) | ~15 KB |
-| **01** | Strategy & Marketing | [`01-strategy-marketing-knowledge.md`](01-strategy-marketing-knowledge.md) | ~67 KB |
+| **01** | Strategy & Marketing | [`01-strategy-marketing-knowledge.md`](01-strategy-marketing-knowledge.md) | ~91 KB (includes MPN disease training) |
 | **02** | Finance & Accounting | [`02-finance-accounting-knowledge.md`](02-finance-accounting-knowledge.md) | ~14 KB |
 | **03** | Ops & Clinical PM | [`03-ops-clinical-pm-knowledge.md`](03-ops-clinical-pm-knowledge.md) | ~29 KB |
 | **04** | Product / GM | [`04-product-gm-knowledge.md`](04-product-gm-knowledge.md) | ~95 KB (includes GM reference) |

@@ -2,7 +2,7 @@
 
 > **For agents:** When role lens = PM, read this index then load only the files relevant to the question.  
 > **Sensitivity:** Public/regulatory/clinical publications = Mid/Low. Internal transcripts and draft dossiers = see `work-briefs/pm/README.md` (High — local only).  
-> **Last built:** 2026-07-27 from user's Perplexity Space file set (Downloads).
+> **Last built:** 2026-10-26. Disease-training module added from the Kaushansky 2025 MPN lecture. Prior library: 2026-07-27 Perplexity Space file set.
 
 ## Load order
 
@@ -13,6 +13,7 @@
 
 | File | Use when |
 |------|----------|
+| [mpn-disease-training.md](mpn-disease-training.md) | Internal MPN disease training (classification, JAK2, c-MPL, CHIP). Not a promo piece; load before product claims |
 | [besremi-hk-pi-summary.md](besremi-hk-pi-summary.md) | Indication, dosing, contraindications, PI-bound claims, IFN potency warning |
 | [pv-clinical-evidence.md](pv-clinical-evidence.md) | PROUD-PV, Low-PV, comparative stats vs HU/phlebotomy, claim boundaries |
 | [regulatory-compliance.md](regulatory-compliance.md) | UMAO, HKAPI CoP, promo rules, hospitality, ADR reporting |
@@ -26,3 +27,4 @@
 - Do not treat reference summaries as permission to invent claims — always cross-check PI + global lexicon
 - Do not quote advisory-board transcript content (not in this folder)
 - Do not paste internal pricing/PSP uptake into external tools
+- Do not treat `mpn-disease-training.md` as cleared HCP copy — lecture biology stays internal unless Medical/Compliance issue a separate piece

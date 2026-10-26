@@ -19,6 +19,7 @@
 | [tmf-quality.md](tmf-quality.md) | TMF Reference Model, quality checklist, high-risk zones |
 | [hk-irb-iec.md](hk-irb-iec.md) | HK PPB IRB/IEC guidance (Jun 2026); ICH GCP E6(R3) in HK |
 | [local-source-index.md](local-source-index.md) | Map to originals on this machine |
+| [../pm-reference/mpn-disease-training.md](../pm-reference/mpn-disease-training.md) | Internal MPN disease literacy (JAK2, c-MPL, CHIP) for trial teams. Not a protocol and not HCP promo |
 
 ## Prohibitions for agents
 
