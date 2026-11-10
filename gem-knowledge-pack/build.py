@@ -104,6 +104,22 @@ def main() -> None:
             ("ISOM5120 Visualizing Data (data story)", MBA / "ISOM5120" / "cheat-sheet.md"),
         ],
     )
+    ma = IND / "ma-reference"
+    pack(
+        "06-medical-affairs-knowledge.md",
+        "Gem 06 — Medical Affairs Knowledge Pack",
+        "BESREMi scientific response. Cite only these cards and the distilled HK PI summary. "
+        "If a fact is absent, say it is not in the current paper library. Do not prescribe for a named patient.",
+        [
+            ("MA index", ma / "_index.md"),
+            ("Response rules", ma / "response-rules.md"),
+            ("Ropeginterferon evidence", ma / "evidence-ropeg.md"),
+            ("Disease and regional context", ma / "evidence-context.md"),
+            ("Paper catalog", ma / "library-catalog.md"),
+            ("Worked questions", ma / "worked-examples.md"),
+            ("HK PI summary (distilled)", IND / "pm-reference" / "besremi-hk-pi-summary.md"),
+        ],
+    )
 
 
 if __name__ == "__main__":

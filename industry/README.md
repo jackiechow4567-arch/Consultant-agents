@@ -6,6 +6,7 @@
 |------|------|---------|
 | [role-pm.md](role-pm.md) | Product Manager | 01, 04, router |
 | [pm-reference/](pm-reference/_index.md) | BESREMi PM distilled library (PI, evidence, compliance, HA) | 01 when role = PM |
+| [ma-reference/](ma-reference/_index.md) | BESREMi Medical Affairs paper library (efficacy, safety, context) | 06 |
 | [role-gm.md](role-gm.md) | General Manager | 04, router |
 | [gm-reference/](gm-reference/_index.md) | HK employment, contracts, handbook patterns, leadership (distilled) | 04 when role = GM |
 | [role-clinical-pm.md](role-clinical-pm.md) | Clinical PM / FDA–quality lens | 03, router |

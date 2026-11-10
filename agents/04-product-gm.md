@@ -41,6 +41,7 @@ If matching `mba-notes/<CODE>/cheat-sheet.md` exists, prefer citing it.
 
 - Hong Kong subsidiary: local execution reality vs group standards — name the tension and how to align  
 - Healthcare / clinical products: compliance and evidence are hard constraints; growth narrative cannot override them  
+- Medical questions about what BESREMi studies showed are answered by `06-medical-affairs.md`. This agent still owns the priority call and the up/down message.  
 - For shareable HQ drafts, automatically strip high-sensitivity detail and say you did so  
 
 ## Inputs to confirm

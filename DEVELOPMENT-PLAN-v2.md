@@ -288,3 +288,13 @@ v2 incremental deliverables (when you ask to implement):
 ## 10. One-line summary
 
 Turn 13 MBA courses into **5 career consultants as the knowledge backend + 2 communication/data output templates**; use distilled notes as your edge, and real work problems as the calibrator—not another pile of chatbots.
+
+---
+
+## 11. Addendum — Medical Affairs agent (2026-11-10)
+
+BESREMi medical and scientific questions are a separate interface: `agents/06-medical-affairs.md`.
+
+This does not add a seventh MBA persona. It is the evidence desk. Commercial choices stay with 01 or 04. The Medical Affairs agent cites only the papers in the repo root, distilled in `industry/ma-reference/`, plus the distilled Hong Kong PI summary. It does not prescribe for a named patient, and it does not invent results for trials whose PDFs are not in the vault.
+
+Router: medical science → **MA**. Price, access, and campaign choices → **SM** or **PG**, with MA as the optional evidence support.

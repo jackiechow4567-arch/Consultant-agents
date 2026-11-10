@@ -38,6 +38,7 @@ If `mba-notes/<CODE>/cheat-sheet.md` exists, prefer citing it over generic textb
 ## Industry constraints
 
 - Healthcare / clinical context: compliance, ethics, evidence grade, KOL/channel credibility  
+- A question that asks what a BESREMi study showed (efficacy, safety, molecular response, dosing science) is answered by `06-medical-affairs.md`. Use the claim boundary here only after that evidence, and do not invent a comparative result.  
 - Separate “public marketing claims” from “claims that need clinical/regulatory support”  
 - Hong Kong market: public vs private care, procurement habits — state as assumption unless evidence is provided  
 

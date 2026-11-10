@@ -3,9 +3,9 @@
 > Generated for HKUST MBA × industry consultant agents (PharmaEssentia HK subsidiary).  
 > **2026-07-27**
 
-## Quick setup (6 Gems)
+## Quick setup (7 Gems)
 
-1. In [Google AI Studio → Gems](https://aistudio.google.com/), create **6 custom Gems**.
+1. In [Google AI Studio → Gems](https://aistudio.google.com/), create **7 custom Gems**.
 2. For each Gem, paste the **system instruction** from [`gem-system-prompts.md`](gem-system-prompts.md) (section matching the Gem number).
 3. Upload **one** knowledge file per Gem (this folder):
 
@@ -17,8 +17,9 @@
 | **03** | Ops & Clinical PM | [`03-ops-clinical-pm-knowledge.md`](03-ops-clinical-pm-knowledge.md) | ~29 KB |
 | **04** | Product / GM | [`04-product-gm-knowledge.md`](04-product-gm-knowledge.md) | ~95 KB (includes GM reference) |
 | **05** | Tech & Geopolitics | [`05-tech-geopolitics-knowledge.md`](05-tech-geopolitics-knowledge.md) | ~30 KB |
+| **06** | Medical Affairs (BESREMi) | [`06-medical-affairs-knowledge.md`](06-medical-affairs-knowledge.md) | ~46 KB |
 
-4. **Workflow:** Open Gem **00** first → paste your question + any context → follow routing to Gem 01–05.
+4. **Workflow:** Open Gem **00** first → paste your question + any context → follow routing to Gem 01–06. Medical questions about BESREMi go to Gem **06**.
 
 ## Tool & sensitivity rules (all Gems)
 
@@ -40,6 +41,7 @@
 | 03 | ISOM5700 | role-clinical-pm.md |
 | 04 | MGMT6501T, MGMT6501W, MGMT5590, MGMT5410 | role-gm.md, role-pm.md |
 | 05 | ISOM5020, SBMT6012G, MGMT6501Q, ISOM5120 | — |
+| 06 | Papers in the repo root, distilled into `industry/ma-reference/` | HK PI summary |
 
 ## Refreshing after vault updates
 
@@ -56,7 +58,7 @@ Then re-upload changed `*-knowledge.md` files to the matching Gem.
 
 Same agent logic lives in:
 
-- `consultant-agents/agents/00-router.md` … `05-tech-geopolitics.md`
-- Cursor skills: `/consultant-router`, `/strategy-marketing`, `/finance-accounting`, `/ops-clinical-pm`, `/product-gm`, `/tech-geopolitics`
+- `consultant-agents/agents/00-router.md` … `06-medical-affairs.md`
+- Cursor skills: `/consultant-router`, `/strategy-marketing`, `/finance-accounting`, `/ops-clinical-pm`, `/product-gm`, `/tech-geopolitics`, `/medical-affairs-consultant`
 
 Gemini Gems = same prompts + this knowledge pack. Cursor also reads live vault paths and `work-briefs/` for High sensitivity.

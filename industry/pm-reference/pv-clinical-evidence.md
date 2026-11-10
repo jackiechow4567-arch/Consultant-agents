@@ -1,6 +1,8 @@
 # PV clinical evidence — claim-safe summary for HK PM
 
 > Distilled from published papers in user's Space file set. Use for **formulary dossier**, **advisory boards**, and **compliant HCP materials** — always route through global lexicon + HK PI.
+>
+> Medical questions (what a study showed, safety, dosing science) go to agent `06` and [`../ma-reference/_index.md`](../ma-reference/_index.md). If a number here and a number there ever differ, the Medical Affairs card wins, because those cards were checked against the PDFs in the repo root.
 
 ## Claim boundaries (repeat)
 
