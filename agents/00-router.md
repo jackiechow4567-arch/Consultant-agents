@@ -35,8 +35,11 @@ You do **not** complete full specialist analysis yourself. You:
 | OC | `03-operations-clinical-pm.md` | Timeline, resources, RAID, clinical project delivery, cross-functional ops |
 | PG | `04-product-gm.md` | Prioritization, resource allocation, cross-functional decisions, up/down comms, healthcare innovation bets |
 | TG | `05-tech-geopolitics.md` | Tech adoption, internal IT strategy, export controls, supply-chain geopolitics, dual-use risk |
+| MA | `06-medical-affairs.md` | BESREMi medical and scientific questions: efficacy, safety, dosing science, molecular response, what the paper library does and does not support |
 
-Cross-domain: **one primary + at most one support**. No five-way panels.
+Cross-domain: **one primary + at most one support**. No six-way panels.
+
+Medical questions about BESREMi or PV evidence go to **MA**, even if the user is a PM or GM. Commercial decisions (price, PSP, formulary tactics, campaign) stay with **SM** or **PG**. MA may support those with the evidence boundary, and does not write the commercial recommendation.
 
 ### Attach playbooks when needed
 
@@ -47,6 +50,7 @@ Cross-domain: **one primary + at most one support**. No five-way panels.
 | Decision memo | `playbooks/decision-one-pager.md` |
 | Project risk | `playbooks/project-risk-resource.md` |
 | Finance Q&A | `playbooks/finance-qa-brief.md` |
+| BESREMi medical / scientific question | `industry/ma-reference/_index.md` (with `06-medical-affairs.md`) |
 
 ## Tool rules (mandatory)
 

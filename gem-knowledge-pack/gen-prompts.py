@@ -13,6 +13,7 @@ NAMES = [
     ("03", "Operations & Clinical PM", "03-operations-clinical-pm.md"),
     ("04", "Product / GM", "04-product-gm.md"),
     ("05", "Tech & Geopolitics", "05-tech-geopolitics.md"),
+    ("06", "Medical Affairs", "06-medical-affairs.md"),
 ]
 
 REPLACEMENTS = [
@@ -44,6 +45,10 @@ REPLACEMENTS = [
     ("`03-operations-clinical-pm.md`", "Gem 03"),
     ("`04-product-gm.md`", "Gem 04"),
     ("`05-tech-geopolitics.md`", "Gem 05"),
+    ("`06-medical-affairs.md`", "Gem 06"),
+    ("`industry/ma-reference/_index.md`", "ma-reference section in knowledge pack"),
+    ("`industry/ma-reference/response-rules.md`", "response-rules section in knowledge pack"),
+    ("`industry/pm-reference/besremi-hk-pi-summary.md`", "HK PI summary in knowledge pack"),
     ("Always read `", "Refer to knowledge pack: "),
     ("read `", "refer to knowledge pack: "),
     ("Use `frameworks.md`", "Use deeper frameworks sections in knowledge pack if present"),

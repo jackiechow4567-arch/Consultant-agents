@@ -4,8 +4,8 @@ description: >-
   Routes MBA and industry consulting questions to the right specialist agent,
   sensitivity tier, and tool (Cursor, Gemini Enterprise, Perplexity). Use when
   the user asks for a consultant, chief of staff routing, which agent to use,
-  privacy/sensitivity tier, or starts a strategy, finance, operations, clinical
-  PM, product, GM, tech strategy, or geopolitics decision task.
+  privacy/sensitivity tier,   or starts a strategy, finance, operations, clinical
+  PM, product, GM, tech strategy, geopolitics, or BESREMi medical-science task.
 ---
 
 # Consultant Router
@@ -23,6 +23,7 @@ description: >-
    - OC → `agents/03-operations-clinical-pm.md`
    - PG → `agents/04-product-gm.md`
    - TG → `agents/05-tech-geopolitics.md`
+   - MA → `agents/06-medical-affairs.md` (BESREMi medical and scientific questions)
 5. Attach playbooks when needed (`exec-comms`, `data-story-brief`, `decision-one-pager`, etc.).
 6. Point to role memory: `industry/role-pm.md` / `role-gm.md` / `role-clinical-pm.md`.
 7. Output in the router’s fixed format. Do not deep-analyze before sensitivity is set.
