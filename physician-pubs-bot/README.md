@@ -6,7 +6,7 @@ Medical Affairs agent: monitor target physicians’ **PubMed** publications, sco
 
 ```bash
 cd physician-pubs-bot
-# Edit roster.yaml (physicians + NCBI email)
+# Edit roster.yaml (physicians only — no NCBI signup)
 npm run check
 npx @grok/agent-sdk validate --dir .
 npx @grok/agent-sdk dev
@@ -18,15 +18,15 @@ Model turns need `npx @grok/agent-sdk login` or `CURSOR_API_KEY`.
 
 | File | Purpose |
 |------|---------|
-| [`roster.yaml`](roster.yaml) | Physicians, TA keywords, `lookback_months`, NCBI `tool` + `email` |
+| [`roster.yaml`](roster.yaml) | Physicians, TA keywords, `lookback_months` |
 | [`SCOPE.md`](SCOPE.md) | Default scope decisions |
 | `PHYSICIAN_PUBS_ROSTER` | Optional env override path to roster file |
 
-Update `ncbi.email` to your real contact address ([NCBI etiquette](https://www.ncbi.nlm.nih.gov/home/develop/api/)).
+**No NCBI account or API application.** See [`docs/self-service-research.md`](docs/self-service-research.md).
 
-## Tier A (no bot)
+## Tier A (optional alerts — skip if not wanted)
 
-Manual PubMed email/RSS alerts: [`docs/tier-a-pubmed-setup.md`](docs/tier-a-pubmed-setup.md) and [`docs/tier-a-pubmed-roster.csv`](docs/tier-a-pubmed-roster.csv).
+PubMed email/RSS alerts need a My NCBI login: [`docs/tier-a-pubmed-setup.md`](docs/tier-a-pubmed-setup.md).
 
 ## HKUST full-text workflow (human step)
 
@@ -40,7 +40,7 @@ The bot **does not** use institutional login or scrape paywalls.
 
 ## Schedule
 
-[`bot/schedules/weekly-scan.md`](bot/schedules/weekly-scan.md) runs **Mondays 08:00 UTC** on hosted `serve` (not auto-fired under `--dev`).
+No built-in weekly cron — run `fetch_publications` / `scan_roster` when you need an update. To automate later, add a file under `bot/schedules/` only if your org allows it.
 
 ## Tools
 

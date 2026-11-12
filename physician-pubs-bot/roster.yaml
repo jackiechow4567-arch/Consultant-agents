@@ -22,9 +22,9 @@ therapeutic_area:
     - in vitro only
 
 ncbi:
-  # NCBI etiquette: identify your tool and contact email (no secrets).
+  # No NCBI signup, account, or API key. Only an optional label on public PubMed requests.
   tool: physician-pubs-bot
-  email: you@example.com
+  # email: (optional — leave unset if you prefer)
 
 physicians:
   - id: dr_gisslinger

@@ -6,7 +6,7 @@ export type RosterConfig = {
   };
   ncbi: {
     tool: string;
-    email: string;
+    email?: string;
   };
   physicians: PhysicianEntry[];
 };

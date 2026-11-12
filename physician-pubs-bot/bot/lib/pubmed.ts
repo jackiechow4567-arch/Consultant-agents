@@ -15,10 +15,16 @@ async function throttle(): Promise<void> {
 }
 
 function ncbiQuery(ncbi: NcbiConfig): string {
-  return `tool=${encodeURIComponent(ncbi.tool)}&email=${encodeURIComponent(ncbi.email)}`;
+  const parts = [`tool=${encodeURIComponent(ncbi.tool)}`];
+  const email = ncbi.email?.trim();
+  if (email) {
+    parts.push(`email=${encodeURIComponent(email)}`);
+  }
+  return parts.join("&");
 }
 
-export type NcbiConfig = { tool: string; email: string };
+/** No NCBI account or API key required; `email` is optional. */
+export type NcbiConfig = { tool: string; email?: string };
 
 function mindateFromMonths(months: number): string {
   const d = new Date();
