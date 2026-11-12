@@ -1,0 +1,19 @@
+{
+  "name": "physician-pubs-bot",
+  "private": true,
+  "type": "module",
+  "description": "agent project: physician-pubs-bot",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "dev": "agent-sdk dev"
+  },
+  "dependencies": {
+    "@grok/agent-sdk": "^0.6.0",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,3 @@
+physician_id,display_name,primary_affiliation,orcid,name_variants,specialty,pubmed_author_query,pubmed_saved_search_url,alert_email_notes
+dr_gisslinger_example,"Gisslinger, Heinz","Medical University of Vienna",,,"Haematology","Gisslinger H[Author]","https://pubmed.ncbi.nlm.nih.gov/?term=Gisslinger+H%5BAuthor%5D","Create account → Search → Save → Create alert (weekly)"
+dr_template,"Last, First Middle","City Hospital HK",0000-0000-0000-0000,"Last F; F Last",Specialty,"Last FM[Author] AND Hong Kong[Affiliation]","https://pubmed.ncbi.nlm.nih.gov/advanced/","Optional: add TA terms in Advanced Search before saving"
