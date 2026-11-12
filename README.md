@@ -26,6 +26,10 @@ See [privacy-policy.md](privacy-policy.md).
 
 Job titles (CPM / PM / GM) are **role lenses**, not separate personas.
 
+## Medical Affairs — physician publications
+
+Agent SDK bot [`physician-pubs-bot/`](physician-pubs-bot/) scans PubMed for roster physicians, scores MPN/PV relevance, and formats MSL briefs. Full text via HKUST Library is a manual step (see bot README).
+
 ## Install in Cursor
 
 This repo ships the full setup: vault content at the repo root plus Cursor integration under `.cursor/`.

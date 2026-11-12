@@ -1,0 +1,43 @@
+# Target physicians for publication monitoring.
+# Copy this file and replace placeholders; do not commit internal strategy notes here.
+
+lookback_months: 24
+
+therapeutic_area:
+  keywords:
+    - polycythemia vera
+    - myeloproliferative neoplasm
+    - MPN
+    - essential thrombocythemia
+    - myelofibrosis
+    - JAK2
+    - interferon
+    - ropeginterferon
+    - hydroxyurea
+    - thrombosis
+  exclude:
+    - pediatric-only
+    - veterinary
+    - murine
+    - in vitro only
+
+ncbi:
+  # NCBI etiquette: identify your tool and contact email (no secrets).
+  tool: physician-pubs-bot
+  email: you@example.com
+
+physicians:
+  - id: dr_gisslinger
+    display_name: "Gisslinger, Heinz"
+    affiliations:
+      - Vienna
+      - Medical University of Vienna
+    orcid: ""
+  - id: dr_template
+    display_name: "Chen, Example"
+    affiliations:
+      - Hong Kong
+      - Queen Mary Hospital
+    name_variants:
+      - "Chen E"
+    orcid: ""
